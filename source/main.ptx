@@ -13,7 +13,7 @@
 
     <!-- Include chapters -->
     <xi:include href="./1Foundations/Foundations.ptx" />
-    <xi:include href="./2LinearFunctions/LinearFunctions/Linear.ptx" />
+    <xi:include href="./2LinearFunctions/Linear.ptx" />
     <xi:include href="./3CompTrans/CompositionTransformations.ptx" />
     <xi:include href="./4ExpFunctions/Exponential.ptx" /> 
     <xi:include href="./5InvLogs/InversesLogarithms.ptx" />
