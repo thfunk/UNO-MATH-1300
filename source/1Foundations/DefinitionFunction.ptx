@@ -11,4 +11,9 @@
   
       <video label="Meaning-of-Inputs-Outputs" source="Meaning-of-Inputs-Outputs.mp4"/>
 
+      <exercise>
+        <title>Exercise 1</title>
+        <p> Given the function f(x) = x^2 - 4, find the output when the input is x = 3. </p>
+        <solution> The output is f(3) = 3^2 - 4 = 9 - 4 = 5. </solution>
+      </exercise>
 </section>
