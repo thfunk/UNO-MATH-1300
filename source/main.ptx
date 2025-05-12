@@ -13,8 +13,15 @@
 
     <!-- Include chapters -->
     <xi:include href="./Foundations.ptx" />
-    <xi:include href="./LinearFunctions.ptx" />
+    <xi:include href="./Linear.ptx" />
+    <xi:include href="./CompositionTransformations.ptx" />
+    <xi:include href="./Exponential.ptx" /> 
+    <xi:include href="./InversesLogarithms.ptx" />
+    <xi:include href="./Quadratics.ptx" />
+    <xi:include href="./HigherOrder.ptx" />
+    <xi:include href="./Rational.ptx" />
 
+    
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
 
