@@ -23,17 +23,15 @@
                         <cell>Input</cell>
                         <cell>Output</cell>
                     </row>
-                                        <row>
+                    <row>
                         <cell><m>-1</m></cell>
                         <cell>ans1</cell>
                     </row>
-                                        </row>
-                                        <row>
+                    <row>
                         <cell><m>0</m></cell>
                         <cell>ans2</cell>
                     </row>
-                                        </row>
-                                        <row>
+                    <row>
                         <cell><m>2</m></cell>
                         <cell>ans3</cell>
                     </row>
