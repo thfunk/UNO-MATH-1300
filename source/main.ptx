@@ -12,14 +12,14 @@
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
-    <xi:include href="./Foundations/Foundations.ptx" />
-    <xi:include href="./LinearFunctions/Linear.ptx" />
-    <xi:include href="./CompositionTransformations.ptx" />
-    <xi:include href="./Exponential.ptx" /> 
-    <xi:include href="./InversesLogarithms.ptx" />
-    <xi:include href="./Quadratics.ptx" />
-    <xi:include href="./HigherOrder.ptx" />
-    <xi:include href="./Rational.ptx" />
+    <xi:include href="./1Foundations/Foundations.ptx" />
+    <xi:include href="./2LinearFunctions/LinearFunctions/Linear.ptx" />
+    <xi:include href="./3CompTrans/CompositionTransformations.ptx" />
+    <xi:include href="./4ExpFunctions/Exponential.ptx" /> 
+    <xi:include href="./5InvLogs/InversesLogarithms.ptx" />
+    <xi:include href="./6QuadFunctions/Quadratics.ptx" />
+    <xi:include href="./7HOPoly/HigherOrder.ptx" />
+    <xi:include href="./8Rational/Rational.ptx" />
 
     
     <!-- Include backmatter -->
