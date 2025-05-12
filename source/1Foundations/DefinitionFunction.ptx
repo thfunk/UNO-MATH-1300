@@ -10,7 +10,5 @@
 
     <video>
       <source src="./Meaning-of-Inputs-Outputs.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      <p>Video on the definition of a function.</p>
     </video> 
 </section>
