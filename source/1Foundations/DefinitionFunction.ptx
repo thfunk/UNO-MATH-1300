@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="DefFunc" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Definition of a Function</title>
+
+    <p> A function is a rule that assigns to each input to exactly one output. The set of all inputs is called the domain of the function, and the set of all outputs is called the range of the function. </p>
+
+    <p> A function can be represented in several ways, including a table of values, a graph, or an equation. The most common representation is an equation, which describes the relationship between the input and output variables. </p>
+    <p> For example, the function f(x) = 2x + 3 assigns to each input x a unique output f(x). The domain of this function is all real numbers, and the range is also all real numbers. </p>
+</section>
