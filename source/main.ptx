@@ -12,8 +12,8 @@
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
-    <xi:include href="./Foundations.ptx" />
-    <xi:include href="./Linear.ptx" />
+    <xi:include href="./Foundations/Foundations.ptx" />
+    <xi:include href="./LinearFunctions/Linear.ptx" />
     <xi:include href="./CompositionTransformations.ptx" />
     <xi:include href="./Exponential.ptx" /> 
     <xi:include href="./InversesLogarithms.ptx" />
