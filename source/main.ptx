@@ -12,8 +12,8 @@
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
-    <xi:include href="./ch-chapter-title.ptx" />
-
+    <xi:include href="./Foundations.ptx" />
+    <xi:include href="./LinearFunctions.ptx" />
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
