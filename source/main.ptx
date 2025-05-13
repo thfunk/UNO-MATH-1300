@@ -6,7 +6,7 @@
 
   <book xml:id="my-great-book">
     <title>College Algebra</title>
-    <subtitle>An example to get you started</subtitle>
+    <subtitle>What should go here?</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
