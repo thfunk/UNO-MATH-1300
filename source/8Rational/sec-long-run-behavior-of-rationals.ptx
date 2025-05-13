@@ -38,6 +38,20 @@
     and we want a way to describe what the far left and far right ends of the graph are doing.
 </p>
 
-
+<figure>
+    <image width="60%">
+        <prefigure xmlns="https://prefigure.org" label="long-run-rational-function-zoom-in">
+            <diagram dimensions="(300,300)" margins="5">
+            <definition>f(x)=(2*x*(x+1))/((x+2)*(x-1))</definition>
+                <coordinates bbox="(-100,-50,100,50)">
+                    <grid-axes xlabel="x" ylabel="y"/>
+                    <graph function="f" domain="(-100,-2.0001)"/>
+                    <graph function="f" domain="(-1.999,0.999)"/>
+                    <graph function="f" domain="(1.0001,100)"/>
+                </coordinates>
+            </diagram>
+        </prefigure>
+    </image>
+</figure>
 
 </section>
