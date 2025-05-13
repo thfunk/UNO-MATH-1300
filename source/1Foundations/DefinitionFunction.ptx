@@ -3,6 +3,17 @@
 <section xml:id="DefFunc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Definition of a Function</title>
 
+    <definition xml:id="def-">
+        <statement>
+            <p>
+                        A <term>function</term>
+                        is a relationship between two variables for which a unique value of the <term>output</term>
+                        variable can be determined from a value of the <term>input</term>
+                        variable.
+                        In other words, a function is relation in which every input corresponds to exactly one output.
+            </p>
+        </statement>
+    </definition>
     <p> A function is a rule that assigns to each input to exactly one output. The set of all inputs is called the domain of the function, and the set of all outputs is called the range of the function. </p>
 
     <p> A function can be represented in several ways, including a table of values, a graph, or an equation. The most common representation is an equation, which describes the relationship between the input and output variables. </p>
