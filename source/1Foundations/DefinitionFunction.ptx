@@ -2,7 +2,10 @@
 
 <section xml:id="DefFunc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Definition of a Function</title>
-
+    <p>
+        In this section, we will definine a function and learn how to identify the
+        input and output variables of graphs, tables, and diagrams.
+    </p>
     <definition xml:id="def-">
         <statement>
             <p>
