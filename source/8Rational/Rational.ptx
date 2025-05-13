@@ -5,4 +5,12 @@
 
   <p>Content of the new chapter.</p>
 
+  <xi:include href="sec-long-run-behavior-of-rationals.ptx" />
+
+  <xi:include href="sec-short-run-behavior-of-rationals.ptx" />
+
+  <xi:include href="sec-sketching-graphs-of-rationals.ptx" />
+
+  <xi:include href="sec-writing-equations-of-rationals.ptx" />
+
 </chapter>

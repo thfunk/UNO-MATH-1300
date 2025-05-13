@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-long-run-behavior-of-rationals" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Long-Run Behavior of Rational Functions</title>
+
+  <p>
+    In this section, we will concern ourselves with the <em>long-run behavior</em> of rational functions.
+
+  </p>
+
+  <p>
+    Consider the graph of the function
+    
+    <me>
+        f(x)=\frac{2x(x+1)}{(x+2)(x-1)}
+    </me>
+    
+  </p>
+
+<figure>
+    <image width="60%">
+        <prefigure xmlns="https://prefigure.org" label="long-run-rational-function">
+            <diagram dimensions="(300,300)" margins="5">
+            <definition>f(x)=(2*x*(x+1))/((x+2)*(x-1))</definition>
+                <coordinates bbox="(-6,-4,6,4)">
+                    <grid-axes xlabel="x" ylabel="y"/>
+                    <graph function="f" domain="(-7.5,-2.0001)"/>
+                    <graph function="f" domain="(-1.999,0.999)"/>
+                    <graph function="f" domain="(1.0001,7.2)"/>
+                </coordinates>
+            </diagram>
+        </prefigure>
+    </image>
+</figure>
+
+<p>
+    Just like with polynomial functions, we can imagine zooming way out on the graph, 
+    and we want a way to describe what the far left and far right ends of the graph are doing.
+</p>
+
+
+
+</section>
