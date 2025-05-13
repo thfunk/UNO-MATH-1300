@@ -19,10 +19,15 @@
         </statement>
     </definition>
 
-<figure xml:id="Func-Bubble-Diagram">
+    <p>
+      In diagrams <xref ref="Func-Bubble-Diagram1" text="type-global"/>
+    </p>
+
+<sidebyside>   
+<figure xml:id="Func-Bubble-Diagram1">
      <image width="60%">
     <caption></caption>
-    <prefigure xmlns="https://prefigure.org" label="Bubble-Diagram">
+    <prefigure xmlns="https://prefigure.org" label="Bubble-Diagram1">
         <title>Bubble Diagram</title>
         <description>Bubble diagram of a function.</description>
      <diagram dimensions="(300,300)" margins="5">
@@ -31,14 +36,17 @@
   <definition> top=1.75 </definition>
   <definition> mid=2 </definition> 
   <coordinates bbox="(-4,-4,4,4)">
-     <ellipse center="(-mid,0)" axes="(1.5,3)" stroke="black"/>
-     <ellipse center="(mid,0)" axes="(1.5,3)" stroke="black"/>
-     <line endpoints="((-mid+.2,0), (mid-.6,top))" stroke="blue"
-	  thickness="2" arrows="1"/>
-    <line endpoints="((-mid+.2,top), (mid-.6,-top))" stroke="blue"
-	  thickness="2" arrows="1"/>
-    <line endpoints="((-mid+.2,-top), (mid-.5,0))" stroke="blue"
-	  thickness="2" arrows="1"/>
+    <label anchor="(-mid,3.4)" alignment="center">
+      Input
+     </label>
+    <ellipse center="(-mid,0)" axes="(1.5,3)" stroke="black"/>
+    <label anchor="(mid,3.4)" alignment="center">
+      Output
+     </label>
+    <ellipse center="(mid,0)" axes="(1.5,3)" stroke="black"/>
+    <line endpoints="((-mid+.2,0), (mid-.6,top))" stroke="blue" thickness="2" arrows="1"/>
+    <line endpoints="((-mid+.2,top), (mid-.6,-top))" stroke="blue" thickness="2" arrows="1"/>
+    <line endpoints="((-mid+.2,-top), (mid-.5,0))" stroke="blue" thickness="2" arrows="1"/>
     <label anchor="(mid,top)" alignment="center">
       Apple
     </label>
@@ -48,7 +56,6 @@
     <label anchor="(mid,-top-.1)" alignment="center">
       Grape
     </label>
-
     <label anchor="(-mid,top)" alignment="center">
       A
     </label>
@@ -65,6 +72,53 @@
 </figure>
 
 
+<figure xml:id="Func-Bubble-Diagram2">
+     <image width="60%">
+    <caption>This is a Function</caption>
+    <prefigure xmlns="https://prefigure.org" label="Bubble-Diagram2">
+        <title>Bubble Diagram</title>
+        <description>Bubble diagram of a function.</description>
+<diagram dimensions="(300,300)" margins="5">
+  <definition> top=1.75 </definition>
+  <definition> mid=2 </definition>
+  <definition> top=1.75 </definition>
+  <definition> mid=2 </definition> 
+  <coordinates bbox="(-4,-4,4,4)">
+    <label anchor="(-mid,3.4)" alignment="center">
+      Input
+     </label>
+     <ellipse center="(-mid,0)" axes="(1.5,3)" stroke="black"/>
+     <label anchor="(mid,3.4)" alignment="center">
+      Output
+     </label>
+     <ellipse center="(mid,0)" axes="(1.5,3)" stroke="black"/>
+     <line endpoints="((-mid+.2,0), (mid-.7,0))" stroke="blue" thickness="2" arrows="1"/>
+     <line endpoints="((-mid+.2,top), (mid-.6,-top))" stroke="blue" thickness="2" arrows="1"/>
+     <line endpoints="((-mid+.2,-top), (mid-.6,-0.1))" stroke="blue" thickness="2" arrows="1"/>
+     <label anchor="(mid,top)" alignment="center">
+      Apple
+     </label>
+     <label anchor="(mid,0)" alignment="center">
+      Pear
+     </label>
+     <label anchor="(mid,-top-.1)" alignment="center">
+      Grape
+     </label>
+     <label anchor="(-mid,top)" alignment="center">
+      A
+     </label>
+     <label anchor="(-mid,0)" alignment="center">
+      B
+     </label>
+     <label anchor="(-mid,-top)" alignment="center">
+      C
+     </label>
+  </coordinates>
+</diagram>
+</prefigure> 
+ </image>
+</figure>
+</sidebyside> 
 
       <video label="Meaning-of-Inputs-Outputs" source="Meaning-of-Inputs-Outputs.mp4"/>
 
