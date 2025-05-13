@@ -7,9 +7,6 @@
         input and output variables of graphs, tables, diagrams, and equations.
     </p>
 
-    <p>
-    </p>
-    </p>
     <definition xml:id="def-">
         <statement>
             <p>
@@ -23,20 +20,20 @@
     </definition>
 
 <figure xml:id="Func-Bubble-Diagram">
+     <image width="60%">
     <caption></caption>
     <prefigure xmlns="https://prefigure.org" label="Bubble-Diagram">
         <title>Bubble Diagram</title>
         <description>Bubble diagram of a function.</description>
-    <image width="60%">
      <diagram dimensions="(300,300)" margins="5">
   <definition> top=1.75 </definition>
   <definition> mid=2 </definition>
   <definition> top=1.75 </definition>
-  <definition> mid=2 </definition>
+  <definition> mid=2 </definition> 
   <coordinates bbox="(-4,-4,4,4)">
      <ellipse center="(-mid,0)" axes="(1.5,3)" stroke="black"/>
      <ellipse center="(mid,0)" axes="(1.5,3)" stroke="black"/>
-     <line endpoints="((-mid+.2,0), (mid-.5,top))" stroke="blue"
+     <line endpoints="((-mid+.2,0), (mid-.6,top))" stroke="blue"
 	  thickness="2" arrows="1"/>
     <line endpoints="((-mid+.2,top), (mid-.6,-top))" stroke="blue"
 	  thickness="2" arrows="1"/>
@@ -64,7 +61,7 @@
   </coordinates>
 </diagram>
 </prefigure> 
-    </image>
+ </image>
 </figure>
 
 
