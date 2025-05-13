@@ -6,20 +6,16 @@
     <definition xml:id="def-">
         <statement>
             <p>
-                        A <term>function</term>
-                        is a relationship between two variables for which a unique value of the <term>output</term>
-                        variable can be determined from a value of the <term>input</term>
-                        variable.
-                        In other words, a function is relation in which every input corresponds to exactly one output.
+                A <term>function</term>
+                is a relationship between two variables for which a unique value of the <term>output</term>
+                variable can be determined from a value of the <term>input</term>
+                variable.
+                In other words, a function is relation in which every input corresponds to exactly one output.
             </p>
         </statement>
     </definition>
-    <p> A function is a rule that assigns to each input to exactly one output. The set of all inputs is called the domain of the function, and the set of all outputs is called the range of the function. </p>
 
-    <p> A function can be represented in several ways, including a table of values, a graph, or an equation. The most common representation is an equation, which describes the relationship between the input and output variables. </p>
-    <p> For example, the function f(x) = 2x + 3 assigns to each input x a unique output f(x). The domain of this function is all real numbers, and the range is also all real numbers. </p>
 
-  
       <video label="Meaning-of-Inputs-Outputs" source="Meaning-of-Inputs-Outputs.mp4"/>
 
       <exercise>
