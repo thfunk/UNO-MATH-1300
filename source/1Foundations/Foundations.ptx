@@ -9,5 +9,6 @@
 
   <!-- include sections -->
   <xi:include href="DefinitionFunction.ptx" />
+  <xi:include href="EvaluatingFunctions.ptx" />
 
 </chapter>

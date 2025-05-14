@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="EvalFunc" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Evaluating Functions</title>
+    <p>
+        In this section, we will use function notation to evaluate functions. We will also learn how to interpret 
+        the meaning of the inputs and outputs of a function.
+    </p>
+
+<video label="Meaning-of-Inputs-Outputs" source="Meaning-of-Inputs-Outputs.mp4"/>
+
+      <exercise>
+        <statement>
+            <p>
+                Complete the input/output table for the equation <m>y = 2(x + 3)</m>. Be sure to simplify your answer.
+            </p>
+            <table>
+                <title>Input/Output Table for <m>y = 2(x+3)</m></title>
+                <tabular>
+                    <row>
+                        <cell>Input</cell>
+                        <cell>Output</cell>
+                    </row>
+                    <row>
+                        <cell><m>-1</m></cell>
+                        <cell>ans1</cell>
+                    </row>
+                    <row>
+                        <cell><m>0</m></cell>
+                        <cell>ans2</cell>
+                    </row>
+                    <row>
+                        <cell><m>2</m></cell>
+                        <cell>ans3</cell>
+                    </row>
+                </tabular>
+            </table>
+        </statement>
+      </exercise>
+</section>

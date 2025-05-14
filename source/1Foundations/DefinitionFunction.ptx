@@ -254,7 +254,7 @@
      <image width="60%">
     <prefigure xmlns="https://prefigure.org" label="function-notation">
         <description>Function Notation</description>
-            <diagram dimensions="(300,300)" margins="5">
+            <diagram dimensions="(300,300)" margins="(-10, -100, -50, -100)">
   <coordinates bbox="(-2,-2,2,2)">
      <label anchor="(0,0)" alignment="center">
       <m>y=f(x)</m>
@@ -265,6 +265,18 @@
     <label anchor="(-1.25,.5)" alignment="center" color="blue">
       Output
      </label>
+     <path start="(-.5,-0.5)" stroke="red" arrows="1">
+      <quadratic-bezier controls="((.05,-.5),(.05,-.2))"/>
+      </path>
+      <label anchor="(-.3,-.5)" alignment="west" color="red">
+      Function Name
+     </label>
+     <path start="(.7,-0.5)" stroke="green" arrows="1">
+      <quadratic-bezier controls="((.3,-.5),(.3,-.2))"/>
+      </path>
+      <label anchor="(.7,-.5)" alignment="east" color="green">
+      Input
+     </label>
   </coordinates>
 </diagram>
 </prefigure> 
@@ -273,38 +285,48 @@
         </statement>
     </definition>
 
+    <p>
+      Let's look at some examples showing function relationships using function notation.
+    </p>
 
-
-
-
-      <video label="Meaning-of-Inputs-Outputs" source="Meaning-of-Inputs-Outputs.mp4"/>
-
-      <exercise>
+<example xml:id="example-function-notation-diagram">
         <statement>
             <p>
-                Complete the input/output table for the equation <m>y = 2(x + 3)</m>. Be sure to simplify your answer.
+             In the first diagram, <xref ref="Func-Bubble-Diagram1" text="type-global"/>, we could use function notation to represent the same relationship:
+             <li>
+                <p>
+                  <m>f(A) =</m> Grape. "The input A is mapped to the output Grape."
+                </p>
+             </li>
+             <li>
+              <p>
+                <m>f(B) =</m> Apple. "The input B is mapped to the output Apple."
+              </p>
+             </li>
+             <li>
+              <p>
+                <m>f(C) =</m> Pear. "The input C is mapped to the output Pear."
+              </p>
+             </li>
             </p>
-            <table>
-                <title>Input/Output Table for <m>y = 2(x+3)</m></title>
-                <tabular>
-                    <row>
-                        <cell>Input</cell>
-                        <cell>Output</cell>
-                    </row>
-                    <row>
-                        <cell><m>-1</m></cell>
-                        <cell>ans1</cell>
-                    </row>
-                    <row>
-                        <cell><m>0</m></cell>
-                        <cell>ans2</cell>
-                    </row>
-                    <row>
-                        <cell><m>2</m></cell>
-                        <cell>ans3</cell>
-                    </row>
-                </tabular>
-            </table>
+
+            <p> 
+              We would first need to name the function <m> f</m> as it was not given a name in the diagram.
+            </p>
         </statement>
-      </exercise>
+  </example>
+
+  <example xml:id="example-function-notation-wordproblem">
+    <statement>
+      <p>
+        The number of visitors, <m>V</m>, to the Omaha Zoo is given by the function <m>V = g(t)</m>, where <m>t</m> is 
+        the number of years since the year 2000.
+      </p>
+      <p>
+        In this example, the input variable is <m>t</m>, which represents the number of years since 2000. 
+        The output variable is <m>V</m>, which represents the number of visitors to the zoo.
+        The name of the function is <m>g</m>.
+      </p>
+    </statement>
+  </example>
 </section>
