@@ -7,20 +7,24 @@
         input and output variables of graphs, tables, diagrams, and equations.
     </p>
 
-    <definition xml:id="def-">
+    <definition xml:id="def-function">
         <statement>
             <p>
-                A <term>function</term>
-                is a relationship between two variables for which a unique value of the <term>output</term>
-                variable can be determined from a value of the <term>input</term>
-                variable.
-                In other words, a function is relation in which every input corresponds to exactly one output.
+                A <term>function</term> is a relationship between two variables where every <term>input</term> 
+                corresponds to exactly one <term>output</term>.
             </p>
         </statement>
     </definition>
 
     <p>
-      In diagrams <xref ref="Func-Bubble-Diagram1" text="type-global"/>
+      Below, in <xref ref="Func-Bubble-Diagram1" text="type-global"/> and <xref ref="Func-Bubble-Diagram2" text="type-global"/> we have
+      two examples of relationships which <em>are functions</em>. Notice that each input A, B, and C is mapped to 
+      exactly one output value. Two inputs can share the same output value, but each input must have a unique output value.
+    </p>
+    <p>
+      For example; in the first diagram, <xref ref="Func-Bubble-Diagram1" text="type-global"/>, each input is going to a different output value.
+      In the second diagram, <xref ref="Func-Bubble-Diagram2" text="type-global"/>, inputs B and C are both going to 
+      the same output value of Pear, but each input is still going to a single output value.
     </p>
 
 <sidebyside>   
@@ -119,6 +123,159 @@
  </image>
 </figure>
 </sidebyside> 
+
+<p>
+  In contrast, the diagrams below are both examples of relationships that are <em>not functions</em>. There is an input
+  which has two different outputs in each diagram.
+</p>
+<p>
+  In the first diagram, <xref ref="not-Func-Bubble-Diagram1" text="type-global"/>, input B is going to both output values of Apple and Pear.
+  In the second diagram, <xref ref="not-Func-Bubble-Diagram2" text="type-global"/>, input A is going to both output values of Apple and Grape.
+</p>
+
+<sidebyside>   
+<figure xml:id="not-Func-Bubble-Diagram1">
+     <image width="60%">
+    <caption></caption>
+    <prefigure xmlns="https://prefigure.org" label="not-Bubble-Diagram1">
+        <title>Bubble Diagram</title>
+        <description>Bubble diagram of a function.</description>
+     <diagram dimensions="(300,300)" margins="5">
+  <definition> top=1.75 </definition>
+  <definition> mid=2 </definition>
+  <definition> top=1.75 </definition>
+  <definition> mid=2 </definition> 
+  <coordinates bbox="(-4,-4,4,4)">
+    <label anchor="(-mid,3.4)" alignment="center">
+      Input
+     </label>
+    <ellipse center="(-mid,0)" axes="(1.5,3)" stroke="black"/>
+    <label anchor="(mid,3.4)" alignment="center">
+      Output
+     </label>
+    <ellipse center="(mid,0)" axes="(1.5,3)" stroke="black"/>
+    <line endpoints="((-mid+.2,0), (mid-.6,top))" stroke="red" thickness="2" arrows="1"/>
+    <line endpoints="((-mid+.2,0), (mid-.6,0))" stroke="red" thickness="2" arrows="1"/>
+    <line endpoints="((-mid+.2,top), (mid-.6,-top))" stroke="red" thickness="2" arrows="1"/>
+    <line endpoints="((-mid+.2,-top), (mid-.5,0))" stroke="red" thickness="2" arrows="1"/>
+    <label anchor="(mid,top)" alignment="center">
+      Apple
+    </label>
+    <label anchor="(mid,0)" alignment="center">
+      Pear
+    </label>
+    <label anchor="(mid,-top-.1)" alignment="center">
+      Grape
+    </label>
+    <label anchor="(-mid,top)" alignment="center">
+      A
+    </label>
+    <label anchor="(-mid,0)" alignment="center">
+      B
+    </label>
+    <label anchor="(-mid,-top)" alignment="center">
+      C
+    </label>
+  </coordinates>
+</diagram>
+</prefigure> 
+ </image>
+</figure>
+
+
+<figure xml:id="not-Func-Bubble-Diagram2">
+     <image width="60%">
+    <caption>This is a Function</caption>
+    <prefigure xmlns="https://prefigure.org" label="not-Bubble-Diagram2">
+        <title>Bubble Diagram</title>
+        <description>Bubble diagram of a function.</description>
+<diagram dimensions="(300,300)" margins="5">
+  <definition> top=1.75 </definition>
+  <definition> mid=2 </definition>
+  <definition> top=1.75 </definition>
+  <definition> mid=2 </definition> 
+  <coordinates bbox="(-4,-4,4,4)">
+    <label anchor="(-mid,3.4)" alignment="center">
+      Input
+     </label>
+     <ellipse center="(-mid,0)" axes="(1.5,3)" stroke="black"/>
+     <label anchor="(mid,3.4)" alignment="center">
+      Output
+     </label>
+     <ellipse center="(mid,0)" axes="(1.5,3)" stroke="black"/>
+     <line endpoints="((-mid+.2,0), (mid-.7,0))" stroke="red" thickness="2" arrows="1"/>
+     <line endpoints="((-mid+.2,top), (mid-.6,-top))" stroke="red" thickness="2" arrows="1"/>
+     <line endpoints="((-mid+.2,top), (mid-.6,top))" stroke="red" thickness="2" arrows="1"/>
+     <line endpoints="((-mid+.2,-top), (mid-.6,-0.1))" stroke="red" thickness="2" arrows="1"/>
+     <label anchor="(mid,top)" alignment="center">
+      Apple
+     </label>
+     <label anchor="(mid,0)" alignment="center">
+      Pear
+     </label>
+     <label anchor="(mid,-top-.1)" alignment="center">
+      Grape
+     </label>
+     <label anchor="(-mid,top)" alignment="center">
+      A
+     </label>
+     <label anchor="(-mid,0)" alignment="center">
+      B
+     </label>
+     <label anchor="(-mid,-top)" alignment="center">
+      C
+     </label>
+  </coordinates>
+</diagram>
+</prefigure> 
+ </image>
+</figure>
+</sidebyside> 
+
+<p>
+  Depending on the situation, we may refer to the relationship between a function and its inputs and outputs as a
+  <term>mapping</term>, a <term>correspondence</term>, or a <term>rule</term>. We also have several ways to represent
+  functions. We can use a <term>table</term>, a <term>graph</term>, a <term>diagram</term>, or an <term>equation</term>.
+</p>
+
+<p>
+  So far we have seen functions represented as diagrams. Before we can move on the others, we need to learn about function notation.
+</p>
+
+<definition xml:id="def-function-notation">
+        <statement>
+            <p>
+                The representation of a function <m>y=f(x)</m> is called <term>function notation</term>.
+                The letter <m>f</m> is the name of the function, and the letter <m>x</m> is the input variable, and the
+                letter <m>y</m> is the output variable. We say that <m>y</m> is a function of <m>x</m>.
+            </p>
+
+            <figure xml:id="function-notation">
+     <image width="60%">
+    <prefigure xmlns="https://prefigure.org" label="function-notation">
+        <description>Function Notation</description>
+            <diagram dimensions="(300,300)" margins="5">
+  <coordinates bbox="(-2,-2,2,2)">
+     <label anchor="(0,0)" alignment="center">
+      <m>y=f(x)</m>
+     </label>
+     <path start="(-1,.5)" stroke="blue" arrows="1">
+      <quadratic-bezier controls="((-.4,.5),(-.4,.1))"/>
+    </path>
+    <label anchor="(-1.25,.5)" alignment="center" color="blue">
+      Output
+     </label>
+  </coordinates>
+</diagram>
+</prefigure> 
+ </image>
+</figure>
+        </statement>
+    </definition>
+
+
+
+
 
       <video label="Meaning-of-Inputs-Outputs" source="Meaning-of-Inputs-Outputs.mp4"/>
 
