@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="EvalFunc" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="EvaluatingFunctions" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Evaluating Functions</title>
     <p>
         In this section, we will use function notation to evaluate functions. We will also learn how to interpret 
@@ -13,27 +13,27 @@
     -->
     <video label="LO1-EvalFunctions" source="LO1-EvalFunctions.mp4"/>
 
-      <exercise label="RWT-Evaluating-Functions-Table">
+      <exercise label="RWT-Evaluating-Functions-exercise1">
         <statement>
             <p>
                 Complete the input/output table for the equation <m>y=<eval obj="theFunction" /></m>. Be sure to simplify your answer.
             </p>
             <table>
                 <title>Input/Output Table</title>
-                <tabular>
-                    <row>
+                <tabular top="major" left="medium" bottom="medium" right="medium">
+                    <row halign="center">
                         <cell>Input</cell>
                         <cell>Output</cell>
                     </row>
-                    <row>
+                    <row halign="center">
                         <cell><m>-1</m></cell>
                         <cell><fillin width="5" mode="math" ansobj="Answer1" name="response1"/></cell>
                     </row>
-                    <row>
+                    <row halign="center">
                         <cell><m>0</m></cell>
                         <cell><fillin width="5" mode="math" ansobj="Answer2" name="response2"/></cell>
                     </row>
-                    <row>
+                    <row halign="center">
                         <cell><m>2</m></cell>
                         <cell><fillin width="5" mode="math" ansobj="Answer3" name="response3"/></cell>
                     </row>
@@ -83,55 +83,51 @@
       Question 2: Can we make the graph random?
     -->
 
-<exercise label="RWT-Evaluating-Functions-Graph">
+ 
+<exercise label="RWT-Evaluating-Functions-exercise2">
     <statement>
-      <figure xml:id="Func-PointGraph">
+      <figure xml:id="RWT-Evaluating-Functions-figure2">">
      <image width="60%">
-    <prefigure xmlns="https://prefigure.org" label="PointGraph">
+    <prefigure xmlns="https://prefigure.org" label="RWT-Evaluating-Functions-prefigure2">
     <description>Points on Graph</description>
 <diagram dimensions="(300,300)" margins="5">
-  <definition> a=2 </definition>
   <coordinates bbox="(-5,-5,5,5)">
     <grid-axes xlabel="x" ylabel="y"/>
     <point p="(2,-1)" size="4"></point>
     <point p="(-2,1)" size="4"></point>
     <point p="(0,3)" size="4"></point>
-    <point p="(1,a)" size="4"></point>
+    <point p="(1,2)" size="4"></point>
+    <point p="(3,-4)" size="4"></point>
   </coordinates>
 </diagram>
     </prefigure>
     </image>
     </figure>
             <p>
-                Complete the input/output table using the graph above. Here is my random number: <eval obj="myNum" />
+                Complete the input/output table using the graph above.
             </p>
             <table>
                 <title>Input/Output Table</title>
-                <tabular>
-                    <row>
+                <tabular top="major" left="medium" bottom="medium" right="medium">
+                    <row halign="center">
                         <cell>Input</cell>
                         <cell>Output</cell>
                     </row>
-                    <row>
+                    <row halign="center">
                         <cell><m>-2</m></cell>
                         <cell><fillin width="5" mode="math" answer="1" name="response1"/></cell>
                     </row>
-                    <row>
+                    <row halign="center">
                         <cell><fillin width="5" mode="math" answer="0" name="response2"/></cell>
                         <cell><m>3</m></cell>
                     </row>
-                    <row>
+                    <row halign="center">
                         <cell><m>2</m></cell>
                         <cell><fillin width="5" mode="math" answer="-1" name="response3"/></cell>
                     </row>
                 </tabular>
             </table>
         </statement>
-        <setup seed="1234">
-    <setupScript>
-    v.myNum=RNG.randDiscrete(1, 4, 1);
-    </setupScript>
-  </setup>
 <evaluation>
   <evaluate submit="response1">
   <test correct="yes">
@@ -150,5 +146,16 @@
   </evaluate>
   </evaluation>
 </exercise>
+
+
+
+<!---
+<interactive label="justatest" platform="doenetml" width="100%" aspect="2:8">
+  <slate surface="doenetml">
+    <xi:include parse="text" href="doenet/first-test-graph.doenetml"/> 
+  </slate>
+</interactive>
+!-->
+
 
 </section>

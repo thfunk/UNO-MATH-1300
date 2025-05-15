@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="DefFunc" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="DefinitionFunction" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Definition of a Function</title>
     <p>
         In this section, we will definine a function and learn how to identify the
         input and output variables of graphs, tables, diagrams, and equations.
     </p>
 
-    <definition xml:id="def-function">
+    <definition xml:id="function-definition">
         <statement>
             <p>
                 A <term>function</term> is a relationship between two variables where every <term>input</term> 
@@ -17,21 +17,19 @@
     </definition>
 
     <p>
-      Below, in <xref ref="Func-Bubble-Diagram1" text="type-global"/> and <xref ref="Func-Bubble-Diagram2" text="type-global"/> we have
-      two examples of relationships which <em>are functions</em>. Notice that each input A, B, and C is mapped to 
-      exactly one output value. Two inputs can share the same output value, but each input must have a unique output value.
+      Below, in <xref ref="Func-Bubble-Diagram-figure1" text="type-global"/> and <xref ref="Func-Bubble-Diagram-figure2" text="type-global"/> we have two examples of relationships which <em>are functions</em>. Notice that each input A, B, and C is mapped to exactly one output value. Two inputs can share the same output value, but each input must have a unique output value.
     </p>
     <p>
-      For example; in the first diagram, <xref ref="Func-Bubble-Diagram1" text="type-global"/>, each input is going to a different output value.
-      In the second diagram, <xref ref="Func-Bubble-Diagram2" text="type-global"/>, inputs B and C are both going to 
+      For example; in the first diagram, <xref ref="Func-Bubble-Diagram-figure1" text="type-global"/>, each input is going to a different output value.
+      In the second diagram, <xref ref="Func-Bubble-Diagram-figure2" text="type-global"/>, inputs B and C are both going to 
       the same output value of Pear, but each input is still going to a single output value.
     </p>
 
 <sidebyside>   
-<figure xml:id="Func-Bubble-Diagram1">
+<figure xml:id="Func-Bubble-Diagram-figure1">
      <image width="60%">
     <caption></caption>
-    <prefigure xmlns="https://prefigure.org" label="Bubble-Diagram1">
+    <prefigure xmlns="https://prefigure.org" label="Bubble-Diagram-prefigure1">
         <title>Bubble Diagram</title>
         <description>Bubble diagram of a function.</description>
      <diagram dimensions="(300,300)" margins="5">
@@ -76,10 +74,10 @@
 </figure>
 
 
-<figure xml:id="Func-Bubble-Diagram2">
+<figure xml:id="Func-Bubble-Diagram-figure2">
      <image width="60%">
     <caption>This is a Function</caption>
-    <prefigure xmlns="https://prefigure.org" label="Bubble-Diagram2">
+    <prefigure xmlns="https://prefigure.org" label="Bubble-Diagram-prefigure2">
         <title>Bubble Diagram</title>
         <description>Bubble diagram of a function.</description>
 <diagram dimensions="(300,300)" margins="5">
@@ -129,15 +127,15 @@
   which has two different outputs in each diagram.
 </p>
 <p>
-  In the first diagram, <xref ref="not-Func-Bubble-Diagram1" text="type-global"/>, input B is going to both output values of Apple and Pear.
-  In the second diagram, <xref ref="not-Func-Bubble-Diagram2" text="type-global"/>, input A is going to both output values of Apple and Grape.
+  In the first diagram, <xref ref="not-Func-Bubble-Diagram-figure1" text="type-global"/>, input B is going to both output values of Apple and Pear.
+  In the second diagram, <xref ref="not-Func-Bubble-Diagram-figure2" text="type-global"/>, input A is going to both output values of Apple and Grape.
 </p>
 
 <sidebyside>   
-<figure xml:id="not-Func-Bubble-Diagram1">
+<figure xml:id="not-Func-Bubble-Diagram-figure1">
      <image width="60%">
     <caption></caption>
-    <prefigure xmlns="https://prefigure.org" label="not-Bubble-Diagram1">
+    <prefigure xmlns="https://prefigure.org" label="not-Bubble-Diagram-prefigure1">
         <title>Bubble Diagram</title>
         <description>Bubble diagram of a function.</description>
      <diagram dimensions="(300,300)" margins="5">
@@ -183,10 +181,10 @@
 </figure>
 
 
-<figure xml:id="not-Func-Bubble-Diagram2">
+<figure xml:id="not-Func-Bubble-Diagram-figure2">
      <image width="60%">
     <caption>This is a Function</caption>
-    <prefigure xmlns="https://prefigure.org" label="not-Bubble-Diagram2">
+    <prefigure xmlns="https://prefigure.org" label="not-Func-Bubble-Diagram-prefigure2">
         <title>Bubble Diagram</title>
         <description>Bubble diagram of a function.</description>
 <diagram dimensions="(300,300)" margins="5">
@@ -242,7 +240,7 @@
   So far we have seen functions represented as diagrams. Before we can move on the others, we need to learn about function notation.
 </p>
 
-<definition xml:id="def-function-notation">
+<definition xml:id="function-notation-definition">
         <statement>
             <p>
                 The representation of a function <m>y=f(x)</m> is called <term>function notation</term>.
@@ -250,9 +248,9 @@
                 letter <m>y</m> is the output variable. We say that <m>y</m> is a function of <m>x</m>.
             </p>
 
-            <figure xml:id="function-notation">
+            <figure xml:id="function-notation-figure">
      <image width="60%">
-    <prefigure xmlns="https://prefigure.org" label="function-notation">
+    <prefigure xmlns="https://prefigure.org" label="function-notation-prefigure">
         <description>Function Notation</description>
             <diagram dimensions="(300,300)" margins="(-10, -100, -50, -100)">
   <coordinates bbox="(-2,-2,2,2)">
@@ -289,10 +287,10 @@
       Let's look at some examples showing function relationships using function notation.
     </p>
 
-<example xml:id="example-function-notation-diagram">
+<example xml:id="function-notation-diagram-example">
         <statement>
             <p>
-             In the first diagram, <xref ref="Func-Bubble-Diagram1" text="type-global"/>, we could use function notation to represent the same relationship:
+             In the first diagram, <xref ref="Func-Bubble-Diagram-figure1" text="type-global"/>, we could use function notation to represent the same relationship:
              <li>
                 <p>
                   <m>f(A) =</m> Grape. "The input A is mapped to the output Grape."
@@ -316,7 +314,7 @@
         </statement>
   </example>
 
-  <example xml:id="example-function-notation-wordproblem">
+  <example xml:id="function-notation-wordproblem-example">
     <statement>
       <p>
         The number of visitors, <m>V</m>, to the Omaha Zoo is given by the function <m>V = g(t)</m>, where <m>t</m> is 
