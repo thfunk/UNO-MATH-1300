@@ -7,9 +7,13 @@
         the meaning of the inputs and outputs of a function.
     </p>
 
+
+    <!--
+      Start of RWT Questions
+    -->
     <video label="LO1-EvalFunctions" source="LO1-EvalFunctions.mp4"/>
 
-      <exercise label="RWT-Evaluating-Functions">
+      <exercise label="RWT-Evaluating-Functions-Table">
         <statement>
             <p>
                 Complete the input/output table for the equation <m>y=<eval obj="theFunction" /></m>. Be sure to simplify your answer.
@@ -75,26 +79,76 @@
   </evaluation>
  </exercise>
 
-<exercise>
-    <figure xml:id="PointGraph">
+<!--
+      Question 2: Can we make the graph random?
+    -->
+
+<exercise label="RWT-Evaluating-Functions-Graph">
+    <statement>
+      <figure xml:id="Func-PointGraph">
      <image width="60%">
     <prefigure xmlns="https://prefigure.org" label="PointGraph">
     <description>Points on Graph</description>
 <diagram dimensions="(300,300)" margins="5">
+  <definition> a=2 </definition>
   <coordinates bbox="(-5,-5,5,5)">
     <grid-axes xlabel="x" ylabel="y"/>
     <point p="(2,-1)" size="4"></point>
     <point p="(-2,1)" size="4"></point>
     <point p="(0,3)" size="4"></point>
-    <point p="(1,2)" size="4"></point>
+    <point p="(1,a)" size="4"></point>
   </coordinates>
 </diagram>
     </prefigure>
     </image>
     </figure>
-
-    <p>
-       What is it 
-    </p>
+            <p>
+                Complete the input/output table using the graph above. Here is my random number: <eval obj="myNum" />
+            </p>
+            <table>
+                <title>Input/Output Table</title>
+                <tabular>
+                    <row>
+                        <cell>Input</cell>
+                        <cell>Output</cell>
+                    </row>
+                    <row>
+                        <cell><m>-2</m></cell>
+                        <cell><fillin width="5" mode="math" answer="1" name="response1"/></cell>
+                    </row>
+                    <row>
+                        <cell><fillin width="5" mode="math" answer="0" name="response2"/></cell>
+                        <cell><m>3</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>2</m></cell>
+                        <cell><fillin width="5" mode="math" answer="-1" name="response3"/></cell>
+                    </row>
+                </tabular>
+            </table>
+        </statement>
+        <setup seed="1234">
+    <setupScript>
+    v.myNum=RNG.randDiscrete(1, 4, 1);
+    </setupScript>
+  </setup>
+<evaluation>
+  <evaluate submit="response1">
+  <test correct="yes">
+  <numcmp use-answer="yes" />
+  </test>
+  </evaluate>
+  <evaluate submit="response2">
+  <test correct="yes">
+  <numcmp use-answer="yes" />
+  </test>
+  </evaluate>
+  <evaluate submit="response3">
+  <test correct="yes">
+  <numcmp use-answer="yes" />
+  </test>
+  </evaluate>
+  </evaluation>
 </exercise>
+
 </section>
