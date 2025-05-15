@@ -6,9 +6,11 @@
         In this section, we will use function notation to evaluate functions. We will also learn how to interpret 
         the meaning of the inputs and outputs of a function.
     </p>
+
+    <video label="LO1-EvalFunctions" source="LO1-EvalFunctions.mp4"/>
+
       <exercise label="RWT-Evaluating-Functions">
         <statement>
-            <video label="LO1-EvalFunctions" source="LO1-EvalFunctions.mp4"/>
             <p>
                 Complete the input/output table for the equation <m>y=<eval obj="theFunction" /></m>. Be sure to simplify your answer.
             </p>
@@ -72,4 +74,27 @@
   </evaluate>
   </evaluation>
  </exercise>
+
+<exercise>
+    <figure xml:id="PointGraph">
+     <image width="60%">
+    <prefigure xmlns="https://prefigure.org" label="PointGraph">
+    <description>Points on Graph</description>
+<diagram dimensions="(300,300)" margins="5">
+  <coordinates bbox="(-5,-5,5,5)">
+    <grid-axes xlabel="x" ylabel="y"/>
+    <point p="(2,-1)" size="4"></point>
+    <point p="(-2,1)" size="4"></point>
+    <point p="(0,3)" size="4"></point>
+    <point p="(1,2)" size="4"></point>
+  </coordinates>
+</diagram>
+    </prefigure>
+    </image>
+    </figure>
+
+    <p>
+       What is it 
+    </p>
+</exercise>
 </section>
