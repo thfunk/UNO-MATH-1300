@@ -3,10 +3,10 @@
 <chapter xml:id="Rational" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>LO8: Rational Functions</title>
 <introduction>
-
   <p>
     In LO 7, we learned about polynomial functions. More specifically, we learned how to find and describe the end behavior of polynomial functions, find <m>x</m>-intercepts and <m>y</m>-intercepts, and determine their behavior (bouncing off the <m>x</m>-axis or crossing through the <m>x</m>-axis). In LO 8, we will learn about what happens when we divide one polynomial function by another.
   </p>
+
 
   <p>
     An important question we should ask ourselves is this: Why are we focusing on division but ignoring addition, subtraction, and multiplication? Let's look at some examples, using <m>f(x)=x^2+3x</m> and <m>g(x)=x^2-1</m>.
