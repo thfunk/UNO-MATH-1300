@@ -2,9 +2,104 @@
 
 <chapter xml:id="Rational" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>LO8: Rational Functions</title>
+<introduction>
 
-  <p>Content of the new chapter.</p>
+  <p>
+    In LO 7, we learned about polynomial functions. More specifically, we learned how to find and describe the end behavior of polynomial functions, find <m>x</m>-intercepts and <m>y</m>-intercepts, and determine their behavior (bouncing off the <m>x</m>-axis or crossing through the <m>x</m>-axis). In LO 8, we will learn about what happens when we divide one polynomial function by another.
+  </p>
 
+  <p>
+    An important question we should ask ourselves is this: Why are we focusing on division but ignoring addition, subtraction, and multiplication? Let's look at some examples, using <m>f(x)=x^2+3x</m> and <m>g(x)=x^2-1</m>.
+  </p>
+
+  <p>
+    If we add these two functions, we get...
+
+    <md>
+      <mrow> f(x)+g(x) \amp = (x^2+3x)+(x^2-1) </mrow>
+      <mrow> </mrow>
+      <mrow> \amp =x^2+3x+x^2-1 </mrow>
+      <mrow> </mrow>
+      <mrow> \amp =2x^2+3x-1 </mrow>
+    </md>
+
+    This shows that the result of adding two polynomial functions is just another polynomial function, and we already know how to handle polynomial functions.
+
+  </p>
+    
+    
+    <p>
+      The same thing happens when we subtract polynomial functions...
+
+      <md>
+        <mrow> f(x)-g(x) \amp =(x^2+3x)-(x^2-1) </mrow>
+        <mrow> </mrow>
+        <mrow> \amp = x^2+3x-x^2+1 </mrow>
+        <mrow> </mrow>
+        <mrow> \amp =3x+1 </mrow>
+      </md>
+
+    </p>
+  
+    <p>
+      ... or multiply polynomial functions:
+    </p>
+
+
+    <p>
+
+      <md>
+        <mrow> f(x) \cdot g(x) \amp = (x^2+3x)(x^2-1) </mrow>
+        <mrow> </mrow>
+        <mrow> \amp = x^4+3x^3-x^2-3x </mrow>
+      </md>
+      
+      When we add, subtract, or multiply two polynomial functions together, what we get as a result is just another polynomial function, so we don't need any new tools to handle these.
+      
+    </p>
+    
+
+    <p>
+      But let's look at what happens when we divide <m>f(x)</m> by <m>g(x)</m>:
+
+      <me>
+        \frac{f(x)}{g(x)}=\frac{x^2+3x}{x^2-1}
+      </me>
+
+      We really haven't encountered a function that looks like this before, so we'll need to investigate this kind of function and figure out how to handle it.
+      
+    </p>
+    
+
+  <p>
+    The name <em>rational functions</em> is based on the root word <em>ratio</em>, which means <em>fraction</em>.
+  </p>
+  
+  <p>
+    Rational functions are a special type of fraction in which both the numerator and denominator of the fraction are <em>polynomials</em>.
+  </p>
+
+  <definition xml:id="def-rational-function">
+    <statement>
+      <p>
+        A rational function is a function <m>f(x)</m> that can be written in the form 
+
+        <me>
+          f(x)=\frac{M(x)}{N(x)}
+        </me>
+        
+        where <m>M(x)</m> and <m>N(x)</m> are both polynomial functions and <m>N(x) \neq 0</m>.
+      </p>
+
+
+    </statement>
+  </definition>
+
+  <p>
+  In LO 8, we will learn how to determine the long-run and short-run behavior of rational functions, we will learn how to sketch graphs from rational function equations, and we will learn how to write rational function equations from graphs.
+  </p>
+</introduction>
+    
   <xi:include href="sec-long-run-behavior-of-rationals.ptx" />
 
   <xi:include href="sec-short-run-behavior-of-rationals.ptx" />
@@ -12,5 +107,6 @@
   <xi:include href="sec-sketching-graphs-of-rationals.ptx" />
 
   <xi:include href="sec-writing-equations-of-rationals.ptx" />
+
 
 </chapter>
