@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="EvalFunc" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Evaluating Functions</title>
+    <p>
+        In this section, we will use function notation to evaluate functions. We will also learn how to interpret 
+        the meaning of the inputs and outputs of a function.
+    </p>
+      <exercise label="RWT-Evaluating-Functions">
+        <statement>
+            <video label="LO1-EvalFunctions" source="LO1-EvalFunctions.mp4"/>
+            <p>
+                Complete the input/output table for the equation <m>y=<eval obj="theFunction" /></m>. Be sure to simplify your answer.
+            </p>
+            <table>
+                <title>Input/Output Table</title>
+                <tabular>
+                    <row>
+                        <cell>Input</cell>
+                        <cell>Output</cell>
+                    </row>
+                    <row>
+                        <cell><m>-1</m></cell>
+                        <cell><fillin width="5" mode="math" ansobj="Answer1" name="response1"/></cell>
+                    </row>
+                    <row>
+                        <cell><m>0</m></cell>
+                        <cell><fillin width="5" mode="math" ansobj="Answer2" name="response2"/></cell>
+                    </row>
+                    <row>
+                        <cell><m>2</m></cell>
+                        <cell><fillin width="5" mode="math" ansobj="Answer3" name="response3"/></cell>
+                    </row>
+                </tabular>
+            </table>
+        </statement>
+          <setup seed="12345">
+    <de-object name="m" context="number">
+    <de-random distribution="discrete" nonzero="yes" min="2" max="7" by="1" />
+    </de-object>
+    <de-object name="a" context="number">
+    <de-random distribution="discrete" nonzero="yes" min="2" max="7" by="1" />
+    </de-object>
+    <de-object name="theFunction" context="formula">
+    <de-expression mode="formula" reduce="yes">m(x+a)</de-expression>
+    </de-object>
+    <de-object name="Answer1" context="formula">
+    <de-expression mode="formula" reduce="yes">m*(-1+a)</de-expression>
+    </de-object>
+    <de-object name="Answer2" context="formula">
+    <de-expression mode="formula" reduce="yes">m*a</de-expression>
+    </de-object>
+    <de-object name="Answer3" context="formula">
+    <de-expression mode="formula" reduce="yes">m*(2+a)</de-expression>
+    </de-object>
+  </setup>
+<evaluation>
+  <evaluate submit="response1">
+  <test correct="yes">
+  <mathcmp use-answer="yes" />
+  </test>
+  </evaluate>
+  <evaluate submit="response2">
+  <test correct="yes">
+  <mathcmp use-answer="yes" />
+  </test>
+  </evaluate>
+  <evaluate submit="response3">
+  <test correct="yes">
+  <mathcmp use-answer="yes" />
+  </test>
+  </evaluate>
+  </evaluation>
+ </exercise>
+</section>
