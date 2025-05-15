@@ -1,0 +1,15 @@
+<setup>
+  <selectFromSequence name="a" from="-2" to="2" exclude="0"/>
+  <selectFromSequence name="b" from="-2" to="16" exclude="$a"/>
+</setup>
+
+What number would you like to pick? <answer><mathInput name="studentInput">
+  </mathInput>42</answer>
+
+<p><m>polynomial($studentInput)=$$polynomial($studentInput)</m></p>
+
+<p><m>f(x) = </m> <function name="polynomial"> $a x^3- $b x</function></p>
+
+<graph>
+  $polynomial
+</graph>
