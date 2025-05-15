@@ -34,8 +34,7 @@
 </figure>
 
 <p>
-    Just like with polynomial functions, we can imagine zooming way out on the graph, 
-    and we want a way to describe what the far left and far right ends of the graph are doing.
+    Just like with polynomial functions, we can imagine zooming way out on the graph, and we want a way to describe what the far left and far right ends of the graph are doing.
 </p>
 
 <figure>
@@ -43,7 +42,7 @@
         <prefigure xmlns="https://prefigure.org" label="long-run-rational-function-zoom-in">
             <diagram dimensions="(300,300)" margins="5">
             <definition>f(x)=(2*x*(x+1))/((x+2)*(x-1))</definition>
-                <coordinates bbox="(-100,-50,100,50)">
+                <coordinates bbox="(-100,-5,100,5)">
                     <grid-axes xlabel="x" ylabel="y"/>
                     <graph function="f" domain="(-100,-2.0001)"/>
                     <graph function="f" domain="(-1.999,0.999)"/>
@@ -53,5 +52,39 @@
         </prefigure>
     </image>
 </figure>
+
+<p>
+    This shows us that, when our <m>x</m>-values become very large and negative, our <m>y</m>-values become very close to <m>2</m>, and when our <m>x</m>-values become very large and positive, our <m>y</m>-values become very close to <m>2</m> as well.
+</p>
+
+<p>
+    Using our symbolic end behavior notation, we can write this as
+
+    <me>
+        \text{As } x \rightarrow -\infty, f(x) \rightarrow 2
+    </me>
+
+    and
+
+    <me>
+        \text{As } x \rightarrow \infty, f(x) \rightarrow 2.
+    </me>
+    
+</p>
+
+<p>
+    But why does this happen? Let's revisit our function's equation:
+
+    <me>
+        f(x)=\frac{2x(x+1)}{(x+2)(x-1)}
+    </me>
+
+    If we multiply out the numerator and the denominator of the function, we can rewrite the function as
+
+    <me>
+        f(x)=\frac{2x^2+2x}{x^2+x-2}
+    </me>
+    
+</p>
 
 </section>
