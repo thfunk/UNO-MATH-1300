@@ -1,11 +1,11 @@
 <exercises>
 <exercise label="RWT-Evaluating-Functions-exercise1">
-        <statement>
-            <p>
-                Complete the input/output table for the equation <m>y=<eval obj="theFunction" /></m>. Be sure to simplify your answer.
-            </p>
-            <table>
-                <title>Input/Output Table</title>
+     <statement>
+     <p>
+       Complete the input/output table for the equation <m>y= <eval obj="theFunction" /></m>. Be sure to simplify your answer.
+     </p>
+     <table>
+         <title>Input/Output Table</title>
                 <tabular top="major" left="medium" bottom="medium" right="medium">
                     <row halign="center">
                         <cell>Input</cell>
@@ -69,11 +69,11 @@
       Question 2
     -->
 
-     <exercise label="RWT-Evaluating-Functions-exercise2">
+<exercise label="RWT-Evaluating-Functions-exercise2">
     <statement>
-      <figure xml:id="RWT-Evaluating-Functions-figure2">">
-     <image width="60%">
-    <prefigure xmlns="https://prefigure.org" label="RWT-Evaluating-Functions-prefigure2">
+        <figure xml:id="RWT-Evaluating-Functions-figure2">
+            <image width="60%">
+            <prefigure xmlns="https://prefigure.org" label="RWT-Evaluating-Functions-prefigure2">
     <description>Points on Graph</description>
 <diagram dimensions="(300,300)" margins="5">
   <coordinates bbox="(-5,-5,5,5)">
@@ -100,31 +100,31 @@
                     </row>
                     <row halign="center">
                         <cell><m>-2</m></cell>
-                        <cell><fillin width="5" mode="math" answer="1" name="response1"/></cell>
+                        <cell><fillin width="5" mode="math" answer="1" name="response4"/></cell>
                     </row>
                     <row halign="center">
-                        <cell><fillin width="5" mode="math" answer="0" name="response2"/></cell>
+                        <cell><fillin width="5" mode="math" answer="0" name="response5"/></cell>
                         <cell><m>3</m></cell>
                     </row>
                     <row halign="center">
                         <cell><m>2</m></cell>
-                        <cell><fillin width="5" mode="math" answer="-1" name="response3"/></cell>
+                        <cell><fillin width="5" mode="math" answer="-1" name="response6"/></cell>
                     </row>
                 </tabular>
             </table>
         </statement>
 <evaluation>
-  <evaluate submit="response1">
+  <evaluate submit="response4">
   <test correct="yes">
   <numcmp use-answer="yes" />
   </test>
   </evaluate>
-  <evaluate submit="response2">
+  <evaluate submit="response5">
   <test correct="yes">
   <numcmp use-answer="yes" />
   </test>
   </evaluate>
-  <evaluate submit="response3">
+  <evaluate submit="response6">
   <test correct="yes">
   <numcmp use-answer="yes" />
   </test>

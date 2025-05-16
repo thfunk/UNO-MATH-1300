@@ -28,7 +28,6 @@
 <sidebyside>   
 <figure xml:id="Func-Bubble-Diagram-figure1">
      <image width="60%">
-    <caption></caption>
     <prefigure xmlns="https://prefigure.org" label="Bubble-Diagram-prefigure1">
         <title>Bubble Diagram</title>
         <description>Bubble diagram of a function.</description>
