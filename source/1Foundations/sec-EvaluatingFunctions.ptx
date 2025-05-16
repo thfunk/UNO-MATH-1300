@@ -13,7 +13,7 @@
     -->
     <video label="LO1-EvalFunctions" source="LO1-EvalFunctions.mp4"/>
 
-    <xi:include href="exercises/RWT-1-evaluate-functions.ptx" />
+   <!-- <xi:include href="exercises/RWT-1-evaluate-functions.ptx" />!-->
 
 
 <!---
