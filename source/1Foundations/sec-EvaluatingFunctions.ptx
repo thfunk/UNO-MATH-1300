@@ -8,21 +8,9 @@
     </p>
 
 
-    <!--
+      <!--
       Start of RWT Questions
     -->
-    <video label="LO1-EvalFunctions" source="LO1-EvalFunctions.mp4"/>
 
-   <!-- <xi:include href="exercises/RWT-1-evaluate-functions.ptx" />!-->
-
-
-<!---
-<interactive label="justatest" platform="doenetml" width="100%" aspect="2:8">
-  <slate surface="doenetml">
-    <xi:include parse="text" href="doenet/first-test-graph.doenetml"/> 
-  </slate>
-</interactive>
-!-->
-
-
-</section>
+  <!-- <xi:include href="exercises/RWT-2-Evaluating-Functions.ptx" /> -->
+  </section>

@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" original-id="root-1" assembly-id="root-1" unique-id="root-1" locale-lang="en-US">
+  <!-- we first include a file which contains the docinfo element: -->
+  <docinfo original-id="root-1-1" assembly-id="root-1-1" unique-id="root-1-1">
+  <!-- A unique name for the book in a catalog; for example, see https://pretextbook.org/catalog.html and https://runestone.academy/ns/books/index. It contains a simple lowercase string with no dashes or other special characters. See https://pretextbook.org/doc/guide/html/sec-publishing-to-runestone-academy.html for more information. -->
+  <document-id original-id="root-1-1-1" assembly-id="root-1-1-1" unique-id="root-1-1-1">changeme</document-id>
+  <!-- A brief description for the book in a catalog; see the links above. The @shelf is used only when publishing to Runestone; see https://runestone.academy/ns/books/index for a list of valid values. You must copy these @shelf names exactly, including capitalization. -->
+  <blurb shelf="AP Computer Science" original-id="root-1-1-2" assembly-id="root-1-1-2" unique-id="root-1-1-2"> A simple string (no markup is allowed) to describe your book. </blurb>
+
+
+  <!-- The next three lines are likely for mature projects only: -->
+
+  <!-- <brandlogo url="" source="images/cover.png"/> -->
+  <!-- <covers front="images/front.pdf" back="images/back.pdf"/> -->
+  <!-- <document-id>unique-book-id</document-id> -->
+
+  <!-- macros for defining latex math shortcuts. It is good practice -->
+  <!-- to define these semantically, so that the macro relates to what-->
+  <!-- it defines. -->
+  <macros original-id="root-1-1-3" assembly-id="root-1-1-3" unique-id="root-1-1-3"> \newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} </macros>
+
+  <!-- If you put any latex-image elements you can include preambles -->
+  <!-- for those in the next element. -->
+  <latex-image-preamble original-id="root-1-1-4" assembly-id="root-1-1-4" unique-id="root-1-1-4"> \usepackage{tikz, pgfplots} \usetikzlibrary{positioning,matrix,arrows} \usetikzlibrary{shapes,decorations,shadows,fadings,patterns} \usetikzlibrary{decorations.markings} </latex-image-preamble>
+
+  <!-- It is possible to rename elements: -->
+  <!-- <rename element="assemblage" xml:lang="en-US">Summary</rename> -->
+
+  <!-- Specify the default type of cross reference: -->
+  <!-- <cross-references text="type-global" /> -->
+
+
+</docinfo>
+
+  <book xml:id="my-great-book" original-id="my-great-book" assembly-id="my-great-book" label="my-great-book" unique-id="my-great-book">
+    <title original-id="my-great-book-1" assembly-id="my-great-book-1" unique-id="my-great-book-1">College Algebra</title>
+    <subtitle original-id="my-great-book-2" assembly-id="my-great-book-2" unique-id="my-great-book-2">What should go here?</subtitle>
+
+    <!-- Include frontmatter -->
+    <frontmatter level="0" xml:id="frontmatter" original-id="frontmatter" assembly-id="frontmatter" label="frontmatter" unique-id="frontmatter">
+  <bibinfo original-id="frontmatter-1" assembly-id="frontmatter-1" unique-id="frontmatter-1">
+  
+    <author original-id="frontmatter-1-1" assembly-id="frontmatter-1-1" unique-id="frontmatter-1-1"><personname original-id="frontmatter-1-1-1" assembly-id="frontmatter-1-1-1" unique-id="frontmatter-1-1-1">Taran Funk &amp; Keith Gallagher</personname><affiliation unique-id="frontmatter-1-1-2"><department original-id="frontmatter-1-1-2" assembly-id="frontmatter-1-1-2" unique-id="frontmatter-1-1-2-1">Department of Mathematics &amp; Statistics</department><institution original-id="frontmatter-1-1-3" assembly-id="frontmatter-1-1-3" unique-id="frontmatter-1-1-2-2">University of Nebraska at Omaha</institution></affiliation></author>
+    <date original-id="frontmatter-1-2" assembly-id="frontmatter-1-2" unique-id="frontmatter-1-2">
+      <today original-id="frontmatter-1-2-1" assembly-id="frontmatter-1-2-1" unique-id="frontmatter-1-2-1"/>
+    </date>
+
+    <website original-id="frontmatter-1-3" assembly-id="frontmatter-1-3" unique-id="frontmatter-1-3">
+      <url href="https://pretextbook.org" original-id="frontmatter-1-3-1" assembly-id="frontmatter-1-3-1" unique-id="frontmatter-1-3-1">My Website</url><fn xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:url="pretextbook.org" unique-id="frontmatter-1-3-2"/>
+    </website>
+
+    <copyright original-id="frontmatter-1-4" assembly-id="frontmatter-1-4" unique-id="frontmatter-1-4">
+      <year original-id="frontmatter-1-4-1" assembly-id="frontmatter-1-4-1" unique-id="frontmatter-1-4-1">2020<ndash original-id="frontmatter-1-4-1-1" assembly-id="frontmatter-1-4-1-1" unique-id="frontmatter-1-4-1-1"/>2024</year>
+      <holder original-id="frontmatter-1-4-2" assembly-id="frontmatter-1-4-2" unique-id="frontmatter-1-4-2">Taran Funk &amp; Keith Gallagher</holder>
+      <shortlicense original-id="frontmatter-1-4-3" assembly-id="frontmatter-1-4-3" unique-id="frontmatter-1-4-3"> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" original-id="frontmatter-1-4-3-1" assembly-id="frontmatter-1-4-3-1" unique-id="frontmatter-1-4-3-1"> CreativeCommons.org</url><fn xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:url="creativecommons.org/licenses/by-sa/4.0" unique-id="frontmatter-1-4-3-2"/>
+      </shortlicense>
+    </copyright>
+  
+  </bibinfo>
+
+  <titlepage original-id="frontmatter-2" assembly-id="frontmatter-2" unique-id="frontmatter-2">
+    <titlepage-items original-id="frontmatter-2-1" assembly-id="frontmatter-2-1" unique-id="frontmatter-2-1"/>
+  </titlepage>
+
+  <colophon xml:id="front-colophon" original-id="front-colophon" assembly-id="front-colophon" label="front-colophon" unique-id="front-colophon">
+    <colophon-items original-id="front-colophon-1" assembly-id="front-colophon-1" unique-id="front-colophon-1"/>
+  </colophon>
+</frontmatter>
+
+    <!-- Include chapters -->
+    <chapter struct="" serial="1" level="1" xml:id="Foundations" xml:base="1Foundations/Foundations.ptx" original-id="Foundations" assembly-id="Foundations" label="Foundations" unique-id="Foundations">
+  <title original-id="Foundations-1" assembly-id="Foundations-1" unique-id="Foundations-1">LO1: Foundations</title>
+
+  <introduction original-id="Foundations-2" assembly-id="Foundations-2" unique-id="Foundations-2">
+    <p original-id="Foundations-2-1" assembly-id="Foundations-2-1" unique-id="Foundations-2-1"> Text before the first section. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <section struct="1" serial="1" level="2" xml:id="DefinitionFunction" original-id="DefinitionFunction" assembly-id="DefinitionFunction" label="DefinitionFunction" unique-id="DefinitionFunction">
+  <title original-id="DefinitionFunction-1" assembly-id="DefinitionFunction-1" unique-id="DefinitionFunction-1">Definition of a Function</title>
+    <p original-id="DefinitionFunction-2" assembly-id="DefinitionFunction-2" unique-id="DefinitionFunction-2">
+        In this section, we will definine a function and learn how to identify the
+        input and output variables of graphs, tables, diagrams, and equations.
+    </p>
+
+    <definition xml:id="function-definition" original-id="function-definition" assembly-id="function-definition" label="function-definition" unique-id="function-definition">
+        <statement original-id="function-definition-1" assembly-id="function-definition-1" unique-id="function-definition-1">
+            <p original-id="function-definition-1-1" assembly-id="function-definition-1-1" unique-id="function-definition-1-1">
+                A <term original-id="function-definition-1-1-1" assembly-id="function-definition-1-1-1" unique-id="function-definition-1-1-1">function</term> is a relationship between two variables where every <term original-id="function-definition-1-1-2" assembly-id="function-definition-1-1-2" unique-id="function-definition-1-1-2">input</term> 
+                corresponds to exactly one <term original-id="function-definition-1-1-3" assembly-id="function-definition-1-1-3" unique-id="function-definition-1-1-3">output</term>.
+            </p>
+        </statement>
+    </definition>
+
+    <p original-id="DefinitionFunction-4" assembly-id="DefinitionFunction-4" unique-id="DefinitionFunction-4">
+      Below, in <xref ref="Func-Bubble-Diagram-figure1" text="type-global" original-id="DefinitionFunction-4-1" assembly-id="DefinitionFunction-4-1" unique-id="DefinitionFunction-4-1"/> and <xref ref="Func-Bubble-Diagram-figure2" text="type-global" original-id="DefinitionFunction-4-2" assembly-id="DefinitionFunction-4-2" unique-id="DefinitionFunction-4-2"/> we have two examples of relationships which <em original-id="DefinitionFunction-4-3" assembly-id="DefinitionFunction-4-3" unique-id="DefinitionFunction-4-3">are functions</em>. Notice that each input A, B, and C is mapped to exactly one output value. Two inputs can share the same output value, but each input must have a unique output value.
+    </p>
+    <p original-id="DefinitionFunction-5" assembly-id="DefinitionFunction-5" unique-id="DefinitionFunction-5">
+      For example; in the first diagram, <xref ref="Func-Bubble-Diagram-figure1" text="type-global" original-id="DefinitionFunction-5-1" assembly-id="DefinitionFunction-5-1" unique-id="DefinitionFunction-5-1"/>, each input is going to a different output value.
+      In the second diagram, <xref ref="Func-Bubble-Diagram-figure2" text="type-global" original-id="DefinitionFunction-5-2" assembly-id="DefinitionFunction-5-2" unique-id="DefinitionFunction-5-2"/>, inputs B and C are both going to 
+      the same output value of Pear, but each input is still going to a single output value.
+    </p>
+
+<sidebyside original-id="DefinitionFunction-6" assembly-id="DefinitionFunction-6" unique-id="DefinitionFunction-6">   
+<figure xml:id="Func-Bubble-Diagram-figure1" original-id="Func-Bubble-Diagram-figure1" assembly-id="Func-Bubble-Diagram-figure1" label="Func-Bubble-Diagram-figure1" unique-id="Func-Bubble-Diagram-figure1">
+     <image width="60%" original-id="Func-Bubble-Diagram-figure1-1" assembly-id="Func-Bubble-Diagram-figure1-1" unique-id="Func-Bubble-Diagram-figure1-1">
+    <prefigure xmlns="https://prefigure.org" label="Bubble-Diagram-prefigure1" authored-label="">
+        <title>Bubble Diagram</title>
+        <description>Bubble diagram of a function.</description>
+     <diagram dimensions="(300,300)" margins="5">
+  <definition> top=1.75 </definition>
+  <definition> mid=2 </definition>
+  <definition> top=1.75 </definition>
+  <definition> mid=2 </definition> 
+  <coordinates bbox="(-4,-4,4,4)">
+    <label anchor="(-mid,3.4)" alignment="center">
+      Input
+     </label>
+    <ellipse center="(-mid,0)" axes="(1.5,3)" stroke="black"/>
+    <label anchor="(mid,3.4)" alignment="center">
+      Output
+     </label>
+    <ellipse center="(mid,0)" axes="(1.5,3)" stroke="black"/>
+    <line endpoints="((-mid+.2,0), (mid-.6,top))" stroke="blue" thickness="2" arrows="1"/>
+    <line endpoints="((-mid+.2,top), (mid-.6,-top))" stroke="blue" thickness="2" arrows="1"/>
+    <line endpoints="((-mid+.2,-top), (mid-.5,0))" stroke="blue" thickness="2" arrows="1"/>
+    <label anchor="(mid,top)" alignment="center">
+      Apple
+    </label>
+    <label anchor="(mid,0)" alignment="center">
+      Pear
+    </label>
+    <label anchor="(mid,-top-.1)" alignment="center">
+      Grape
+    </label>
+    <label anchor="(-mid,top)" alignment="center">
+      A
+    </label>
+    <label anchor="(-mid,0)" alignment="center">
+      B
+    </label>
+    <label anchor="(-mid,-top)" alignment="center">
+      C
+    </label>
+  </coordinates>
+</diagram>
+</prefigure> 
+ </image>
+</figure>
+
+
+<figure xml:id="Func-Bubble-Diagram-figure2" original-id="Func-Bubble-Diagram-figure2" assembly-id="Func-Bubble-Diagram-figure2" label="Func-Bubble-Diagram-figure2" unique-id="Func-Bubble-Diagram-figure2">
+     <image width="60%" original-id="Func-Bubble-Diagram-figure2-1" assembly-id="Func-Bubble-Diagram-figure2-1" unique-id="Func-Bubble-Diagram-figure2-1">
+    <caption original-id="Func-Bubble-Diagram-figure2-1-1" assembly-id="Func-Bubble-Diagram-figure2-1-1" unique-id="Func-Bubble-Diagram-figure2-1-1">This is a Function</caption>
+    <prefigure xmlns="https://prefigure.org" label="Bubble-Diagram-prefigure2" authored-label="">
+        <title>Bubble Diagram</title>
+        <description>Bubble diagram of a function.</description>
+<diagram dimensions="(300,300)" margins="5">
+  <definition> top=1.75 </definition>
+  <definition> mid=2 </definition>
+  <definition> top=1.75 </definition>
+  <definition> mid=2 </definition> 
+  <coordinates bbox="(-4,-4,4,4)">
+    <label anchor="(-mid,3.4)" alignment="center">
+      Input
+     </label>
+     <ellipse center="(-mid,0)" axes="(1.5,3)" stroke="black"/>
+     <label anchor="(mid,3.4)" alignment="center">
+      Output
+     </label>
+     <ellipse center="(mid,0)" axes="(1.5,3)" stroke="black"/>
+     <line endpoints="((-mid+.2,0), (mid-.7,0))" stroke="blue" thickness="2" arrows="1"/>
+     <line endpoints="((-mid+.2,top), (mid-.6,-top))" stroke="blue" thickness="2" arrows="1"/>
+     <line endpoints="((-mid+.2,-top), (mid-.6,-0.1))" stroke="blue" thickness="2" arrows="1"/>
+     <label anchor="(mid,top)" alignment="center">
+      Apple
+     </label>
+     <label anchor="(mid,0)" alignment="center">
+      Pear
+     </label>
+     <label anchor="(mid,-top-.1)" alignment="center">
+      Grape
+     </label>
+     <label anchor="(-mid,top)" alignment="center">
+      A
+     </label>
+     <label anchor="(-mid,0)" alignment="center">
+      B
+     </label>
+     <label anchor="(-mid,-top)" alignment="center">
+      C
+     </label>
+  </coordinates>
+</diagram>
+</prefigure> 
+ </image>
+</figure>
+</sidebyside> 
+
+<p original-id="DefinitionFunction-7" assembly-id="DefinitionFunction-7" unique-id="DefinitionFunction-7">
+  In contrast, the diagrams below are both examples of relationships that are <em original-id="DefinitionFunction-7-1" assembly-id="DefinitionFunction-7-1" unique-id="DefinitionFunction-7-1">not functions</em>. There is an input
+  which has two different outputs in each diagram.
+</p>
+<p original-id="DefinitionFunction-8" assembly-id="DefinitionFunction-8" unique-id="DefinitionFunction-8">
+  In the first diagram, <xref ref="not-Func-Bubble-Diagram-figure1" text="type-global" original-id="DefinitionFunction-8-1" assembly-id="DefinitionFunction-8-1" unique-id="DefinitionFunction-8-1"/>, input B is going to both output values of Apple and Pear.
+  In the second diagram, <xref ref="not-Func-Bubble-Diagram-figure2" text="type-global" original-id="DefinitionFunction-8-2" assembly-id="DefinitionFunction-8-2" unique-id="DefinitionFunction-8-2"/>, input A is going to both output values of Apple and Grape.
+</p>
+
+<sidebyside original-id="DefinitionFunction-9" assembly-id="DefinitionFunction-9" unique-id="DefinitionFunction-9">   
+<figure xml:id="not-Func-Bubble-Diagram-figure1" original-id="not-Func-Bubble-Diagram-figure1" assembly-id="not-Func-Bubble-Diagram-figure1" label="not-Func-Bubble-Diagram-figure1" unique-id="not-Func-Bubble-Diagram-figure1">
+     <image width="60%" original-id="not-Func-Bubble-Diagram-figure1-1" assembly-id="not-Func-Bubble-Diagram-figure1-1" unique-id="not-Func-Bubble-Diagram-figure1-1">
+    <caption original-id="not-Func-Bubble-Diagram-figure1-1-1" assembly-id="not-Func-Bubble-Diagram-figure1-1-1" unique-id="not-Func-Bubble-Diagram-figure1-1-1"/>
+    <prefigure xmlns="https://prefigure.org" label="not-Bubble-Diagram-prefigure1" authored-label="">
+        <title>Bubble Diagram</title>
+        <description>Bubble diagram of a function.</description>
+     <diagram dimensions="(300,300)" margins="5">
+  <definition> top=1.75 </definition>
+  <definition> mid=2 </definition>
+  <definition> top=1.75 </definition>
+  <definition> mid=2 </definition> 
+  <coordinates bbox="(-4,-4,4,4)">
+    <label anchor="(-mid,3.4)" alignment="center">
+      Input
+     </label>
+    <ellipse center="(-mid,0)" axes="(1.5,3)" stroke="black"/>
+    <label anchor="(mid,3.4)" alignment="center">
+      Output
+     </label>
+    <ellipse center="(mid,0)" axes="(1.5,3)" stroke="black"/>
+    <line endpoints="((-mid+.2,0), (mid-.6,top))" stroke="red" thickness="2" arrows="1"/>
+    <line endpoints="((-mid+.2,0), (mid-.6,0))" stroke="red" thickness="2" arrows="1"/>
+    <line endpoints="((-mid+.2,top), (mid-.6,-top))" stroke="red" thickness="2" arrows="1"/>
+    <line endpoints="((-mid+.2,-top), (mid-.5,0))" stroke="red" thickness="2" arrows="1"/>
+    <label anchor="(mid,top)" alignment="center">
+      Apple
+    </label>
+    <label anchor="(mid,0)" alignment="center">
+      Pear
+    </label>
+    <label anchor="(mid,-top-.1)" alignment="center">
+      Grape
+    </label>
+    <label anchor="(-mid,top)" alignment="center">
+      A
+    </label>
+    <label anchor="(-mid,0)" alignment="center">
+      B
+    </label>
+    <label anchor="(-mid,-top)" alignment="center">
+      C
+    </label>
+  </coordinates>
+</diagram>
+</prefigure> 
+ </image>
+</figure>
+
+
+<figure xml:id="not-Func-Bubble-Diagram-figure2" original-id="not-Func-Bubble-Diagram-figure2" assembly-id="not-Func-Bubble-Diagram-figure2" label="not-Func-Bubble-Diagram-figure2" unique-id="not-Func-Bubble-Diagram-figure2">
+     <image width="60%" original-id="not-Func-Bubble-Diagram-figure2-1" assembly-id="not-Func-Bubble-Diagram-figure2-1" unique-id="not-Func-Bubble-Diagram-figure2-1">
+    <caption original-id="not-Func-Bubble-Diagram-figure2-1-1" assembly-id="not-Func-Bubble-Diagram-figure2-1-1" unique-id="not-Func-Bubble-Diagram-figure2-1-1">This is a Function</caption>
+    <prefigure xmlns="https://prefigure.org" label="not-Func-Bubble-Diagram-prefigure2" authored-label="">
+        <title>Bubble Diagram</title>
+        <description>Bubble diagram of a function.</description>
+<diagram dimensions="(300,300)" margins="5">
+  <definition> top=1.75 </definition>
+  <definition> mid=2 </definition>
+  <definition> top=1.75 </definition>
+  <definition> mid=2 </definition> 
+  <coordinates bbox="(-4,-4,4,4)">
+    <label anchor="(-mid,3.4)" alignment="center">
+      Input
+     </label>
+     <ellipse center="(-mid,0)" axes="(1.5,3)" stroke="black"/>
+     <label anchor="(mid,3.4)" alignment="center">
+      Output
+     </label>
+     <ellipse center="(mid,0)" axes="(1.5,3)" stroke="black"/>
+     <line endpoints="((-mid+.2,0), (mid-.7,0))" stroke="red" thickness="2" arrows="1"/>
+     <line endpoints="((-mid+.2,top), (mid-.6,-top))" stroke="red" thickness="2" arrows="1"/>
+     <line endpoints="((-mid+.2,top), (mid-.6,top))" stroke="red" thickness="2" arrows="1"/>
+     <line endpoints="((-mid+.2,-top), (mid-.6,-0.1))" stroke="red" thickness="2" arrows="1"/>
+     <label anchor="(mid,top)" alignment="center">
+      Apple
+     </label>
+     <label anchor="(mid,0)" alignment="center">
+      Pear
+     </label>
+     <label anchor="(mid,-top-.1)" alignment="center">
+      Grape
+     </label>
+     <label anchor="(-mid,top)" alignment="center">
+      A
+     </label>
+     <label anchor="(-mid,0)" alignment="center">
+      B
+     </label>
+     <label anchor="(-mid,-top)" alignment="center">
+      C
+     </label>
+  </coordinates>
+</diagram>
+</prefigure> 
+ </image>
+</figure>
+</sidebyside> 
+
+<p original-id="DefinitionFunction-10" assembly-id="DefinitionFunction-10" unique-id="DefinitionFunction-10">
+  Depending on the situation, we may refer to the relationship between a function and its inputs and outputs as a
+  <term original-id="DefinitionFunction-10-1" assembly-id="DefinitionFunction-10-1" unique-id="DefinitionFunction-10-1">mapping</term>, a <term original-id="DefinitionFunction-10-2" assembly-id="DefinitionFunction-10-2" unique-id="DefinitionFunction-10-2">correspondence</term>, or a <term original-id="DefinitionFunction-10-3" assembly-id="DefinitionFunction-10-3" unique-id="DefinitionFunction-10-3">rule</term>. We also have several ways to represent
+  functions. We can use a <term original-id="DefinitionFunction-10-4" assembly-id="DefinitionFunction-10-4" unique-id="DefinitionFunction-10-4">table</term>, a <term original-id="DefinitionFunction-10-5" assembly-id="DefinitionFunction-10-5" unique-id="DefinitionFunction-10-5">graph</term>, a <term original-id="DefinitionFunction-10-6" assembly-id="DefinitionFunction-10-6" unique-id="DefinitionFunction-10-6">diagram</term>, or an <term original-id="DefinitionFunction-10-7" assembly-id="DefinitionFunction-10-7" unique-id="DefinitionFunction-10-7">equation</term>.
+</p>
+
+<p original-id="DefinitionFunction-11" assembly-id="DefinitionFunction-11" unique-id="DefinitionFunction-11">
+  So far we have seen functions represented as diagrams. Before we can move on the others, we need to learn about function notation.
+</p>
+
+<definition xml:id="function-notation-definition" original-id="function-notation-definition" assembly-id="function-notation-definition" label="function-notation-definition" unique-id="function-notation-definition">
+        <statement original-id="function-notation-definition-1" assembly-id="function-notation-definition-1" unique-id="function-notation-definition-1">
+            <p original-id="function-notation-definition-1-1" assembly-id="function-notation-definition-1-1" unique-id="function-notation-definition-1-1">
+                The representation of a function <m original-id="function-notation-definition-1-1-1" assembly-id="function-notation-definition-1-1-1" unique-id="function-notation-definition-1-1-1">y=f(x)</m> is called <term original-id="function-notation-definition-1-1-2" assembly-id="function-notation-definition-1-1-2" unique-id="function-notation-definition-1-1-2">function notation</term>.
+                The letter <m original-id="function-notation-definition-1-1-3" assembly-id="function-notation-definition-1-1-3" unique-id="function-notation-definition-1-1-3">f</m> is the name of the function, and the letter <m original-id="function-notation-definition-1-1-4" assembly-id="function-notation-definition-1-1-4" unique-id="function-notation-definition-1-1-4">x</m> is the input variable, and the
+                letter <m original-id="function-notation-definition-1-1-5" assembly-id="function-notation-definition-1-1-5" unique-id="function-notation-definition-1-1-5">y</m> is the output variable. We say that <m original-id="function-notation-definition-1-1-6" assembly-id="function-notation-definition-1-1-6" unique-id="function-notation-definition-1-1-6">y</m> is a function of <m original-id="function-notation-definition-1-1-7" assembly-id="function-notation-definition-1-1-7" unique-id="function-notation-definition-1-1-7">x</m>.
+            </p>
+
+            <figure xml:id="function-notation-figure" original-id="function-notation-figure" assembly-id="function-notation-figure" label="function-notation-figure" unique-id="function-notation-figure">
+     <image width="60%" original-id="function-notation-figure-1" assembly-id="function-notation-figure-1" unique-id="function-notation-figure-1">
+    <prefigure xmlns="https://prefigure.org" label="function-notation-prefigure" authored-label="">
+        <description>Function Notation</description>
+            <diagram dimensions="(300,300)" margins="(-10, -100, -50, -100)">
+  <coordinates bbox="(-2,-2,2,2)">
+     <label anchor="(0,0)" alignment="center">
+      <m>y=f(x)</m>
+     </label>
+     <path start="(-1,.5)" stroke="blue" arrows="1">
+      <quadratic-bezier controls="((-.4,.5),(-.4,.1))"/>
+    </path>
+    <label anchor="(-1.25,.5)" alignment="center" color="blue">
+      Output
+     </label>
+     <path start="(-.5,-0.5)" stroke="red" arrows="1">
+      <quadratic-bezier controls="((.05,-.5),(.05,-.2))"/>
+      </path>
+      <label anchor="(-.3,-.5)" alignment="west" color="red">
+      Function Name
+     </label>
+     <path start="(.7,-0.5)" stroke="green" arrows="1">
+      <quadratic-bezier controls="((.3,-.5),(.3,-.2))"/>
+      </path>
+      <label anchor="(.7,-.5)" alignment="east" color="green">
+      Input
+     </label>
+  </coordinates>
+</diagram>
+</prefigure> 
+ </image>
+</figure>
+        </statement>
+    </definition>
+
+    <p original-id="DefinitionFunction-13" assembly-id="DefinitionFunction-13" unique-id="DefinitionFunction-13">
+      Let's look at some examples showing function relationships using function notation.
+    </p>
+
+<example xml:id="function-notation-diagram-example" original-id="function-notation-diagram-example" assembly-id="function-notation-diagram-example" label="function-notation-diagram-example" unique-id="function-notation-diagram-example">
+        <statement original-id="function-notation-diagram-example-1" assembly-id="function-notation-diagram-example-1" unique-id="function-notation-diagram-example-1">
+            <p original-id="function-notation-diagram-example-1-1" assembly-id="function-notation-diagram-example-1-1" unique-id="function-notation-diagram-example-1-1">
+             In the first diagram, <xref ref="Func-Bubble-Diagram-figure1" text="type-global" original-id="function-notation-diagram-example-1-1-1" assembly-id="function-notation-diagram-example-1-1-1" unique-id="function-notation-diagram-example-1-1-1"/>, we could use function notation to represent the same relationship:
+             <li original-id="function-notation-diagram-example-1-1-2" assembly-id="function-notation-diagram-example-1-1-2" unique-id="function-notation-diagram-example-1-1-2">
+                <p original-id="function-notation-diagram-example-1-1-2-1" assembly-id="function-notation-diagram-example-1-1-2-1" unique-id="function-notation-diagram-example-1-1-2-1">
+                  <m original-id="function-notation-diagram-example-1-1-2-1-1" assembly-id="function-notation-diagram-example-1-1-2-1-1" unique-id="function-notation-diagram-example-1-1-2-1-1">f(A) =</m> Grape. "The input A is mapped to the output Grape."
+                </p>
+             </li>
+             <li original-id="function-notation-diagram-example-1-1-3" assembly-id="function-notation-diagram-example-1-1-3" unique-id="function-notation-diagram-example-1-1-3">
+              <p original-id="function-notation-diagram-example-1-1-3-1" assembly-id="function-notation-diagram-example-1-1-3-1" unique-id="function-notation-diagram-example-1-1-3-1">
+                <m original-id="function-notation-diagram-example-1-1-3-1-1" assembly-id="function-notation-diagram-example-1-1-3-1-1" unique-id="function-notation-diagram-example-1-1-3-1-1">f(B) =</m> Apple. "The input B is mapped to the output Apple."
+              </p>
+             </li>
+             <li original-id="function-notation-diagram-example-1-1-4" assembly-id="function-notation-diagram-example-1-1-4" unique-id="function-notation-diagram-example-1-1-4">
+              <p original-id="function-notation-diagram-example-1-1-4-1" assembly-id="function-notation-diagram-example-1-1-4-1" unique-id="function-notation-diagram-example-1-1-4-1">
+                <m original-id="function-notation-diagram-example-1-1-4-1-1" assembly-id="function-notation-diagram-example-1-1-4-1-1" unique-id="function-notation-diagram-example-1-1-4-1-1">f(C) =</m> Pear. "The input C is mapped to the output Pear."
+              </p>
+             </li>
+            </p>
+
+            <p original-id="function-notation-diagram-example-1-2" assembly-id="function-notation-diagram-example-1-2" unique-id="function-notation-diagram-example-1-2"> 
+              We would first need to name the function <m original-id="function-notation-diagram-example-1-2-1" assembly-id="function-notation-diagram-example-1-2-1" unique-id="function-notation-diagram-example-1-2-1"> f</m> as it was not given a name in the diagram.
+            </p>
+        </statement>
+  </example>
+
+  <example xml:id="function-notation-wordproblem-example" original-id="function-notation-wordproblem-example" assembly-id="function-notation-wordproblem-example" label="function-notation-wordproblem-example" unique-id="function-notation-wordproblem-example">
+    <statement original-id="function-notation-wordproblem-example-1" assembly-id="function-notation-wordproblem-example-1" unique-id="function-notation-wordproblem-example-1">
+      <p original-id="function-notation-wordproblem-example-1-1" assembly-id="function-notation-wordproblem-example-1-1" unique-id="function-notation-wordproblem-example-1-1">
+        The number of visitors, <m original-id="function-notation-wordproblem-example-1-1-1" assembly-id="function-notation-wordproblem-example-1-1-1" unique-id="function-notation-wordproblem-example-1-1-1">V</m>, to the Omaha Zoo is given by the function <m original-id="function-notation-wordproblem-example-1-1-2" assembly-id="function-notation-wordproblem-example-1-1-2" unique-id="function-notation-wordproblem-example-1-1-2">V = g(t)</m>, where <m original-id="function-notation-wordproblem-example-1-1-3" assembly-id="function-notation-wordproblem-example-1-1-3" unique-id="function-notation-wordproblem-example-1-1-3">t</m> is 
+        the number of years since the year 2000.
+      </p>
+      <p original-id="function-notation-wordproblem-example-1-2" assembly-id="function-notation-wordproblem-example-1-2" unique-id="function-notation-wordproblem-example-1-2">
+        In this example, the input variable is <m original-id="function-notation-wordproblem-example-1-2-1" assembly-id="function-notation-wordproblem-example-1-2-1" unique-id="function-notation-wordproblem-example-1-2-1">t</m>, which represents the number of years since 2000. 
+        The output variable is <m original-id="function-notation-wordproblem-example-1-2-2" assembly-id="function-notation-wordproblem-example-1-2-2" unique-id="function-notation-wordproblem-example-1-2-2">V</m>, which represents the number of visitors to the zoo.
+        The name of the function is <m original-id="function-notation-wordproblem-example-1-2-3" assembly-id="function-notation-wordproblem-example-1-2-3" unique-id="function-notation-wordproblem-example-1-2-3">g</m>.
+      </p>
+    </statement>
+  </example>
+</section>
+  <section struct="1" serial="2" level="2" xml:id="EvaluatingFunctions" original-id="EvaluatingFunctions" assembly-id="EvaluatingFunctions" label="EvaluatingFunctions" unique-id="EvaluatingFunctions">
+  <title original-id="EvaluatingFunctions-1" assembly-id="EvaluatingFunctions-1" unique-id="EvaluatingFunctions-1">Evaluating Functions</title>
+    <p original-id="EvaluatingFunctions-2" assembly-id="EvaluatingFunctions-2" unique-id="EvaluatingFunctions-2">
+        In this section, we will use function notation to evaluate functions. We will also learn how to interpret 
+        the meaning of the inputs and outputs of a function.
+    </p>
+
+
+    <!--
+      Start of RWT Questions
+    -->
+    <sidebyside margins="7.5% 7.5%" widths="47% 21%" valign="top" halign="center" unique-id="EvaluatingFunctions-3"><p unique-id="EvaluatingFunctions-3-1">BUG: PREVIEW NOT HANDLED</p><stack unique-id="EvaluatingFunctions-3-2"><image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="qrcode/RWT1.1-Representations-Functions.png" unique-id="EvaluatingFunctions-3-2-1"/></stack></sidebyside>
+
+  <exercises struct="1.2" serial="1" level="3" xml:base="exercises/RWT-1-evaluate-functions.ptx" original-id="EvaluatingFunctions-4" assembly-id="EvaluatingFunctions-4" unique-id="EvaluatingFunctions-4">
+<exercise exercise-customization="divisional" exercise-interactive="fillin" label="RWT-Representations-Functions-exercise1" original-id="RWT-Representations-Functions-exercise1" assembly-id="RWT-Representations-Functions-exercise1" authored-label="" unique-id="RWT-Representations-Functions-exercise1"><statement original-id="RWT-Representations-Functions-exercise1-1" assembly-id="RWT-Representations-Functions-exercise1-1" unique-id="RWT-Representations-Functions-exercise1-1">
+     <p original-id="RWT-Representations-Functions-exercise1-1-1" assembly-id="RWT-Representations-Functions-exercise1-1-1" unique-id="RWT-Representations-Functions-exercise1-1-1">
+       Complete the input/output table for the equation <m original-id="RWT-Representations-Functions-exercise1-1-1-1" assembly-id="RWT-Representations-Functions-exercise1-1-1-1" unique-id="RWT-Representations-Functions-exercise1-1-1-1">y= 3 \left(x+3\right)</m>. Be sure to simplify your answer.
+     </p>
+     <table original-id="RWT-Representations-Functions-exercise1-1-2" assembly-id="RWT-Representations-Functions-exercise1-1-2" unique-id="RWT-Representations-Functions-exercise1-1-2">
+         <title original-id="RWT-Representations-Functions-exercise1-1-2-1" assembly-id="RWT-Representations-Functions-exercise1-1-2-1" unique-id="RWT-Representations-Functions-exercise1-1-2-1">Input/Output Table</title>
+                <tabular top="major" left="medium" bottom="medium" right="medium" original-id="RWT-Representations-Functions-exercise1-1-2-2" assembly-id="RWT-Representations-Functions-exercise1-1-2-2" unique-id="RWT-Representations-Functions-exercise1-1-2-2">
+                    <row halign="center" original-id="RWT-Representations-Functions-exercise1-1-2-2-1" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-1" unique-id="RWT-Representations-Functions-exercise1-1-2-2-1">
+                        <cell original-id="RWT-Representations-Functions-exercise1-1-2-2-1-1" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-1-1" unique-id="RWT-Representations-Functions-exercise1-1-2-2-1-1">Input</cell>
+                        <cell original-id="RWT-Representations-Functions-exercise1-1-2-2-1-2" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-1-2" unique-id="RWT-Representations-Functions-exercise1-1-2-2-1-2">Output</cell>
+                    </row>
+                    <row halign="center" original-id="RWT-Representations-Functions-exercise1-1-2-2-2" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-2" unique-id="RWT-Representations-Functions-exercise1-1-2-2-2">
+                        <cell original-id="RWT-Representations-Functions-exercise1-1-2-2-2-1" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-2-1" unique-id="RWT-Representations-Functions-exercise1-1-2-2-2-1"><m original-id="RWT-Representations-Functions-exercise1-1-2-2-2-1-1" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-2-1-1" unique-id="RWT-Representations-Functions-exercise1-1-2-2-2-1-1">-1</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise1-1-2-2-2-2" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-2-2" unique-id="RWT-Representations-Functions-exercise1-1-2-2-2-2"><fillin characters="5" unique-id="RWT-Representations-Functions-exercise1-1-2-2-2-2-1"/></cell>
+                    </row>
+                    <row halign="center" original-id="RWT-Representations-Functions-exercise1-1-2-2-3" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-3" unique-id="RWT-Representations-Functions-exercise1-1-2-2-3">
+                        <cell original-id="RWT-Representations-Functions-exercise1-1-2-2-3-1" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-3-1" unique-id="RWT-Representations-Functions-exercise1-1-2-2-3-1"><m original-id="RWT-Representations-Functions-exercise1-1-2-2-3-1-1" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-3-1-1" unique-id="RWT-Representations-Functions-exercise1-1-2-2-3-1-1">0</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise1-1-2-2-3-2" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-3-2" unique-id="RWT-Representations-Functions-exercise1-1-2-2-3-2"><fillin characters="5" unique-id="RWT-Representations-Functions-exercise1-1-2-2-3-2-1"/></cell>
+                    </row>
+                    <row halign="center" original-id="RWT-Representations-Functions-exercise1-1-2-2-4" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-4" unique-id="RWT-Representations-Functions-exercise1-1-2-2-4">
+                        <cell original-id="RWT-Representations-Functions-exercise1-1-2-2-4-1" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-4-1" unique-id="RWT-Representations-Functions-exercise1-1-2-2-4-1"><m original-id="RWT-Representations-Functions-exercise1-1-2-2-4-1-1" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-4-1-1" unique-id="RWT-Representations-Functions-exercise1-1-2-2-4-1-1">2</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise1-1-2-2-4-2" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-4-2" unique-id="RWT-Representations-Functions-exercise1-1-2-2-4-2"><fillin characters="5" unique-id="RWT-Representations-Functions-exercise1-1-2-2-4-2-1"/></cell>
+                    </row>
+                </tabular>
+            </table>
+        </statement><solution original-id="RWT-Representations-Functions-exercise1-1" assembly-id="RWT-Representations-Functions-exercise1-1" unique-id="RWT-Representations-Functions-exercise1-2">
+     <p original-id="RWT-Representations-Functions-exercise1-1-1" assembly-id="RWT-Representations-Functions-exercise1-1-1" unique-id="RWT-Representations-Functions-exercise1-2-1">
+       Complete the input/output table for the equation <m original-id="RWT-Representations-Functions-exercise1-1-1-1" assembly-id="RWT-Representations-Functions-exercise1-1-1-1" unique-id="RWT-Representations-Functions-exercise1-2-1-1">y= 3 \left(x+3\right)</m>. Be sure to simplify your answer.
+     </p>
+     <table original-id="RWT-Representations-Functions-exercise1-1-2" assembly-id="RWT-Representations-Functions-exercise1-1-2" unique-id="RWT-Representations-Functions-exercise1-2-2">
+         <title original-id="RWT-Representations-Functions-exercise1-1-2-1" assembly-id="RWT-Representations-Functions-exercise1-1-2-1" unique-id="RWT-Representations-Functions-exercise1-2-2-1">Input/Output Table</title>
+                <tabular top="major" left="medium" bottom="medium" right="medium" original-id="RWT-Representations-Functions-exercise1-1-2-2" assembly-id="RWT-Representations-Functions-exercise1-1-2-2" unique-id="RWT-Representations-Functions-exercise1-2-2-2">
+                    <row halign="center" original-id="RWT-Representations-Functions-exercise1-1-2-2-1" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-1" unique-id="RWT-Representations-Functions-exercise1-2-2-2-1">
+                        <cell original-id="RWT-Representations-Functions-exercise1-1-2-2-1-1" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-1-1" unique-id="RWT-Representations-Functions-exercise1-2-2-2-1-1">Input</cell>
+                        <cell original-id="RWT-Representations-Functions-exercise1-1-2-2-1-2" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-1-2" unique-id="RWT-Representations-Functions-exercise1-2-2-2-1-2">Output</cell>
+                    </row>
+                    <row halign="center" original-id="RWT-Representations-Functions-exercise1-1-2-2-2" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-2" unique-id="RWT-Representations-Functions-exercise1-2-2-2-2">
+                        <cell original-id="RWT-Representations-Functions-exercise1-1-2-2-2-1" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-2-1" unique-id="RWT-Representations-Functions-exercise1-2-2-2-2-1"><m original-id="RWT-Representations-Functions-exercise1-1-2-2-2-1-1" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-2-1-1" unique-id="RWT-Representations-Functions-exercise1-2-2-2-2-1-1">-1</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise1-1-2-2-2-2" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-2-2" unique-id="RWT-Representations-Functions-exercise1-2-2-2-2-2"><fillin characters="1" unique-id="RWT-Representations-Functions-exercise1-2-2-2-2-2-1"/><m unique-id="RWT-Representations-Functions-exercise1-2-2-2-2-2-2">6</m><fillin characters="1" unique-id="RWT-Representations-Functions-exercise1-2-2-2-2-2-3"/></cell>
+                    </row>
+                    <row halign="center" original-id="RWT-Representations-Functions-exercise1-1-2-2-3" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-3" unique-id="RWT-Representations-Functions-exercise1-2-2-2-3">
+                        <cell original-id="RWT-Representations-Functions-exercise1-1-2-2-3-1" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-3-1" unique-id="RWT-Representations-Functions-exercise1-2-2-2-3-1"><m original-id="RWT-Representations-Functions-exercise1-1-2-2-3-1-1" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-3-1-1" unique-id="RWT-Representations-Functions-exercise1-2-2-2-3-1-1">0</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise1-1-2-2-3-2" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-3-2" unique-id="RWT-Representations-Functions-exercise1-2-2-2-3-2"><fillin characters="1" unique-id="RWT-Representations-Functions-exercise1-2-2-2-3-2-1"/><m unique-id="RWT-Representations-Functions-exercise1-2-2-2-3-2-2">9</m><fillin characters="1" unique-id="RWT-Representations-Functions-exercise1-2-2-2-3-2-3"/></cell>
+                    </row>
+                    <row halign="center" original-id="RWT-Representations-Functions-exercise1-1-2-2-4" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-4" unique-id="RWT-Representations-Functions-exercise1-2-2-2-4">
+                        <cell original-id="RWT-Representations-Functions-exercise1-1-2-2-4-1" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-4-1" unique-id="RWT-Representations-Functions-exercise1-2-2-2-4-1"><m original-id="RWT-Representations-Functions-exercise1-1-2-2-4-1-1" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-4-1-1" unique-id="RWT-Representations-Functions-exercise1-2-2-2-4-1-1">2</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise1-1-2-2-4-2" assembly-id="RWT-Representations-Functions-exercise1-1-2-2-4-2" unique-id="RWT-Representations-Functions-exercise1-2-2-2-4-2"><fillin characters="1" unique-id="RWT-Representations-Functions-exercise1-2-2-2-4-2-1"/><m unique-id="RWT-Representations-Functions-exercise1-2-2-2-4-2-2">15</m><fillin characters="1" unique-id="RWT-Representations-Functions-exercise1-2-2-2-4-2-3"/></cell>
+                    </row>
+                </tabular>
+            </table>
+        </solution></exercise>
+
+<!--
+      Question 2
+    -->
+
+<exercise exercise-customization="divisional" exercise-interactive="fillin" label="RWT-Representations-Functions-exercise2" original-id="RWT-Representations-Functions-exercise2" assembly-id="RWT-Representations-Functions-exercise2" authored-label="" unique-id="RWT-Representations-Functions-exercise2"><statement original-id="RWT-Representations-Functions-exercise2-1" assembly-id="RWT-Representations-Functions-exercise2-1" unique-id="RWT-Representations-Functions-exercise2-1">
+        <p original-id="RWT-Representations-Functions-exercise2-1-1" assembly-id="RWT-Representations-Functions-exercise2-1-1" unique-id="RWT-Representations-Functions-exercise2-1-1">
+            Test text.
+        </p>
+        <figure xml:id="RWT-Representations-Functions-figure2" original-id="RWT-Representations-Functions-figure2" assembly-id="RWT-Representations-Functions-figure2" label="RWT-Representations-Functions-figure2" unique-id="RWT-Representations-Functions-figure2">
+            <image width="60%" original-id="RWT-Representations-Functions-figure2-1" assembly-id="RWT-Representations-Functions-figure2-1" unique-id="RWT-Representations-Functions-figure2-1">
+                <prefigure xmlns="https://prefigure.org" label="RWT-Representations-Functions-prefigure2" authored-label="">
+                    <description>Points on Graph</description>
+                    <diagram dimensions="(300,300)" margins="5">
+                    <coordinates bbox="(-5,-5,5,5)">
+                        <grid-axes xlabel="x" ylabel="y"/>
+                        <point p="(2,-1)" size="4"/>
+                        <point p="(-2,1)" size="4"/>
+                        <point p="(0,3)" size="4"/>
+                        <point p="(1,2)" size="4"/>
+                        <point p="(3,-4)" size="4"/>
+                    </coordinates>
+                    </diagram>
+                 </prefigure>
+            </image>
+        </figure>
+            <p original-id="RWT-Representations-Functions-exercise2-1-3" assembly-id="RWT-Representations-Functions-exercise2-1-3" unique-id="RWT-Representations-Functions-exercise2-1-3">
+                Complete the input/output table using the graph above.
+            </p>
+            <table original-id="RWT-Representations-Functions-exercise2-1-4" assembly-id="RWT-Representations-Functions-exercise2-1-4" unique-id="RWT-Representations-Functions-exercise2-1-4">
+                <title original-id="RWT-Representations-Functions-exercise2-1-4-1" assembly-id="RWT-Representations-Functions-exercise2-1-4-1" unique-id="RWT-Representations-Functions-exercise2-1-4-1">Input/Output Table</title>
+                <tabular top="major" left="medium" bottom="medium" right="medium" original-id="RWT-Representations-Functions-exercise2-1-4-2" assembly-id="RWT-Representations-Functions-exercise2-1-4-2" unique-id="RWT-Representations-Functions-exercise2-1-4-2">
+                    <row halign="center" original-id="RWT-Representations-Functions-exercise2-1-4-2-1" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-1" unique-id="RWT-Representations-Functions-exercise2-1-4-2-1">
+                        <cell original-id="RWT-Representations-Functions-exercise2-1-4-2-1-1" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-1-1" unique-id="RWT-Representations-Functions-exercise2-1-4-2-1-1">Input</cell>
+                        <cell original-id="RWT-Representations-Functions-exercise2-1-4-2-1-2" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-1-2" unique-id="RWT-Representations-Functions-exercise2-1-4-2-1-2">Output</cell>
+                    </row>
+                    <row halign="center" original-id="RWT-Representations-Functions-exercise2-1-4-2-2" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-2" unique-id="RWT-Representations-Functions-exercise2-1-4-2-2">
+                        <cell original-id="RWT-Representations-Functions-exercise2-1-4-2-2-1" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-2-1" unique-id="RWT-Representations-Functions-exercise2-1-4-2-2-1"><m original-id="RWT-Representations-Functions-exercise2-1-4-2-2-1-1" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-2-1-1" unique-id="RWT-Representations-Functions-exercise2-1-4-2-2-1-1">-2</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise2-1-4-2-2-2" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-2-2" unique-id="RWT-Representations-Functions-exercise2-1-4-2-2-2"><fillin characters="5" unique-id="RWT-Representations-Functions-exercise2-1-4-2-2-2-1"/></cell>
+                    </row>
+                    <row halign="center" original-id="RWT-Representations-Functions-exercise2-1-4-2-3" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-3" unique-id="RWT-Representations-Functions-exercise2-1-4-2-3">
+                        <cell original-id="RWT-Representations-Functions-exercise2-1-4-2-3-1" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-3-1" unique-id="RWT-Representations-Functions-exercise2-1-4-2-3-1"><fillin characters="5" unique-id="RWT-Representations-Functions-exercise2-1-4-2-3-1-1"/></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise2-1-4-2-3-2" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-3-2" unique-id="RWT-Representations-Functions-exercise2-1-4-2-3-2"><m original-id="RWT-Representations-Functions-exercise2-1-4-2-3-2-1" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-3-2-1" unique-id="RWT-Representations-Functions-exercise2-1-4-2-3-2-1">3</m></cell>
+                    </row>
+                    <row halign="center" original-id="RWT-Representations-Functions-exercise2-1-4-2-4" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-4" unique-id="RWT-Representations-Functions-exercise2-1-4-2-4">
+                        <cell original-id="RWT-Representations-Functions-exercise2-1-4-2-4-1" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-4-1" unique-id="RWT-Representations-Functions-exercise2-1-4-2-4-1"><m original-id="RWT-Representations-Functions-exercise2-1-4-2-4-1-1" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-4-1-1" unique-id="RWT-Representations-Functions-exercise2-1-4-2-4-1-1">2</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise2-1-4-2-4-2" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-4-2" unique-id="RWT-Representations-Functions-exercise2-1-4-2-4-2"><fillin characters="5" unique-id="RWT-Representations-Functions-exercise2-1-4-2-4-2-1"/></cell>
+                    </row>
+                </tabular>
+            </table>
+        </statement><solution original-id="RWT-Representations-Functions-exercise2-1" assembly-id="RWT-Representations-Functions-exercise2-1" unique-id="RWT-Representations-Functions-exercise2-2">
+        <p original-id="RWT-Representations-Functions-exercise2-1-1" assembly-id="RWT-Representations-Functions-exercise2-1-1" unique-id="RWT-Representations-Functions-exercise2-2-1">
+            Test text.
+        </p>
+        <figure xml:id="RWT-Representations-Functions-figure2" original-id="RWT-Representations-Functions-figure2" assembly-id="RWT-Representations-Functions-figure2" label="RWT-Representations-Functions-figure2" unique-id="RWT-Representations-Functions-figure2">
+            <image width="60%" original-id="RWT-Representations-Functions-figure2-1" assembly-id="RWT-Representations-Functions-figure2-1" unique-id="RWT-Representations-Functions-figure2-1">
+                <prefigure xmlns="https://prefigure.org" label="RWT-Representations-Functions-prefigure2" authored-label="">
+                    <description>Points on Graph</description>
+                    <diagram dimensions="(300,300)" margins="5">
+                    <coordinates bbox="(-5,-5,5,5)">
+                        <grid-axes xlabel="x" ylabel="y"/>
+                        <point p="(2,-1)" size="4"/>
+                        <point p="(-2,1)" size="4"/>
+                        <point p="(0,3)" size="4"/>
+                        <point p="(1,2)" size="4"/>
+                        <point p="(3,-4)" size="4"/>
+                    </coordinates>
+                    </diagram>
+                 </prefigure>
+            </image>
+        </figure>
+            <p original-id="RWT-Representations-Functions-exercise2-1-3" assembly-id="RWT-Representations-Functions-exercise2-1-3" unique-id="RWT-Representations-Functions-exercise2-2-3">
+                Complete the input/output table using the graph above.
+            </p>
+            <table original-id="RWT-Representations-Functions-exercise2-1-4" assembly-id="RWT-Representations-Functions-exercise2-1-4" unique-id="RWT-Representations-Functions-exercise2-2-4">
+                <title original-id="RWT-Representations-Functions-exercise2-1-4-1" assembly-id="RWT-Representations-Functions-exercise2-1-4-1" unique-id="RWT-Representations-Functions-exercise2-2-4-1">Input/Output Table</title>
+                <tabular top="major" left="medium" bottom="medium" right="medium" original-id="RWT-Representations-Functions-exercise2-1-4-2" assembly-id="RWT-Representations-Functions-exercise2-1-4-2" unique-id="RWT-Representations-Functions-exercise2-2-4-2">
+                    <row halign="center" original-id="RWT-Representations-Functions-exercise2-1-4-2-1" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-1" unique-id="RWT-Representations-Functions-exercise2-2-4-2-1">
+                        <cell original-id="RWT-Representations-Functions-exercise2-1-4-2-1-1" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-1-1" unique-id="RWT-Representations-Functions-exercise2-2-4-2-1-1">Input</cell>
+                        <cell original-id="RWT-Representations-Functions-exercise2-1-4-2-1-2" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-1-2" unique-id="RWT-Representations-Functions-exercise2-2-4-2-1-2">Output</cell>
+                    </row>
+                    <row halign="center" original-id="RWT-Representations-Functions-exercise2-1-4-2-2" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-2" unique-id="RWT-Representations-Functions-exercise2-2-4-2-2">
+                        <cell original-id="RWT-Representations-Functions-exercise2-1-4-2-2-1" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-2-1" unique-id="RWT-Representations-Functions-exercise2-2-4-2-2-1"><m original-id="RWT-Representations-Functions-exercise2-1-4-2-2-1-1" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-2-1-1" unique-id="RWT-Representations-Functions-exercise2-2-4-2-2-1-1">-2</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise2-1-4-2-2-2" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-2-2" unique-id="RWT-Representations-Functions-exercise2-2-4-2-2-2"><fillin characters="1" unique-id="RWT-Representations-Functions-exercise2-2-4-2-2-2-1"/><m unique-id="RWT-Representations-Functions-exercise2-2-4-2-2-2-2">1</m><fillin characters="1" unique-id="RWT-Representations-Functions-exercise2-2-4-2-2-2-3"/></cell>
+                    </row>
+                    <row halign="center" original-id="RWT-Representations-Functions-exercise2-1-4-2-3" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-3" unique-id="RWT-Representations-Functions-exercise2-2-4-2-3">
+                        <cell original-id="RWT-Representations-Functions-exercise2-1-4-2-3-1" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-3-1" unique-id="RWT-Representations-Functions-exercise2-2-4-2-3-1"><fillin characters="1" unique-id="RWT-Representations-Functions-exercise2-2-4-2-3-1-1"/><m unique-id="RWT-Representations-Functions-exercise2-2-4-2-3-1-2">0</m><fillin characters="1" unique-id="RWT-Representations-Functions-exercise2-2-4-2-3-1-3"/></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise2-1-4-2-3-2" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-3-2" unique-id="RWT-Representations-Functions-exercise2-2-4-2-3-2"><m original-id="RWT-Representations-Functions-exercise2-1-4-2-3-2-1" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-3-2-1" unique-id="RWT-Representations-Functions-exercise2-2-4-2-3-2-1">3</m></cell>
+                    </row>
+                    <row halign="center" original-id="RWT-Representations-Functions-exercise2-1-4-2-4" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-4" unique-id="RWT-Representations-Functions-exercise2-2-4-2-4">
+                        <cell original-id="RWT-Representations-Functions-exercise2-1-4-2-4-1" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-4-1" unique-id="RWT-Representations-Functions-exercise2-2-4-2-4-1"><m original-id="RWT-Representations-Functions-exercise2-1-4-2-4-1-1" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-4-1-1" unique-id="RWT-Representations-Functions-exercise2-2-4-2-4-1-1">2</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise2-1-4-2-4-2" assembly-id="RWT-Representations-Functions-exercise2-1-4-2-4-2" unique-id="RWT-Representations-Functions-exercise2-2-4-2-4-2"><fillin characters="1" unique-id="RWT-Representations-Functions-exercise2-2-4-2-4-2-1"/><m unique-id="RWT-Representations-Functions-exercise2-2-4-2-4-2-2">-1</m><fillin characters="1" unique-id="RWT-Representations-Functions-exercise2-2-4-2-4-2-3"/></cell>
+                    </row>
+                </tabular>
+            </table>
+        </solution></exercise>
+
+<!--
+      Question 3
+    -->
+
+<exercise exercise-customization="divisional" exercise-interactive="multiplechoice" label="RWT-Representations-Functions-exercise3" original-id="RWT-Representations-Functions-exercise3" assembly-id="RWT-Representations-Functions-exercise3" authored-label="" unique-id="RWT-Representations-Functions-exercise3"><statement unique-id="RWT-Representations-Functions-exercise3-1">
+        <p original-id="RWT-Representations-Functions-exercise3-1-1" assembly-id="RWT-Representations-Functions-exercise3-1-1" unique-id="RWT-Representations-Functions-exercise3-1-1">
+            Which graph represents the same function as table below?
+        </p>
+                <tabular top="major" left="medium" bottom="medium" right="medium" original-id="RWT-Representations-Functions-exercise3-1-2" assembly-id="RWT-Representations-Functions-exercise3-1-2" unique-id="RWT-Representations-Functions-exercise3-1-2">
+                    <row halign="center" original-id="RWT-Representations-Functions-exercise3-1-2-1" assembly-id="RWT-Representations-Functions-exercise3-1-2-1" unique-id="RWT-Representations-Functions-exercise3-1-2-1"> 
+                        <cell original-id="RWT-Representations-Functions-exercise3-1-2-1-1" assembly-id="RWT-Representations-Functions-exercise3-1-2-1-1" unique-id="RWT-Representations-Functions-exercise3-1-2-1-1">Input</cell>
+                        <cell original-id="RWT-Representations-Functions-exercise3-1-2-1-2" assembly-id="RWT-Representations-Functions-exercise3-1-2-1-2" unique-id="RWT-Representations-Functions-exercise3-1-2-1-2"><m original-id="RWT-Representations-Functions-exercise3-1-2-1-2-1" assembly-id="RWT-Representations-Functions-exercise3-1-2-1-2-1" unique-id="RWT-Representations-Functions-exercise3-1-2-1-2-1">-3</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise3-1-2-1-3" assembly-id="RWT-Representations-Functions-exercise3-1-2-1-3" unique-id="RWT-Representations-Functions-exercise3-1-2-1-3"><m original-id="RWT-Representations-Functions-exercise3-1-2-1-3-1" assembly-id="RWT-Representations-Functions-exercise3-1-2-1-3-1" unique-id="RWT-Representations-Functions-exercise3-1-2-1-3-1">-2</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise3-1-2-1-4" assembly-id="RWT-Representations-Functions-exercise3-1-2-1-4" unique-id="RWT-Representations-Functions-exercise3-1-2-1-4"><m original-id="RWT-Representations-Functions-exercise3-1-2-1-4-1" assembly-id="RWT-Representations-Functions-exercise3-1-2-1-4-1" unique-id="RWT-Representations-Functions-exercise3-1-2-1-4-1">-1</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise3-1-2-1-5" assembly-id="RWT-Representations-Functions-exercise3-1-2-1-5" unique-id="RWT-Representations-Functions-exercise3-1-2-1-5"><m original-id="RWT-Representations-Functions-exercise3-1-2-1-5-1" assembly-id="RWT-Representations-Functions-exercise3-1-2-1-5-1" unique-id="RWT-Representations-Functions-exercise3-1-2-1-5-1"> 0</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise3-1-2-1-6" assembly-id="RWT-Representations-Functions-exercise3-1-2-1-6" unique-id="RWT-Representations-Functions-exercise3-1-2-1-6"><m original-id="RWT-Representations-Functions-exercise3-1-2-1-6-1" assembly-id="RWT-Representations-Functions-exercise3-1-2-1-6-1" unique-id="RWT-Representations-Functions-exercise3-1-2-1-6-1"> 1</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise3-1-2-1-7" assembly-id="RWT-Representations-Functions-exercise3-1-2-1-7" unique-id="RWT-Representations-Functions-exercise3-1-2-1-7"><m original-id="RWT-Representations-Functions-exercise3-1-2-1-7-1" assembly-id="RWT-Representations-Functions-exercise3-1-2-1-7-1" unique-id="RWT-Representations-Functions-exercise3-1-2-1-7-1"> 2</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise3-1-2-1-8" assembly-id="RWT-Representations-Functions-exercise3-1-2-1-8" unique-id="RWT-Representations-Functions-exercise3-1-2-1-8"><m original-id="RWT-Representations-Functions-exercise3-1-2-1-8-1" assembly-id="RWT-Representations-Functions-exercise3-1-2-1-8-1" unique-id="RWT-Representations-Functions-exercise3-1-2-1-8-1"> 3</m></cell>
+                    </row>
+                    <row halign="center" original-id="RWT-Representations-Functions-exercise3-1-2-2" assembly-id="RWT-Representations-Functions-exercise3-1-2-2" unique-id="RWT-Representations-Functions-exercise3-1-2-2">
+                        <cell original-id="RWT-Representations-Functions-exercise3-1-2-2-1" assembly-id="RWT-Representations-Functions-exercise3-1-2-2-1" unique-id="RWT-Representations-Functions-exercise3-1-2-2-1">Output</cell>
+                        <cell original-id="RWT-Representations-Functions-exercise3-1-2-2-2" assembly-id="RWT-Representations-Functions-exercise3-1-2-2-2" unique-id="RWT-Representations-Functions-exercise3-1-2-2-2"><m original-id="RWT-Representations-Functions-exercise3-1-2-2-2-1" assembly-id="RWT-Representations-Functions-exercise3-1-2-2-2-1" unique-id="RWT-Representations-Functions-exercise3-1-2-2-2-1">9</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise3-1-2-2-3" assembly-id="RWT-Representations-Functions-exercise3-1-2-2-3" unique-id="RWT-Representations-Functions-exercise3-1-2-2-3"><m original-id="RWT-Representations-Functions-exercise3-1-2-2-3-1" assembly-id="RWT-Representations-Functions-exercise3-1-2-2-3-1" unique-id="RWT-Representations-Functions-exercise3-1-2-2-3-1">4</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise3-1-2-2-4" assembly-id="RWT-Representations-Functions-exercise3-1-2-2-4" unique-id="RWT-Representations-Functions-exercise3-1-2-2-4"><m original-id="RWT-Representations-Functions-exercise3-1-2-2-4-1" assembly-id="RWT-Representations-Functions-exercise3-1-2-2-4-1" unique-id="RWT-Representations-Functions-exercise3-1-2-2-4-1">1</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise3-1-2-2-5" assembly-id="RWT-Representations-Functions-exercise3-1-2-2-5" unique-id="RWT-Representations-Functions-exercise3-1-2-2-5"><m original-id="RWT-Representations-Functions-exercise3-1-2-2-5-1" assembly-id="RWT-Representations-Functions-exercise3-1-2-2-5-1" unique-id="RWT-Representations-Functions-exercise3-1-2-2-5-1">0</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise3-1-2-2-6" assembly-id="RWT-Representations-Functions-exercise3-1-2-2-6" unique-id="RWT-Representations-Functions-exercise3-1-2-2-6"><m original-id="RWT-Representations-Functions-exercise3-1-2-2-6-1" assembly-id="RWT-Representations-Functions-exercise3-1-2-2-6-1" unique-id="RWT-Representations-Functions-exercise3-1-2-2-6-1">1</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise3-1-2-2-7" assembly-id="RWT-Representations-Functions-exercise3-1-2-2-7" unique-id="RWT-Representations-Functions-exercise3-1-2-2-7"><m original-id="RWT-Representations-Functions-exercise3-1-2-2-7-1" assembly-id="RWT-Representations-Functions-exercise3-1-2-2-7-1" unique-id="RWT-Representations-Functions-exercise3-1-2-2-7-1">4</m></cell>
+                        <cell original-id="RWT-Representations-Functions-exercise3-1-2-2-8" assembly-id="RWT-Representations-Functions-exercise3-1-2-2-8" unique-id="RWT-Representations-Functions-exercise3-1-2-2-8"><m original-id="RWT-Representations-Functions-exercise3-1-2-2-8-1" assembly-id="RWT-Representations-Functions-exercise3-1-2-2-8-1" unique-id="RWT-Representations-Functions-exercise3-1-2-2-8-1">9</m></cell>
+                    </row>
+                </tabular>
+    <p unique-id="RWT-Representations-Functions-exercise3-1-3"><ol ordered-list-level="1" format-code="A" marker-prefix="" marker-suffix="." marker="A." unique-id="RWT-Representations-Functions-exercise3-1-3-1"><li unique-id="RWT-Representations-Functions-exercise3-1-3-1-1">
+        <image width="60%" original-id="RWT-Representations-Functions-exercise3-2-1-1-1" assembly-id="RWT-Representations-Functions-exercise3-2-1-1-1" unique-id="RWT-Representations-Functions-exercise3-1-3-1-1-1">
+        <prefigure xmlns="https://prefigure.org" label="RWT-Representations-of-Functions-prefigure3" authored-label="">
+            <diagram dimensions="(300,300)" margins="5">
+  <coordinates bbox="(-1,-1,10,10)">
+    <grid-axes xlabel="x" ylabel="y"/>
+    <graph function="f"/>
+    <tangent-line function="f" point="a"/>
+    <point p="(3,9)"/>
+    <point p="(2,4)"/>
+    <point p="(1,1)"/>
+    <point p="(0,0)"/>
+  </coordinates>
+</diagram>
+        </prefigure> 
+        </image>
+  </li><li unique-id="RWT-Representations-Functions-exercise3-1-3-1-2">
+                <image width="60%" original-id="RWT-Representations-Functions-exercise3-2-2-1-1" assembly-id="RWT-Representations-Functions-exercise3-2-2-1-1" unique-id="RWT-Representations-Functions-exercise3-1-3-1-2-1">
+                <prefigure xmlns="https://prefigure.org" label="RWT-Representations-of-Functions-prefigure4" authored-label=""> 
+            <diagram dimensions="(300,300)" margins="5">
+                <coordinates bbox="(-1,-4,10,4)">
+                <grid-axes xlabel="x" ylabel="y"/>
+                <graph function="f"/>
+                <tangent-line function="f" point="a"/>
+                <point p="(9,-3)"/>
+                <point p="(9,3)"/>
+                <point p="(4,-2)"/>
+                <point p="(4,2)"/>
+                <point p="(1,1)"/>
+                <point p="(1,-1)"/>
+                <point p="(0,0)"/>
+                </coordinates>
+            </diagram>
+            </prefigure> 
+            </image>
+  </li><li unique-id="RWT-Representations-Functions-exercise3-1-3-1-3">
+        <image width="60%" original-id="RWT-Representations-Functions-exercise3-2-3-1-1" assembly-id="RWT-Representations-Functions-exercise3-2-3-1-1" unique-id="RWT-Representations-Functions-exercise3-1-3-1-3-1">
+      <prefigure xmlns="https://prefigure.org" label="RWT-Representations-of-Functions-prefigure5" authored-label="">
+        <diagram dimensions="(300,300)" margins="5">
+          <coordinates bbox="(-5,-1,5,10)">
+            <grid-axes xlabel="x" ylabel="y"/>
+            <point p="(-3,9)"/>
+            <point p="(-2,4)"/>
+            <point p="(-1,1)"/>
+            <point p="(0,0)"/>
+            <point p="(1,1)"/>
+            <point p="(2,4)"/>
+            <point p="(3,9)"/>
+          </coordinates>
+        </diagram>
+    </prefigure> 
+    </image>
+    </li><li unique-id="RWT-Representations-Functions-exercise3-1-3-1-4">
+        <image width="60%" original-id="RWT-Representations-Functions-exercise3-2-4-1-1" assembly-id="RWT-Representations-Functions-exercise3-2-4-1-1" unique-id="RWT-Representations-Functions-exercise3-1-3-1-4-1">
+            <prefigure xmlns="https://prefigure.org" label="RWT-Representations-of-Functions-prefigure6" authored-label="">
+            <diagram dimensions="(300,300)" margins="5">
+               <coordinates bbox="(-1,-1,10,4)">
+            <grid-axes xlabel="x" ylabel="y"/>
+            <graph function="f"/>
+            <tangent-line function="f" point="a"/>
+            <point p="(9,3)"/>
+            <point p="(4,2)"/>
+            <point p="(1,1)"/>
+            <point p="(0,0)"/>
+        </coordinates>
+        </diagram>
+                </prefigure> 
+                </image>
+  </li></ol></p></statement><answer unique-id="RWT-Representations-Functions-exercise3-2"><p unique-id="RWT-Representations-Functions-exercise3-2-1">C.</p></answer><solution unique-id="RWT-Representations-Functions-exercise3-3"><p unique-id="RWT-Representations-Functions-exercise3-3-1"><ol ordered-list-level="1" format-code="A" marker-prefix="" marker-suffix="." marker="A." unique-id="RWT-Representations-Functions-exercise3-3-1-1"><li unique-id="RWT-Representations-Functions-exercise3-3-1-1-1"><title unique-id="RWT-Representations-Functions-exercise3-3-1-1-1-1">Incorrect</title>
+    <p original-id="RWT-Representations-Functions-exercise3-2-1-2-1" assembly-id="RWT-Representations-Functions-exercise3-2-1-2-1" unique-id="RWT-Representations-Functions-exercise3-3-1-1-1-2">
+      What about the negative input values?
+      <q original-id="RWT-Representations-Functions-exercise3-2-1-2-1-1" assembly-id="RWT-Representations-Functions-exercise3-2-1-2-1-1" unique-id="RWT-Representations-Functions-exercise3-3-1-1-1-2-1">go!</q>.
+    </p>
+  </li><li unique-id="RWT-Representations-Functions-exercise3-3-1-1-2"><title unique-id="RWT-Representations-Functions-exercise3-3-1-1-2-1">Incorrect</title>
+    <p original-id="RWT-Representations-Functions-exercise3-2-2-2-1" assembly-id="RWT-Representations-Functions-exercise3-2-2-2-1" unique-id="RWT-Representations-Functions-exercise3-3-1-1-2-2">
+      What about the negative input values?
+    </p>
+  </li><li unique-id="RWT-Representations-Functions-exercise3-3-1-1-3"><title unique-id="RWT-Representations-Functions-exercise3-3-1-1-3-1">Correct</title></li><li unique-id="RWT-Representations-Functions-exercise3-3-1-1-4"><title unique-id="RWT-Representations-Functions-exercise3-3-1-1-4-1">Incorrect</title>
+    <p original-id="RWT-Representations-Functions-exercise3-2-4-2-1" assembly-id="RWT-Representations-Functions-exercise3-2-4-2-1" unique-id="RWT-Representations-Functions-exercise3-3-1-1-4-2">
+      What about the negative input values?
+    </p>
+  </li></ol></p></solution></exercise>
+
+<!--Questoin 4
+-->
+
+<exercise exercise-customization="divisional" exercise-interactive="static" original-id="EvaluatingFunctions-4-4" assembly-id="EvaluatingFunctions-4-4" unique-id="EvaluatingFunctions-4-4">
+    <statement original-id="EvaluatingFunctions-4-4-1" assembly-id="EvaluatingFunctions-4-4-1" unique-id="EvaluatingFunctions-4-4-1">
+        <p original-id="EvaluatingFunctions-4-4-1-1" assembly-id="EvaluatingFunctions-4-4-1-1" unique-id="EvaluatingFunctions-4-4-1-1">
+            Choose the input/output table that corresponds to the graph below.
+        </p>
+
+        <image width="60%" original-id="EvaluatingFunctions-4-4-1-2" assembly-id="EvaluatingFunctions-4-4-1-2" unique-id="EvaluatingFunctions-4-4-1-2">
+            <prefigure xmlns="https://prefigure.org" label="RWT-Representations-of-Functions-prefigure7" authored-label="">
+                <diagram dimensions="(300,300)" margins="5">
+                    <coordinates bbox="(-4,-5,2,3)">
+                        <grid-axes xlabel="x" ylabel="y"/>
+                        <point p="(-3,-1)"/>
+                        <point p="(-2,1)"/>
+                        <point p="(-1,-3)"/>
+                        <point p="(0,-2)"/>
+                        <point p="(1,0)"/>
+                    </coordinates>
+                    </diagram>
+            </prefigure>
+        </image>
+    </statement>
+</exercise>
+</exercises>
+
+
+<!---
+<interactive label="justatest" platform="doenetml" width="100%" aspect="2:8">
+  <slate surface="doenetml">
+    <xi:include parse="text" href="doenet/first-test-graph.doenetml"/> 
+  </slate>
+</interactive>
+!-->
+
+<!-- <exercise xml:id="multiple-choice-one" label="multiple-choice-not-randomized">
+  <title>Multiple-Choice, Not Randomized, One Answer</title>
+  <idx>stop signs</idx>
+  <statement>
+    <p>
+      What color is a stop sign?
+    </p>
+  </statement>
+  <choices>
+    <sidebyside>
+  <choice>
+  <statement>
+    <p>
+      Green
+    </p>
+  </statement>
+  </choice>
+  <choice correct="yes">
+  <statement>
+    <p>
+      Red
+    </p>
+  </statement>
+  </choice>
+  </sidebyside>
+  <sidebyside>
+  <choice>
+  <statement>
+    <p>
+      White
+    </p>
+  </statement>
+  </choice>
+  <choice>
+  <statement>
+    <p>
+      Blue
+    </p>
+  </statement>
+  </choice>
+  </sidebyside>
+  </choices>
+</exercise> -->
+
+</section>
+
+</chapter>
+    <chapter struct="" serial="2" level="1" xml:id="Linear" xml:base="2LinearFunctions/Linear.ptx" original-id="Linear" assembly-id="Linear" label="Linear" unique-id="Linear">
+  <title original-id="Linear-1" assembly-id="Linear-1" unique-id="Linear-1">LO2: Linear Functions</title>
+
+  <p original-id="Linear-2" assembly-id="Linear-2" unique-id="Linear-2">Content of the new chapter.</p>
+
+</chapter>
+    <chapter struct="" serial="3" level="1" xml:id="LinearFunctions" xml:base="3CompTrans/CompositionTransformations.ptx" original-id="LinearFunctions" assembly-id="LinearFunctions" label="LinearFunctions" unique-id="LinearFunctions">
+  <title original-id="LinearFunctions-1" assembly-id="LinearFunctions-1" unique-id="LinearFunctions-1">LO3: Composition &amp; Transformation</title>
+
+  <p original-id="LinearFunctions-2" assembly-id="LinearFunctions-2" unique-id="LinearFunctions-2">Content of the new chapter.</p>
+
+</chapter>
+    <chapter struct="" serial="4" level="1" xml:id="Exp" xml:base="4ExpFunctions/Exponential.ptx" original-id="Exp" assembly-id="Exp" label="Exp" unique-id="Exp">
+  <title original-id="Exp-1" assembly-id="Exp-1" unique-id="Exp-1">LO4: Exponential Functions</title>
+
+  <p original-id="Exp-2" assembly-id="Exp-2" unique-id="Exp-2">Content of the new chapter.</p>
+
+</chapter> 
+    <chapter struct="" serial="5" level="1" xml:id="InvLogs" xml:base="5InvLogs/InversesLogarithms.ptx" original-id="InvLogs" assembly-id="InvLogs" label="InvLogs" unique-id="InvLogs">
+  <title original-id="InvLogs-1" assembly-id="InvLogs-1" unique-id="InvLogs-1">LO5: Inverses &amp; Logarithms</title>
+
+  <p original-id="InvLogs-2" assembly-id="InvLogs-2" unique-id="InvLogs-2">Content of the new chapter.</p>
+
+</chapter>
+    <chapter struct="" serial="6" level="1" xml:id="Quad" xml:base="6QuadFunctions/Quadratics.ptx" original-id="Quad" assembly-id="Quad" label="Quad" unique-id="Quad">
+  <title original-id="Quad-1" assembly-id="Quad-1" unique-id="Quad-1">LO6: Quadratic Functions</title>
+
+  <p original-id="Quad-2" assembly-id="Quad-2" unique-id="Quad-2">Content of the new chapter.</p>
+
+</chapter>
+    <chapter struct="" serial="7" level="1" xml:id="HO" xml:base="7HOPoly/HigherOrder.ptx" original-id="HO" assembly-id="HO" label="HO" unique-id="HO">
+  <title original-id="HO-1" assembly-id="HO-1" unique-id="HO-1">LO7: Higher Order Polynomials</title>
+
+  <p original-id="HO-2" assembly-id="HO-2" unique-id="HO-2">Content of the new chapter.</p>
+
+</chapter>
+    <chapter struct="" serial="8" level="1" xml:id="Rational" xml:base="8Rational/Rational.ptx" original-id="Rational" assembly-id="Rational" label="Rational" unique-id="Rational">
+  <title original-id="Rational-1" assembly-id="Rational-1" unique-id="Rational-1">LO8: Rational Functions</title>
+<introduction original-id="Rational-2" assembly-id="Rational-2" unique-id="Rational-2">
+  <p original-id="Rational-2-1" assembly-id="Rational-2-1" unique-id="Rational-2-1">
+    In LO 7, we learned about polynomial functions. More specifically, we learned how to find and describe the end behavior of polynomial functions, find <m original-id="Rational-2-1-1" assembly-id="Rational-2-1-1" unique-id="Rational-2-1-1">x</m>-intercepts and <m original-id="Rational-2-1-2" assembly-id="Rational-2-1-2" unique-id="Rational-2-1-2">y</m>-intercepts, and determine their behavior (bouncing off the <m original-id="Rational-2-1-3" assembly-id="Rational-2-1-3" unique-id="Rational-2-1-3">x</m>-axis or crossing through the <m original-id="Rational-2-1-4" assembly-id="Rational-2-1-4" unique-id="Rational-2-1-4">x</m>-axis). In LO 8, we will learn about what happens when we divide one polynomial function by another.
+  </p>
+
+
+  <p original-id="Rational-2-2" assembly-id="Rational-2-2" unique-id="Rational-2-2">
+    An important question we should ask ourselves is this: Why are we focusing on division but ignoring addition, subtraction, and multiplication? Let's look at some examples, using <m original-id="Rational-2-2-1" assembly-id="Rational-2-2-1" unique-id="Rational-2-2-1">f(x)=x^2+3x</m> and <m original-id="Rational-2-2-2" assembly-id="Rational-2-2-2" unique-id="Rational-2-2-2">g(x)=x^2-1</m>.
+  </p>
+
+  <p original-id="Rational-2-3" assembly-id="Rational-2-3" unique-id="Rational-2-3">
+    If we add these two functions, we get...
+
+    <md original-id="Rational-2-3-1" assembly-id="Rational-2-3-1" unique-id="Rational-2-3-1">
+      <mrow original-id="Rational-2-3-1-1" assembly-id="Rational-2-3-1-1" unique-id="Rational-2-3-1-1"> f(x)+g(x) \amp = (x^2+3x)+(x^2-1) </mrow>
+      <mrow original-id="Rational-2-3-1-2" assembly-id="Rational-2-3-1-2" unique-id="Rational-2-3-1-2"> </mrow>
+      <mrow original-id="Rational-2-3-1-3" assembly-id="Rational-2-3-1-3" unique-id="Rational-2-3-1-3"> \amp =x^2+3x+x^2-1 </mrow>
+      <mrow original-id="Rational-2-3-1-4" assembly-id="Rational-2-3-1-4" unique-id="Rational-2-3-1-4"> </mrow>
+      <mrow original-id="Rational-2-3-1-5" assembly-id="Rational-2-3-1-5" unique-id="Rational-2-3-1-5"> \amp =2x^2+3x-1 </mrow>
+    </md>
+
+    This shows that the result of adding two polynomial functions is just another polynomial function, and we already know how to handle polynomial functions.
+
+  </p>
+    
+    
+    <p original-id="Rational-2-4" assembly-id="Rational-2-4" unique-id="Rational-2-4">
+      The same thing happens when we subtract polynomial functions...
+
+      <md original-id="Rational-2-4-1" assembly-id="Rational-2-4-1" unique-id="Rational-2-4-1">
+        <mrow original-id="Rational-2-4-1-1" assembly-id="Rational-2-4-1-1" unique-id="Rational-2-4-1-1"> f(x)-g(x) \amp =(x^2+3x)-(x^2-1) </mrow>
+        <mrow original-id="Rational-2-4-1-2" assembly-id="Rational-2-4-1-2" unique-id="Rational-2-4-1-2"> </mrow>
+        <mrow original-id="Rational-2-4-1-3" assembly-id="Rational-2-4-1-3" unique-id="Rational-2-4-1-3"> \amp = x^2+3x-x^2+1 </mrow>
+        <mrow original-id="Rational-2-4-1-4" assembly-id="Rational-2-4-1-4" unique-id="Rational-2-4-1-4"> </mrow>
+        <mrow original-id="Rational-2-4-1-5" assembly-id="Rational-2-4-1-5" unique-id="Rational-2-4-1-5"> \amp =3x+1 </mrow>
+      </md>
+
+    </p>
+  
+    <p original-id="Rational-2-5" assembly-id="Rational-2-5" unique-id="Rational-2-5">
+      ... or multiply polynomial functions:
+    </p>
+
+
+    <p original-id="Rational-2-6" assembly-id="Rational-2-6" unique-id="Rational-2-6">
+
+      <md original-id="Rational-2-6-1" assembly-id="Rational-2-6-1" unique-id="Rational-2-6-1">
+        <mrow original-id="Rational-2-6-1-1" assembly-id="Rational-2-6-1-1" unique-id="Rational-2-6-1-1"> f(x) \cdot g(x) \amp = (x^2+3x)(x^2-1) </mrow>
+        <mrow original-id="Rational-2-6-1-2" assembly-id="Rational-2-6-1-2" unique-id="Rational-2-6-1-2"> </mrow>
+        <mrow original-id="Rational-2-6-1-3" assembly-id="Rational-2-6-1-3" unique-id="Rational-2-6-1-3"> \amp = x^4+3x^3-x^2-3x </mrow>
+      </md>
+      
+      When we add, subtract, or multiply two polynomial functions together, what we get as a result is just another polynomial function, so we don't need any new tools to handle these.
+      
+    </p>
+    
+
+    <p original-id="Rational-2-7" assembly-id="Rational-2-7" unique-id="Rational-2-7">
+      But let's look at what happens when we divide <m original-id="Rational-2-7-1" assembly-id="Rational-2-7-1" unique-id="Rational-2-7-1">f(x)</m> by <m original-id="Rational-2-7-2" assembly-id="Rational-2-7-2" unique-id="Rational-2-7-2">g(x)</m>:
+
+      <me original-id="Rational-2-7-3" assembly-id="Rational-2-7-3" unique-id="Rational-2-7-3">
+        \frac{f(x)}{g(x)}=\frac{x^2+3x}{x^2-1}
+      </me>
+
+      We really haven't encountered a function that looks like this before, so we'll need to investigate this kind of function and figure out how to handle it.
+      
+    </p>
+    
+
+  <p original-id="Rational-2-8" assembly-id="Rational-2-8" unique-id="Rational-2-8">
+    The name <em original-id="Rational-2-8-1" assembly-id="Rational-2-8-1" unique-id="Rational-2-8-1">rational functions</em> is based on the root word <em original-id="Rational-2-8-2" assembly-id="Rational-2-8-2" unique-id="Rational-2-8-2">ratio</em>, which means <em original-id="Rational-2-8-3" assembly-id="Rational-2-8-3" unique-id="Rational-2-8-3">fraction</em>.
+  </p>
+  
+  <p original-id="Rational-2-9" assembly-id="Rational-2-9" unique-id="Rational-2-9">
+    Rational functions are a special type of fraction in which both the numerator and denominator of the fraction are <em original-id="Rational-2-9-1" assembly-id="Rational-2-9-1" unique-id="Rational-2-9-1">polynomials</em>.
+  </p>
+
+  <definition xml:id="def-rational-function" original-id="def-rational-function" assembly-id="def-rational-function" label="def-rational-function" unique-id="def-rational-function">
+    <statement original-id="def-rational-function-1" assembly-id="def-rational-function-1" unique-id="def-rational-function-1">
+      <p original-id="def-rational-function-1-1" assembly-id="def-rational-function-1-1" unique-id="def-rational-function-1-1">
+        A rational function is a function <m original-id="def-rational-function-1-1-1" assembly-id="def-rational-function-1-1-1" unique-id="def-rational-function-1-1-1">f(x)</m> that can be written in the form 
+
+        <me original-id="def-rational-function-1-1-2" assembly-id="def-rational-function-1-1-2" unique-id="def-rational-function-1-1-2">
+          f(x)=\frac{M(x)}{N(x)}
+        </me>
+        
+        where <m original-id="def-rational-function-1-1-3" assembly-id="def-rational-function-1-1-3" unique-id="def-rational-function-1-1-3">M(x)</m> and <m original-id="def-rational-function-1-1-4" assembly-id="def-rational-function-1-1-4" unique-id="def-rational-function-1-1-4">N(x)</m> are both polynomial functions and <m original-id="def-rational-function-1-1-5" assembly-id="def-rational-function-1-1-5" unique-id="def-rational-function-1-1-5">N(x) \neq 0</m>.
+      </p>
+
+
+    </statement>
+  </definition>
+
+  <p original-id="Rational-2-11" assembly-id="Rational-2-11" unique-id="Rational-2-11">
+  In LO 8, we will learn how to determine the long-run and short-run behavior of rational functions, we will learn how to sketch graphs from rational function equations, and we will learn how to write rational function equations from graphs.
+  </p>
+</introduction>
+    
+  <section struct="8" serial="1" level="2" xml:id="sec-long-run-behavior-of-rationals" original-id="sec-long-run-behavior-of-rationals" assembly-id="sec-long-run-behavior-of-rationals" label="sec-long-run-behavior-of-rationals" unique-id="sec-long-run-behavior-of-rationals">
+  <title original-id="sec-long-run-behavior-of-rationals-1" assembly-id="sec-long-run-behavior-of-rationals-1" unique-id="sec-long-run-behavior-of-rationals-1">Long-Run Behavior of Rational Functions</title>
+
+  <p original-id="sec-long-run-behavior-of-rationals-2" assembly-id="sec-long-run-behavior-of-rationals-2" unique-id="sec-long-run-behavior-of-rationals-2">
+    In this section, we will concern ourselves with the <em original-id="sec-long-run-behavior-of-rationals-2-1" assembly-id="sec-long-run-behavior-of-rationals-2-1" unique-id="sec-long-run-behavior-of-rationals-2-1">long-run behavior</em> of rational functions.
+
+  </p>
+
+  <p original-id="sec-long-run-behavior-of-rationals-3" assembly-id="sec-long-run-behavior-of-rationals-3" unique-id="sec-long-run-behavior-of-rationals-3">
+    Consider the graph of the function
+    
+    <me original-id="sec-long-run-behavior-of-rationals-3-1" assembly-id="sec-long-run-behavior-of-rationals-3-1" unique-id="sec-long-run-behavior-of-rationals-3-1">
+        f(x)=\frac{2x(x+1)}{(x+2)(x-1)}
+    </me>
+    
+  </p>
+
+<figure original-id="sec-long-run-behavior-of-rationals-4" assembly-id="sec-long-run-behavior-of-rationals-4" unique-id="sec-long-run-behavior-of-rationals-4">
+    <image width="60%" original-id="sec-long-run-behavior-of-rationals-4-1" assembly-id="sec-long-run-behavior-of-rationals-4-1" unique-id="sec-long-run-behavior-of-rationals-4-1">
+        <prefigure xmlns="https://prefigure.org" label="long-run-rational-function" authored-label="">
+            <diagram dimensions="(300,300)" margins="5">
+            <definition>f(x)=(2*x*(x+1))/((x+2)*(x-1))</definition>
+                <coordinates bbox="(-6,-4,6,4)">
+                    <grid-axes xlabel="x" ylabel="y"/>
+                    <graph function="f" domain="(-7.5,-2.0001)"/>
+                    <graph function="f" domain="(-1.999,0.999)"/>
+                    <graph function="f" domain="(1.0001,7.2)"/>
+                </coordinates>
+            </diagram>
+        </prefigure>
+    </image>
+</figure>
+
+<p original-id="sec-long-run-behavior-of-rationals-5" assembly-id="sec-long-run-behavior-of-rationals-5" unique-id="sec-long-run-behavior-of-rationals-5">
+    Just like with polynomial functions, we can imagine zooming way out on the graph, and we want a way to describe what the far left and far right ends of the graph are doing.
+</p>
+
+<figure original-id="sec-long-run-behavior-of-rationals-6" assembly-id="sec-long-run-behavior-of-rationals-6" unique-id="sec-long-run-behavior-of-rationals-6">
+    <image width="60%" original-id="sec-long-run-behavior-of-rationals-6-1" assembly-id="sec-long-run-behavior-of-rationals-6-1" unique-id="sec-long-run-behavior-of-rationals-6-1">
+        <prefigure xmlns="https://prefigure.org" label="long-run-rational-function-zoom-in" authored-label="">
+            <diagram dimensions="(300,300)" margins="5">
+            <definition>f(x)=(2*x*(x+1))/((x+2)*(x-1))</definition>
+                <coordinates bbox="(-100,-5,100,5)">
+                    <grid-axes xlabel="x" ylabel="y"/>
+                    <graph function="f" domain="(-100,-2.0001)"/>
+                    <graph function="f" domain="(-1.999,0.999)"/>
+                    <graph function="f" domain="(1.0001,100)"/>
+                </coordinates>
+            </diagram>
+        </prefigure>
+    </image>
+</figure>
+
+<p original-id="sec-long-run-behavior-of-rationals-7" assembly-id="sec-long-run-behavior-of-rationals-7" unique-id="sec-long-run-behavior-of-rationals-7">
+    This shows us that, when our <m original-id="sec-long-run-behavior-of-rationals-7-1" assembly-id="sec-long-run-behavior-of-rationals-7-1" unique-id="sec-long-run-behavior-of-rationals-7-1">x</m>-values become very large and negative, our <m original-id="sec-long-run-behavior-of-rationals-7-2" assembly-id="sec-long-run-behavior-of-rationals-7-2" unique-id="sec-long-run-behavior-of-rationals-7-2">y</m>-values become very close to <m original-id="sec-long-run-behavior-of-rationals-7-3" assembly-id="sec-long-run-behavior-of-rationals-7-3" unique-id="sec-long-run-behavior-of-rationals-7-3">2</m>, and when our <m original-id="sec-long-run-behavior-of-rationals-7-4" assembly-id="sec-long-run-behavior-of-rationals-7-4" unique-id="sec-long-run-behavior-of-rationals-7-4">x</m>-values become very large and positive, our <m original-id="sec-long-run-behavior-of-rationals-7-5" assembly-id="sec-long-run-behavior-of-rationals-7-5" unique-id="sec-long-run-behavior-of-rationals-7-5">y</m>-values become very close to <m original-id="sec-long-run-behavior-of-rationals-7-6" assembly-id="sec-long-run-behavior-of-rationals-7-6" unique-id="sec-long-run-behavior-of-rationals-7-6">2</m> as well.
+</p>
+
+<p original-id="sec-long-run-behavior-of-rationals-8" assembly-id="sec-long-run-behavior-of-rationals-8" unique-id="sec-long-run-behavior-of-rationals-8">
+    Using our symbolic end behavior notation, we can write this as
+
+    <me original-id="sec-long-run-behavior-of-rationals-8-1" assembly-id="sec-long-run-behavior-of-rationals-8-1" unique-id="sec-long-run-behavior-of-rationals-8-1">
+        \text{As } x \rightarrow -\infty, f(x) \rightarrow 2
+    </me>
+
+    and
+
+    <me original-id="sec-long-run-behavior-of-rationals-8-2" assembly-id="sec-long-run-behavior-of-rationals-8-2" unique-id="sec-long-run-behavior-of-rationals-8-2">
+        \text{As } x \rightarrow \infty, f(x) \rightarrow 2.
+    </me>
+    
+</p>
+
+<p original-id="sec-long-run-behavior-of-rationals-9" assembly-id="sec-long-run-behavior-of-rationals-9" unique-id="sec-long-run-behavior-of-rationals-9">
+    But why does this happen? Let's revisit our function's equation:
+
+    <me original-id="sec-long-run-behavior-of-rationals-9-1" assembly-id="sec-long-run-behavior-of-rationals-9-1" unique-id="sec-long-run-behavior-of-rationals-9-1">
+        f(x)=\frac{2x(x+1)}{(x+2)(x-1)}
+    </me>
+
+    If we multiply out the numerator and the denominator of the function, we can rewrite the function as
+
+    <me original-id="sec-long-run-behavior-of-rationals-9-2" assembly-id="sec-long-run-behavior-of-rationals-9-2" unique-id="sec-long-run-behavior-of-rationals-9-2">
+        f(x)=\frac{2x^2+2x}{x^2+x-2}
+    </me>
+    
+</p>
+
+</section>
+
+  <section struct="8" serial="2" level="2" xml:id="sec-short-run-behavior-of-rationals" original-id="sec-short-run-behavior-of-rationals" assembly-id="sec-short-run-behavior-of-rationals" label="sec-short-run-behavior-of-rationals" unique-id="sec-short-run-behavior-of-rationals">
+  <title original-id="sec-short-run-behavior-of-rationals-1" assembly-id="sec-short-run-behavior-of-rationals-1" unique-id="sec-short-run-behavior-of-rationals-1">Short-Run Behavior of Rational Functions</title>
+
+  <p original-id="sec-short-run-behavior-of-rationals-2" assembly-id="sec-short-run-behavior-of-rationals-2" unique-id="sec-short-run-behavior-of-rationals-2">Content of the new chapter.</p>
+
+</section>
+
+  <section struct="8" serial="3" level="2" xml:id="sec-sketching-graphs-of-rationals" original-id="sec-sketching-graphs-of-rationals" assembly-id="sec-sketching-graphs-of-rationals" label="sec-sketching-graphs-of-rationals" unique-id="sec-sketching-graphs-of-rationals">
+  <title original-id="sec-sketching-graphs-of-rationals-1" assembly-id="sec-sketching-graphs-of-rationals-1" unique-id="sec-sketching-graphs-of-rationals-1">Sketching Graphs of Rational Functions</title>
+
+  <p original-id="sec-sketching-graphs-of-rationals-2" assembly-id="sec-sketching-graphs-of-rationals-2" unique-id="sec-sketching-graphs-of-rationals-2">Content of the new chapter.</p>
+
+</section>
+
+  <section struct="8" serial="4" level="2" xml:id="sec-writing-equations-of-rationals" original-id="sec-writing-equations-of-rationals" assembly-id="sec-writing-equations-of-rationals" label="sec-writing-equations-of-rationals" unique-id="sec-writing-equations-of-rationals">
+  <title original-id="sec-writing-equations-of-rationals-1" assembly-id="sec-writing-equations-of-rationals-1" unique-id="sec-writing-equations-of-rationals-1">Writing Equations of Rational Functions</title>
+
+  <p original-id="sec-writing-equations-of-rationals-2" assembly-id="sec-writing-equations-of-rationals-2" unique-id="sec-writing-equations-of-rationals-2">Content of the new chapter.</p>
+
+</section>
+
+
+</chapter>
+
+    
+    <!-- Include backmatter -->
+    <backmatter level="0" xml:id="backmatter" original-id="backmatter" assembly-id="backmatter" label="backmatter" unique-id="backmatter">
+  <title original-id="backmatter-1" assembly-id="backmatter-1" unique-id="backmatter-1">Backmatter</title>
+
+  <!-- <solutions divisional="hint"> <title>Selected Hints</title> </solutions> -->
+
+  <!-- <solutions divisional="solution"> <title>Selected Solutions</title> </solutions> -->
+
+  <!-- <appendix> <title>List of Symbols</title> <notation-list/> </appendix> -->
+
+  <!-- <index> <title>Index</title> <index-list/> </index> -->
+
+  <colophon original-id="backmatter-2" assembly-id="backmatter-2" unique-id="backmatter-2">
+    <p original-id="backmatter-2-1" assembly-id="backmatter-2-1" unique-id="backmatter-2-1"> This book was authored in <pretext original-id="backmatter-2-1-1" assembly-id="backmatter-2-1-1" unique-id="backmatter-2-1-1"/>. </p>
+  </colophon>
+</backmatter>
+
+  </book>
+</pretext>
