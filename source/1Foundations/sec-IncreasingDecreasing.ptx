@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="IncreasingDecreasing" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Increasing and Decreasing</title>
+    <p>
+        In this section, we will look at graphs to determine where a function is increasing or decreasing. We will also learn how to identify the intervals where a function is increasing or decreasing.
+    </p>
+
+
+      <!--
+      Start of RWT Questions
+    -->
+
+  <xi:include href="exercises/RWT-4-Increasing-Decreasing.ptx" />
+
+  </section>

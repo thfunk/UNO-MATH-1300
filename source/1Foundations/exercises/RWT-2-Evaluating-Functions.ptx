@@ -1,5 +1,173 @@
 <exercises label="RWT-Evaluating-Functions">
+    <title>Read-Watch-Try</title>
     <introduction>
-        <p>This is for RWT 1.1 Evaluating of Functions.</p>
         <video label="RWT1.2-Evaluating-Functions" source="RWT1.2-Evaluating-Functions.mp4"/>
     </introduction>
+
+<!--
+    Question 1
+-->
+
+    <exercise label="RWT-Evaluating-Functions-exercise1">
+        <statement>
+            <p>
+            In the function notation <m>f(<eval obj="x1" />)=<eval obj="y1" /></m>, the input is <fillin name="response1" mode="math" ansobj="input" />, the output is <fillin name="response2" mode="math" ansobj="output" />.
+            </p>
+        </statement>
+        <solution>
+            <p>
+            In function notation the input always appears in the parenthesis and the output is the lonely number on the other side of the equals sign.
+            </p>
+            <p>
+            So in the function notation <m>f(<eval obj="x1" />)=<eval obj="x2" /></m>, the input is <m><eval obj="x1" /></m> and the output is <m><eval obj="x2" /></m>.
+            </p>
+        </solution>
+        <setup seed="314159">
+            <de-object name="x1" context="number">
+            <de-random distribution="discrete" min="-9" max="9" by="1" />
+            </de-object>
+            <de-object name="d1" context="number">
+            <de-random distribution="discrete" min="1" max="4" by="1" />
+            </de-object>
+            <de-object name="y1" context="number">
+            <de-number>x1+d1</de-number>
+            </de-object>
+            <de-object name="input" context="formula">
+            <de-expression reduce="yes">x1</de-expression>
+            </de-object>
+            <de-object name="output" context="formula">
+            <de-expression reduce="yes">y1</de-expression>
+            </de-object>
+        </setup>
+        <evaluation>
+        <evaluate name="response1">
+        <test correct="yes">
+        <mathcmp obj="input" />
+        </test>
+        </evaluate>
+        <evaluate name="response2">
+        <test correct="yes">
+        <mathcmp obj="output" />
+        </test>
+        </evaluate>
+        </evaluation>
+    </exercise>
+
+<!--
+    Question 2
+-->
+
+    <exercise label="RWT-Evaluating-Functions-exercise2">
+        <statement correct="no">  
+            <p>
+                If <m>g(x)=7-6x</m>, then <m>g(3)=(7-6x)3</m>.
+            </p>
+        </statement>
+    </exercise>
+
+<!--
+    Question 3
+-->
+
+    <exercise label="RWT-Evaluating-Functions-exercise3">
+        <statement>
+            <p>
+                Use the table to fill in the blanks.
+            </p>
+            <tabular top="medium" left="major" bottom="medium" right="medium">
+                <row halign="center">
+                    <cell><m>x</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>2</m></cell>
+                    <cell><m>4</m></cell>
+                    <cell><m>6</m></cell>
+                    <cell><m>8</m></cell>
+                </row>
+                <row halign="center">
+                    <cell><m>f(x)</m></cell>
+                    <cell><m>5</m></cell>
+                    <cell><m>6</m></cell>
+                    <cell><m>3</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>2</m></cell>
+                </row>
+            </tabular>
+
+            <p>
+               Evaluate the function at zero: <m>f(0)=</m> <fillin name="response1" mode="math" answer="5" />
+            </p>
+            <p>If <m>f(x)=2</m>, then <m>x =</m> <fillin name="response2" mode="math" answer="8" />.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                The input is the top row in this table, so <m>f(0)=5</m>.
+            </p>
+            <p>
+            Now we look in the bottom row, the output, for <m>2</m> and state the input value that got us there: <m>x = 8</m>
+            </p>
+        </solution>
+    <evaluation>
+    <evaluate name="response1">
+    <test correct="yes">
+    </test>
+    </evaluate>
+    <evaluate name="response2">
+    <test correct="yes">
+    </test>
+    </evaluate>
+    </evaluation>
+    </exercise>
+
+<!--
+    Question 4
+-->
+
+    <exercise label="RWT-Evaluating-Functions-exercise4">
+        <statement>
+            <image width="60%">
+                <prefigure xmlns="https://prefigure.org" label="RWT-Evaluating-Functions-prefigure1">
+                    <diagram dimensions="(300,300)" margins="5">
+                        <coordinates bbox="(-5,-2,5,6)">
+                            <grid-axes xlabel="x" ylabel="y"/>
+                            <line endpoints="((-3,0), (0,4))" stroke="blue"
+                            thickness="3"/>
+                            <line endpoints="((0,4), (1,3))" stroke="blue"
+                            thickness="3"/>
+                            <line endpoints="((1,3), (3,3))" stroke="blue"
+                            thickness="3"/>
+                            <point p="(-3,0)" fill="blue"/>
+                            <point p="(0,4)" fill="blue"/>
+                            <point p="(1,3)" fill="blue"/>
+                            <point p="(3,3)" fill="blue"/>
+                        </coordinates>
+                    </diagram>
+                </prefigure>
+            </image>
+            <p>
+               Evaluate the function at zero: <m>g(1)=</m> <fillin name="response1" mode="math" answer="3" />
+            </p>
+            <p>If <m>g(x)=0</m>, then <m>x =</m> <fillin name="response2" mode="math" answer="-3" />.
+            </p>
+        </statement>
+        <!-- <solution>
+            <p>
+                Draw a vertical line that goes through all of the points where <m>x=1</m>. Where does this line intersect the graph of <m>g(x)</m>? We get <m> g(1)=3</m>.
+            </p>
+            <p>
+            Draw a hoirzontal line that goes through all of the points where <m>y=0</m> (this is just the <m>x</m>-axis). Where does this line intersect the graph of <m>g(x)</m>? We get <m> g(-3)=0</m>.
+            </p>
+        </solution> -->
+        <evaluation>
+        <evaluate name="response1">
+        <test correct="yes">
+        </test>
+        </evaluate>
+        <evaluate name="response2">
+        <test correct="yes">
+        </test>
+        </evaluate>
+        </evaluation>
+    </exercise>
+            
+</exercises>
