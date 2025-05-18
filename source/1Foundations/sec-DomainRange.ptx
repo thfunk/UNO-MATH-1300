@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="DomainRange" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Domain and Range</title>
+    <p>
+        In this section, we will learn how to identify, through a function's graph, the domain and range of a function. We will also learn how to determine where a function is increasing or decreasing.
+    </p>
+
+
+      <!--
+      Start of RWT Questions
+    -->
+
+  <xi:include href="exercises/RWT-3-Domain-Range.ptx" />
+
+  </section>

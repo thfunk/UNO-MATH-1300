@@ -1,0 +1,14 @@
+<exercises label="RWT-Evaluating-Functions">
+    <title>Read-Watch-Try</title>
+    <introduction>
+        <video label="RWT1.3-Domain-Range" source="RWT1.3-Domain-Range.mp4"/>
+    </introduction>
+
+    <exercise label="RWT-Domain-Range-exercise1">
+        <statement>
+            <p>
+                The domain is the set of all to a function. The range is the set of all of a function. The inequality is represented by the interval 
+            </p>
+        </statement>
+    </exercise>
+</exercises>

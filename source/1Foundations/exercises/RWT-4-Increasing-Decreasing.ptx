@@ -1,0 +1,26 @@
+<exercises label="RWT-Increasing-Decreasing">
+    <title>Read-Watch-Try</title>
+    <introduction>
+        <video label="RWT1.4-Increasing-Decreasing" source="RWT1.4-Increasing-Decreasing.mp4"/>
+    </introduction>
+
+    <exercise label="RWT-Increasing-Decreasing-exercise1">
+        <statement>
+            <p>
+                The graph of the function <m>g(x)</m> is shown below. On what interval or intervals is <m>g(x)</m> increasing?
+            </p>
+            <image width="60%">
+            <prefigure xmlns="https://prefigure.org" label="RWT-Increasing-Decreasing-prefigure1">
+                <diagram dimensions="(300,300)" margins="5">
+                <definition>f(x)=-(x-1)^2+2</definition>
+                <coordinates bbox="(-2,-3,4,3)">
+                <grid-axes xlabel="x" ylabel="y"/>
+                <graph function="f"/>
+                </coordinates>
+                </diagram>
+            </prefigure>
+            </image>
+        </statement>
+    </exercise>
+
+</exercises>
