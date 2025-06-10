@@ -4,11 +4,71 @@
         <video label="RWT1.3-Domain-Range" source="RWT1.3-Domain-Range.mp4"/>
     </introduction>
 
+    <!-- Question 1 -->
+
     <exercise label="RWT-Domain-Range-exercise1">
         <statement>
             <p>
-                The domain is the set of all to a function. The range is the set of all of a function. The inequality is represented by the interval 
+            Match the description on the left with their matching pair on the right.
             </p>
         </statement>
+        <cardsort>
+        <match>
+            <premise order="4">An interval which includes every value.</premise>
+            <response><m>(-\infty,\infty)</m></response>
+            </match>
+            <match>
+            <premise order="3">Where the <m>x</m> and <m>y</m>-axis meet on a graph.</premise>
+            <response>The origin</response>
+            </match>
+            <match>
+            <premise order="1">The set of all input values.</premise>
+            <response>Domain</response>
+            </match>
+            <match>
+            <premise order="2">The set of all output values.</premise>
+            <response>Range</response>
+        </match>
+        </cardsort>
+    </exercise>
+
+    <!-- Question 2 -->
+
+    <exercise label="RWT-Domain-Range-exercise2">
+        <statement>
+            <image width="60%">
+            <prefigure xmlns="https://prefigure.org" label="RWT-Domain-Range-prefigure1">
+            <diagram dimensions="(300,300)" margins="5">
+                <definition>f(x)=((1/1.58)*x)^3+1</definition>
+                <coordinates bbox="(-3,-2,3,4)">
+                <grid-axes xlabel="x" ylabel="y"/>
+                <graph function="f" domain="(-2,2)"/>
+                <point p="(-2,-1)" fill="blue"/>
+                <point p="(2,3)" fill="white"/>
+                </coordinates>
+            </diagram>
+            </prefigure>
+            </image>
+            <p>
+            The domain of the function <m>f(x)=\frac{1}{x}</m> is <fillin name="response1" mode="math" ansobj="domain" />.
+            </p>
+        </statement>
+        <solution>
+            <p>
+            The domain of the function <m>f(x)=\frac{1}{x}</m> is all real numbers except for zero, or in interval notation, <m>(-\infty,0) \cup (0,\infty)</m>.
+            </p>
+        </solution>
+        <setup seed="314159">
+            <de-object name="domain" context="formula">
+                <de-expression reduce="yes">( -\infty, 0 ) \cup ( 0, \infty )</de-expression>
+            </de-object>
+        </setup>
+        <evaluation>
+            <evaluate name="response1">
+                <test correct="yes">
+                    <mathcmp obj="domain" />
+                </test>
+            </evaluate>
+        </evaluation>
     </exercise>
 </exercises>

@@ -3,8 +3,6 @@ pretext generate -f
 
 pretext build
 
-pretext build
-
 pretext view web
 
  ffmpeg -f concat -safe 0 -i mylist.txt -c copy output.mp4  (combines all the videos into one file)
