@@ -7,10 +7,10 @@
     </p>
 
 
-      <!--
+<!--       
       Start of RWT Questions
     -->
 
-  <xi:include href="exercises/RWT-3-Domain-Range.ptx" />
+  <!-- <xi:include href="exercises/RWT-3-Domain-Range.ptx" /> -->
 
   </section>

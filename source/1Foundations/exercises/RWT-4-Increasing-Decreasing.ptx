@@ -4,6 +4,8 @@
         <video label="RWT1.4-Increasing-Decreasing" source="RWT1.4-Increasing-Decreasing.mp4"/>
     </introduction>
 
+    <!-- Question 1 -->
+
     <exercise label="RWT-Increasing-Decreasing-exercise1">
         <statement>
             <p>
@@ -21,6 +23,158 @@
             </prefigure>
             </image>
         </statement>
+        <choices>
+            <choice>
+                <statement>
+                <p><m>(1, \infty)</m></p>
+                </statement>
+            </choice>
+            <choice correct="yes">
+                <statement>
+                <p><m>(-\infty, 1)</m></p>
+                </statement>
+            </choice>
+            <choice>
+                <statement>
+                <p><m>[1, \infty)</m></p>
+                </statement>
+            </choice>
+            <choice>
+                <statement>
+                <p><m>(-\infty, 1]</m></p>
+                </statement>
+            </choice>
+        </choices>
     </exercise>
 
+    <!-- Question 2 -->
+
+    <exercise label="RWT-Increasing-Decreasing-exercise2">
+        <statement>
+            <p>
+                The graph of the function <m>g(x)</m> is shown below. On what interval or intervals is <m>g(x)</m> decreasing?
+            </p>
+            <image width="60%">
+            <prefigure xmlns="https://prefigure.org" label="RWT-Increasing-Decreasing-prefigure2">
+                <diagram dimensions="(300,300)" margins="5">
+                <definition>f(x)=-(x-1)^2+2</definition>
+                <coordinates bbox="(-2,-3,4,3)">
+                <grid-axes xlabel="x" ylabel="y"/>
+                <graph function="f"/>
+                </coordinates>
+                </diagram>
+            </prefigure>
+            </image>
+        </statement>
+        <choices>
+            <choice correct="yes">
+                <statement>
+                <p><m>(1, \infty)</m></p>
+                </statement>
+            </choice>
+            <choice>
+                <statement>
+                <p><m>(-\infty, 1)</m></p>
+                </statement>
+            </choice>
+            <choice>
+                <statement>
+                <p><m>[1, \infty)</m></p>
+                </statement>
+            </choice>
+            <choice>
+                <statement>
+                <p><m>(-\infty, 1]</m></p>
+                </statement>
+            </choice>
+        </choices>
+    </exercise>
+
+    <!-- Question 3 -->
+
+    <exercise label="RWT-Increasing-Decreasing-exercise3">
+        <statement>
+            <p>
+                The graph of the function <m>f(x)</m> is shown below. On what interval or intervals is <m>g(x)</m> increasing?
+            </p>
+            <image width="60%">
+            <prefigure xmlns="https://prefigure.org" label="RWT-Increasing-Decreasing-prefigure3">
+                <diagram dimensions="(300,300)" margins="5">
+                <definition>f(x)=1/8.25*(x+3.5)*x*(x-3.5)</definition>
+                <definition>a = 1</definition>
+                <coordinates bbox="(-5,-5,5,5)">
+                <grid-axes xlabel="x" ylabel="y"/>
+                <graph function="f"/>
+                </coordinates>
+                </diagram>
+            </prefigure>
+            </image>
+        </statement>
+        <choices>
+            <choice>
+                <statement>
+                <p><m>(-\infty, -2)</m></p>
+                </statement>
+            </choice>
+            <choice correct="yes">
+                <statement>
+                <p><m>(-\infty, -2)\cup(2,\infty)</m></p>
+                </statement>
+            </choice>
+            <choice>
+                <statement>
+                <p><m>(2, \infty)</m></p>
+                </statement>
+            </choice>
+            <choice>
+                <statement>
+                <p><m>(-2, 2)</m></p>
+                </statement>
+            </choice>
+        </choices>
+    </exercise>
+
+    <!-- Question 4 -->
+
+    <exercise label="RWT-Increasing-Decreasing-exercise4">
+        <statement>
+            <p>
+                The graph of the function <m>f(x)</m> is shown below. On what interval or intervals is <m>g(x)</m> decreasing?
+            </p>
+            <image width="60%">
+            <prefigure xmlns="https://prefigure.org" label="RWT-Increasing-Decreasing-prefigure4">
+                <diagram dimensions="(300,300)" margins="5">
+                <definition>f(x)=1/8.25*(x+3.5)*x*(x-3.5)</definition>
+                <definition>a = 1</definition>
+                <coordinates bbox="(-5,-5,5,5)">
+                <grid-axes xlabel="x" ylabel="y"/>
+                <graph function="f"/>
+                </coordinates>
+                </diagram>
+            </prefigure>
+            </image>
+        </statement>
+        <choices>
+            <choice>
+                <statement>
+                <p><m>(-\infty, -2)</m></p>
+                </statement>
+            </choice>
+            <choice>
+                <statement>
+                <p><m>(-\infty, -2)\cup(2,\infty)</m></p>
+                </statement>
+            </choice>
+            <choice>
+                <statement>
+                <p><m>(2, \infty)</m></p>
+                </statement>
+            </choice>
+            <choice correct="yes">
+                <statement>
+                <p><m>(-2, 2)</m></p>
+                </statement>
+            </choice>
+        </choices>
+    </exercise>
 </exercises>
