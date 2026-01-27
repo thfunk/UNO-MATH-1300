@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="diagram" width="310" height="310">
+  <defs>
+    <clipPath id="clipPath-0">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="clipPath-1">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+    <marker id="arrow-head-end-2_None_24_60-blue" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="blue" stroke="none"/>
+    </marker>
+    <marker id="arrow-head-end-2_None_24_60-blue-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+  </defs>
+  <g id="label-0" transform="translate(80.0,27.5) translate(2.2,0.0)">
+    <g id="g-0">
+      <text font-family="sans" font-size="14">Input</text>
+    </g>
+  </g>
+  <path id="path-0" d="M 136.2 155.0 L 136.1 147.9 L 135.8 140.9 L 135.3 133.9 L 134.5 127.0 L 133.5 120.2 L 132.3 113.6 L 130.9 107.1 L 129.3 100.8 L 127.5 94.7 L 125.5 88.9 L 123.3 83.3 L 121.0 78.0 L 118.5 73.0 L 115.9 68.3 L 113.1 64.0 L 110.1 60.0 L 107.1 56.4 L 104.0 53.2 L 100.7 50.4 L 97.4 48.0 L 94.0 46.0 L 90.5 44.5 L 87.0 43.4 L 83.5 42.7 L 80.0 42.5 L 76.5 42.7 L 73.0 43.4 L 69.5 44.5 L 66.0 46.0 L 62.6 48.0 L 59.3 50.4 L 56.0 53.2 L 52.9 56.4 L 49.9 60.0 L 46.9 64.0 L 44.1 68.3 L 41.5 73.0 L 39.0 78.0 L 36.7 83.3 L 34.5 88.9 L 32.5 94.7 L 30.7 100.8 L 29.1 107.1 L 27.7 113.6 L 26.5 120.2 L 25.5 127.0 L 24.7 133.9 L 24.2 140.9 L 23.9 147.9 L 23.8 155.0 L 23.9 162.1 L 24.2 169.1 L 24.7 176.1 L 25.5 183.0 L 26.5 189.8 L 27.7 196.4 L 29.1 202.9 L 30.7 209.2 L 32.5 215.3 L 34.5 221.1 L 36.7 226.7 L 39.0 232.0 L 41.5 237.0 L 44.1 241.7 L 46.9 246.0 L 49.9 250.0 L 52.9 253.6 L 56.0 256.8 L 59.3 259.6 L 62.6 262.0 L 66.0 264.0 L 69.5 265.5 L 73.0 266.6 L 76.5 267.3 L 80.0 267.5 L 83.5 267.3 L 87.0 266.6 L 90.5 265.5 L 94.0 264.0 L 97.4 262.0 L 100.7 259.6 L 104.0 256.8 L 107.1 253.6 L 110.1 250.0 L 113.1 246.0 L 115.9 241.7 L 118.5 237.0 L 121.0 232.0 L 123.3 226.7 L 125.5 221.1 L 127.5 215.3 L 129.3 209.2 L 130.9 202.9 L 132.3 196.4 L 133.5 189.8 L 134.5 183.0 L 135.3 176.1 L 135.8 169.1 L 136.1 162.1 Z" stroke="black" stroke-width="2" fill="none"/>
+  <g id="label-1" transform="translate(230.0,27.5) translate(2.2,0.0)">
+    <g id="g-1">
+      <text font-family="sans" font-size="14">Output</text>
+    </g>
+  </g>
+  <path id="path-1" d="M 286.2 155.0 L 286.1 147.9 L 285.8 140.9 L 285.3 133.9 L 284.5 127.0 L 283.5 120.2 L 282.3 113.6 L 280.9 107.1 L 279.3 100.8 L 277.5 94.7 L 275.5 88.9 L 273.3 83.3 L 271.0 78.0 L 268.5 73.0 L 265.9 68.3 L 263.1 64.0 L 260.1 60.0 L 257.1 56.4 L 254.0 53.2 L 250.7 50.4 L 247.4 48.0 L 244.0 46.0 L 240.5 44.5 L 237.0 43.4 L 233.5 42.7 L 230.0 42.5 L 226.5 42.7 L 223.0 43.4 L 219.5 44.5 L 216.0 46.0 L 212.6 48.0 L 209.3 50.4 L 206.0 53.2 L 202.9 56.4 L 199.9 60.0 L 196.9 64.0 L 194.1 68.3 L 191.5 73.0 L 189.0 78.0 L 186.7 83.3 L 184.5 88.9 L 182.5 94.7 L 180.7 100.8 L 179.1 107.1 L 177.7 113.6 L 176.5 120.2 L 175.5 127.0 L 174.7 133.9 L 174.2 140.9 L 173.9 147.9 L 173.8 155.0 L 173.9 162.1 L 174.2 169.1 L 174.7 176.1 L 175.5 183.0 L 176.5 189.8 L 177.7 196.4 L 179.1 202.9 L 180.7 209.2 L 182.5 215.3 L 184.5 221.1 L 186.7 226.7 L 189.0 232.0 L 191.5 237.0 L 194.1 241.7 L 196.9 246.0 L 199.9 250.0 L 202.9 253.6 L 206.0 256.8 L 209.3 259.6 L 212.6 262.0 L 216.0 264.0 L 219.5 265.5 L 223.0 266.6 L 226.5 267.3 L 230.0 267.5 L 233.5 267.3 L 237.0 266.6 L 240.5 265.5 L 244.0 264.0 L 247.4 262.0 L 250.7 259.6 L 254.0 256.8 L 257.1 253.6 L 260.1 250.0 L 263.1 246.0 L 265.9 241.7 L 268.5 237.0 L 271.0 232.0 L 273.3 226.7 L 275.5 221.1 L 277.5 215.3 L 279.3 209.2 L 280.9 202.9 L 282.3 196.4 L 283.5 189.8 L 284.5 183.0 L 285.3 176.1 L 285.8 169.1 L 286.1 162.1 Z" stroke="black" stroke-width="2" fill="none"/>
+  <line id="line-0" x1="87.5" y1="155.0" x2="207.5" y2="89.4" stroke="blue" stroke-width="2" fill="none" marker-end="url(#arrow-head-end-2_None_24_60-blue)"/>
+  <line id="line-1" x1="87.5" y1="89.4" x2="207.5" y2="220.6" stroke="blue" stroke-width="2" fill="none" marker-end="url(#arrow-head-end-2_None_24_60-blue)"/>
+  <line id="line-2" x1="87.5" y1="220.6" x2="211.2" y2="155.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#arrow-head-end-2_None_24_60-blue)"/>
+  <g id="label-2" transform="translate(230.0,89.4) translate(2.2,0.0)">
+    <g id="g-2">
+      <text font-family="sans" font-size="14">Apple</text>
+    </g>
+  </g>
+  <g id="label-3" transform="translate(230.0,155.0) translate(2.2,0.0)">
+    <g id="g-3">
+      <text font-family="sans" font-size="14">Pear</text>
+    </g>
+  </g>
+  <g id="label-4" transform="translate(230.0,224.4) translate(2.2,0.0)">
+    <g id="g-4">
+      <text font-family="sans" font-size="14">Grape</text>
+    </g>
+  </g>
+  <g id="label-5" transform="translate(80.0,89.4) translate(2.2,0.0)">
+    <g id="g-5">
+      <text font-family="sans" font-size="14">A</text>
+    </g>
+  </g>
+  <g id="label-6" transform="translate(80.0,155.0) translate(2.2,0.0)">
+    <g id="g-6">
+      <text font-family="sans" font-size="14">B</text>
+    </g>
+  </g>
+  <g id="label-7" transform="translate(80.0,220.6) translate(2.2,0.0)">
+    <g id="g-7">
+      <text font-family="sans" font-size="14">C</text>
+    </g>
+  </g>
+</svg>
