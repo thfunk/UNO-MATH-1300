@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="Slope" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Slope</title>
+    <p>
+        In this section, we will learn how to calculate and interpret the slope of a line.
+    </p>
+
+    <definition xml:id="SlopeDefinition">
+        <statement>
+            <p>
+                The <term>Slope</term> between two points $(x_1, y_1)$ and $(x_2, y_2)$ is given by the formula:
+                \[
+                m = \frac{y_2 - y_1}{x_2 - x_1}
+                \]
+            </p>
+        </statement>
+    </definition>
+
+
+<!--       
+      Start of RWT Questions
+    -->
+
+  <!-- <xi:include href="exercises/RWT-3-Domain-Range.ptx" /> -->
+
+  </section>
