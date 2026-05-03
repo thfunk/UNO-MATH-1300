@@ -9,20 +9,20 @@
     <definition xml:id="SlopeDefinition">
         <statement>
             <p>
-                The <term>Slope</term> between two points $(x_1, y_1)$ and $(x_2, y_2)$ is given by the formula:
-                \[
-                m = \frac{y_2 - y_1}{x_2 - x_1}
-                \]
+                The <term>Slope</term> between two points <m>(x_1, y_1)</m> and <m>(x_2, y_2)</m> is given by the formula:
+                <me>
+                    m = \frac{y_2 - y_1}{x_2 - x_1}
+                </me>
             </p>
         </statement>
     </definition>
 
 
 <!--       
-      Start of RWT Questions
+      Start of Preview Questions
     -->
 
-  <!-- <xi:include href="exercises/RWT-3-Domain-Range.ptx" /> -->
+  <xi:include href="exercises/ex-Slope.ptx" />
 
  
 

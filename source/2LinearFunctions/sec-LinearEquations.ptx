@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="LinearEquations" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Linear Equations</title>
+    <p>
+        In this section, we will learn how to write and solve linear equations.
+    </p>
+
+    <definition xml:id="def-SlopeInterceptForm">
+         <statement>
+             <p>
+                 The <term>Slope-Intercept Form</term> of a line is given by the formula:
+                 <me>
+                     y = mx + b
+                 </me>
+             </p>
+        </statement>
+    </definition>
+
+    <definition xml:id="def-PointSlopeForm">
+         <statement>
+             <p>
+                 The <term>Point-Slope Form</term> of a line is given by the formula:
+                 <me>
+                     y - y_1 = m(x - x_1)
+                 </me>
+             </p>
+         </statement>
+     </definition>
+
+
+<!--       
+      Start of RWT Questions
+    -->
+
+  <!-- <xi:include href="exercises/RWT-3-Domain-Range.ptx" /> -->
+
+ 
+
+    </section>

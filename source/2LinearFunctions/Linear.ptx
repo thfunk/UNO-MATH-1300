@@ -9,5 +9,6 @@
 
   <!-- include sections -->
   <xi:include href="sec-Slope.ptx" />
+  <xi:include href="sec-LinearEquations.ptx" />
 
 </chapter>
