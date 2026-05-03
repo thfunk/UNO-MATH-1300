@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="Slope" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Slope of a Line</title>
+    <p>
+        In this section, we will define the slope of a line and learn how to calculate it.
+    </p>
+
+    <definition xml:id="slope-definition">
+        <statement>
+            <p>
+                The <term>slope</term> of a line is a measure of its steepness, defined as the ratio of the change in <term>y</term> to the change in <term>x</term>.
+            </p>
+        </statement>
+    </definition>
+
+    </section>
