@@ -1,0 +1,56 @@
+<exercises label="ex-Slope" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Read-Watch-Try</title>
+
+    <introduction>
+        <video label="vid-Slope" source="RWT2.1-Finding-Slope.mp4"/>
+    </introduction>
+
+<!--
+    Question 1
+-->
+
+    <exercise xml:id="ex-Slope-1" label="ex-Slope-1">
+      <title>Multiple-Choice, Not Randomized, One Answer</title>
+      <idx>stop signs</idx>
+      <statement>
+        <p>
+          Determine the slope of the line between the two points <m> (3, -4) </m> and <m> (8, 2) </m>.
+        </p>
+      </statement>
+<!-- to appear as problem with potentially multiple correct -->
+<!-- answers (even though there is only one), use           -->
+<!--                                                        -->
+<!--     <choices multiple-correct="yes">                   -->
+<!--                                                        -->
+      <choices>
+      <choice>
+      <statement>
+        <p>
+          <m> \frac{5}{6} </m>
+        </p>
+      </statement>
+      </choice>
+      <choice correct="yes">
+      <statement>
+        <p>
+          <m> \frac{6}{5} </m>
+        </p>
+      </statement>
+      </choice>
+      <choice>
+      <statement>
+        <p>
+          <m> \frac{-5}{6} </m>
+        </p>
+      </statement>
+      </choice>
+      </choices>
+    </exercise>
+
+<!--
+      Question 2
+    -->
+
+
+</exercises>
+
