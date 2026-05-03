@@ -169,7 +169,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Slope",
-  "body": " Slope  In this section, we will learn how to calculate and interpret the slope of a line.    The Slope between two points $(x_1, y_1)$ and $(x_2, y_2)$ is given by the formula: \\[ m = \\frac{y_2 - y_1}{x_2 - x_1} \\]      "
+  "body": " Slope  In this section, we will learn how to calculate and interpret the slope of a line.    The Slope between two points and is given by the formula:       Read-Watch-Try       Multiple-Choice, Not Randomized, One Answer  stop signs   What color is a stop sign?           Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.      What did you see last time you went driving?    Maybe go out for a drive?      "
 },
 {
   "id": "SlopeDefinition",
@@ -178,7 +178,43 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "2.1.1",
   "title": "",
-  "body": "  The Slope between two points $(x_1, y_1)$ and $(x_2, y_2)$ is given by the formula: \\[ m = \\frac{y_2 - y_1}{x_2 - x_1} \\]   "
+  "body": "  The Slope between two points and is given by the formula:    "
+},
+{
+  "id": "ex-Slope-1",
+  "level": "2",
+  "url": "Slope.html#ex-Slope-1",
+  "type": "Exercise",
+  "number": "2.1.1",
+  "title": "Multiple-Choice, Not Randomized, One Answer.",
+  "body": " Multiple-Choice, Not Randomized, One Answer  stop signs   What color is a stop sign?           Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.      What did you see last time you went driving?    Maybe go out for a drive?   "
+},
+{
+  "id": "LinearEquations",
+  "level": "1",
+  "url": "LinearEquations.html",
+  "type": "Section",
+  "number": "2.2",
+  "title": "Linear Equations",
+  "body": " Linear Equations  In this section, we will learn how to write and solve linear equations.    The Slope-Intercept Form of a line is given by the formula:       The Point-Slope Form of a line is given by the formula:       "
+},
+{
+  "id": "def-SlopeInterceptForm",
+  "level": "2",
+  "url": "LinearEquations.html#def-SlopeInterceptForm",
+  "type": "Definition",
+  "number": "2.2.1",
+  "title": "",
+  "body": "  The Slope-Intercept Form of a line is given by the formula:    "
+},
+{
+  "id": "def-PointSlopeForm",
+  "level": "2",
+  "url": "LinearEquations.html#def-PointSlopeForm",
+  "type": "Definition",
+  "number": "2.2.2",
+  "title": "",
+  "body": "  The Point-Slope Form of a line is given by the formula:    "
 },
 {
   "id": "LinearFunctions",
