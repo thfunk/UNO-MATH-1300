@@ -163,13 +163,22 @@ var ptx_lunr_docs = [
   "body": "  The graph of the function is shown below. On what interval or intervals is decreasing?     f(x)=1\/8.25*(x+3.5)*x*(x-3.5)  a = 1                                "
 },
 {
-  "id": "Linear",
+  "id": "Slope",
   "level": "1",
-  "url": "Linear.html",
-  "type": "Chapter",
-  "number": "2",
-  "title": "LO2: Linear Functions",
-  "body": " LO2: Linear Functions  Content of the new chapter.  "
+  "url": "Slope.html",
+  "type": "Section",
+  "number": "2.1",
+  "title": "Slope",
+  "body": " Slope  In this section, we will learn how to calculate and interpret the slope of a line.    The Slope between two points $(x_1, y_1)$ and $(x_2, y_2)$ is given by the formula: \\[ m = \\frac{y_2 - y_1}{x_2 - x_1} \\]      "
+},
+{
+  "id": "SlopeDefinition",
+  "level": "2",
+  "url": "Slope.html#SlopeDefinition",
+  "type": "Definition",
+  "number": "2.1.1",
+  "title": "",
+  "body": "  The Slope between two points $(x_1, y_1)$ and $(x_2, y_2)$ is given by the formula: \\[ m = \\frac{y_2 - y_1}{x_2 - x_1} \\]   "
 },
 {
   "id": "LinearFunctions",
