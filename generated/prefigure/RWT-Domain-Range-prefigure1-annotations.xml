@@ -1,0 +1,55 @@
+<diagram>
+  <annotations>
+    <annotation id="figure" speech2="Graph showing the how the change in y and change in x is found on a graph">
+      <grouped>figure</grouped>
+      <position>1</position>
+      <children>
+        <active>graph-group</active>
+      </children>
+      <components>
+        <active>graph-group</active>
+      </components>
+    </annotation>
+    <annotation id="graph-group" speech2="The graph and its tangent line">
+      <grouped>graph-group</grouped>
+      <position>1</position>
+      <children>
+        <active>graph</active>
+        <active>point</active>
+        <active>tangent</active>
+      </children>
+      <components>
+        <active>graph</active>
+        <active>point</active>
+        <active>tangent</active>
+      </components>
+      <parents>
+        <grouped>figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="graph" speech2="The graph of the function f" sonify="yes">
+      <active>graph</active>
+      <position>1</position>
+      <parents>
+        <grouped>graph-group</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>graph</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="point" speech2="The point a comma f of a">
+      <active>point</active>
+      <position>2</position>
+      <parents>
+        <grouped>graph-group</grouped>
+      </parents>
+    </annotation>
+    <annotation id="tangent" speech2="The tangent line to the graph of f at the point">
+      <active>tangent</active>
+      <position>3</position>
+      <parents>
+        <grouped>graph-group</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>
