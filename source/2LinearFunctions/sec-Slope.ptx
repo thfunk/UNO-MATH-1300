@@ -17,6 +17,8 @@
         </statement>
     </definition>
 
+    <figure>
+    <image width="60%">
      <prefigure xmlns="https://prefigure.org" label="RWT-Domain-Range-prefigure1">
         <diagram dimensions="(300,300)" margins="5">
             <definition>x1=1</definition>
@@ -52,6 +54,8 @@
   </annotations>
 </diagram>
     </prefigure>
+    </image>
+    </figure>
 
 
 <!--       
