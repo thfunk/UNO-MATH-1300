@@ -169,7 +169,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Slope",
-  "body": " Slope  In this section, we will learn how to calculate and interpret the slope of a line.    The Slope between two points and is given by the formula:       Read-Watch-Try       Multiple-Choice, Not Randomized, One Answer  stop signs   What color is a stop sign?           Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.      What did you see last time you went driving?    Maybe go out for a drive?      "
+  "body": " Slope  In this section, we will learn how to calculate and interpret the slope of a line.    The Slope between two points and is given by the formula:       Video Explaining Slope       Multiple-Choice, Not Randomized, One Answer  stop signs   Determine the slope of the line between the two points and .                                  "
 },
 {
   "id": "SlopeDefinition",
@@ -187,7 +187,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.1.1",
   "title": "Multiple-Choice, Not Randomized, One Answer.",
-  "body": " Multiple-Choice, Not Randomized, One Answer  stop signs   What color is a stop sign?           Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.      What did you see last time you went driving?    Maybe go out for a drive?   "
+  "body": " Multiple-Choice, Not Randomized, One Answer  stop signs   Determine the slope of the line between the two points and .                               "
 },
 {
   "id": "LinearEquations",
