@@ -17,6 +17,42 @@
         </statement>
     </definition>
 
+     <prefigure xmlns="https://prefigure.org" label="RWT-Domain-Range-prefigure1">
+        <diagram dimensions="(300,300)" margins="5">
+            <definition>x1=1</definition>
+            <definition>x2=4</definition>
+            <definition>y1=1</definition>
+            <definition>y2=5</definition>
+            <definition>p=(x1,y1)</definition>
+            <definition>q=(x2,y2)</definition>
+            <definition>r=(x2,y1)</definition>
+            <coordinates bbox="(-1,-1,6,6)">
+            <axes decorations="no" xlabel="x" ylabel="y"/>
+            <group outline="none">
+            <polygon points="(p,r,q)" stroke="red"/>
+            <line endpoints="(p, q)" stroke="blue" infinite="yes"/>
+    </group>
+    <label anchor="((x1+x2)/2,y1)" alignment="south">
+      <m>\Delta x</m>
+    </label>
+    <label anchor="(x2,(y1+y2)/2)" alignment="east">
+      <m>\Delta y</m>
+    </label>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure"
+                text="Graph showing the how the change in y and change in x is found on a graph">
+      <annotation ref="graph-group" text="The graph and its tangent line">
+        <annotation ref="graph" text="The graph of the function f" sonify="yes"/>
+        <annotation ref="point" text="The point a comma f of a"/>
+        <annotation ref="tangent" text="The tangent line to the graph of f at the point"/>
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>
+    </prefigure>
+
 
 <!--       
       Start of Preview Questions
