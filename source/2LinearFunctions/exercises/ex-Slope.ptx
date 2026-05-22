@@ -1,58 +1,132 @@
-<exercises label="ex-Slope" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Video Explaining Slope</title>
+<exercises xml:id="multiple-choice-exercises" groupwork="no" label="exercises-groupwork">
 
-    <introduction>
-        <video label="vid-Slope" source="RWT2.1-Finding-Slope.mp4"/>
+      <title>Preview 2.1</title>
+
+      <introduction>
+        <p>
+          Read the section above and watch the video for review, then complete the following exercises for Preview 2.1.
+        </p>
     </introduction>
 
-    
+      <exercise xml:id="slope-exercise1" label="slope-exercise1" type="multiple-choice" randomize="yes" multiple-correct="no">
+        <idx>slope1</idx>
+        <statement>
+          <p>
+            Determine the slope of the line between the points <m>(3,-4)</m> and <m>(8,2)</m>.
+          </p>
+        </statement>
 
-<!--
-    Question 1
--->
+          <choices>
+            <choice>
+              <statement>
+                <p>
+                  <m> \frac{-6}{5} </m>
+                </p>
+              </statement>
 
-    <exercise xml:id="ex-Slope-1" label="ex-Slope-1">
-      <title>Multiple-Choice, Not Randomized, One Answer</title>
-      <idx>stop signs</idx>
-      <statement>
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>
+                  <m> \frac{6}{5} </m>
+                </p>
+              </statement>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  <m> \frac{-5}{6} </m>
+                </p>
+              </statement>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  <m> \frac{5}{6} </m>
+                </p>
+              </statement>
+            </choice>
+          </choices>
+        </exercise>
+
+
+        <exercise xml:id="slope-exercise2" label="slope-exercise2" type="multiple-choice" randomize="yes" multiple-correct="no">
+        <idx>slope2</idx>
+        <statement>
+          <p>
+            Determine the slope of the line between the points <m>(-3.6,5.9)</m> and <m>(2.4,4.4)</m>.
+          </p>
+        </statement>
+
+          <choices>
+            <choice>
+              <statement>
+                <p>
+                  <m> -4 </m>
+                </p>
+              </statement>
+
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>
+                  <m> -\frac{1}{4} </m>
+                </p>
+              </statement>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  <m> 4 </m>
+                </p>
+              </statement>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  <m> \frac{1}{4} </m>
+                </p>
+              </statement>
+            </choice>
+          </choices>
+        </exercise>
+
+
+        <exercise label="slope-exercise3">
+        <idx>slope3</idx>
+        <statement>
         <p>
-          Determine the slope of the line between the two points <m> (3, -4) </m> and <m> (8, 2) </m>.
+          Sort the following functions into their correct categories.
         </p>
-      </statement>
-<!-- to appear as problem with potentially multiple correct -->
-<!-- answers (even though there is only one), use           -->
-<!--                                                        -->
-<!--     <choices multiple-correct="yes">                   -->
-<!--                                                        -->
-      <choices>
-      <choice>
-      <statement>
-        <p>
-          <m> \frac{5}{6} </m>
-        </p>
-      </statement>
-      </choice>
-      <choice correct="yes">
-      <statement>
-        <p>
-          <m> \frac{6}{5} </m>
-        </p>
-      </statement>
-      </choice>
-      <choice>
-      <statement>
-        <p>
-          <m> \frac{-5}{6} </m>
-        </p>
-      </statement>
-      </choice>
-      </choices>
-    </exercise>
+        </statement>
 
-<!--
-      Question 2
-    -->
+        <feedback>
+        <p>
+          Recall that a function is <term> Linear </term> if the slope is constant for each pair of points. If you ever find a pair with a different slope, then it is not linear.
+        </p>
+        </feedback>
 
+        <cardsort>
 
+        <match>
+        <response>Linear</response>
+        <premise order="1"><m>y = 5x+3</m></premise>
+        <premise order="4"><m> y = 2</m></premise>
+        <premise order="6"><m>y = x</m></premise>
+        </match>
+
+        <match>
+        <response>Not Linear</response>
+        <premise order="2"><m>y=x^3</m></premise>
+        <premise order="3"><m>y=2^x</m></premise>
+        <premise order="5"><m>y = \frac{1}{x}</m></premise>
+        </match>
+        </cardsort>
+  </exercise>
 </exercises>
-
