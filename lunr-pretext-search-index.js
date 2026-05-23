@@ -169,7 +169,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Slope",
-  "body": " Slope  In this section, we will learn how to calculate and interpret the slope of a line.    The Slope between two points and is given by the formula:         x1=1  x2=4  y1=1  y2=5  p=(x1,y1)  q=(x2,y2)  r=(x2,y1)         \\Delta x    \\Delta y                   Video Explaining Slope       Multiple-Choice, Not Randomized, One Answer  stop signs   Determine the slope of the line between the two points and .                                  "
+  "body": " Slope  In this section, we will learn how to calculate and interpret the slope between two points. We will also define a linear function using our understanding of slope.    The Slope , , between two points is determined by the change in output divided by the change in input between the two points. For points and , the slope is given by the formula:     The above equation is showing that the order in which we subtract the y-values and x-values does not matter. However, make sure that if you start with in the numerator, then you also start with in the denominator, and similaryly, if you start with in the numerator, then you also start with in the denominator.  We also refer to the slope as the \"rise over run\" or the \"change in y over change in x\".    Slope between Two Points  What is the slope between the points and ?   We first decide which point will be and which point will be . This choice is up to you, and is the reason behind the order not mattering as shown in .  Let's choose to be and to be . Then we can substitute into the formula for slope:   We could also have used the other order and get the same value in the end:   So, the slope between the points and is .     Slope between Two Points (Function Notation)  Let and . What is the slope between the points and ?   First, we need to find the coordinates of the two points. We can do this by substituting into the functions: and So, the two points are and .  Now we can use the formula for slope to find the slope between these two points:      Slope between Two Points (Rise over Run)  What is the slope between the points and ?   Graph of the two points    Slope of a line segment between two points on a graph   x1=1  x2=4  y1=1  y2=5  p=(x1,y1)  q=(x2,y2)  r=(x2,y1)        \\text{Change in } x    \\text{\"Run\"}    \\text{Change in } y    \\text{\"Rise\"}    (1,1)    (4,5)               You can find the slope just as we did in example by substituting into the formula for slope. However, let's use the alternative definition for this example. Namely, let's find the change in and the change in from the graph.  To do this, pick a point to start with. I'll choose . Then, to get to I must go up 4 units (the change in ) and right units (the change in ). Note that going up or to the right is positive, while going down or to the left is negative. So, the change in is and the change in is . Therefore, the slope is:       A function is called a Linear Function if the slope is constant. In other words, a function is linear if the slope between any two points is the same.       Preview 2.1   Read the section above and watch the video for review, then complete the following exercises for Preview 2.1.    slope1   Determine the slope of the line between the points and .                                   slope2   Determine the slope of the line between the points and .                                   slope3   Sort the following functions into their correct categories.    Recall that a function is Linear if the slope is constant for each pair of points. If you ever find a pair with a different slope, then it is not linear.     Linear       Not Linear         "
 },
 {
   "id": "SlopeDefinition",
@@ -178,25 +178,70 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "2.1.1",
   "title": "",
-  "body": "  The Slope between two points and is given by the formula:    "
+  "body": "  The Slope , , between two points is determined by the change in output divided by the change in input between the two points. For points and , the slope is given by the formula:    "
 },
 {
-  "id": "Slope-4",
+  "id": "example-slope-two-points",
   "level": "2",
-  "url": "Slope.html#Slope-4",
-  "type": "Figure",
+  "url": "Slope.html#example-slope-two-points",
+  "type": "Example",
   "number": "2.1.2",
-  "title": "",
-  "body": "    x1=1  x2=4  y1=1  y2=5  p=(x1,y1)  q=(x2,y2)  r=(x2,y1)         \\Delta x    \\Delta y                "
+  "title": "Slope between Two Points.",
+  "body": " Slope between Two Points  What is the slope between the points and ?   We first decide which point will be and which point will be . This choice is up to you, and is the reason behind the order not mattering as shown in .  Let's choose to be and to be . Then we can substitute into the formula for slope:   We could also have used the other order and get the same value in the end:   So, the slope between the points and is .   "
 },
 {
-  "id": "ex-Slope-1",
+  "id": "example-slope-function-notation",
   "level": "2",
-  "url": "Slope.html#ex-Slope-1",
+  "url": "Slope.html#example-slope-function-notation",
+  "type": "Example",
+  "number": "2.1.3",
+  "title": "Slope between Two Points (Function Notation).",
+  "body": " Slope between Two Points (Function Notation)  Let and . What is the slope between the points and ?   First, we need to find the coordinates of the two points. We can do this by substituting into the functions: and So, the two points are and .  Now we can use the formula for slope to find the slope between these two points:    "
+},
+{
+  "id": "example-slope-rise-run",
+  "level": "2",
+  "url": "Slope.html#example-slope-rise-run",
+  "type": "Example",
+  "number": "2.1.4",
+  "title": "Slope between Two Points (Rise over Run).",
+  "body": " Slope between Two Points (Rise over Run)  What is the slope between the points and ?   Graph of the two points    Slope of a line segment between two points on a graph   x1=1  x2=4  y1=1  y2=5  p=(x1,y1)  q=(x2,y2)  r=(x2,y1)        \\text{Change in } x    \\text{\"Run\"}    \\text{Change in } y    \\text{\"Rise\"}    (1,1)    (4,5)               You can find the slope just as we did in example by substituting into the formula for slope. However, let's use the alternative definition for this example. Namely, let's find the change in and the change in from the graph.  To do this, pick a point to start with. I'll choose . Then, to get to I must go up 4 units (the change in ) and right units (the change in ). Note that going up or to the right is positive, while going down or to the left is negative. So, the change in is and the change in is . Therefore, the slope is:    "
+},
+{
+  "id": "LinearDefinition",
+  "level": "2",
+  "url": "Slope.html#LinearDefinition",
+  "type": "Definition",
+  "number": "2.1.6",
+  "title": "",
+  "body": "  A function is called a Linear Function if the slope is constant. In other words, a function is linear if the slope between any two points is the same.   "
+},
+{
+  "id": "slope-exercise1",
+  "level": "2",
+  "url": "Slope.html#slope-exercise1",
   "type": "Exercise",
   "number": "2.1.1",
-  "title": "Multiple-Choice, Not Randomized, One Answer.",
-  "body": " Multiple-Choice, Not Randomized, One Answer  stop signs   Determine the slope of the line between the two points and .                               "
+  "title": "",
+  "body": " slope1   Determine the slope of the line between the points and .                                 "
+},
+{
+  "id": "slope-exercise2",
+  "level": "2",
+  "url": "Slope.html#slope-exercise2",
+  "type": "Exercise",
+  "number": "2.1.2",
+  "title": "",
+  "body": " slope2   Determine the slope of the line between the points and .                                 "
+},
+{
+  "id": "slope-exercise3",
+  "level": "2",
+  "url": "Slope.html#slope-exercise3",
+  "type": "Exercise",
+  "number": "2.1.3",
+  "title": "",
+  "body": " slope3   Sort the following functions into their correct categories.    Recall that a function is Linear if the slope is constant for each pair of points. If you ever find a pair with a different slope, then it is not linear.     Linear       Not Linear       "
 },
 {
   "id": "LinearEquations",

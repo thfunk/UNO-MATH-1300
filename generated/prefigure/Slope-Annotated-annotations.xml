@@ -1,0 +1,30 @@
+<diagram>
+  <annotations>
+    <annotation id="Slope-Annotated-figure" speech2="Graph showing the how the change in y and change in x is found on a graph">
+      <grouped>Slope-Annotated-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>Slope-Annotated-point1</active>
+        <active>Slope-Annotated-point2</active>
+      </children>
+      <components>
+        <active>Slope-Annotated-point1</active>
+        <active>Slope-Annotated-point2</active>
+      </components>
+    </annotation>
+    <annotation id="Slope-Annotated-point1" speech2="The point x=1 and y=1">
+      <active>Slope-Annotated-point1</active>
+      <position>1</position>
+      <parents>
+        <grouped>Slope-Annotated-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="Slope-Annotated-point2" speech2="The point x=4 and y=5">
+      <active>Slope-Annotated-point2</active>
+      <position>2</position>
+      <parents>
+        <grouped>Slope-Annotated-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>
