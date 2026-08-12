@@ -5,4 +5,10 @@
 
   <p>Content of the new chapter.</p>
 
+  <xi:include href="sec-Intro-Inverse-Functions.ptx" />
+  <xi:include href="sec-Finding-Inverse-Functions.ptx" />
+  <xi:include href="sec-Logarithms-As-Inverses.ptx" />
+  <xi:include href="sec-Solving-Equations-with-Logarithms.ptx" />
+  <xi:include href="sec-Applications-of-Logarithms.ptx" />
+
 </chapter>

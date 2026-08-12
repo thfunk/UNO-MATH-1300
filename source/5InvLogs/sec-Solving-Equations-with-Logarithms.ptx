@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-solving-equations-with-logarithms" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Solving Equations with Logarithms</title>
+
+  <introduction>
+    <p>Logarithmic and exponential functions are inverses. This inverse relationship allows us to solve equations in which the variable appears in an exponent or inside a logarithm. Solutions may be written exactly with logarithms or approximated with a calculator.</p>
+  </introduction>
+
+  <objectives>
+    <title>Learning Objectives</title>
+    <ol>
+      <li><p>Solve exponential equations with base <m>e</m> by applying the natural logarithm.</p></li>
+      <li><p>Solve exponential equations with other bases by using logarithms.</p></li>
+      <li><p>Distinguish between exact and approximate solutions.</p></li>
+      <li><p>Solve logarithmic equations by applying the corresponding exponential function.</p></li>
+      <li><p>Check restrictions and reject invalid logarithmic solutions.</p></li>
+    </ol>
+  </objectives>
+
+  <subsection xml:id="subsec-inverse-review-solving-equations">
+    <title>Logarithms Undo Exponential Functions</title>
+
+    <p>If <m>g(x)=b^x</m>, then its inverse is <m>g^{-1}(x)=\log_b(x)</m>. Therefore, the equation <m>b^x=A</m> can be solved by applying a logarithm:</p>
+    <me>x=\log_b(A)=\frac{\ln(A)}{\ln(b)}.</me>
+
+    <example xml:id="ex-review-inverse-power-two">
+      <title>Exact and Approximate Forms</title>
+      <statement>
+        <p>Solve <m>2^x=70</m>. Give an exact solution and an approximation to three decimal places.</p>
+      </statement>
+      <solution>
+        <p>Apply the natural logarithm to both sides:</p>
+        <md>
+          <mrow>\ln(2^x)&amp;=\ln(70),</mrow>
+          <mrow>x\ln(2)&amp;=\ln(70),</mrow>
+          <mrow>x&amp;=\frac{\ln(70)}{\ln(2)}.</mrow>
+        </md>
+        <p>The exact solution is <m>\frac{\ln(70)}{\ln(2)}</m>. Using a calculator, <m>x\approx6.129</m>.</p>
+      </solution>
+    </example>
+
+    <remark>
+      <p>An exact answer retains logarithms. An approximate answer replaces the logarithmic expression with a rounded decimal.</p>
+    </remark>
+  </subsection>
+
+  <subsection xml:id="subsec-solving-natural-exponential-equations">
+    <title>Equations with Base e</title>
+
+    <procedure xml:id="proc-solve-natural-exponential-equation">
+      <title>Solving an Equation with Base <m>e</m></title>
+      <ol>
+        <li><p>Isolate the exponential expression.</p></li>
+        <li><p>Apply <m>\ln</m> to both sides.</p></li>
+        <li><p>Use <m>\ln(e^u)=u</m>.</p></li>
+        <li><p>Solve the resulting equation.</p></li>
+      </ol>
+    </procedure>
+
+    <example xml:id="ex-natural-exponential-basic">
+      <title>A Natural Exponential Equation</title>
+      <statement>
+        <p>Solve <m>e^{-0.35t}=\frac{1}{4}</m>. Give an exact solution and an approximation.</p>
+      </statement>
+      <solution>
+        <md>
+          <mrow>\ln\left(e^{-0.35t}\right)&amp;=\ln\left(\frac14\right),</mrow>
+          <mrow>-0.35t&amp;=\ln\left(\frac14\right),</mrow>
+          <mrow>t&amp;=\frac{\ln(1/4)}{-0.35}.</mrow>
+        </md>
+        <p>Thus, <m>t\approx3.961</m>.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-natural-exponential-isolate-first">
+      <title>Isolate the Exponential Expression First</title>
+      <statement>
+        <p>Solve <m>18=50e^{-0.22t}+6</m>.</p>
+      </statement>
+      <solution>
+        <p>First isolate the exponential expression:</p>
+        <md>
+          <mrow>12&amp;=50e^{-0.22t},</mrow>
+          <mrow>\frac{6}{25}&amp;=e^{-0.22t}.</mrow>
+        </md>
+        <p>Now apply the natural logarithm:</p>
+        <md>
+          <mrow>\ln\left(\frac{6}{25}\right)&amp;=-0.22t,</mrow>
+          <mrow>t&amp;=\frac{\ln(6/25)}{-0.22}\approx6.488.</mrow>
+        </md>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-solving-other-base-exponential-equations">
+    <title>Exponential Equations with Other Bases</title>
+
+    <p>When the base is not <m>e</m>, we can still apply <m>\ln</m> to both sides. The power property, <m>\ln(b^x)=x\ln(b)</m>, brings the variable out of the exponent.</p>
+
+    <example xml:id="ex-other-base-growth-equation">
+      <title>Growth with an Initial Value</title>
+      <statement>
+        <p>Solve <m>420=75(1.18)^t</m>.</p>
+      </statement>
+      <solution>
+        <p>Divide by 75 before applying a logarithm:</p>
+        <md>
+          <mrow>5.6&amp;=(1.18)^t,</mrow>
+          <mrow>\ln(5.6)&amp;=\ln\left((1.18)^t\right),</mrow>
+          <mrow>\ln(5.6)&amp;=t\ln(1.18),</mrow>
+          <mrow>t&amp;=\frac{\ln(5.6)}{\ln(1.18)}\approx10.410.</mrow>
+        </md>
+      </solution>
+    </example>
+
+    <example xml:id="ex-other-base-shifted-equation">
+      <title>An Equation with a Vertical Shift</title>
+      <statement>
+        <p>Solve <m>36=11(1.09)^{x+2}+3</m>.</p>
+      </statement>
+      <solution>
+        <p>Isolate the exponential expression:</p>
+        <md>
+          <mrow>33&amp;=11(1.09)^{x+2},</mrow>
+          <mrow>3&amp;=(1.09)^{x+2}.</mrow>
+        </md>
+        <p>Apply <m>\ln</m> and use the power property:</p>
+        <md>
+          <mrow>\ln(3)&amp;=(x+2)\ln(1.09),</mrow>
+          <mrow>x+2&amp;=\frac{\ln(3)}{\ln(1.09)},</mrow>
+          <mrow>x&amp;=\frac{\ln(3)}{\ln(1.09)}-2\approx10.747.</mrow>
+        </md>
+      </solution>
+    </example>
+
+    <warning>
+      <p>Do not apply a logarithm until the exponential expression is isolated. For example, in <m>36=11(1.09)^{x+2}+3</m>, subtract 3 and divide by 11 before taking logarithms.</p>
+    </warning>
+  </subsection>
+
+  <subsection xml:id="subsec-solving-logarithmic-equations">
+    <title>Equations Containing Logarithms</title>
+
+    <p>To solve an equation containing one logarithm, first isolate the logarithm. Then rewrite the equation in exponential form.</p>
+
+    <example xml:id="ex-solve-common-log-equation">
+      <title>A Common Logarithmic Equation</title>
+      <statement>
+        <p>Solve <m>2\log(x-4)+1=7</m>.</p>
+      </statement>
+      <solution>
+        <p>Isolate the logarithm:</p>
+        <md>
+          <mrow>2\log(x-4)&amp;=6,</mrow>
+          <mrow>\log(x-4)&amp;=3.</mrow>
+        </md>
+        <p>Rewrite in exponential form:</p>
+        <md>
+          <mrow>x-4&amp;=10^3,</mrow>
+          <mrow>x&amp;=1004.</mrow>
+        </md>
+        <p>Because <m>x-4&gt;0</m>, the solution is valid.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-solve-natural-log-equation">
+      <title>A Natural Logarithmic Equation</title>
+      <statement>
+        <p>Solve <m>5-3\ln(2x)=-1</m>.</p>
+      </statement>
+      <solution>
+        <md>
+          <mrow>-3\ln(2x)&amp;=-6,</mrow>
+          <mrow>\ln(2x)&amp;=2,</mrow>
+          <mrow>2x&amp;=e^2,</mrow>
+          <mrow>x&amp;=\frac{e^2}{2}.</mrow>
+        </md>
+        <p>The exact solution is <m>\frac{e^2}{2}</m>, and <m>x\approx3.695</m>.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-log-equation-reject-invalid">
+      <title>Checking the Logarithm's Domain</title>
+      <statement>
+        <p>Solve <m>\ln(x-1)=\ln(5-x)</m>.</p>
+      </statement>
+      <solution>
+        <p>Since the natural logarithm is one-to-one, equal logarithms with the same base have equal arguments:</p>
+        <md>
+          <mrow>x-1&amp;=5-x,</mrow>
+          <mrow>2x&amp;=6,</mrow>
+          <mrow>x&amp;=3.</mrow>
+        </md>
+        <p>Checking the arguments gives <m>3-1=2&gt;0</m> and <m>5-3=2&gt;0</m>, so <m>x=3</m> is valid.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-solving-log-equations-summary">
+    <title>Choosing a Method</title>
+
+    <table xml:id="table-solving-exponential-log-equations">
+      <title>Equation Types and Inverse Operations</title>
+      <tabular>
+        <row header="yes"><cell>Equation type</cell><cell>First goal</cell><cell>Inverse operation</cell></row>
+        <row><cell><m>e^{u}=A</m></cell><cell>Isolate <m>e^u</m></cell><cell>Apply <m>\ln</m></cell></row>
+        <row><cell><m>b^{u}=A</m></cell><cell>Isolate <m>b^u</m></cell><cell>Apply <m>\ln</m> or <m>\log_b</m></cell></row>
+        <row><cell><m>\ln(u)=A</m></cell><cell>Isolate <m>\ln(u)</m></cell><cell>Apply the exponential base <m>e</m></cell></row>
+        <row><cell><m>\log(u)=A</m></cell><cell>Isolate <m>\log(u)</m></cell><cell>Apply the exponential base 10</cell></row>
+      </tabular>
+    </table>
+
+    <important>
+      <ul>
+        <li><p>Isolate the exponential or logarithmic expression before applying its inverse.</p></li>
+        <li><p>Use the power property to move a variable out of an exponent.</p></li>
+        <li><p>State exact answers with logarithms before rounding.</p></li>
+        <li><p>Check that every logarithm has a positive argument.</p></li>
+      </ul>
+    </important>
+  </subsection>
+
+  <conclusion>
+    <p>Logarithms and exponentials undo one another. To solve an exponential equation, isolate the exponential expression and apply a logarithm. To solve a logarithmic equation, isolate the logarithm and rewrite in exponential form. Exact logarithmic expressions preserve the full solution, while decimal approximations provide practical numerical values.</p>
+  </conclusion>
+</section>

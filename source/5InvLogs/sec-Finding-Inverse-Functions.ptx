@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-finding-inverse-functions" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Finding Inverse Functions</title>
+
+  <introduction>
+    <p>An inverse function reverses the input-output relationship of a function. In this section, we find inverse functions algebraically, interpret inverse notation in context, and use composition to determine whether two functions are inverses of one another.</p>
+  </introduction>
+
+  <objectives>
+    <title>Learning Objectives</title>
+    <ol>
+      <li><p>Find an inverse function algebraically.</p></li>
+      <li><p>Interpret values of an inverse function in context.</p></li>
+      <li><p>Verify that two functions are inverses by composing them in both orders.</p></li>
+      <li><p>Recognize when two functions are not inverses.</p></li>
+    </ol>
+  </objectives>
+
+  <subsection xml:id="subsec-algebraic-process-inverses">
+    <title>Finding an Inverse Algebraically</title>
+
+    <p>Finding an inverse algebraically follows the same input-output reversal used with tables and graphs.</p>
+
+    <procedure xml:id="proc-find-inverse-algebraically">
+      <title>Steps for Finding an Inverse</title>
+      <ol>
+        <li><p>Write the function as <m>y=f(x)</m>.</p></li>
+        <li><p>Switch <m>x</m> and <m>y</m>.</p></li>
+        <li><p>Solve the new equation for <m>y</m>.</p></li>
+        <li><p>Write the result using inverse-function notation.</p></li>
+      </ol>
+    </procedure>
+
+    <example xml:id="ex-find-linear-inverse">
+      <title>Inverse of a Linear Function</title>
+      <statement>
+        <p>Find the inverse of <m>f(x)=4x-7</m>.</p>
+      </statement>
+      <solution>
+        <p>Begin by writing <m>y=4x-7</m>. Switch the input and output variables:</p>
+        <me>x=4y-7.</me>
+        <p>Solve for <m>y</m>:</p>
+        <md>
+          <mrow>x+7&amp;=4y,</mrow>
+          <mrow>y&amp;=\frac{x+7}{4}.</mrow>
+        </md>
+        <p>Therefore,</p>
+        <me>f^{-1}(x)=\frac{x+7}{4}.</me>
+      </solution>
+    </example>
+
+    <example xml:id="ex-find-fractional-linear-inverse">
+      <title>Inverse of a Function with a Fraction</title>
+      <statement>
+        <p>Find the inverse of <m>g(x)=\frac{x-5}{3}</m>.</p>
+      </statement>
+      <solution>
+        <p>Write <m>y=\frac{x-5}{3}</m> and switch <m>x</m> and <m>y</m>:</p>
+        <me>x=\frac{y-5}{3}.</me>
+        <p>Solve for <m>y</m>:</p>
+        <md>
+          <mrow>3x&amp;=y-5,</mrow>
+          <mrow>y&amp;=3x+5.</mrow>
+        </md>
+        <p>Thus,</p>
+        <me>g^{-1}(x)=3x+5.</me>
+      </solution>
+    </example>
+
+    <example xml:id="ex-find-reciprocal-inverse">
+      <title>Inverse of a Reciprocal Function</title>
+      <statement>
+        <p>Find the inverse of <m>h(x)=\frac{2}{x+1}</m>.</p>
+      </statement>
+      <solution>
+        <p>Write <m>y=\frac{2}{x+1}</m> and switch the variables:</p>
+        <me>x=\frac{2}{y+1}.</me>
+        <p>Solve for <m>y</m>:</p>
+        <md>
+          <mrow>x(y+1)&amp;=2,</mrow>
+          <mrow>xy+x&amp;=2,</mrow>
+          <mrow>xy&amp;=2-x,</mrow>
+          <mrow>y&amp;=\frac{2-x}{x}=\frac{2}{x}-1.</mrow>
+        </md>
+        <p>Therefore,</p>
+        <me>h^{-1}(x)=\frac{2}{x}-1.</me>
+      </solution>
+    </example>
+
+    <warning>
+      <p>The notation <m>f^{-1}(x)</m> names the inverse function. It does not mean the reciprocal <m>\frac{1}{f(x)}</m>.</p>
+    </warning>
+  </subsection>
+
+  <subsection xml:id="subsec-quadratic-inverses-restricted-domain">
+    <title>Quadratic Functions and Restricted Domains</title>
+
+    <p>A quadratic function is not one-to-one on its entire domain, so its inverse relation is not a function unless the original domain is restricted to one side of the vertex.</p>
+
+    <!-- Figure: Graph of f(x)=(x-2)^2+1 restricted to x greater than or equal to 2. Show that the restricted graph passes the horizontal line test. Include the reflected inverse graph y=2+sqrt(x-1) as a commented visual reference only. -->
+
+    <example xml:id="ex-find-quadratic-inverse-restricted">
+      <title>Inverse of a Restricted Quadratic</title>
+      <statement>
+        <p>Let <m>q(x)=(x-2)^2+1</m> with domain <m>x\ge 2</m>. Find <m>q^{-1}(x)</m>.</p>
+      </statement>
+      <solution>
+        <p>Write the function using <m>y</m>, then switch <m>x</m> and <m>y</m>:</p>
+        <md>
+          <mrow>y&amp;=(x-2)^2+1,</mrow>
+          <mrow>x&amp;=(y-2)^2+1.</mrow>
+        </md>
+        <p>Solve for <m>y</m>:</p>
+        <md>
+          <mrow>x-1&amp;=(y-2)^2,</mrow>
+          <mrow>\sqrt{x-1}&amp;=y-2,</mrow>
+          <mrow>y&amp;=2+\sqrt{x-1}.</mrow>
+        </md>
+        <p>We use the positive square root because the original domain requires <m>x\ge 2</m>, so the range of the inverse must satisfy <m>y\ge 2</m>.</p>
+        <me>q^{-1}(x)=2+\sqrt{x-1}.</me>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-interpreting-inverse-context">
+    <title>Interpreting Inverse Functions in Context</title>
+
+    <example xml:id="ex-inverse-context-library">
+      <title>Finding the Time from an Output</title>
+      <statement>
+        <p>Let <m>B(t)=850-45t</m> represent the number of books remaining at a community book sale <m>t</m> hours after the sale begins. Interpret <m>B^{-1}(625)=5</m>.</p>
+      </statement>
+      <solution>
+        <p>The original function uses time as input and number of books as output. The inverse uses a number of books as input and returns the corresponding time.</p>
+        <p>The statement means that 5 hours after the sale begins, 625 books remain.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-verifying-inverses-composition">
+    <title>Verifying Inverses with Composition</title>
+
+    <definition xml:id="def-composition-inverse-test">
+      <title>Composition Test for Inverses</title>
+      <p>Two functions <m>f</m> and <m>g</m> are inverses of one another if both compositions return the starting input:</p>
+      <me>f(g(x))=x \quad\text{and}\quad g(f(x))=x.</me>
+    </definition>
+
+    <example xml:id="ex-verify-linear-inverses-composition">
+      <title>Verifying a Pair of Linear Functions</title>
+      <statement>
+        <p>Determine whether <m>f(x)=5x+2</m> and <m>g(x)=\frac{x-2}{5}</m> are inverses.</p>
+      </statement>
+      <solution>
+        <p>Compose in the first order:</p>
+        <md>
+          <mrow>f(g(x))&amp;=5\left(\frac{x-2}{5}\right)+2</mrow>
+          <mrow>&amp;=x-2+2</mrow>
+          <mrow>&amp;=x.</mrow>
+        </md>
+        <p>Compose in the reverse order:</p>
+        <md>
+          <mrow>g(f(x))&amp;=\frac{(5x+2)-2}{5}</mrow>
+          <mrow>&amp;=\frac{5x}{5}</mrow>
+          <mrow>&amp;=x.</mrow>
+        </md>
+        <p>Both compositions return <m>x</m>, so the functions are inverses.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-not-inverses-composition">
+      <title>Recognizing Functions That Are Not Inverses</title>
+      <statement>
+        <p>Determine whether <m>p(x)=2x-3</m> and <m>r(x)=\frac{x}{2}+3</m> are inverses.</p>
+      </statement>
+      <solution>
+        <p>It is enough to find one composition that does not return <m>x</m>:</p>
+        <md>
+          <mrow>p(r(x))&amp;=2\left(\frac{x}{2}+3\right)-3</mrow>
+          <mrow>&amp;=x+6-3</mrow>
+          <mrow>&amp;=x+3.</mrow>
+        </md>
+        <p>Because <m>p(r(x))\ne x</m>, the functions are not inverses.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-verify-reciprocal-inverses">
+      <title>Verifying a Nonlinear Pair</title>
+      <statement>
+        <p>Let <m>u(x)=\frac{3}{x-4}</m> and <m>v(x)=\frac{3}{x}+4</m>. Verify that the functions are inverses on their domains.</p>
+      </statement>
+      <solution>
+        <md>
+          <mrow>u(v(x))&amp;=\frac{3}{\left(\frac{3}{x}+4\right)-4}</mrow>
+          <mrow>&amp;=\frac{3}{3/x}</mrow>
+          <mrow>&amp;=x,</mrow>
+        </md>
+        <p>and</p>
+        <md>
+          <mrow>v(u(x))&amp;=\frac{3}{3/(x-4)}+4</mrow>
+          <mrow>&amp;=x-4+4</mrow>
+          <mrow>&amp;=x.</mrow>
+        </md>
+        <p>Both compositions simplify to <m>x</m>, wherever the compositions are defined. Therefore, <m>u</m> and <m>v</m> are inverses.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-finding-inverses-summary">
+    <title>Key Ideas</title>
+    <important>
+      <ul>
+        <li><p>Find an inverse by switching the input and output variables and solving for the new output.</p></li>
+        <li><p>Inverse notation asks for the input that produced a specified output.</p></li>
+        <li><p>Restricted domains may be necessary before a function has an inverse function.</p></li>
+        <li><p>Two functions are inverses if composing them in both orders returns the original input.</p></li>
+      </ul>
+    </important>
+  </subsection>
+</section>

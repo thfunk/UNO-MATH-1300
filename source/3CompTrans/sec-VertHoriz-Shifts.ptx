@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-vertical-horizontal-shifts" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Vertical and Horizontal Shifts</title>
+
+  <introduction>
+    <p>A transformation changes the graph of a function in a predictable way. In this section, we focus on vertical and horizontal shifts. These shifts move a graph without changing its basic shape.</p>
+  </introduction>
+
+  <objectives>
+    <title>Learning Objectives</title>
+    <ol>
+      <li><p>Identify vertical and horizontal shifts from function notation.</p></li>
+      <li><p>Describe how a shift changes every point on a graph.</p></li>
+      <li><p>Graph shifted functions from a given graph.</p></li>
+      <li><p>Determine the location of a transformed point.</p></li>
+    </ol>
+  </objectives>
+
+  <subsection xml:id="subsec-vertical-shifts">
+    <title>Vertical Shifts</title>
+
+    <definition xml:id="def-vertical-shift">
+      <title>Vertical Shift</title>
+      <p>Let <m>y=f(x)</m> be a function and let <m>d</m> be a real number. The graph of <m>y=f(x)+d</m> is the graph of <m>f</m> shifted vertically.</p>
+      <ul>
+        <li><p>If <m>d&gt;0</m>, the graph shifts up <m>d</m> units.</p></li>
+        <li><p>If <m>d&lt;0</m>, the graph shifts down <m>|d|</m> units.</p></li>
+      </ul>
+    </definition>
+
+    <p>A vertical shift changes the output of the function. Each point <m>(x,y)</m> on the original graph becomes <m>(x,y+d)</m> on the shifted graph.</p>
+
+    <!-- Figure: On the same coordinate plane, show the graph of f and the graph of g(x)=f(x)+3. Use a simple curved graph with several marked corresponding points. Each transformed point should have the same x-coordinate and a y-coordinate three units larger. -->
+
+    <example xml:id="ex-vertical-shift-graph">
+      <title>Recognizing a Vertical Shift from a Graph</title>
+      <statement>
+        <p>The graph of <m>g</m> has the same shape as the graph of <m>f</m>, but every point on <m>g</m> is 3 units above the corresponding point on <m>f</m>. Write <m>g</m> in terms of <m>f</m>.</p>
+      </statement>
+      <solution>
+        <p>Because each output is 3 larger, the shift is vertical and upward.</p>
+        <me>g(x)=f(x)+3</me>
+      </solution>
+    </example>
+
+    <example xml:id="ex-vertical-shift-point">
+      <title>Tracking One Point Through a Vertical Shift</title>
+      <statement>
+        <p>The point <m>(-2,5)</m> is on the graph of <m>f</m>. What point is on the graph of <m>p(x)=f(x)-7</m>?</p>
+      </statement>
+      <solution>
+        <p>The expression <m>f(x)-7</m> shifts every point down 7 units. The input stays the same, and the output changes from <m>5</m> to <m>5-7=-2</m>.</p>
+        <p>The corresponding point is <m>(-2,-2)</m>.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-horizontal-shifts">
+    <title>Horizontal Shifts</title>
+
+    <definition xml:id="def-horizontal-shift">
+      <title>Horizontal Shift</title>
+      <p>Let <m>y=f(x)</m> be a function and let <m>c</m> be a real number. The graph of <m>y=f(x-c)</m> is the graph of <m>f</m> shifted horizontally.</p>
+      <ul>
+        <li><p>If <m>c&gt;0</m>, the graph shifts right <m>c</m> units.</p></li>
+        <li><p>If <m>c&lt;0</m>, then <m>f(x-c)=f(x+|c|)</m>, and the graph shifts left <m>|c|</m> units.</p></li>
+      </ul>
+    </definition>
+
+    <p>A horizontal shift changes the input location of each point. Each point <m>(x,y)</m> on the original graph becomes <m>(x+c,y)</m> on the graph of <m>f(x-c)</m>.</p>
+
+    <warning>
+      <p>The direction of a horizontal shift may look opposite to the sign inside the parentheses. The graph of <m>f(x-4)</m> shifts right 4 units, while the graph of <m>f(x+4)</m> shifts left 4 units.</p>
+    </warning>
+
+    <!-- Figure: On the same coordinate plane, show the graph of f and the graph of h(x)=f(x+2). Use a simple piecewise-linear graph with marked corresponding points. Each transformed point should be two units left of its original point and have the same y-coordinate. -->
+
+    <example xml:id="ex-horizontal-shift-graph">
+      <title>Recognizing a Horizontal Shift from a Graph</title>
+      <statement>
+        <p>The graph of <m>h</m> has the same shape as the graph of <m>f</m>, but every point on <m>h</m> is 2 units to the left of the corresponding point on <m>f</m>. Write <m>h</m> in terms of <m>f</m>.</p>
+      </statement>
+      <solution>
+        <p>A shift left 2 units is produced by adding 2 to the input.</p>
+        <me>h(x)=f(x+2)</me>
+      </solution>
+    </example>
+
+    <example xml:id="ex-horizontal-shift-point">
+      <title>Tracking One Point Through a Horizontal Shift</title>
+      <statement>
+        <p>The point <m>(6,-1)</m> is on the graph of <m>f</m>. What point is on the graph of <m>q(x)=f(x-5)</m>?</p>
+      </statement>
+      <solution>
+        <p>The graph shifts right 5 units. The input location changes from <m>6</m> to <m>6+5=11</m>, while the output remains <m>-1</m>.</p>
+        <p>The corresponding point is <m>(11,-1)</m>.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-combined-shifts">
+    <title>Combining Horizontal and Vertical Shifts</title>
+
+    <p>A function of the form <m>g(x)=f(x-c)+d</m> combines a horizontal shift with a vertical shift. A point <m>(x,y)</m> on the graph of <m>f</m> becomes <m>(x+c,y+d)</m> on the graph of <m>g</m>.</p>
+
+    <example xml:id="ex-combined-shift-point">
+      <title>Tracking a Point Through Two Shifts</title>
+      <statement>
+        <p>The point <m>(-1,4)</m> is on the graph of <m>f</m>. Find the corresponding point on the graph of</p>
+        <me>g(x)=f(x+3)-6.</me>
+      </statement>
+      <solution>
+        <p>The expression <m>x+3</m> shifts the graph left 3 units, so the new input coordinate is <m>-1-3=-4</m>.</p>
+        <p>The value <m>-6</m> outside the function shifts the graph down 6 units, so the new output coordinate is <m>4-6=-2</m>.</p>
+        <p>The corresponding point is <m>(-4,-2)</m>.</p>
+      </solution>
+    </example>
+
+    <!-- Figure: A piecewise-linear graph f has an open endpoint at (-4,-2), rises to (-2,3), remains horizontal to (1,3), and falls to a closed endpoint at (4,0). On a second coordinate plane, students graph h(x)=f(x-2)+1, a shift right 2 units and up 1 unit. -->
+
+    <example xml:id="ex-combined-shift-full-graph">
+      <title>Shifting an Entire Graph</title>
+      <statement>
+        <p>Use the graph described above to sketch <m>h(x)=f(x-2)+1</m>. Describe the movement of the graph and state how each point changes.</p>
+      </statement>
+      <solution>
+        <p>The expression <m>x-2</m> shifts the graph right 2 units. The value <m>+1</m> outside the function shifts the graph up 1 unit.</p>
+        <p>Each point <m>(x,y)</m> becomes <m>(x+2,y+1)</m>. Open endpoints remain open, closed endpoints remain closed, and the shape of the graph does not change.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-write-shifted-function-from-description">
+      <title>Writing a Shifted Function</title>
+      <statement>
+        <p>The graph of <m>r</m> is obtained by shifting the graph of <m>f</m> left 5 units and up 2 units. Write <m>r</m> in terms of <m>f</m>.</p>
+      </statement>
+      <solution>
+        <p>A shift left 5 units changes the input to <m>x+5</m>. A shift up 2 units adds 2 to the output.</p>
+        <me>r(x)=f(x+5)+2</me>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-desmos-shifts">
+    <title>Exploring Shifts with Desmos</title>
+
+    <p>A graphing tool can help you compare a function with its transformations. In the Desmos Graphing Calculator, enter a base function such as <m>f(x)=|x|</m>. On separate lines, graph examples such as <m>f(x)+3</m>, <m>f(x)-2</m>, <m>f(x-4)</m>, and <m>f(x+1)</m>.</p>
+
+    <activity xml:id="act-desmos-shifts">
+      <title>Compare the Graphs</title>
+      <statement>
+        <ol>
+          <li><p>Open the Desmos Graphing Calculator.</p></li>
+          <li><p>Enter <m>f(x)=|x|</m>.</p></li>
+          <li><p>On new lines, enter <m>f(x)+3</m>, <m>f(x)-2</m>, <m>f(x-4)</m>, and <m>f(x+1)</m>.</p></li>
+          <li><p>For each graph, describe the direction and distance of the shift.</p></li>
+          <li><p>Choose one point on the original graph and verify where that point moves under each transformation.</p></li>
+        </ol>
+      </statement>
+    </activity>
+  </subsection>
+
+  <subsection xml:id="subsec-shifts-summary">
+    <title>Key Ideas</title>
+    <important>
+      <ul>
+        <li><p><m>f(x)+d</m> changes outputs and shifts the graph vertically.</p></li>
+        <li><p><m>f(x-c)</m> changes input locations and shifts the graph horizontally.</p></li>
+        <li><p>For <m>g(x)=f(x-c)+d</m>, a point <m>(x,y)</m> becomes <m>(x+c,y+d)</m>.</p></li>
+        <li><p>Horizontal shift signs appear opposite the direction of movement: subtraction shifts right and addition shifts left.</p></li>
+      </ul>
+    </important>
+  </subsection>
+</section>

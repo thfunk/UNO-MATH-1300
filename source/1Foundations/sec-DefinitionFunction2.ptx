@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-definition-of-function" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>The Definition of a Function</title>
+
+  <introduction>
+    <p>A relationship connects inputs with outputs. Some relationships are functions and some are not. In this section, we will decide whether a relationship is a function when it is represented by a table, a graph, or a bubble diagram. We will also use function notation to describe and evaluate functions.</p>
+  </introduction>
+
+  <objectives>
+    <title>Learning Objectives</title>
+    <ol>
+      <li><p>Identify the input and output of a relationship.</p></li>
+      <li><p>Determine whether a table, graph, or bubble diagram represents a function.</p></li>
+      <li><p>Interpret and evaluate function notation.</p></li>
+    </ol>
+  </objectives>
+
+  <definition xml:id="def-function">
+    <title>Function</title>
+    <p>A <term>function</term> is a relationship in which every input has exactly one output.</p>
+  </definition>
+
+  <remark>
+    <p>The words <q>exactly one output</q> are essential. Different inputs are allowed to have the same output. However, one input cannot be paired with two different outputs.</p>
+  </remark>
+
+  <subsection xml:id="subsec-functions-from-tables">
+    <title>Functions Represented by Tables</title>
+
+    <example xml:id="ex-function-table">
+      <title>Deciding Whether a Table Represents a Function</title>
+      <statement>
+        <p>The table gives the number of pages, <m>p</m>, a student has read after studying for <m>t</m> minutes. Does the table represent <m>p</m> as a function of <m>t</m>?</p>
+        <table xml:id="table-reading-function">
+          <title>Pages read after several study times</title>
+          <tabular>
+            <row header="yes"><cell><m>t</m>, minutes</cell><cell><m>p</m>, pages</cell></row>
+            <row><cell><m>0</m></cell><cell><m>0</m></cell></row>
+            <row><cell><m>12</m></cell><cell><m>7</m></cell></row>
+            <row><cell><m>25</m></cell><cell><m>15</m></cell></row>
+            <row><cell><m>40</m></cell><cell><m>24</m></cell></row>
+          </tabular>
+        </table>
+      </statement>
+      <solution>
+        <p>Yes. Each input in the first column appears once and is paired with exactly one output in the second column. Therefore, the relationship is a function.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-not-function-table">
+      <title>A Repeated Input</title>
+      <statement>
+        <p>A weather station records a temperature at several times. Does the table represent temperature <m>T</m> as a function of time <m>h</m>?</p>
+        <table xml:id="table-weather-not-function">
+          <title>Temperature readings</title>
+          <tabular>
+            <row header="yes"><cell><m>h</m>, hours after noon</cell><cell><m>T</m>, degrees Fahrenheit</cell></row>
+            <row><cell><m>1</m></cell><cell><m>71</m></cell></row>
+            <row><cell><m>2</m></cell><cell><m>73</m></cell></row>
+            <row><cell><m>2</m></cell><cell><m>68</m></cell></row>
+            <row><cell><m>3</m></cell><cell><m>70</m></cell></row>
+          </tabular>
+        </table>
+      </statement>
+      <solution>
+        <p>No. The input <m>2</m> is paired with two different outputs, <m>73</m> and <m>68</m>. One input has more than one output, so the relationship is not a function.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-functions-from-graphs">
+    <title>Functions Represented by Graphs</title>
+
+    <p>On a graph, the horizontal coordinate is the input and the vertical coordinate is the output. A graph represents a function when each input corresponds to only one point on the graph.</p>
+
+    <definition xml:id="def-vertical-line-test">
+      <title>Vertical Line Test</title>
+      <p>A graph represents a function if every vertical line intersects the graph at most once.</p>
+    </definition>
+
+   <!-- <example xml:id="ex-function-graph">
+      <title>Applying the Vertical Line Test</title>
+      <statement>
+        <p>Does the graph of <m>y=\frac12(x-1)^2+1</m> represent <m>y</m> as a function of <m>x</m>?</p>
+        <figure xml:id="fig-parabola-function">
+          <caption>The graph of <m>y=\frac12(x-1)^2+1</m></caption>
+          <image width="55%">
+            <latex-image>
+              <preamble>\usepackage{tikz}\usepackage{pgfplots}\pgfplotsset{compat=1.18}</preamble>
+              <tikz>
+\begin{tikzpicture}
+  \begin{axis}[
+    axis lines=middle,
+    xmin=-3.5,xmax=5.5,
+    ymin=-0.5,ymax=10.5,
+    xtick={-3,-2,...,5},
+    ytick={0,2,...,10},
+    xlabel={$x$},ylabel={$y$},
+    grid=both,
+    width=9cm,height=7cm]
+    \addplot[blue,thick,domain=-3:5,samples=100] {0.5*(x-1)^2+1};
+  \end{axis}
+\end{tikzpicture}
+              </tikz>
+            </latex-image>
+          </image>
+        </figure>
+      </statement>
+      <solution>
+        <p>Yes. Every vertical line intersects the graph at most once. Equivalently, each chosen value of <m>x</m> produces exactly one value of <m>y</m>.</p>
+      </solution>
+    </example>
+  -->
+    <warning>
+      <p>A vertical line does not need to intersect a graph. It only causes a problem when it intersects the graph more than once.</p>
+    </warning>
+  </subsection>
+
+  <subsection xml:id="subsec-functions-from-mapping-diagrams">
+    <title>Functions Represented by Bubble Diagrams</title>
+
+    <p>A <term>bubble diagram</term>, also called a <term>mapping diagram</term>, places inputs in one group and outputs in another. An arrow shows which output is assigned to each input.</p>
+
+
+    <example xml:id="ex-bubble-not-function">
+      <title>Finding the Input That Breaks the Rule</title>
+      <statement>
+        <p>Suppose the input <m>5</m> in the previous diagram also had an arrow pointing to Zone A. Would the new relationship be a function?</p>
+      </statement>
+      <solution>
+        <p>No. The input <m>5</m> would have two outputs, Zone A and Zone B. That violates the definition of a function.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-introduction-function-notation">
+    <title>Introducing Function Notation</title>
+
+    <p>When a relationship is a function, we can give the function a name. A common name is <m>f</m>. The notation</p>
+    <me>y=f(x)</me>
+    <p>means that <m>x</m> is the input, <m>f</m> is the name of the function, and <m>f(x)</m> is the output. The expression <m>f(x)</m> is read <q><m>f</m> of <m>x</m></q>; it does not mean <m>f</m> multiplied by <m>x</m>.</p>
+
+    <example xml:id="ex-notation-context">
+      <title>Interpreting Function Notation in Context</title>
+      <statement>
+        <p>Let <m>C=f(n)</m> represent the total cost, in dollars, to print <m>n</m> posters. Interpret the statement <m>f(30)=18</m>.</p>
+      </statement>
+      <solution>
+        <p>The input is <m>30</m> posters and the output is a cost of <m>18</m> dollars. Therefore, printing <m>30</m> posters costs <m>$18</m>.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-evaluate-notation-table">
+      <title>Evaluating a Function from a Table</title>
+      <statement>
+        <p>Use <xref ref="table-reading-function"/> and let <m>p=r(t)</m>.</p>
+        <ol marker="a.">
+          <li><p>Find <m>r(25)</m>.</p></li>
+          <li><p>Find an input <m>t</m> for which <m>r(t)=24</m>.</p></li>
+        </ol>
+      </statement>
+      <solution>
+        <ol marker="a.">
+          <li><p>Locate the input <m>25</m>. Its output is <m>15</m>, so <m>r(25)=15</m>.</p></li>
+          <li><p>Locate the output <m>24</m> and read its corresponding input. Since <m>r(40)=24</m>, the requested input is <m>t=40</m>.</p></li>
+        </ol>
+      </solution>
+    </example>
+
+    <example xml:id="ex-evaluate-formula">
+      <title>Evaluating a Function Given by a Formula</title>
+      <statement>
+        <p>Let <m>g(x)=2x^2-3x+1</m>. Find <m>g(-2)</m>.</p>
+      </statement>
+      <solution>
+        <p>Substitute <m>-2</m> for every occurrence of <m>x</m>.</p>
+        <md>
+          <mrow>g(-2) &amp;= 2(-2)^2-3(-2)+1</mrow>
+          <mrow>&amp;= 2(4)+6+1</mrow>
+          <mrow>&amp;= 15.</mrow>
+        </md>
+        <p>Thus, the input <m>-2</m> produces the output <m>15</m>.</p>
+      </solution>
+    </example>
+  </subsection>
+
+ 
+
+  <conclusion>
+    <p>A relationship is a function when every input has exactly one output. In a table, check repeated inputs. On a graph, use the vertical line test. In a bubble diagram, verify that exactly one arrow leaves every input. Function notation records the same input-output relationship compactly.</p>
+  </conclusion>
+</section>

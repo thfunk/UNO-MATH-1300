@@ -5,4 +5,10 @@
 
   <p>Content of the new chapter.</p>
 
+  <xi:include href="sec-Composition.ptx" />
+  <xi:include href="sec-VertHoriz-Shifts.ptx" />
+  <xi:include href="sec-VertHoriz-Reflections.ptx" />
+  <xi:include href="sec-VertHoriz-Scaling.ptx" />
+  <xi:include href="sec-Combining-Transformations.ptx" />
+
 </chapter>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-vertical-horizontal-reflections" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Vertical and Horizontal Reflections</title>
+
+  <introduction>
+    <p>Reflections create mirror images of graphs. Unlike shifts, which move a graph, reflections reverse the position of points across an axis.</p>
+  </introduction>
+
+  <subsection xml:id="subsec-horizontal-reflection">
+    <title>Reflection Across the y-Axis</title>
+
+    <definition xml:id="def-y-axis-reflection">
+      <title>Horizontal Reflection</title>
+      <p>The transformation <m>g(x)=f(-x)</m> changes the input values of the function and reflects the graph across the y-axis.</p>
+    </definition>
+
+    <p>If <m>(a,b)</m> lies on the graph of <m>f</m>, then <m>(-a,b)</m> lies on the graph of <m>f(-x)</m>.</p>
+
+    <!-- Figure: Show a graph and its reflection across the y-axis. Corresponding points should have opposite x-coordinates and identical y-coordinates. -->
+
+    <example xml:id="ex-y-axis-reflection-point">
+      <title>Tracking a Point</title>
+      <statement>
+        <p>The point <m>(4,-2)</m> lies on the graph of <m>f</m>. What point lies on the graph of <m>g(x)=f(-x)</m>?</p>
+      </statement>
+      <solution>
+        <p>A reflection across the y-axis changes the sign of the x-coordinate.</p>
+        <p>The corresponding point is <m>(-4,-2)</m>.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-vertical-reflection">
+    <title>Reflection Across the x-Axis</title>
+
+    <definition xml:id="def-x-axis-reflection">
+      <title>Vertical Reflection</title>
+      <p>The transformation <m>g(x)=-f(x)</m> changes the output values of the function and reflects the graph across the x-axis.</p>
+    </definition>
+
+    <p>If <m>(a,b)</m> lies on the graph of <m>f</m>, then <m>(a,-b)</m> lies on the graph of <m>-f(x)</m>.</p>
+
+    <!-- Figure: Show a graph and its reflection across the x-axis. Corresponding points should have identical x-coordinates and opposite y-coordinates. -->
+
+    <example xml:id="ex-x-axis-reflection-point">
+      <title>Tracking a Point</title>
+      <statement>
+        <p>The point <m>(-3,5)</m> lies on the graph of <m>f</m>. What point lies on the graph of <m>h(x)=-f(x)</m>?</p>
+      </statement>
+      <solution>
+        <p>A reflection across the x-axis changes the sign of the y-coordinate.</p>
+        <p>The corresponding point is <m>(-3,-5)</m>.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-domain-range-reflections">
+    <title>How Reflections Affect Domain and Range</title>
+
+    <!-- Figure: Graph f and -f on the same axes. Use to discuss that the domain stays the same while the range changes sign. -->
+
+    <example xml:id="ex-domain-range-x-axis">
+      <title>Reflection Across the x-Axis</title>
+      <statement>
+        <p>How does <m>-f(x)</m> affect the domain and range of a function?</p>
+      </statement>
+      <solution>
+        <p>The domain remains unchanged because the inputs are not altered.</p>
+        <p>The range is reflected across the x-axis because each output changes sign.</p>
+      </solution>
+    </example>
+
+    <!-- Figure: Graph f and f(-x) on the same axes. Use to discuss that the range stays the same while x-values are reflected. -->
+
+    <example xml:id="ex-domain-range-y-axis">
+      <title>Reflection Across the y-Axis</title>
+      <statement>
+        <p>How does <m>f(-x)</m> affect the domain and range of a function?</p>
+      </statement>
+      <solution>
+        <p>The range remains unchanged because outputs keep the same values.</p>
+        <p>The domain is reflected across the y-axis because the inputs change sign.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-combined-transformations-reflections">
+    <title>Reflections with Shifts</title>
+
+    <example xml:id="ex-reflection-and-shift-point">
+      <title>Combining Reflections and Shifts</title>
+      <statement>
+        <p>The point <m>(2,5)</m> lies on the graph of <m>g(x)</m>. Find the corresponding point on the graph of</p>
+        <me>h(x)=-g(x-3)+2.</me>
+      </statement>
+      <solution>
+        <p>The expression <m>x-3</m> shifts the graph right 3 units, moving the point to <m>(5,5)</m>.</p>
+        <p>The negative sign reflects the graph across the x-axis, giving <m>(5,-5)</m>.</p>
+        <p>The <m>+2</m> shifts the graph up 2 units, giving <m>(5,-3)</m>.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-reflections-summary">
+    <title>Key Ideas</title>
+    <important>
+      <ul>
+        <li><p><m>f(-x)</m> changes inputs and reflects across the y-axis.</p></li>
+        <li><p><m>-f(x)</m> changes outputs and reflects across the x-axis.</p></li>
+        <li><p>A y-axis reflection changes x-coordinates but not y-coordinates.</p></li>
+        <li><p>An x-axis reflection changes y-coordinates but not x-coordinates.</p></li>
+      </ul>
+    </important>
+  </subsection>
+</section>

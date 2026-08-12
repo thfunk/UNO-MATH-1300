@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-combining-transformations" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Combining Transformations</title>
+
+  <introduction>
+    <p>A function can undergo more than one transformation. To understand a combined transformation, separate the changes to inputs from the changes to outputs, and pay careful attention to the order in which operations are applied.</p>
+  </introduction>
+
+  <objectives>
+    <title>Learning Objectives</title>
+    <ol>
+      <li><p>Describe multiple transformations represented by a function rule.</p></li>
+      <li><p>Track a point through a sequence of transformations.</p></li>
+      <li><p>Match a transformed graph with its equation.</p></li>
+      <li><p>Explain why the order of transformations can affect the result.</p></li>
+      <li><p>Connect combined transformations with composition of functions.</p></li>
+    </ol>
+  </objectives>
+
+  <subsection xml:id="subsec-reading-combined-transformations">
+    <title>Reading a Combined Transformation</title>
+
+    <p>A useful general form is</p>
+    <me>g(x)=a f(b(x-c))+d.</me>
+    <p>The parameters describe transformations of the graph of <m>f</m>:</p>
+    <ul>
+      <li><p><m>x-c</m> produces a horizontal shift.</p></li>
+      <li><p>The factor <m>b</m> produces horizontal scaling and, if negative, a reflection across the y-axis.</p></li>
+      <li><p>The factor <m>a</m> produces vertical scaling and, if negative, a reflection across the x-axis.</p></li>
+      <li><p>The value <m>d</m> produces a vertical shift.</p></li>
+    </ul>
+
+    <example xml:id="ex-describe-combined-transformation">
+      <title>Describing Several Transformations</title>
+      <statement>
+        <p>Describe how the graph of <m>f</m> is transformed to obtain</p>
+        <me>g(x)=-2f(x+4)+3.</me>
+      </statement>
+      <solution>
+        <p>The expression <m>x+4</m> shifts the graph left 4 units.</p>
+        <p>The factor <m>-2</m> reflects the graph across the x-axis and stretches it vertically by a factor of 2.</p>
+        <p>The value <m>+3</m> shifts the graph up 3 units.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-moving-points-sequentially">
+    <title>Moving a Point Through Several Transformations</title>
+
+    <p>When transformations are given as a sequence, update the point after each step. Keeping a record of the intermediate coordinates helps prevent changes to inputs and outputs from being mixed together.</p>
+
+    <example xml:id="ex-point-sequence-four-transformations">
+      <title>Following a Sequence</title>
+      <statement>
+        <p>The point <m>(-2,6)</m> is on the graph of <m>f</m>. Find its final location after the graph is transformed in this order:</p>
+        <ol>
+          <li><p>shift down 4 units,</p></li>
+          <li><p>reflect across the y-axis,</p></li>
+          <li><p>shift right 3 units,</p></li>
+          <li><p>stretch vertically by a factor of 2.</p></li>
+        </ol>
+      </statement>
+      <solution>
+        <md>
+          <mrow>(-2,6) &amp;\longmapsto (-2,2) &amp;\text{shift down 4}</mrow>
+          <mrow>&amp;\longmapsto (2,2) &amp;\text{reflect across the y-axis}</mrow>
+          <mrow>&amp;\longmapsto (5,2) &amp;\text{shift right 3}</mrow>
+          <mrow>&amp;\longmapsto (5,4) &amp;\text{vertical stretch by 2}</mrow>
+        </md>
+        <p>The final point is <m>(5,4)</m>.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-point-rule-combined-transformation">
+      <title>Using a Combined Rule</title>
+      <statement>
+        <p>The point <m>(1,-3)</m> is on the graph of <m>f</m>. Find the corresponding point on the graph of</p>
+        <me>h(x)=-3f(x-2)+5.</me>
+      </statement>
+      <solution>
+        <p>The expression <m>x-2</m> shifts the input location right 2 units, so the new x-coordinate is <m>1+2=3</m>.</p>
+        <p>The output is multiplied by <m>-3</m> and then increased by 5:</p>
+        <me>-3(-3)+5=14.</me>
+        <p>The corresponding point is <m>(3,14)</m>.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-order-matters-transformations">
+    <title>Order Matters</title>
+
+    <p>Two transformations that affect the same coordinate may produce different results when their order is reversed.</p>
+
+    <example xml:id="ex-order-vertical-shift-scale">
+      <title>Shift Then Scale, or Scale Then Shift?</title>
+      <statement>
+        <p>The point <m>(-3,2)</m> is on the graph of <m>f</m>. Compare the final point in each sequence.</p>
+        <ol marker="a.">
+          <li><p>First shift up 4 units, then stretch vertically by a factor of 3.</p></li>
+          <li><p>First stretch vertically by a factor of 3, then shift up 4 units.</p></li>
+        </ol>
+      </statement>
+      <solution>
+        <ol marker="a.">
+          <li><p>The output changes from <m>2</m> to <m>6</m>, then to <m>18</m>. The final point is <m>(-3,18)</m>.</p></li>
+          <li><p>The output changes from <m>2</m> to <m>6</m>, then to <m>10</m>. The final point is <m>(-3,10)</m>.</p></li>
+        </ol>
+        <p>The results differ because <m>3(f(x)+4)=3f(x)+12</m>, while applying the stretch first and then shifting gives <m>3f(x)+4</m>.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-match-graphs-equations">
+    <title>Matching Graphs and Equations</title>
+
+    <!-- Figure: Display a nonsymmetric parent graph f with two clearly marked anchor points and three transformed graphs. Graph A is f(x)-2, Graph B is 2f(x), and Graph C is f(x+3). Label the transformed graphs only as A, B, and C so students must match each graph to its rule. -->
+
+    <example xml:id="ex-match-transformed-graphs">
+      <title>Use More Than One Anchor Point</title>
+      <statement>
+        <p>Match each graph described above with one of the following equations:</p>
+        <ol marker="a.">
+          <li><p><m>f(x)-2</m></p></li>
+          <li><p><m>2f(x)</m></p></li>
+          <li><p><m>f(x+3)</m></p></li>
+        </ol>
+      </statement>
+      <solution>
+        <p>The graph of <m>f(x)-2</m> has the same x-coordinates as <m>f</m>, but every output is 2 smaller.</p>
+        <p>The graph of <m>2f(x)</m> has the same x-coordinates and x-intercepts as <m>f</m>, but every output is doubled.</p>
+        <p>The graph of <m>f(x+3)</m> has the same shape and output values as <m>f</m>, but every point is shifted left 3 units.</p>
+        <p>Checking multiple anchor points helps distinguish a shift from a scaling.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-transformations-as-compositions">
+    <title>Transformations as Compositions</title>
+
+    <p>Transformations can be represented by composing simple functions. The order of the composition records which transformation happens first.</p>
+
+    <example xml:id="ex-composition-order-transformations">
+      <title>Comparing Two Compositions</title>
+      <statement>
+        <p>Let <m>F(x)=x^2</m> and <m>S(x)=x-6</m>. Find <m>F(S(x))</m> and <m>S(F(x))</m>, and describe the transformation of the parent graph <m>y=x^2</m> in each case.</p>
+      </statement>
+      <solution>
+        <p>For the first composition, substitute <m>x-6</m> into <m>F</m>:</p>
+        <me>F(S(x))=(x-6)^2.</me>
+        <p>This shifts the graph of <m>y=x^2</m> right 6 units.</p>
+        <p>For the second composition, substitute <m>x^2</m> into <m>S</m>:</p>
+        <me>S(F(x))=x^2-6.</me>
+        <p>This shifts the graph of <m>y=x^2</m> down 6 units.</p>
+        <p>The compositions produce different transformations because the order of the functions is different.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-multi-function-composition-transformation">
+      <title>Building a Combined Transformation with Composition</title>
+      <statement>
+        <p>Let <m>R(x)=x+1</m>, <m>V(x)=-2x</m>, and <m>p(x)=x^3</m>. Find</p>
+        <me>g(x)=R(V(p(R(x))))</me>
+        <p>and explain how the composition transforms the graph of <m>p(x)=x^3</m>.</p>
+      </statement>
+      <solution>
+        <p>Work from the inside out:</p>
+        <md>
+          <mrow>R(x)&amp;=x+1,</mrow>
+          <mrow>p(R(x))&amp;=(x+1)^3,</mrow>
+          <mrow>V(p(R(x)))&amp;=-2(x+1)^3,</mrow>
+          <mrow>R(V(p(R(x))))&amp;=-2(x+1)^3+1.</mrow>
+        </md>
+        <p>Relative to <m>p(x)=x^3</m>, the graph shifts left 1 unit, reflects across the x-axis, stretches vertically by a factor of 2, and shifts up 1 unit.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-combining-transformations-summary">
+    <title>Key Ideas</title>
+    <important>
+      <ul>
+        <li><p>Separate changes to inputs from changes to outputs.</p></li>
+        <li><p>Track intermediate points when transformations are listed in sequence.</p></li>
+        <li><p>Order matters when multiple operations affect the same coordinate.</p></li>
+        <li><p>Use several anchor points when matching a transformed graph to an equation.</p></li>
+        <li><p>A composition records transformation order from the inside function to the outside function.</p></li>
+      </ul>
+    </important>
+  </subsection>
+</section>

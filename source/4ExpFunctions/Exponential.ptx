@@ -5,4 +5,7 @@
 
   <p>Content of the new chapter.</p>
 
+  <xi:include href="sec-IntroExponential.ptx" />
+  <xi:include href="sec-Applications-Exponential.ptx" />
+
 </chapter>

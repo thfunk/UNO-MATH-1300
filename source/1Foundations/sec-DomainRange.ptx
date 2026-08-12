@@ -1,16 +1,212 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<section xml:id="DomainRange" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-domain-and-range" xmlns:xml="http://www.w3.org/XML/1998/namespace">
   <title>Domain and Range</title>
-    <p>
-        In this section, we will learn how to identify, through a function's graph, the domain and range of a function. We will also learn how to determine where a function is increasing or decreasing.
-    </p>
 
+  <introduction>
+    <p>Every function connects inputs with outputs. The collection of all possible inputs is called the <term>domain</term>, and the collection of all possible outputs is called the <term>range</term>. In this section, we will define domain and range, translate between interval notation and inequality notation, and determine domain and range from graphs.</p>
+  </introduction>
 
-<!--       
-      Start of RWT Questions
-    -->
+  <objectives>
+    <title>Learning Objectives</title>
+    <ol>
+      <li><p>Define the domain and range of a function.</p></li>
+      <li><p>Translate between interval notation and inequality notation.</p></li>
+      <li><p>Determine domain and range from a graph.</p></li>
+      <li><p>Express domain and range using both interval and inequality notation.</p></li>
+    </ol>
+  </objectives>
 
-  <!-- <xi:include href="exercises/RWT-3-Domain-Range.ptx" /> -->
+  <subsection xml:id="subsec-domain-range-definitions">
+    <title>Domain and Range as Sets of Values</title>
 
-  </section>
+    <definition xml:id="def-domain">
+      <title>Domain</title>
+      <p>The <term>domain</term> of a function is the set of all input values for which the function is defined.</p>
+    </definition>
+
+    <definition xml:id="def-range">
+      <title>Range</title>
+      <p>The <term>range</term> of a function is the set of all output values produced by the function.</p>
+    </definition>
+
+    <example xml:id="ex-domain-range-context">
+      <title>Interpreting Domain and Range in Context</title>
+      <statement>
+        <p>Let <m>B=f(t)</m> represent the charge level of a rechargeable battery, as a percent, <m>t</m> minutes after it is connected to a charger. Describe the meaning of the domain and range.</p>
+      </statement>
+      <solution>
+        <p>The input is time in minutes, so the domain is the set of possible charging times.</p>
+        <p>The output is the battery's charge level as a percent, so the range is the set of possible charge levels produced during those times.</p>
+      </solution>
+    </example>
+
+    <remark>
+      <p>When a function is written as <m>y=f(x)</m>, the domain contains the possible <m>x</m>-values and the range contains the resulting <m>y</m>-values.</p>
+    </remark>
+  </subsection>
+
+  <subsection xml:id="subsec-interval-and-inequality-notation">
+    <title>Interval Notation and Inequality Notation</title>
+
+    <p>An interval describes all real numbers between two boundary values. We can describe the same interval using either interval notation or inequality notation.</p>
+
+    <p>Use a square bracket when a finite endpoint is included. Use a parenthesis when an endpoint is not included.</p>
+
+    <table xml:id="table-endpoint-notation">
+      <title>Endpoint Notation</title>
+      <tabular>
+        <row header="yes"><cell>Endpoint condition</cell><cell>Interval symbol</cell><cell>Inequality symbol</cell></row>
+        <row><cell>Endpoint is included</cell><cell>Square bracket</cell><cell><m>\le</m> or <m>\ge</m></cell></row>
+        <row><cell>Endpoint is not included</cell><cell>Parenthesis</cell><cell><m>&lt;</m> or <m>></m></cell></row>
+      </tabular>
+    </table>
+
+    <example xml:id="ex-interval-to-inequality-open-closed">
+      <title>From Interval Notation to Inequality Notation</title>
+      <statement>
+        <p>Write <m>(-6,11]</m> using inequality notation.</p>
+      </statement>
+      <solution>
+        <p>The parenthesis at <m>-6</m> means that <m>-6</m> is not included. The square bracket at <m>11</m> means that <m>11</m> is included.</p>
+        <me>-6&lt;x\le 11</me>
+      </solution>
+    </example>
+
+    <example xml:id="ex-inequality-to-interval-closed-open">
+      <title>From Inequality Notation to Interval Notation</title>
+      <statement>
+        <p>Write <m>3\le t&lt;14</m> using interval notation.</p>
+      </statement>
+      <solution>
+        <p>The value <m>3</m> is included, so use a square bracket. The value <m>14</m> is not included, so use a parenthesis.</p>
+        <me>[3,14)</me>
+      </solution>
+    </example>
+
+    <example xml:id="ex-interval-to-inequality-neither-endpoint">
+      <title>Neither Endpoint Included</title>
+      <statement>
+        <p>Write <m>(-9,-2)</m> using inequality notation.</p>
+      </statement>
+      <solution>
+        <p>Both endpoints use parentheses, so neither endpoint is included.</p>
+        <me>-9&lt;y&lt;-2</me>
+      </solution>
+    </example>
+
+    <example xml:id="ex-inequality-to-interval-both-endpoints">
+      <title>Both Endpoints Included</title>
+      <statement>
+        <p>Write <m>5\le q\le 18</m> using interval notation.</p>
+      </statement>
+      <solution>
+        <p>Both endpoints are included, so use a square bracket at each end.</p>
+        <me>[5,18]</me>
+      </solution>
+    </example>
+
+    <subsubsection xml:id="subsubsec-infinite-intervals">
+      <title>Intervals That Continue Without Bound</title>
+
+      <p>The symbols <m>\infty</m> and <m>-\infty</m> indicate that an interval continues without bound. Infinity is not a number or an endpoint that can be included, so it always appears next to a parenthesis.</p>
+
+      <example xml:id="ex-positive-infinity-interval">
+        <statement>
+          <p>Write <m>[-3,\infty)</m> using inequality notation.</p>
+        </statement>
+        <solution>
+          <p>The interval begins at <m>-3</m>, includes <m>-3</m>, and continues to the right without bound.</p>
+          <me>x\ge -3</me>
+        </solution>
+      </example>
+
+      <example xml:id="ex-negative-infinity-interval">
+        <statement>
+          <p>Write <m>r&lt;7</m> using interval notation.</p>
+        </statement>
+        <solution>
+          <p>The values continue to the left without bound, and <m>7</m> is not included.</p>
+          <me>(-\infty,7)</me>
+        </solution>
+      </example>
+
+      <warning>
+        <p>Do not write inequalities such as <m>x&lt;\infty</m> as part of a compound inequality. Instead, write only the finite restriction, such as <m>x\ge -3</m>.</p>
+      </warning>
+    </subsubsection>
+  </subsection>
+
+  <subsection xml:id="subsec-domain-range-from-graphs">
+    <title>Finding Domain and Range from a Graph</title>
+
+    <p>To find the domain of a graph, look from left to right and identify every input value used by the graph. To find the range, look from bottom to top and identify every output value used by the graph.</p>
+
+    <important>
+      <ul>
+        <li><p><em>Domain:</em> read the graph from left to right.</p></li>
+        <li><p><em>Range:</em> read the graph from bottom to top.</p></li>
+        <li><p>A closed point includes its coordinate and corresponds to a square bracket or a non-strict inequality.</p></li>
+        <li><p>An open point excludes its coordinate and corresponds to a parenthesis or a strict inequality.</p></li>
+      </ul>
+    </important>
+
+    <!-- Figure: A continuous curve begins at a closed point (-5,1), rises to a highest point with y=7, and ends at an open point (4,3). The curve reaches y=1 only at the closed left endpoint and reaches y=7 at an included point. Use this graph for Example ex-bounded-domain-range-graph. -->
+
+    <example xml:id="ex-bounded-domain-range-graph">
+      <title>A Graph with Two Finite Endpoints</title>
+      <statement>
+        <p>Use the graph described above to determine the domain and range. Express each answer using interval notation and inequality notation.</p>
+      </statement>
+      <solution>
+        <p>The graph begins at the included input <m>x=-5</m> and ends at the excluded input <m>x=4</m>.</p>
+        <p><em>Domain in interval notation:</em> <m>[-5,4)</m></p>
+        <p><em>Domain in inequality notation:</em> <m>-5\le x&lt;4</m></p>
+        <p>The smallest output is <m>y=1</m> and the largest output is <m>y=7</m>. Both output values occur on the graph.</p>
+        <p><em>Range in interval notation:</em> <m>[1,7]</m></p>
+        <p><em>Range in inequality notation:</em> <m>1\le y\le 7</m></p>
+      </solution>
+    </example>
+
+    <remark>
+      <p>An open endpoint affects the domain through its <m>x</m>-coordinate and the range through its <m>y</m>-coordinate. However, an excluded endpoint does not automatically exclude that output from the range. The same output may occur at another included point on the graph.</p>
+    </remark>
+
+    <!-- Figure: A curve starts at a closed point (-2,-4), passes through several points, and continues indefinitely to the right and upward as indicated by an arrow. Use this graph for Example ex-unbounded-domain-range-graph. -->
+
+    <example xml:id="ex-unbounded-domain-range-graph">
+      <title>A Graph That Continues Without Bound</title>
+      <statement>
+        <p>Use the graph described above to determine the domain and range. Express each answer using interval notation and inequality notation.</p>
+      </statement>
+      <solution>
+        <p>The smallest input is <m>-2</m>, and it is included. The graph continues to the right without bound.</p>
+        <p><em>Domain in interval notation:</em> <m>[-2,\infty)</m></p>
+        <p><em>Domain in inequality notation:</em> <m>x\ge -2</m></p>
+        <p>The smallest output is <m>-4</m>, and it is included. The graph continues upward without bound.</p>
+        <p><em>Range in interval notation:</em> <m>[-4,\infty)</m></p>
+        <p><em>Range in inequality notation:</em> <m>y\ge -4</m></p>
+      </solution>
+    </example>
+
+    <!-- Figure: A smooth wave-like graph extends indefinitely in both horizontal directions, indicated by arrows. Its lowest output is y=-3 and its highest output is y=2, and both values are attained. Use this graph for Example ex-all-real-domain-bounded-range. -->
+
+    <example xml:id="ex-all-real-domain-bounded-range">
+      <title>All Real Inputs with Bounded Outputs</title>
+      <statement>
+        <p>Use the graph described above to determine the domain and range. Express each answer using interval notation and inequality notation.</p>
+      </statement>
+      <solution>
+        <p>The graph continues indefinitely to both the left and the right, so every real number is an input.</p>
+        <p><em>Domain in interval notation:</em> <m>(-\infty,\infty)</m></p>
+        <p><em>Domain in inequality notation:</em> <m>-\infty&lt;x&lt;\infty</m>, or equivalently, <m>x</m> is any real number.</p>
+        <p>The lowest output is <m>-3</m> and the highest output is <m>2</m>. Both values occur on the graph.</p>
+        <p><em>Range in interval notation:</em> <m>[-3,2]</m></p>
+        <p><em>Range in inequality notation:</em> <m>-3\le y\le 2</m></p>
+      </solution>
+    </example>
+  </subsection>
+
+  <conclusion>
+    <p>The domain is the set of input values, and the range is the set of output values. Interval notation and inequality notation provide two ways to describe the same sets of numbers. On a graph, read from left to right to find the domain and from bottom to top to find the range, paying careful attention to open points, closed points, and arrows.</p>
+  </conclusion>
+</section>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-vertical-horizontal-scaling" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Vertical and Horizontal Scaling</title>
+
+  <introduction>
+    <p>Scaling changes the distance between points on a graph and an axis. Vertical scaling changes outputs, while horizontal scaling changes input locations. Depending on the scale factor, a graph may be stretched or compressed.</p>
+  </introduction>
+
+  <objectives>
+    <title>Learning Objectives</title>
+    <ol>
+      <li><p>Identify vertical stretches and compressions from function notation.</p></li>
+      <li><p>Identify horizontal stretches and compressions from function notation.</p></li>
+      <li><p>Track points through vertical and horizontal scalings.</p></li>
+      <li><p>Combine scaling with shifts and reflections.</p></li>
+    </ol>
+  </objectives>
+
+  <subsection xml:id="subsec-vertical-scaling">
+    <title>Vertical Scaling</title>
+
+    <definition xml:id="def-vertical-scaling">
+      <title>Vertical Scaling</title>
+      <p>Let <m>y=f(x)</m> be a function and let <m>a&gt;0</m>. The graph of <m>y=af(x)</m> is obtained by multiplying every output of <m>f</m> by <m>a</m>.</p>
+      <ul>
+        <li><p>If <m>a&gt;1</m>, the graph is stretched vertically by a factor of <m>a</m>. Most points move farther from the x-axis.</p></li>
+        <li><p>If <m>0&lt;a&lt;1</m>, the graph is compressed vertically by a factor of <m>a</m>. Most points move closer to the x-axis.</p></li>
+      </ul>
+    </definition>
+
+    <p>Under the transformation <m>g(x)=af(x)</m>, a point <m>(x,y)</m> on the graph of <m>f</m> becomes <m>(x,ay)</m> on the graph of <m>g</m>. A point whose y-coordinate is zero does not move, so each x-intercept is a fixed point.</p>
+
+    <!-- Figure: On one coordinate plane, show a nonsymmetric piecewise-linear graph f and the graph g(x)=3f(x). Mark corresponding points to show that x-coordinates stay fixed while y-coordinates are tripled. Points on the x-axis remain fixed. -->
+
+    <example xml:id="ex-vertical-stretch-graph">
+      <title>A Vertical Stretch</title>
+      <statement>
+        <p>The graph of <m>g</m> is obtained from the graph of <m>f</m> by multiplying every output by <m>3</m>. Describe the transformation and write <m>g</m> in terms of <m>f</m>.</p>
+      </statement>
+      <solution>
+        <p>Multiplying every output by <m>3</m> produces a vertical stretch by a factor of <m>3</m>.</p>
+        <me>g(x)=3f(x)</me>
+      </solution>
+    </example>
+
+    <example xml:id="ex-vertical-compression-point">
+      <title>Tracking a Point Through a Vertical Compression</title>
+      <statement>
+        <p>The point <m>(-4,10)</m> is on the graph of <m>f</m>. Find the corresponding point on the graph of <m>p(x)=\frac{2}{5}f(x)</m>.</p>
+      </statement>
+      <solution>
+        <p>The x-coordinate remains <m>-4</m>. Multiply the output by <m>\frac{2}{5}</m>:</p>
+        <me>\frac{2}{5}(10)=4.</me>
+        <p>The corresponding point is <m>(-4,4)</m>.</p>
+      </solution>
+    </example>
+
+    <!-- Figure: Show the graph of f and the graph of q(x)=(1/2)f(x). Use marked points above and below the x-axis to show that all y-coordinates are halved. -->
+
+    <example xml:id="ex-identify-vertical-scale-from-graphs">
+      <title>Identifying a Scale Factor from Two Graphs</title>
+      <statement>
+        <p>Corresponding points on the graphs of <m>f</m> and <m>q</m> include <m>(2,6)</m> on <m>f</m> and <m>(2,3)</m> on <m>q</m>. The graphs have the same x-intercepts. Determine the vertical scale factor and write <m>q</m> in terms of <m>f</m>.</p>
+      </statement>
+      <solution>
+        <p>The output changed from <m>6</m> to <m>3</m>, so every output was multiplied by <m>\frac12</m>. This is a vertical compression by a factor of <m>\frac12</m>.</p>
+        <me>q(x)=\frac12f(x)</me>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-horizontal-scaling">
+    <title>Horizontal Scaling</title>
+
+    <definition xml:id="def-horizontal-scaling">
+      <title>Horizontal Scaling</title>
+      <p>Let <m>y=f(x)</m> be a function and let <m>b&gt;0</m>. The graph of <m>y=f(bx)</m> is obtained by dividing every input location by <m>b</m>.</p>
+      <ul>
+        <li><p>If <m>b&gt;1</m>, the graph is compressed horizontally by a factor of <m>\frac{1}{b}</m>. Most points move closer to the y-axis.</p></li>
+        <li><p>If <m>0&lt;b&lt;1</m>, the graph is stretched horizontally by a factor of <m>\frac{1}{b}</m>. Most points move farther from the y-axis.</p></li>
+      </ul>
+    </definition>
+
+    <p>Under the transformation <m>h(x)=f(bx)</m>, a point <m>(x,y)</m> on the graph of <m>f</m> becomes <m>(x/b,y)</m> on the graph of <m>h</m>. Points on the y-axis do not move.</p>
+
+    <warning>
+      <p>As with horizontal shifts, horizontal scaling can appear opposite to the number inside the function. The graph of <m>f(4x)</m> is compressed horizontally, not stretched.</p>
+    </warning>
+
+    <!-- Figure: On one coordinate plane, show f and h(x)=f(2x). Mark corresponding points to show that y-coordinates stay fixed while x-coordinates are divided by 2. Points on the y-axis remain fixed. -->
+
+    <example xml:id="ex-horizontal-compression-graph">
+      <title>A Horizontal Compression</title>
+      <statement>
+        <p>Describe the transformation from <m>f</m> to <m>h(x)=f(2x)</m>.</p>
+      </statement>
+      <solution>
+        <p>Because the inputs inside the function are multiplied by <m>2</m>, every x-coordinate is divided by <m>2</m>. The graph is compressed horizontally by a factor of <m>\frac12</m>.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-horizontal-stretch-point">
+      <title>Tracking a Point Through a Horizontal Stretch</title>
+      <statement>
+        <p>The point <m>(3,-5)</m> is on the graph of <m>f</m>. Find the corresponding point on the graph of <m>r(x)=f(x/4)</m>.</p>
+      </statement>
+      <solution>
+        <p>Here <m>b=\frac14</m>, so each x-coordinate is divided by <m>\frac14</m>, or multiplied by <m>4</m>. The y-coordinate stays the same.</p>
+        <p>The corresponding point is <m>(12,-5)</m>.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-combined-scaling-transformations">
+    <title>Scaling with Other Transformations</title>
+
+    <p>When several transformations are combined, track the change to the input coordinate and the change to the output coordinate separately.</p>
+
+    <example xml:id="ex-vertical-scale-reflection-shift">
+      <title>Vertical Scaling, Reflection, and Shift</title>
+      <statement>
+        <p>The point <m>(5,-3)</m> is on the graph of <m>m</m>. Find the corresponding point on the graph of</p>
+        <me>c(x)=-4m(x)+2.</me>
+      </statement>
+      <solution>
+        <p>The input is unchanged, so the new x-coordinate is <m>5</m>. Multiply the original output by <m>-4</m>, then add <m>2</m>:</p>
+        <me>-4(-3)+2=14.</me>
+        <p>The corresponding point is <m>(5,14)</m>. The negative scale factor combines a reflection across the x-axis with a vertical stretch by a factor of <m>4</m>.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-horizontal-and-vertical-scaling-point">
+      <title>Horizontal and Vertical Scaling Together</title>
+      <statement>
+        <p>The point <m>(8,6)</m> is on the graph of <m>f</m>. Find the corresponding point on the graph of</p>
+        <me>k(x)=\frac13 f(2x).</me>
+      </statement>
+      <solution>
+        <p>The factor <m>2</m> inside the function divides the x-coordinate by <m>2</m>, so <m>8</m> becomes <m>4</m>.</p>
+        <p>The factor <m>\frac13</m> outside the function multiplies the y-coordinate by <m>\frac13</m>, so <m>6</m> becomes <m>2</m>.</p>
+        <p>The corresponding point is <m>(4,2)</m>.</p>
+      </solution>
+    </example>
+
+    <!-- Figure: Start with a piecewise-linear graph f containing the points (-4,2), (0,0), and (6,-3). Ask students to sketch g(x)=2f(x/3). Corresponding points become (-12,4), (0,0), and (18,-6). -->
+
+    <example xml:id="ex-scale-entire-graph">
+      <title>Scaling an Entire Graph</title>
+      <statement>
+        <p>Use the graph described above to sketch <m>g(x)=2f(x/3)</m>. Describe both scalings.</p>
+      </statement>
+      <solution>
+        <p>The input expression <m>x/3</m> produces a horizontal stretch by a factor of <m>3</m>. The factor <m>2</m> outside the function produces a vertical stretch by a factor of <m>2</m>.</p>
+        <p>Each point <m>(x,y)</m> on <m>f</m> becomes <m>(3x,2y)</m> on <m>g</m>.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-scaling-summary">
+    <title>Key Ideas</title>
+    <important>
+      <ul>
+        <li><p>For <m>g(x)=af(x)</m>, multiply every y-coordinate by <m>a</m>.</p></li>
+        <li><p>If <m>a&gt;1</m>, the graph stretches vertically. If <m>0&lt;a&lt;1</m>, it compresses vertically.</p></li>
+        <li><p>For <m>h(x)=f(bx)</m>, divide every x-coordinate by <m>b</m>.</p></li>
+        <li><p>If <m>b&gt;1</m>, the graph compresses horizontally. If <m>0&lt;b&lt;1</m>, it stretches horizontally.</p></li>
+        <li><p>Points on the x-axis remain fixed under vertical scaling. Points on the y-axis remain fixed under horizontal scaling.</p></li>
+      </ul>
+    </important>
+  </subsection>
+</section>

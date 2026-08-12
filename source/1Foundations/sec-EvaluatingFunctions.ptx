@@ -1,17 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-function-notation-evaluating-functions" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Function Notation and Evaluating Functions</title>
 
-<section xml:id="EvaluatingFunctions" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Evaluating Functions</title>
-    <p>
-        In this section, we will use function notation to evaluate functions. We will also learn how to interpret 
-        the meaning of the inputs and outputs of a function.
-    </p>
+  <introduction>
+    <p>A function assigns exactly one output to each input. Function notation provides a convenient way to describe this input-output relationship. Before evaluating functions, it is important to understand what the inputs and outputs represent in a real-world situation.</p>
+  </introduction>
 
+  <subsection xml:id="subsec-understanding-function-notation">
+    <title>Understanding Function Notation</title>
+    <p>Function notation does not change the relationship itself. Instead, it gives the relationship a name.</p>
+    <p>When we write <m>N=f(x)</m>, the symbol <m>f</m> names the function, <m>x</m> represents the input, and <m>f(x)</m> represents the output corresponding to that input.</p>
 
-      <!--
-      Start of RWT Questions
-    -->
+    <example xml:id="ex-function-notation-non-numeric">
+      <title>A Function Does Not Need Numbers</title>
+      <statement>
+        <p>Suppose a bookstore records a customer associated with each preferred genre. Let <m>C=f(g)</m> represent the customer associated with genre <m>g</m>.</p>
+        <table xml:id="table-bookstore-genres">
+          <title>Preferred Genres</title>
+          <tabular>
+            <row header="yes"><cell>Genre</cell><cell>Customer</cell></row>
+            <row><cell>Mystery</cell><cell>Ava</cell></row>
+            <row><cell>Fantasy</cell><cell>Ben</cell></row>
+            <row><cell>History</cell><cell>Maya</cell></row>
+          </tabular>
+        </table>
+        <p>Evaluate <m>f(\text{Fantasy})</m>.</p>
+      </statement>
+      <solution>
+        <p>The input <q>Fantasy</q> corresponds to the output <q>Ben</q>. Therefore, <m>f(\text{Fantasy})=\text{Ben}</m>.</p>
+      </solution>
+    </example>
 
- <!-- <xi:include href="exercises/RWT-2-Evaluating-Functions.ptx" /> -->
+    <remark>
+      <p>Function notation is not limited to numbers. An object can serve as an input or output as long as the relationship is a function.</p>
+    </remark>
+  </subsection>
 
-  </section>
+  <subsection xml:id="subsec-interpreting-inputs-outputs">
+    <title>Interpreting Inputs and Outputs</title>
+    <p>To understand a function, identify what the input represents and what the output represents.</p>
+
+    <example xml:id="ex-paddleboard-rental">
+      <title>Rental Cost</title>
+      <statement>
+        <p>Let <m>C=t(h)</m> represent the total cost, in dollars, of renting a paddleboard for <m>h</m> hours. Interpret the statement <m>t(4)=36</m>.</p>
+      </statement>
+      <solution>
+        <p>The input is <m>4</m> hours and the output is <m>36</m> dollars. Renting a paddleboard for four hours costs 36 dollars.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-plant-growth">
+      <title>Plant Growth</title>
+      <statement>
+        <p>Let <m>H=g(d)</m> represent the height of a sunflower, in centimeters, after <m>d</m> days. Interpret the statement <m>g(20)=58</m>.</p>
+      </statement>
+      <solution>
+        <p>The input is <m>20</m> days and the output is <m>58</m> centimeters. After twenty days, the sunflower is 58 centimeters tall.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-bicycle-distance">
+      <title>Distance Traveled</title>
+      <statement>
+        <p>Let <m>D=m(t)</m> represent the total distance traveled, in miles, after riding a bicycle for <m>t</m> minutes. Interpret the statement <m>m(45)=11</m>.</p>
+      </statement>
+      <solution>
+        <p>The input is <m>45</m> minutes and the output is <m>11</m> miles. After riding for 45 minutes, the cyclist has traveled 11 miles.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-graph-evaluation">
+    <title>Evaluating Functions from Graphs</title>
+    <p>A graph represents many input-output pairs at once. To evaluate a function using a graph:</p>
+    <ol>
+      <li><p>Locate the input on the horizontal axis.</p></li>
+      <li><p>Move vertically until you reach the graph.</p></li>
+      <li><p>Read the corresponding output on the vertical axis.</p></li>
+    </ol>
+
+    <!-- Figure: A piecewise linear graph passing through (-2,1), (0,3), (3,5), and (6,2). Use the graph to illustrate f(3)=5, f(0)=3, and f(x)=5 when x=3. -->
+
+    <example xml:id="ex-evaluate-graph-output">
+      <title>Finding an Output from a Graph</title>
+      <statement><p>Use the graph described above to evaluate <m>f(3)</m>.</p></statement>
+      <solution>
+        <p>Locate <m>x=3</m> on the horizontal axis and move to the graph. The corresponding output is <m>5</m>. Therefore, <m>f(3)=5</m>.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-evaluate-graph-input">
+      <title>Finding an Input from a Graph</title>
+      <statement><p>Use the same graph to find the value of <m>x</m> for which <m>f(x)=5</m>.</p></statement>
+      <solution>
+        <p>Locate <m>5</m> on the vertical axis and determine where the graph has that output value. The graph reaches an output of <m>5</m> when <m>x=3</m>.</p>
+      </solution>
+    </example>
+
+    <remark>
+      <p>Questions like <m>f(3)</m> begin with an input and ask for an output. Questions like <m>f(x)=5</m> begin with an output and ask for an input.</p>
+    </remark>
+  </subsection>
+
+  <subsection xml:id="subsec-table-evaluation">
+    <title>Evaluating Functions from Tables</title>
+    <p>A table lists inputs and their corresponding outputs. To evaluate a function, locate the given input and read the matching output.</p>
+
+    <example xml:id="ex-function-values-table">
+      <title>Reading a Function Table</title>
+      <statement>
+        <p>Suppose <m>f(x)</m> is represented by the table below.</p>
+        <table xml:id="table-function-values">
+          <title>Function Values</title>
+          <tabular>
+            <row header="yes"><cell><m>x</m></cell><cell>0</cell><cell>2</cell><cell>5</cell><cell>8</cell><cell>10</cell></row>
+            <row><cell><m>f(x)</m></cell><cell>12</cell><cell>15</cell><cell>18</cell><cell>21</cell><cell>25</cell></row>
+          </tabular>
+        </table>
+        <ol marker="a.">
+          <li><p>Find <m>f(5)</m>.</p></li>
+          <li><p>Find <m>f(10)</m>.</p></li>
+          <li><p>Find the value of <m>x</m> for which <m>f(x)=21</m>.</p></li>
+        </ol>
+      </statement>
+      <solution>
+        <ol marker="a.">
+          <li><p>The input <m>5</m> corresponds to the output <m>18</m>, so <m>f(5)=18</m>.</p></li>
+          <li><p>The input <m>10</m> corresponds to the output <m>25</m>, so <m>f(10)=25</m>.</p></li>
+          <li><p>The output <m>21</m> occurs when the input is <m>8</m>, so <m>x=8</m>.</p></li>
+        </ol>
+      </solution>
+    </example>
+
+    <example xml:id="ex-water-consumption-table">
+      <title>A Contextual Example</title>
+      <statement>
+        <p>Let <m>W=c(h)</m> represent the number of cups of water consumed after <m>h</m> hours of hiking.</p>
+        <table xml:id="table-water-consumption">
+          <title>Hiking Data</title>
+          <tabular>
+            <row header="yes"><cell><m>h</m></cell><cell>1</cell><cell>2</cell><cell>4</cell><cell>6</cell></row>
+            <row><cell><m>c(h)</m></cell><cell>2</cell><cell>3</cell><cell>6</cell><cell>8</cell></row>
+          </tabular>
+        </table>
+        <p>Evaluate <m>c(4)</m> and interpret the result.</p>
+      </statement>
+      <solution>
+        <p>The input is <m>4</m> hours, and the corresponding output is <m>6</m> cups of water. Thus, <m>c(4)=6</m>, meaning that 6 cups of water have been consumed after 4 hours of hiking.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-summary-function-notation">
+    <title>Key Ideas</title>
+    <important>
+      <p>When interpreting function notation:</p>
+      <ul>
+        <li><p>The value inside the parentheses is the input.</p></li>
+        <li><p>The value after the equals sign is the output.</p></li>
+      </ul>
+      <p>When evaluating a function:</p>
+      <ul>
+        <li><p>Start with the given input and find the corresponding output.</p></li>
+        <li><p>If an output is given, determine which input produces that output.</p></li>
+      </ul>
+    </important>
+  </subsection>
+
+  <conclusion>
+    <p>Function notation provides a concise way to describe input-output relationships. Whether a function is represented by a context, a graph, or a table, the underlying goal remains the same: identify how inputs and outputs are connected.</p>
+  </conclusion>
+</section>
