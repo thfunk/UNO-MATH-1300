@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-introduction-inverse-functions" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Introduction to Inverse Functions</title>
+
+  <introduction>
+    <p>Many processes can be reversed. An inverse function reverses the action of another function by exchanging its inputs and outputs. In this section, we use processes, tables, and graphs to develop the idea of an inverse function.</p>
+  </introduction>
+
+  <objectives>
+    <title>Learning Objectives</title>
+    <ol>
+      <li><p>Explain an inverse function as a process that undoes another function.</p></li>
+      <li><p>Construct an inverse relation by switching inputs and outputs in a table.</p></li>
+      <li><p>Determine whether the inverse relation is also a function.</p></li>
+      <li><p>Construct the graph of an inverse by switching the coordinates of points.</p></li>
+      <li><p>Relate the domain and range of a function to those of its inverse.</p></li>
+    </ol>
+  </objectives>
+
+  <subsection xml:id="subsec-inverses-as-undoing">
+    <title>Inverses as Undoing</title>
+
+    <p>An inverse reverses a process. If a process changes an original object into a new object, the inverse begins with the new object and reverses the steps to recover the original object.</p>
+
+    <!-- Figure: A reversible paper-folding process. On the first row, a square sheet of paper passes through a sequence of labeled folds and becomes a simple origami animal. On the second row, the finished origami animal passes through the folds in reverse order and returns to the square sheet. Emphasize that the input and output exchange roles. -->
+
+    <example xml:id="ex-paper-folding-inverse">
+      <title>Reversing a Paper-Folding Process</title>
+      <statement>
+        <p>Suppose a function <m>F</m> takes a square sheet of paper as its input and applies a fixed sequence of folds to make an origami animal. Describe what the inverse process <m>F^{-1}</m> would do.</p>
+      </statement>
+      <solution>
+        <p>The inverse process begins with the finished origami animal and reverses the folding steps in the opposite order. Its output is the original square sheet of paper.</p>
+        <p>The input of <m>F</m> becomes the output of <m>F^{-1}</m>, and the output of <m>F</m> becomes the input of <m>F^{-1}</m>.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-everyday-inverse-process">
+      <title>An Everyday Reversible Process</title>
+      <statement>
+        <p>A machine converts a temperature from degrees Celsius to degrees Fahrenheit. What would its inverse machine do?</p>
+      </statement>
+      <solution>
+        <p>The original process accepts a Celsius temperature and outputs a Fahrenheit temperature. The inverse accepts a Fahrenheit temperature and outputs the corresponding Celsius temperature.</p>
+      </solution>
+    </example>
+
+    <remark>
+      <p>Not every process can be reversed uniquely. If information is lost in the original process, the output may not determine one original input.</p>
+    </remark>
+  </subsection>
+
+  <subsection xml:id="subsec-definition-inverse-function">
+    <title>Definition of an Inverse Function</title>
+
+    <definition xml:id="def-inverse-function">
+      <title>Inverse Function</title>
+      <p>An <term>inverse function</term>, written <m>f^{-1}</m>, reverses the input-output relationship of a function <m>f</m>. If <m>f(a)=b</m>, then <m>f^{-1}(b)=a</m>.</p>
+    </definition>
+
+    <important>
+      <ul>
+        <li><p>The input of <m>f</m> becomes the output of <m>f^{-1}</m>.</p></li>
+        <li><p>The output of <m>f</m> becomes the input of <m>f^{-1}</m>.</p></li>
+        <li><p>The domain of <m>f</m> becomes the range of <m>f^{-1}</m>.</p></li>
+        <li><p>The range of <m>f</m> becomes the domain of <m>f^{-1}</m>.</p></li>
+      </ul>
+    </important>
+
+    <warning>
+      <p>The notation <m>f^{-1}(x)</m> means the inverse function. It does not mean <m>1/f(x)</m>.</p>
+    </warning>
+  </subsection>
+
+  <subsection xml:id="subsec-inverses-from-tables">
+    <title>Inverses from Tables</title>
+
+    <p>To create a table for an inverse, switch the input and output in every row.</p>
+
+    <example xml:id="ex-create-inverse-table">
+      <title>Switching Inputs and Outputs</title>
+      <statement>
+        <p>The function <m>g</m> is represented by the table. Construct a table for <m>g^{-1}</m>.</p>
+        <table xml:id="table-original-invertible-function">
+          <title>Values of <m>g</m></title>
+          <tabular>
+            <row header="yes"><cell><m>x</m></cell><cell><m>g(x)</m></cell></row>
+            <row><cell>-3</cell><cell>8</cell></row>
+            <row><cell>-1</cell><cell>2</cell></row>
+            <row><cell>0</cell><cell>-4</cell></row>
+            <row><cell>4</cell><cell>5</cell></row>
+            <row><cell>7</cell><cell>1</cell></row>
+          </tabular>
+        </table>
+      </statement>
+      <solution>
+        <p>Switch the entries in each input-output pair.</p>
+        <table xml:id="table-inverse-of-g">
+          <title>Values of <m>g^{-1}</m></title>
+          <tabular>
+            <row header="yes"><cell><m>y</m></cell><cell><m>g^{-1}(y)</m></cell></row>
+            <row><cell>8</cell><cell>-3</cell></row>
+            <row><cell>2</cell><cell>-1</cell></row>
+            <row><cell>-4</cell><cell>0</cell></row>
+            <row><cell>5</cell><cell>4</cell></row>
+            <row><cell>1</cell><cell>7</cell></row>
+          </tabular>
+        </table>
+        <p>For example, <m>g(-1)=2</m> becomes <m>g^{-1}(2)=-1</m>.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-table-inverse-not-function">
+      <title>When the Inverse Relation Is Not a Function</title>
+      <statement>
+        <p>Determine whether the inverse relation of the function below is also a function.</p>
+        <table xml:id="table-repeated-output-function">
+          <title>Values of <m>h</m></title>
+          <tabular>
+            <row header="yes"><cell><m>x</m></cell><cell><m>h(x)</m></cell></row>
+            <row><cell>1</cell><cell>6</cell></row>
+            <row><cell>2</cell><cell>9</cell></row>
+            <row><cell>3</cell><cell>6</cell></row>
+            <row><cell>4</cell><cell>12</cell></row>
+          </tabular>
+        </table>
+      </statement>
+      <solution>
+        <p>The output 6 is paired with both inputs 1 and 3. After switching inputs and outputs, the input 6 would have two outputs, 1 and 3.</p>
+        <p>Therefore, the inverse relation is not a function, so <m>h</m> does not have an inverse function on this domain.</p>
+      </solution>
+    </example>
+
+    <definition xml:id="def-one-to-one">
+      <title>One-to-One Function</title>
+      <p>A function is <term>one-to-one</term> if different inputs always produce different outputs. A function has an inverse function precisely when it is one-to-one on its domain.</p>
+    </definition>
+  </subsection>
+
+  <subsection xml:id="subsec-inverses-from-graphs">
+    <title>Inverses from Graphs</title>
+
+    <p>Switching the coordinates of every point transforms the graph of a function into the graph of its inverse. A point <m>(a,b)</m> on the graph of <m>f</m> becomes <m>(b,a)</m> on the graph of <m>f^{-1}</m>.</p>
+
+    <!-- Figure: Display two graphs. Graph A is an upward-opening parabola with several horizontal lines intersecting it twice. Graph B is a strictly increasing piecewise-linear curve with each horizontal line intersecting it at most once. Use the graphs for Example ex-which-graph-has-inverse. -->
+
+    <example xml:id="ex-which-graph-has-inverse">
+      <title>Which Graph Has an Inverse Function?</title>
+      <statement>
+        <p>Use the two graphs described above to determine which function has an inverse function.</p>
+      </statement>
+      <solution>
+        <p>The strictly increasing graph has an inverse function because every output belongs to only one input.</p>
+        <p>The parabola does not have an inverse function on its full domain because some outputs belong to two different inputs.</p>
+      </solution>
+    </example>
+
+    <definition xml:id="def-horizontal-line-test">
+      <title>Horizontal Line Test</title>
+      <p>A function has an inverse function if every horizontal line intersects its graph at most once.</p>
+    </definition>
+
+    <!-- Figure: A strictly increasing graph passes through (-2,1), (0,3), (2,4), and (5,7). On the same coordinate plane, include the line y=x as a dashed reference. The inverse graph passes through (1,-2), (3,0), (4,2), and (7,5). The two graphs should appear as mirror images across y=x. -->
+
+    <example xml:id="ex-construct-inverse-graph">
+      <title>Constructing an Inverse Graph from Points</title>
+      <statement>
+        <p>A one-to-one function passes through <m>(-2,1)</m>, <m>(0,3)</m>, <m>(2,4)</m>, and <m>(5,7)</m>. List points on its inverse and describe how to graph the inverse.</p>
+      </statement>
+      <solution>
+        <p>Switch the coordinates of each ordered pair:</p>
+        <md>
+          <mrow>(-2,1)&amp;\longrightarrow(1,-2),</mrow>
+          <mrow>(0,3)&amp;\longrightarrow(3,0),</mrow>
+          <mrow>(2,4)&amp;\longrightarrow(4,2),</mrow>
+          <mrow>(5,7)&amp;\longrightarrow(7,5).</mrow>
+        </md>
+        <p>Plot the switched points and connect them in the corresponding order. The original graph and inverse graph are reflections of each other across the line <m>y=x</m>.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-evaluating-inverse-notation">
+    <title>Evaluating Inverse Notation</title>
+
+    <example xml:id="ex-evaluate-inverse-from-table">
+      <title>Reading an Inverse Value</title>
+      <statement>
+        <p>Use <xref ref="table-original-invertible-function"/> to find <m>g^{-1}(5)</m>.</p>
+      </statement>
+      <solution>
+        <p>The statement asks which input of <m>g</m> produces the output 5. The table shows <m>g(4)=5</m>, so</p>
+        <me>g^{-1}(5)=4.</me>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-inverse-functions-summary">
+    <title>Key Ideas</title>
+    <important>
+      <ul>
+        <li><p>An inverse reverses a function by switching its inputs and outputs.</p></li>
+        <li><p>If <m>f(a)=b</m>, then <m>f^{-1}(b)=a</m>.</p></li>
+        <li><p>The domain and range exchange roles.</p></li>
+        <li><p>Only one-to-one functions have inverse functions.</p></li>
+        <li><p>Inverse graphs are reflections across the line <m>y=x</m>.</p></li>
+      </ul>
+    </important>
+  </subsection>
+</section>

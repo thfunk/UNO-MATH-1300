@@ -1,16 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-increasing-and-decreasing" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Increasing and Decreasing Functions</title>
 
-<section xml:id="IncreasingDecreasing" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Increasing and Decreasing</title>
-    <p>
-        In this section, we will look at graphs to determine where a function is increasing or decreasing. We will also learn how to identify the intervals where a function is increasing or decreasing.
-    </p>
+  <introduction>
+    <p>Functions can change in different ways as the input changes. One important question is whether the outputs get larger or smaller as we move from left to right across a graph.</p>
+  </introduction>
 
+  <definition xml:id="def-increasing-function">
+    <title>Increasing Function</title>
+    <p>A function is <term>increasing</term> on an interval if the outputs become larger as the inputs become larger.</p>
+  </definition>
 
-      <!--
-      Start of RWT Questions
-    -->
+  <definition xml:id="def-decreasing-function">
+    <title>Decreasing Function</title>
+    <p>A function is <term>decreasing</term> on an interval if the outputs become smaller as the inputs become larger.</p>
+  </definition>
 
-  <xi:include href="exercises/RWT-4-Increasing-Decreasing.ptx" />
+  <remark>
+    <p>To determine whether a graph is increasing or decreasing, read the graph from left to right. If the graph rises, the function is increasing. If the graph falls, the function is decreasing.</p>
+  </remark>
 
-  </section>
+  <subsection xml:id="subsec-increasing-decreasing-graphs">
+    <title>Identifying Increasing and Decreasing Intervals from Graphs</title>
+
+    <!-- Figure: Graph of an absolute-value style function with vertex at (3,2). The graph decreases for x less than 3 and increases for x greater than 3. -->
+
+    <example xml:id="ex-absolute-value-intervals">
+      <title>A Function with One Turning Point</title>
+      <statement>
+        <p>Determine the interval(s) on which the graph described above is increasing and decreasing.</p>
+      </statement>
+      <solution>
+        <p>The graph falls as we move toward x=3 from the left, so it is decreasing on <m>(-\infty,3)</m>.</p>
+        <p>The graph rises after x=3, so it is increasing on <m>(3,\infty)</m>.</p>
+      </solution>
+    </example>
+
+    <!-- Figure: Smooth curve with a local maximum at x=-2 and a local minimum at x=4. -->
+
+    <example xml:id="ex-two-turning-points">
+      <title>Multiple Increasing and Decreasing Intervals</title>
+      <statement>
+        <p>Determine where the function is increasing and decreasing.</p>
+      </statement>
+      <solution>
+        <p>The graph rises until x=-2, decreases from x=-2 to x=4, and then rises again after x=4.</p>
+        <p>Increasing: <m>(-\infty,-2)\cup(4,\infty)</m></p>
+        <p>Decreasing: <m>(-2,4)</m></p>
+      </solution>
+    </example>
+
+    <!-- Figure: A smooth graph rises to a local maximum at x=-3, falls to a local minimum at x=2, and then rises again. Arrows show that the graph continues indefinitely in both horizontal directions. Use this figure for Example ex-identify-both-inc-dec. -->
+
+    <example xml:id="ex-identify-both-inc-dec">
+      <title>Identifying Both Increasing and Decreasing Intervals</title>
+      <statement>
+        <p>Use the graph described above to identify every interval on which the function is increasing and every interval on which the function is decreasing.</p>
+      </statement>
+      <solution>
+        <p>Read the graph from left to right. The graph rises until it reaches the local maximum at <m>x=-3</m>, so the function is increasing on <m>(-\infty,-3)</m>.</p>
+        <p>The graph then falls from <m>x=-3</m> to the local minimum at <m>x=2</m>, so the function is decreasing on <m>(-3,2)</m>.</p>
+        <p>After <m>x=2</m>, the graph rises again, so the function is increasing on <m>(2,\infty)</m>.</p>
+        <p>Combining the two increasing intervals gives:</p>
+        <me>\text{Increasing on }(-\infty,-3)\cup(2,\infty).</me>
+        <me>\text{Decreasing on }(-3,2).</me>
+      </solution>
+    </example>
+
+    <!-- Figure: Cubic-like graph with local minimum at x=1 and local maximum at x=5. -->
+
+    <example xml:id="ex-find-decreasing-intervals">
+      <title>Finding Decreasing Intervals</title>
+      <statement>
+        <p>Identify all intervals on which the graph is decreasing.</p>
+      </statement>
+      <solution>
+        <p>The graph falls as x approaches 1, rises between x=1 and x=5, and falls again after x=5.</p>
+        <p>Decreasing: <m>(-\infty,1)\cup(5,\infty)</m></p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-increasing-decreasing-tables">
+    <title>Identifying Increasing and Decreasing Behavior from Tables</title>
+
+    <p>A table can also reveal whether a function is increasing or decreasing. Compare the outputs as the inputs increase.</p>
+
+    <example xml:id="ex-increasing-table">
+      <title>An Increasing Function</title>
+      <statement>
+        <table xml:id="table-increasing-function">
+          <title>Website Subscribers</title>
+          <tabular>
+            <row header="yes"><cell>Week</cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell></row>
+            <row><cell>Subscribers</cell><cell>120</cell><cell>145</cell><cell>171</cell><cell>198</cell></row>
+          </tabular>
+        </table>
+        <p>Is the function increasing or decreasing?</p>
+      </statement>
+      <solution>
+        <p>As the inputs increase from week 1 to week 4, every output increases. Therefore, the function is increasing.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-decreasing-table">
+      <title>A Decreasing Function</title>
+      <statement>
+        <table xml:id="table-decreasing-function">
+          <title>Fuel Remaining</title>
+          <tabular>
+            <row header="yes"><cell>Hours Driven</cell><cell>0</cell><cell>2</cell><cell>4</cell><cell>6</cell></row>
+            <row><cell>Gallons Remaining</cell><cell>14</cell><cell>11</cell><cell>8</cell><cell>5</cell></row>
+          </tabular>
+        </table>
+        <p>Is the function increasing or decreasing?</p>
+      </statement>
+      <solution>
+        <p>As the inputs increase, the outputs continually decrease. Therefore, the function is decreasing.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-neither-table">
+      <title>Neither Increasing nor Decreasing</title>
+      <statement>
+        <table xml:id="table-neither-function">
+          <title>Output Values</title>
+          <tabular>
+            <row header="yes"><cell>x</cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell></row>
+            <row><cell>f(x)</cell><cell>5</cell><cell>9</cell><cell>7</cell><cell>10</cell></row>
+          </tabular>
+        </table>
+        <p>Is the function increasing or decreasing?</p>
+      </statement>
+      <solution>
+        <p>The outputs increase, then decrease, then increase again. The function is neither increasing nor decreasing on its entire domain.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-summary-inc-dec">
+    <title>Key Ideas</title>
+    <important>
+      <ul>
+        <li><p>Read graphs from left to right.</p></li>
+        <li><p>If outputs get larger as inputs get larger, the function is increasing.</p></li>
+        <li><p>If outputs get smaller as inputs get larger, the function is decreasing.</p></li>
+        <li><p>Intervals of increase and decrease are usually written using interval notation.</p></li>
+      </ul>
+    </important>
+  </subsection>
+</section>

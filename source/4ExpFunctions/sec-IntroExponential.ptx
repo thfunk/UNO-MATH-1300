@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-intro-exponential-functions" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Introduction to Exponential Functions</title>
+
+  <introduction>
+    <p>An exponential function models repeated multiplication. Unlike a linear function, which changes by adding the same amount repeatedly, an exponential function changes by multiplying by the same factor repeatedly.</p>
+  </introduction>
+
+  <definition xml:id="def-exponential-function">
+    <title>Exponential Function</title>
+    <p>An exponential function has the form <m>f(x)=a(b)^x</m>, where <m>a\neq 0</m>, <m>b&gt;0</m>, and <m>b\neq 1</m>.</p>
+    <ul>
+      <li><p><m>a</m> is the initial value, or y-intercept.</p></li>
+      <li><p><m>b</m> is the growth or decay factor.</p></li>
+    </ul>
+  </definition>
+
+  <subsection xml:id="subsec-growth-and-decay">
+    <title>Growth and Decay</title>
+
+    <definition xml:id="def-exponential-growth">
+      <title>Exponential Growth</title>
+      <p>If <m>b&gt;1</m>, the function represents exponential growth.</p>
+    </definition>
+
+    <definition xml:id="def-exponential-decay">
+      <title>Exponential Decay</title>
+      <p>If <m>0&lt;b&lt;1</m>, the function represents exponential decay.</p>
+    </definition>
+
+    <example xml:id="ex-lily-pad-growth">
+      <title>Lily Pad Growth</title>
+      <statement>
+        <p>A lake starts with 3 lily pads and the number of lily pads doubles each day.</p>
+      </statement>
+      <solution>
+        <p>The initial value is 3 and the growth factor is 2.</p>
+        <me>L(t)=3(2)^t.</me>
+      </solution>
+    </example>
+
+    <table xml:id="tbl-growth-example">
+      <title>Lily Pad Growth Data</title>
+      <tabular>
+        <row header="yes"><cell>Day</cell><cell>0</cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell></row>
+        <row><cell>L(t)</cell><cell>3</cell><cell>6</cell><cell>12</cell><cell>24</cell><cell>48</cell></row>
+      </tabular>
+    </table>
+  </subsection>
+
+  <subsection xml:id="subsec-writing-exponential-equations">
+    <title>Writing an Exponential Equation</title>
+
+    <p>The key pieces of information are the initial value and the growth or decay factor.</p>
+
+    <example xml:id="ex-write-growth-equation">
+      <title>Writing an Equation from Context</title>
+      <statement>
+        <p>A population starts at 500 and increases by 8% each year. Write an exponential model.</p>
+      </statement>
+      <solution>
+        <p>The initial value is 500.</p>
+        <p>An increase of 8% corresponds to a growth factor of <m>1.08</m>.</p>
+        <me>P(t)=500(1.08)^t.</me>
+      </solution>
+    </example>
+
+    <example xml:id="ex-write-decay-equation">
+      <title>Writing a Decay Equation</title>
+      <statement>
+        <p>A pond contains 400 flowers. Each day, only one-quarter of the flowers remain.</p>
+      </statement>
+      <solution>
+        <p>The initial value is 400 and the decay factor is <m>\frac14</m>.</p>
+        <me>P(t)=400\left(\frac14\right)^t.</me>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-graphs-properties">
+    <title>Graphs and Properties</title>
+
+    <!-- Figure: Compare the graphs of y=3(2)^x and y=400(1/4)^x. Emphasize the common horizontal asymptote y=0 and the different growth/decay behavior. -->
+
+    <important>
+      <ul>
+        <li><p>The domain of an exponential function is all real numbers.</p></li>
+        <li><p>If <m>a&gt;0</m>, the range is <m>y&gt;0</m>.</p></li>
+        <li><p>The graph has a horizontal asymptote at <m>y=0</m>.</p></li>
+        <li><p>The y-intercept is <m>(0,a)</m>.</p></li>
+      </ul>
+    </important>
+
+    <example xml:id="ex-identify-parameters">
+      <title>Reading Information from an Equation</title>
+      <statement>
+        <p>Consider <m>C(t)=5(3)^t</m>.</p>
+      </statement>
+      <solution>
+        <ul>
+          <li><p>Initial value: 5</p></li>
+          <li><p>Growth factor: 3</p></li>
+          <li><p>y-intercept: (0,5)</p></li>
+          <li><p>The function represents exponential growth.</p></li>
+        </ul>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-finding-equations-from-points">
+    <title>Finding an Equation from Points</title>
+
+    <example xml:id="ex-known-yint">
+      <title>Known y-Intercept</title>
+      <statement>
+        <p>An exponential function passes through the points <m>(0,2)</m> and <m>(4,10)</m>. Find an equation for the function.</p>
+      </statement>
+      <solution>
+        <p>Because the graph passes through <m>(0,2)</m>, the initial value is <m>a=2</m>.</p>
+        <p>Substitute <m>(4,10)</m> into <m>f(x)=2b^x</m>.</p>
+        <me>10=2b^4.</me>
+        <me>b^4=5.</me>
+        <me>b=\sqrt[4]{5}.</me>
+        <p>Therefore,</p>
+        <me>f(x)=2\left(\sqrt[4]{5}\right)^x.</me>
+      </solution>
+    </example>
+  </subsection>
+</section>

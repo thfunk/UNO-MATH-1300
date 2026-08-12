@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-applications-of-logarithms" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Applications of Logarithms</title>
+
+  <introduction>
+    <p>In many exponential models, the input is time and the output is a changing quantity. A logarithm, or equivalently the inverse of the exponential model, allows us to reverse the question: given an output, when does it occur? In this section, we interpret inverse functions in context and use logarithms to solve applied problems.</p>
+  </introduction>
+
+  <objectives>
+    <title>Learning Objectives</title>
+    <ol>
+      <li><p>Identify the input, output, and units of an exponential model and its inverse.</p></li>
+      <li><p>Interpret inverse-function notation in context.</p></li>
+      <li><p>Use logarithms to solve for an unknown input in an exponential model.</p></li>
+      <li><p>Write an inverse formula for a shifted exponential function.</p></li>
+      <li><p>Interpret exact and approximate solutions appropriately.</p></li>
+    </ol>
+  </objectives>
+
+  <subsection xml:id="subsec-inverse-questions-in-context">
+    <title>Forward and Inverse Questions</title>
+
+    <p>A forward exponential model begins with an input and calculates an output. Its inverse begins with an output and determines the input that produced it.</p>
+
+    <example xml:id="ex-greenhouse-temperature-notation">
+      <title>Heating a Greenhouse</title>
+      <statement>
+        <p>The temperature of a greenhouse is modeled by</p>
+        <me>T=h(t)=72-24(0.91)^t,</me>
+        <p>where <m>t</m> is the number of minutes after the heater is turned on and <m>T</m> is the temperature in degrees Fahrenheit.</p>
+        <ol marker="a.">
+          <li><p>Identify the input and output of <m>h</m>.</p></li>
+          <li><p>Identify the input and output of <m>h^{-1}</m>.</p></li>
+          <li><p>Interpret <m>h^{-1}(60)=7.31</m>.</p></li>
+        </ol>
+      </statement>
+      <solution>
+        <ol marker="a.">
+          <li><p>The input of <m>h</m> is time in minutes. The output is temperature in degrees Fahrenheit.</p></li>
+          <li><p>The input of <m>h^{-1}</m> is temperature in degrees Fahrenheit. The output is time in minutes.</p></li>
+          <li><p>The greenhouse reaches 60 degrees Fahrenheit about 7.31 minutes after the heater is turned on.</p></li>
+        </ol>
+      </solution>
+    </example>
+
+    <important>
+      <p>When a function and its inverse are interpreted in context, the numerical values switch roles and the units switch roles as well.</p>
+    </important>
+  </subsection>
+
+  <subsection xml:id="subsec-solving-contextual-exponential-equations">
+    <title>Solving for Time with Logarithms</title>
+
+    <procedure xml:id="proc-contextual-logarithm-solution">
+      <title>Solving an Applied Exponential Equation</title>
+      <ol>
+        <li><p>Substitute the known output into the model.</p></li>
+        <li><p>Isolate the exponential expression.</p></li>
+        <li><p>Apply a logarithm to both sides.</p></li>
+        <li><p>Use the power property and solve for the input.</p></li>
+        <li><p>Interpret the solution with units and appropriate rounding.</p></li>
+      </ol>
+    </procedure>
+
+    <example xml:id="ex-greenhouse-reaches-temperature">
+      <title>When Does the Greenhouse Reach a Target Temperature?</title>
+      <statement>
+        <p>Using <m>T=h(t)=72-24(0.91)^t</m>, determine when the greenhouse reaches 65 degrees Fahrenheit.</p>
+      </statement>
+      <solution>
+        <p>Substitute the target temperature and isolate the exponential expression:</p>
+        <md>
+          <mrow>65&amp;=72-24(0.91)^t,</mrow>
+          <mrow>-7&amp;=-24(0.91)^t,</mrow>
+          <mrow>\frac{7}{24}&amp;=(0.91)^t.</mrow>
+        </md>
+        <p>Apply the natural logarithm:</p>
+        <md>
+          <mrow>\ln\left(\frac{7}{24}\right)&amp;=\ln\left((0.91)^t\right),</mrow>
+          <mrow>\ln\left(\frac{7}{24}\right)&amp;=t\ln(0.91),</mrow>
+          <mrow>t&amp;=\frac{\ln(7/24)}{\ln(0.91)}\approx13.069.</mrow>
+        </md>
+        <p>The greenhouse reaches 65 degrees Fahrenheit about 13.1 minutes after the heater is turned on.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-medicine-decay-application">
+      <title>Medicine Remaining in the Body</title>
+      <statement>
+        <p>The amount of a medicine in a person's body is modeled by</p>
+        <me>M(t)=180e^{-0.16t},</me>
+        <p>where <m>t</m> is measured in hours and <m>M(t)</m> is measured in milligrams. When will 50 milligrams remain?</p>
+      </statement>
+      <solution>
+        <md>
+          <mrow>50&amp;=180e^{-0.16t},</mrow>
+          <mrow>\frac{5}{18}&amp;=e^{-0.16t},</mrow>
+          <mrow>\ln\left(\frac{5}{18}\right)&amp;=-0.16t,</mrow>
+          <mrow>t&amp;=\frac{\ln(5/18)}{-0.16}\approx8.008.</mrow>
+        </md>
+        <p>About 8.0 hours after the medicine is administered, 50 milligrams remain.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-subscription-growth-application">
+      <title>Reaching a Membership Goal</title>
+      <statement>
+        <p>A community program starts with 320 members, and membership grows by 6% each month. The model is</p>
+        <me>N(t)=320(1.06)^t.</me>
+        <p>How many months will it take for membership to reach 500?</p>
+      </statement>
+      <solution>
+        <md>
+          <mrow>500&amp;=320(1.06)^t,</mrow>
+          <mrow>\frac{25}{16}&amp;=(1.06)^t,</mrow>
+          <mrow>t&amp;=\frac{\ln(25/16)}{\ln(1.06)}\approx7.660.</mrow>
+        </md>
+        <p>The model reaches 500 members after about 7.66 months. If membership is recorded only at the end of each month, the program first has at least 500 members during month 8.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-finding-inverse-exponential-models">
+    <title>Writing an Inverse Model</title>
+
+    <p>Finding a formula for the inverse is helpful when many different output values will be used to determine corresponding inputs.</p>
+
+    <example xml:id="ex-inverse-greenhouse-formula">
+      <title>Finding the Inverse of a Shifted Exponential Model</title>
+      <statement>
+        <p>Find a formula for the inverse of</p>
+        <me>T=h(t)=72-24(0.91)^t.</me>
+      </statement>
+      <solution>
+        <p>Switch the input and output variables, then solve for the new output:</p>
+        <md>
+          <mrow>x&amp;=72-24(0.91)^y,</mrow>
+          <mrow>72-x&amp;=24(0.91)^y,</mrow>
+          <mrow>\frac{72-x}{24}&amp;=(0.91)^y.</mrow>
+        </md>
+        <p>Apply the natural logarithm:</p>
+        <md>
+          <mrow>\ln\left(\frac{72-x}{24}\right)&amp;=y\ln(0.91),</mrow>
+          <mrow>y&amp;=\frac{\ln\left((72-x)/24\right)}{\ln(0.91)}.</mrow>
+        </md>
+        <p>Therefore,</p>
+        <me>h^{-1}(x)=\frac{\ln\left((72-x)/24\right)}{\ln(0.91)}.</me>
+        <p>In context, the input of <m>h^{-1}</m> is a temperature and the output is the number of minutes needed to reach that temperature.</p>
+      </solution>
+    </example>
+
+    <!-- Figure: Show the graph of the greenhouse temperature model T=72-24(0.91)^t and its inverse. Mark a corresponding point such as (7.31,60) on the original graph and (60,7.31) on the inverse. Label axes with units. -->
+  </subsection>
+
+  <subsection xml:id="subsec-error-analysis-log-applications">
+    <title>Analyzing Common Errors</title>
+
+    <example xml:id="ex-logarithm-error-analysis">
+      <title>Finding the First Incorrect Step</title>
+      <statement>
+        <p>A student attempts to solve <m>8(1.25)^t-12=68</m>:</p>
+        <md>
+          <mrow>8(1.25)^t&amp;=80,</mrow>
+          <mrow>(1.25)^t&amp;=10,</mrow>
+          <mrow>t\ln(8(1.25))&amp;=\ln(80),</mrow>
+          <mrow>t&amp;=\frac{\ln(80)}{\ln(10)}.</mrow>
+        </md>
+        <p>Identify the first incorrect step and give the correct solution.</p>
+      </statement>
+      <solution>
+        <p>The first two steps are correct. The third step incorrectly places the coefficient 8 inside the logarithmic factor after the exponential expression has already been isolated.</p>
+        <p>Starting from <m>(1.25)^t=10</m>, the correct work is</p>
+        <md>
+          <mrow>\ln\left((1.25)^t\right)&amp;=\ln(10),</mrow>
+          <mrow>t\ln(1.25)&amp;=\ln(10),</mrow>
+          <mrow>t&amp;=\frac{\ln(10)}{\ln(1.25)}\approx10.319.</mrow>
+        </md>
+      </solution>
+    </example>
+
+    <warning>
+      <p>Do not distribute a logarithm across addition or subtraction. In general, <m>\ln(A+B)\ne\ln(A)+\ln(B)</m>. Isolate the exponential expression before applying a logarithm.</p>
+    </warning>
+  </subsection>
+
+  <subsection xml:id="subsec-applications-of-logs-summary">
+    <title>Key Ideas</title>
+
+    <important>
+      <ul>
+        <li><p>A forward exponential model uses an input to calculate an output.</p></li>
+        <li><p>The inverse model uses an output to determine the input that produced it.</p></li>
+        <li><p>Inputs, outputs, and units switch roles in an inverse function.</p></li>
+        <li><p>Isolate the exponential expression before applying a logarithm.</p></li>
+        <li><p>Interpret the final solution in context and include appropriate units.</p></li>
+      </ul>
+    </important>
+  </subsection>
+
+
+  <conclusion>
+    <p>Logarithms make it possible to answer inverse questions in exponential contexts. When an output is known and the input is unknown, isolate the exponential expression, apply a logarithm, solve, and interpret the result with its units. An inverse formula packages this process into a reusable function.</p>
+  </conclusion>
+</section>

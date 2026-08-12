@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-logarithms-as-inverse-functions" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Logarithms as Inverse Functions</title>
+
+  <introduction>
+    <p>An exponential function answers the question, <q>What output results from this exponent?</q> A logarithmic function reverses that process by answering, <q>What exponent produces this output?</q> In this section, we define logarithms as inverse functions, evaluate logarithms, and use logarithms to find unknown exponents.</p>
+  </introduction>
+
+  <objectives>
+    <title>Learning Objectives</title>
+    <ol>
+      <li><p>Interpret a logarithm as an exponent.</p></li>
+      <li><p>Convert between exponential form and logarithmic form.</p></li>
+      <li><p>Explain why exponential and logarithmic functions are inverses.</p></li>
+      <li><p>Evaluate logarithms exactly and approximately.</p></li>
+      <li><p>Use logarithms to solve exponential equations.</p></li>
+    </ol>
+  </objectives>
+
+  <subsection xml:id="subsec-motivation-for-logarithms">
+    <title>Reversing an Exponential Process</title>
+
+    <example xml:id="ex-lake-growth-inverse-question">
+      <title>How Long Until the Lake Reaches a Given Size?</title>
+      <statement>
+        <p>Let <m>L=f(d)=5(2)^d</m> represent the number of floating plants in a pond after <m>d</m> days.</p>
+        <ol marker="a.">
+          <li><p>What are the input and output of <m>f</m>?</p></li>
+          <li><p>What question does <m>f^{-1}(160)</m> answer?</p></li>
+        </ol>
+      </statement>
+      <solution>
+        <ol marker="a.">
+          <li><p>The input is time in days, and the output is the number of floating plants.</p></li>
+          <li><p>The inverse uses a number of plants as its input and returns the corresponding number of days. Thus, <m>f^{-1}(160)</m> asks how many days it takes the pond to reach 160 plants.</p></li>
+        </ol>
+      </solution>
+    </example>
+
+    <!-- Figure: An exponential growth graph for L=5(2)^d and its inverse graph. Label the horizontal axis of the original graph as days and the vertical axis as number of plants. Reverse these labels for the inverse graph. Include corresponding points (0,5), (1,10), (2,20), (3,40), (4,80), and (5,160), with their coordinates switched on the inverse. -->
+
+    <remark>
+      <p>The entire range of the exponential function becomes the domain of its inverse. The units switch along with the numerical values.</p>
+    </remark>
+  </subsection>
+
+  <subsection xml:id="subsec-definition-of-logarithm">
+    <title>Defining a Logarithm</title>
+
+    <definition xml:id="def-logarithm-as-exponent">
+      <title>Logarithm</title>
+      <p>For <m>b&gt;0</m>, <m>b\ne1</m>, and <m>x&gt;0</m>,</p>
+      <me>y=\log_b(x)</me>
+      <p>if and only if</p>
+      <me>b^y=x.</me>
+      <p>The value of a logarithm is an exponent.</p>
+    </definition>
+
+    <example xml:id="ex-log-base-three">
+      <title>Reading a Logarithm as an Exponent</title>
+      <statement>
+        <p>Evaluate <m>\log_3(81)</m>.</p>
+      </statement>
+      <solution>
+        <p>The question asks, <q>What exponent on 3 produces 81?</q> Since <m>3^4=81</m>,</p>
+        <me>\log_3(81)=4.</me>
+      </solution>
+    </example>
+
+    <example xml:id="ex-negative-log-value">
+      <title>A Negative Logarithm Value</title>
+      <statement>
+        <p>Evaluate <m>\log_5\left(\frac{1}{125}\right)</m>.</p>
+      </statement>
+      <solution>
+        <p>Since <m>5^{-3}=\frac{1}{125}</m>,</p>
+        <me>\log_5\left(\frac{1}{125}\right)=-3.</me>
+      </solution>
+    </example>
+
+    <example xml:id="ex-convert-exponential-logarithmic">
+      <title>Converting Between Forms</title>
+      <statement>
+        <ol marker="a.">
+          <li><p>Rewrite <m>7^2=49</m> in logarithmic form.</p></li>
+          <li><p>Rewrite <m>\log_4(64)=3</m> in exponential form.</p></li>
+        </ol>
+      </statement>
+      <solution>
+        <ol marker="a.">
+          <li><p><m>\log_7(49)=2</m>.</p></li>
+          <li><p><m>4^3=64</m>.</p></li>
+        </ol>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-exponential-logarithmic-inverses">
+    <title>Exponential and Logarithmic Functions Are Inverses</title>
+
+    <p>For a fixed base <m>b</m>, the exponential function <m>f(x)=b^x</m> and the logarithmic function <m>f^{-1}(x)=\log_b(x)</m> reverse one another.</p>
+
+    <important>
+      <me>\log_b\left(b^x\right)=x</me>
+      <me>b^{\log_b(x)}=x</me>
+    </important>
+
+    <example xml:id="ex-inverse-exponential-log-pair">
+      <title>Switching Inputs and Outputs</title>
+      <statement>
+        <p>Let <m>f(x)=4^x</m>.</p>
+        <ol marker="a.">
+          <li><p>Evaluate <m>f(3)</m>.</p></li>
+          <li><p>Use the inverse relationship to evaluate <m>f^{-1}(64)</m>.</p></li>
+          <li><p>Write a formula for <m>f^{-1}</m>.</p></li>
+        </ol>
+      </statement>
+      <solution>
+        <ol marker="a.">
+          <li><p><m>f(3)=4^3=64</m>.</p></li>
+          <li><p>Because the inverse switches the input and output, <m>f^{-1}(64)=3</m>.</p></li>
+          <li><p><m>f^{-1}(x)=\log_4(x)</m>.</p></li>
+        </ol>
+      </solution>
+    </example>
+
+    <!-- Figure: On one coordinate plane, show y=4^x, y=log base 4 of x, and the dashed line y=x. Mark the corresponding points (0,1), (1,4), and (2,16) on the exponential graph and (1,0), (4,1), and (16,2) on the logarithmic graph. -->
+  </subsection>
+
+  <subsection xml:id="subsec-common-natural-logarithms">
+    <title>Common and Natural Logarithms</title>
+
+    <definition xml:id="def-common-logarithm">
+      <title>Common Logarithm</title>
+      <p>The common logarithm has base 10. When no base is written,</p>
+      <me>\log(x)=\log_{10}(x).</me>
+    </definition>
+
+    <definition xml:id="def-natural-logarithm">
+      <title>Natural Logarithm</title>
+      <p>The natural logarithm has base <m>e</m>:</p>
+      <me>\ln(x)=\log_e(x).</me>
+    </definition>
+
+    <example xml:id="ex-evaluate-common-natural-logs">
+      <title>Exact and Approximate Values</title>
+      <statement>
+        <ol marker="a.">
+          <li><p>Evaluate <m>\log(10000)</m> exactly.</p></li>
+          <li><p>Evaluate <m>\ln(e^{-2})</m> exactly.</p></li>
+          <li><p>Approximate <m>\ln(23)</m> to three decimal places.</p></li>
+        </ol>
+      </statement>
+      <solution>
+        <ol marker="a.">
+          <li><p>Because <m>10^4=10000</m>, <m>\log(10000)=4</m>.</p></li>
+          <li><p>Because natural logarithms and powers of <m>e</m> are inverse operations, <m>\ln(e^{-2})=-2</m>.</p></li>
+          <li><p>Using a calculator, <m>\ln(23)\approx3.135</m>.</p></li>
+        </ol>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-logarithm-properties-introduction">
+    <title>Properties of Logarithms</title>
+
+    <p>The properties of logarithms follow from the corresponding rules for exponents.</p>
+
+    <definition xml:id="def-basic-logarithm-properties">
+      <title>Basic Properties</title>
+      <p>When all expressions are defined,</p>
+      <md>
+        <mrow>\log_b(AC)&amp;=\log_b(A)+\log_b(C),</mrow>
+        <mrow>\log_b\left(\frac{A}{C}\right)&amp;=\log_b(A)-\log_b(C),</mrow>
+        <mrow>\log_b(A^r)&amp;=r\log_b(A).</mrow>
+      </md>
+    </definition>
+
+    <example xml:id="ex-expand-logarithm">
+      <title>Using Logarithm Properties</title>
+      <statement>
+        <p>Expand <m>\log_3\left(\frac{x^4y}{z}
+ight)</m>.</p>
+      </statement>
+      <solution>
+        <md>
+          <mrow>\log_3\left(\frac{x^4y}{z}\right)&amp;=\log_3(x^4y)-\log_3(z)</mrow>
+          <mrow>&amp;=\log_3(x^4)+\log_3(y)-\log_3(z)</mrow>
+          <mrow>&amp;=4\log_3(x)+\log_3(y)-\log_3(z).</mrow>
+        </md>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-solving-exponential-equations-with-logs">
+    <title>Solving Exponential Equations with Logarithms</title>
+
+    <p>When an exponential equation cannot be rewritten with a convenient common base, apply a logarithm to both sides and use the power property to move the exponent in front.</p>
+
+    <example xml:id="ex-solve-exponential-equation-logs">
+      <title>Finding an Unknown Exponent</title>
+      <statement>
+        <p>Solve <m>5(2)^t=140</m>.</p>
+      </statement>
+      <solution>
+        <p>First isolate the exponential term:</p>
+        <me>2^t=28.</me>
+        <p>Apply the natural logarithm to both sides:</p>
+        <md>
+          <mrow>\ln(2^t)&amp;=\ln(28),</mrow>
+          <mrow>t\ln(2)&amp;=\ln(28),</mrow>
+          <mrow>t&amp;=\frac{\ln(28)}{\ln(2)}\approx4.807.</mrow>
+        </md>
+      </solution>
+    </example>
+
+    <example xml:id="ex-find-inverse-exponential-function">
+      <title>Finding the Inverse of an Exponential Function</title>
+      <statement>
+        <p>Find the inverse of <m>f(x)=6(3)^x-4</m>.</p>
+      </statement>
+      <solution>
+        <p>Write <m>y=6(3)^x-4</m>, switch <m>x</m> and <m>y</m>, and isolate the exponential expression:</p>
+        <md>
+          <mrow>x&amp;=6(3)^y-4,</mrow>
+          <mrow>x+4&amp;=6(3)^y,</mrow>
+          <mrow>\frac{x+4}{6}&amp;=3^y.</mrow>
+        </md>
+        <p>Apply a logarithm:</p>
+        <md>
+          <mrow>\ln\left(\frac{x+4}{6}\right)&amp;=\ln(3^y),</mrow>
+          <mrow>\ln\left(\frac{x+4}{6}\right)&amp;=y\ln(3),</mrow>
+          <mrow>y&amp;=\frac{\ln\left((x+4)/6\right)}{\ln(3)}.</mrow>
+        </md>
+        <p>Therefore,</p>
+        <me>f^{-1}(x)=\frac{\ln\left((x+4)/6\right)}{\ln(3)}.</me>
+      </solution>
+    </example>
+  </subsection>
+
+  <conclusion>
+    <p>A logarithm is an exponent, and logarithmic functions reverse exponential functions. The equivalence <m>y=\log_b(x)</m> if and only if <m>b^y=x</m> allows us to convert between forms, evaluate logarithms, and solve equations in which the unknown appears in an exponent.</p>
+  </conclusion>
+</section>

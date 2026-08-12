@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-applications-exponential-functions" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Applications of Exponential Functions</title>
+
+  <introduction>
+    <p>Exponential functions appear in many applications involving repeated growth or decay. In this section, we interpret exponential models, identify growth and decay rates, and compare exponential functions written with a general base to those written with the natural base <m>e</m>.</p>
+  </introduction>
+
+  <definition xml:id="def-general-exponential-model">
+    <title>General Exponential Model</title>
+    <p>A general exponential model has the form <m>f(t)=ab^t</m>, where <m>a</m> is the initial value and <m>b</m> is the growth or decay factor.</p>
+  </definition>
+
+  <definition xml:id="def-natural-exponential-model">
+    <title>Natural Exponential Model</title>
+    <p>A natural exponential model has the form <m>f(t)=ae^{kt}</m>, where <m>a</m> is the initial value and <m>k</m> represents a continuous growth or decay rate.</p>
+  </definition>
+
+  <subsection xml:id="subsec-growth-decay-rates">
+    <title>Growth and Decay Rates</title>
+
+    <important>
+      <ul>
+        <li><p>For <m>ab^t</m>, growth occurs when <m>b&gt;1</m> and decay occurs when <m>0&lt;b&lt;1</m>.</p></li>
+        <li><p>For <m>ae^{kt}</m>, growth occurs when <m>k&gt;0</m> and decay occurs when <m>k&lt;0</m>.</p></li>
+      </ul>
+    </important>
+
+    <example xml:id="ex-general-growth-model">
+      <title>General-Base Growth</title>
+      <statement><p>Determine whether <m>P(t)=250(1.12)^t</m> represents growth or decay. Identify the growth rate.</p></statement>
+      <solution>
+        <p>The growth factor is <m>1.12</m>. Since <m>1.12&gt;1</m>, the model represents growth.</p>
+        <p>The growth rate is <m>12\%</m>.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-natural-decay-model">
+      <title>Natural-Base Decay</title>
+      <statement><p>Determine whether <m>N(t)=80e^{-0.18t}</m> represents growth or decay.</p></statement>
+      <solution>
+        <p>The exponent coefficient is <m>k=-0.18</m>. Because it is negative, the model represents continuous exponential decay.</p>
+        <p>The decay rate is <m>18\%</m>.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-interpreting-exponential-models">
+    <title>Interpreting Exponential Models</title>
+
+    <example xml:id="ex-bacteria-growth">
+      <title>Bacteria Population</title>
+      <statement>
+        <p>A bacteria culture is modeled by</p>
+        <me>B(t)=500(1.35)^t.</me>
+        <p>Interpret the initial value and growth factor.</p>
+      </statement>
+      <solution>
+        <p>The initial population is 500 bacteria.</p>
+        <p>The factor 1.35 indicates a 35% increase during each time period.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-coffee-cooling">
+      <title>Cooling Coffee</title>
+      <statement>
+        <p>The temperature of a cup of coffee is modeled by</p>
+        <me>T(t)=75+95e^{-0.12t}.</me>
+        <p>Explain why this model represents decay.</p>
+      </statement>
+      <solution>
+        <p>The exponent coefficient is negative, so the exponential portion decreases over time.</p>
+        <p>The model describes a temperature approaching room temperature.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-general-vs-natural">
+    <title>General Base versus Natural Base</title>
+
+    <!-- Figure: Side-by-side comparison table showing f(t)=ab^t and g(t)=ae^{kt}. Include examples of growth and decay in each form. -->
+
+    <p>Both forms model exponential change. The difference is how the rate is represented.</p>
+
+    <table xml:id="tbl-general-natural-compare">
+      <title>Comparing Exponential Forms</title>
+      <tabular>
+        <row header="yes"><cell>General Base</cell><cell>Natural Base</cell></row>
+        <row><cell><m>f(t)=ab^t</m></cell><cell><m>g(t)=ae^{kt}</m></cell></row>
+        <row><cell>Uses growth or decay factor <m>b</m></cell><cell>Uses continuous rate <m>k</m></cell></row>
+        <row><cell><m>b&gt;1</m> gives growth</cell><cell><m>k&gt;0</m> gives growth</cell></row>
+        <row><cell><m>0&lt;b&lt;1</m> gives decay</cell><cell><m>k&lt;0</m> gives decay</cell></row>
+      </tabular>
+    </table>
+
+    <example xml:id="ex-classify-models">
+      <title>Classifying Exponential Models</title>
+      <statement>
+        <p>For each model, identify whether it is a general-base model or a natural-base model and determine whether it represents growth or decay.</p>
+        <ol marker="a.">
+          <li><p><m>m(t)=2(1.59)^t</m></p></li>
+          <li><p><m>r(t)=2(0.69)^t</m></p></li>
+          <li><p><m>a(t)=2e^{-0.21t}</m></p></li>
+          <li><p><m>d(t)=2e^{0.46t}</m></p></li>
+        </ol>
+      </statement>
+      <solution>
+        <ol marker="a.">
+          <li><p>General-base growth.</p></li>
+          <li><p>General-base decay.</p></li>
+          <li><p>Natural-base decay.</p></li>
+          <li><p>Natural-base growth.</p></li>
+        </ol>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-applied-problems">
+    <title>Applied Exponential Problems</title>
+
+    <example xml:id="ex-medical-isotope">
+      <title>Medical Isotope Decay</title>
+      <statement>
+        <p>The amount of a medical isotope is modeled by</p>
+        <me>M(t)=400e^{-0.116t},</me>
+        <p>where <m>t</m> is measured in hours.</p>
+        <ol marker="a.">
+          <li><p>How much remains after 2 hours?</p></li>
+          <li><p>What is the initial amount?</p></li>
+        </ol>
+      </statement>
+      <solution>
+        <ol marker="a.">
+          <li><p><m>M(2)=400e^{-0.232}\approx317</m>. About 317 units remain.</p></li>
+          <li><p>The initial amount is <m>M(0)=400</m>.</p></li>
+        </ol>
+      </solution>
+    </example>
+
+    <example xml:id="ex-population-growth-application">
+      <title>Population Growth</title>
+      <statement>
+        <p>A wildlife population is modeled by</p>
+        <me>P(t)=1200e^{0.08t}.</me>
+        <p>Interpret the value of 0.08.</p>
+      </statement>
+      <solution>
+        <p>The model uses the natural base <m>e</m>.</p>
+        <p>The value 0.08 represents a continuous growth rate of 8% per time period.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-summary-exponential-applications">
+    <title>Key Ideas</title>
+    <important>
+      <ul>
+        <li><p><m>ab^t</m> uses a growth or decay factor.</p></li>
+        <li><p><m>ae^{kt}</m> uses a continuous growth or decay rate.</p></li>
+        <li><p>The parameter <m>a</m> is the initial value in either form.</p></li>
+        <li><p>Growth occurs when <m>b&gt;1</m> or <m>k&gt;0</m>.</p></li>
+        <li><p>Decay occurs when <m>0&lt;b&lt;1</m> or <m>k&lt;0</m>.</p></li>
+      </ul>
+    </important>
+  </subsection>
+</section>

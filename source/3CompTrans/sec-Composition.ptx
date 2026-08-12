@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-composition-of-functions" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Composition of Functions</title>
+
+  <introduction>
+    <p>A composition of functions occurs when the output of one function becomes the input of another function. If the output of <m>g</m> is used as the input of <m>f</m>, the composition is written <m>f(g(x))</m>.</p>
+  </introduction>
+
+  <definition xml:id="def-composition">
+    <title>Composition of Functions</title>
+    <p>The composition <m>f(g(x))</m> means: first evaluate <m>g(x)</m>, then use that output as the input of <m>f</m>.</p>
+  </definition>
+
+  <subsection xml:id="subsec-composition-context">
+    <title>Composition in Context</title>
+
+    <example xml:id="ex-composition-context-shipping">
+      <title>Interpreting a Composition</title>
+      <statement>
+        <p>A package's weight <m>w=m(d)</m> depends on the number of items <m>d</m> placed in a box. The shipping cost <m>C=s(w)</m> depends on the package weight.</p>
+        <p>Explain the meaning of <m>s(m(d))</m>.</p>
+      </statement>
+      <solution>
+        <p>The input is the number of items placed in the box.</p>
+        <p>The output is the shipping cost.</p>
+        <p>The composition <m>s(m(d))</m> gives the shipping cost for a box containing <m>d</m> items.</p>
+      </solution>
+    </example>
+
+    <!-- Figure: Three-bubble composition diagram. Input: number of items. Middle quantity: package weight. Final output: shipping cost. -->
+  </subsection>
+
+  <subsection xml:id="subsec-composition-from-tables">
+    <title>Finding Outputs Using Tables</title>
+
+    <example xml:id="ex-composition-table">
+      <title>Evaluating a Composition from Tables</title>
+      <statement>
+        <table xml:id="table-f-values">
+          <title>Values of f</title>
+          <tabular>
+            <row header="yes"><cell>x</cell><cell>-2</cell><cell>-1</cell><cell>0</cell><cell>1</cell><cell>2</cell></row>
+            <row><cell>f(x)</cell><cell>4</cell><cell>2</cell><cell>1</cell><cell>3</cell><cell>0</cell></row>
+          </tabular>
+        </table>
+        <table xml:id="table-g-values">
+          <title>Values of g</title>
+          <tabular>
+            <row header="yes"><cell>x</cell><cell>0</cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell></row>
+            <row><cell>g(x)</cell><cell>5</cell><cell>6</cell><cell>8</cell><cell>7</cell><cell>9</cell></row>
+          </tabular>
+        </table>
+        <p>Find <m>g(f(-1))</m>.</p>
+      </statement>
+      <solution>
+        <p>First find <m>f(-1)=2</m>.</p>
+        <p>Then evaluate <m>g(2)=8</m>.</p>
+        <p>Therefore, <m>g(f(-1))=8</m>.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-composition-from-graphs">
+    <title>Finding Outputs Using Graphs</title>
+
+    <!-- Figure: Graph of f and graph of g. From graph, f(2)=4 and g(4)=-1. -->
+
+    <example xml:id="ex-composition-graph">
+      <title>Evaluating a Composition from Graphs</title>
+      <statement>
+        <p>Suppose a graph shows that <m>f(2)=4</m> and <m>g(4)=-1</m>. Find <m>g(f(2))</m>.</p>
+      </statement>
+      <solution>
+        <p>Start with the inside function.</p>
+        <p><m>f(2)=4</m>.</p>
+        <p>Now use <m>4</m> as the input of <m>g</m>.</p>
+        <p><m>g(4)=-1</m>.</p>
+        <p>Therefore, <m>g(f(2))=-1</m>.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-composition-from-equations">
+    <title>Finding Outputs Using Equations</title>
+
+    <example xml:id="ex-composition-equations">
+      <title>Evaluating and Building a Composition</title>
+      <statement>
+        <p>Let <m>f(x)=2x+3</m> and <m>g(x)=x^2-1</m>.</p>
+        <ol marker="a.">
+          <li><p>Find <m>g(f(2))</m>.</p></li>
+          <li><p>Find a formula for <m>g(f(x))</m>.</p></li>
+        </ol>
+      </statement>
+      <solution>
+        <ol marker="a.">
+          <li><p><m>f(2)=7</m>, so <m>g(f(2))=g(7)=48</m>.</p></li>
+          <li><p>Substitute <m>2x+3</m> into <m>g</m>.</p>
+          <me>g(f(x))=(2x+3)^2-1=4x^2+12x+8.</me></li>
+        </ol>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-find-original-functions">
+    <title>Reversing a Composition</title>
+
+    <example xml:id="ex-decompose-composition">
+      <title>Identifying Two Functions from a Composition</title>
+      <statement>
+        <p>Find functions <m>g</m> and <m>h</m> such that</p>
+        <me>g(h(x))=\sqrt{x^2+4}+7.</me>
+      </statement>
+      <solution>
+        <p>Identify the operation that occurs first and the operation that occurs last.</p>
+        <p>One possible choice is</p>
+        <me>h(x)=x^2+4</me>
+        <p>followed by</p>
+        <me>g(x)=\sqrt{x}+7.</me>
+        <p>Checking:</p>
+        <me>g(h(x))=\sqrt{x^2+4}+7.</me>
+        <p>Many compositions can be decomposed in more than one valid way.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-composition-context-output">
+    <title>Finding the Output in Context</title>
+
+    <example xml:id="ex-composition-profit">
+      <title>A Real-World Composition</title>
+      <statement>
+        <p>The number of smoothies sold on a day with temperature <m>t</m> is given by <m>S=w(t)=8t-420</m>.</p>
+        <p>The daily profit is given by <m>P=z(S)=2.5S-150</m>.</p>
+        <p>Evaluate <m>z(w(80))</m> and interpret the result.</p>
+      </statement>
+      <solution>
+        <p><m>w(80)=220</m>.</p>
+        <p><m>z(220)=400</m>.</p>
+        <p>The composition value is <m>400</m>.</p>
+        <p>When the temperature is 80 degrees, the model predicts a daily profit of 400 dollars.</p>
+      </solution>
+    </example>
+  </subsection>
+</section>

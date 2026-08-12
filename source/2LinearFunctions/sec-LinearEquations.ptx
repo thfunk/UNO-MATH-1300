@@ -1,32 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="LinearEquations" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Linear Equations</title>
+<section xml:id="writing-linear-equations">
+    <title>Writing Equations of Lines</title>
+
     <p>
-        In this section, we will learn how to write and solve linear equations.
+        A linear function has a constant rate of change, called the
+        <term>slope</term>. Once we know the slope and some information
+        about the line, we can write an equation that models the
+        relationship between the input and output variables.
     </p>
 
-    <definition xml:id="def-SlopeInterceptForm">
-         <statement>
-             <p>
-                 The <term>Slope-Intercept Form</term> of a line is given by the formula:
-                 <me>
-                     y = mx + b
-                 </me>
-             </p>
-        </statement>
-    </definition>
+    <subsection xml:id="slope-intercept-form">
+        <title>Slope-Intercept Form</title>
 
-    <definition xml:id="def-PointSlopeForm">
-         <statement>
-             <p>
-                 The <term>Point-Slope Form</term> of a line is given by the formula:
-                 <me>
-                     y - y_1 = m(x - x_1)
-                 </me>
-             </p>
-         </statement>
-     </definition>
+        <p>
+            If we know the slope of a line and its vertical intercept,
+            we can write the equation in <term>slope-intercept form</term>.
+        </p>
+
+        <me>
+                y=mx+b
+        </me>
+
+        <ul>
+            <li><m>m</m> is the slope (rate of change).</li>
+            <li><m>b</m> is the <m>y</m>-intercept (the output when <m>x=0</m>).</li>
+        </ul>
+
+        <example xml:id="lake-b-example">
+            <title>Lake Depth</title>
+
+            <p>
+                A scientist measures the depth of a lake. On day 7, the
+                lake is 16.3 meters deep, and on day 28, the lake is
+                20.5 meters deep.
+            </p>
+
+            <p>
+                First, find the slope:
+            </p>
+
+            <md>
+                <mrow>
+                    <m>m=\frac{20.5-16.3}{28-7}</m>
+                    <m>=\frac{4.2}{21}</m>
+                    <m>=0.2</m>
+                </mrow>
+            </md>
+
+            <p>
+                The lesson notes give the model
+            </p>
+
+            <md>
+                <m>B(x)=0.2x+14.9</m>
+            </md>
+
+            <p>
+                This equation is in slope-intercept form. The slope
+                tells us that the lake depth increases by
+                0.2 meters per day, and the intercept tells us that
+                the lake was 14.9 meters deep on day 0.
+            </p>
+        </example>
+    </subsection>
+
+    <subsection xml:id="point-slope-form">
+        <title>Point-Slope Form</title>
+
+        <p>
+            Sometimes we know the slope of a line and one point on the
+            line. In this case, it is often easiest to use
+            <term>point-slope form</term>.
+        </p>
+
+        <md>
+            <mrow>
+                <m>y-y_1=m(x-x_1)</m>
+            </mrow>
+        </md>
+
+        <p>
+            Here, <m>(x_1,y_1)</m> is any point on the line and
+            <m>m</m> is the slope.
+        </p>
+
+        <example xml:id="cereal-example">
+            <title>Amount of Cereal Remaining</title>
+
+            <p>
+                Dr. Infinity has a new box of cereal. After one day,
+                there are 17.5 ounces remaining. After four days,
+                there are 10 ounces remaining.
+            </p>
+
+            <p>
+                The two points are <m>(1,17.5)</m> and
+                <m>(4,10)</m>.
+            </p>
+
+            <p>
+                First, find the slope:
+            </p>
+
+            <md>
+                <mrow>
+                    <m>m=\frac{10-17.5}{4-1}</m>
+                    <m>=\frac{-7.5}{3}</m>
+                    <m>=-2.5</m>
+                </mrow>
+            </md>
+
+            <p>
+                Using point-slope form with the point
+                <m>(1,17.5)</m>:
+            </p>
+
+            <md>
+                <m>A(x)-17.5=-2.5(x-1)</m>
+            </md>
+
+            <p>
+                This equation is correct and fully describes the line.
+            </p>
+
+            <p>
+                If we distribute and simplify, we obtain slope-intercept form:
+            </p>
+
+            <md>
+                <mrow>
+                    <m>A(x)-17.5=-2.5x+2.5</m>
+                </mrow>
+            </md>
+
+            <md>
+                <mrow>
+                    <m>A(x)=-2.5x+20</m>
+                </mrow>
+            </md>
+
+            <p>
+                This tells us that the cereal decreases by
+                2.5 ounces each day and that the box originally
+                contained 20 ounces of cereal.
+            </p>
+        </example>
+    </subsection>
+
+    <subsection xml:id="choosing-a-form">
+        <title>Choosing a Form</title>
+
+        <p>
+            Both slope-intercept form and point-slope form describe the
+            same line. Choose the form that matches the information you
+            are given:
+        </p>
+
+        <ul>
+            <li>
+                Use <m>y=mx+b</m> when you know the slope and the
+                <m>y</m>-intercept.
+            </li>
+            <li>
+                Use <m>y-y_1=m(x-x_1)</m> when you know the slope and
+                a point on the line.
+            </li>
+            <li>
+                If given two points, first find the slope, then use
+                point-slope form or convert to slope-intercept form.
+            </li>
+        </ul>
+    </subsection>
 
 
 <!--       
