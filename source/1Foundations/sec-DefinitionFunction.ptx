@@ -247,7 +247,7 @@
                 letter <m>y</m> is the output variable. We say that <m>y</m> is a function of <m>x</m>.
             </p>
 
-            <figure xml:id="function-notation-figure">
+      <figure xml:id="function-notation-figure">
      <image width="60%">
     <prefigure xmlns="https://prefigure.org" label="function-notation-prefigure">
         <description>Function Notation</description>

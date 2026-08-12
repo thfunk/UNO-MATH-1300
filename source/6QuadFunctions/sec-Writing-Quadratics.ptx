@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-writing-quadratic-equations" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Writing Equations of Quadratic Functions</title>
+
+  <introduction>
+    <p>A graph contains a great deal of information about a quadratic function. The x-intercepts reveal the zeros of the function, the vertex identifies the maximum or minimum value, and the axis of symmetry describes the balance point of the parabola. By using this information, we can write equations that model the graph.</p>
+    <p>There is no single best form for a quadratic equation. Different forms emphasize different features of the graph. In this section, we focus on factored form, <m>y=a(x-r_1)(x-r_2)</m>, and vertex form, <m>y=a(x-h)^2+k</m>.</p>
+  </introduction>
+
+  <subsection xml:id="subsec-characteristics-of-a-parabola">
+    <title>Characteristics of a Parabola</title>
+
+    <!-- Figure: A parabola with labeled x-intercepts, y-intercept, vertex, and axis of symmetry. Use the figure to introduce the key features discussed below. -->
+
+    <p>Before writing an equation, identify the key characteristics of the graph. These characteristics provide the information needed to determine the equation.</p>
+
+    <definition xml:id="def-parabola-characteristics">
+      <title>Important Features of a Quadratic Graph</title>
+      <ul>
+        <li><p>The <term>x-intercepts</term> are the points where the graph crosses the x-axis.</p></li>
+        <li><p>The <term>y-intercept</term> is the point where the graph crosses the y-axis.</p></li>
+        <li><p>The <term>vertex</term> is the highest or lowest point on the graph.</p></li>
+        <li><p>The <term>axis of symmetry</term> is the vertical line passing through the vertex.</p></li>
+      </ul>
+    </definition>
+
+    <p>Different forms of a quadratic equation make different features easy to identify. If the graph shows x-intercepts clearly, factored form is often most useful. If the vertex is easy to identify, vertex form is usually the better choice.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-writing-factored-form">
+    <title>Writing Equations in Factored Form</title>
+
+    <definition xml:id="def-factored-form">
+      <title>Factored Form</title>
+      <p>A quadratic function in factored form is written as</p>
+      <me>y=a(x-r_1)(x-r_2),</me>
+      <p>where <m>r_1</m> and <m>r_2</m> are the x-intercepts of the graph.</p>
+    </definition>
+
+    <p>Factored form is often the easiest form to use when the graph shows the x-intercepts. Each x-intercept corresponds directly to a factor. For example, if a graph crosses the x-axis at <m>x=2</m>, then the factor <m>(x-2)</m> appears in the equation because that factor becomes zero when <m>x=2</m>.</p>
+
+    <example xml:id="ex-writing-factored-form">
+      <title>Using x-Intercepts to Write an Equation</title>
+      <statement>
+        <p>A parabola has x-intercepts at <m>(2,0)</m> and <m>(6,0)</m>. The graph passes through the point <m>(4,8)</m>. Find an equation of the parabola.</p>
+      </statement>
+      <solution>
+        <p>The x-intercepts tell us the factors:</p>
+        <me>y=a(x-2)(x-6).</me>
+        <p>The value of <m>a</m> is still unknown. Use the point <m>(4,8)</m>.</p>
+        <md>
+          <mrow>8&amp;=a(4-2)(4-6),</mrow>
+          <mrow>8&amp;=-4a,</mrow>
+          <mrow>a&amp;=-2.</mrow>
+        </md>
+        <p>Therefore,</p>
+        <me>y=-2(x-2)(x-6).</me>
+      </solution>
+    </example>
+
+    <p>This example illustrates the general strategy for writing a quadratic equation in factored form. The intercepts identify the factors, while one additional point determines the value of <m>a</m>. The coefficient <m>a</m> controls whether the parabola opens upward or downward and affects how steep the graph appears.</p>
+
+    <procedure xml:id="proc-write-quadratic-factored-form">
+      <title>Writing a Quadratic in Factored Form</title>
+      <ol>
+        <li><p>Use the x-intercepts to write the factors.</p></li>
+        <li><p>Include an unknown coefficient <m>a</m>.</p></li>
+        <li><p>Substitute the coordinates of another point on the graph.</p></li>
+        <li><p>Solve for <m>a</m> and rewrite the complete function.</p></li>
+      </ol>
+    </procedure>
+  </subsection>
+
+  <subsection xml:id="subsec-axis-symmetry-and-vertex">
+    <title>The Axis of Symmetry and the Vertex</title>
+
+    <p>The x-intercepts provide more information than just factors. Because a parabola is symmetric, the vertex lies exactly halfway between the intercepts.</p>
+
+    <example xml:id="ex-axis-of-symmetry">
+      <title>Finding the Axis of Symmetry</title>
+      <statement>
+        <p>A parabola has x-intercepts at <m>x=-3</m> and <m>x=5</m>. Find its axis of symmetry.</p>
+      </statement>
+      <solution>
+        <p>The axis of symmetry lies halfway between the two intercepts:</p>
+        <md>
+          <mrow>x&amp;=\frac{-3+5}{2},</mrow>
+          <mrow>x&amp;=1.</mrow>
+        </md>
+      </solution>
+    </example>
+
+    <p>This midpoint calculation gives the x-coordinate of the vertex. Once that x-value is known, substituting it into the function gives the corresponding y-coordinate.</p>
+
+    <example xml:id="ex-find-vertex-from-factored-form">
+      <title>Finding the Vertex from Factored Form</title>
+      <statement>
+        <p>Find the vertex of <m>f(x)=-(x+3)(x-5)</m>.</p>
+      </statement>
+      <solution>
+        <p>The x-intercepts are <m>-3</m> and <m>5</m>, so the axis of symmetry is <m>x=1</m>. Evaluate the function at <m>x=1</m>:</p>
+        <md>
+          <mrow>f(1)&amp;=-(1+3)(1-5),</mrow>
+          <mrow>&amp;=-(4)(-4),</mrow>
+          <mrow>&amp;=16.</mrow>
+        </md>
+        <p>The vertex is <m>(1,16)</m>.</p>
+      </solution>
+    </example>
+
+    <p>This example shows how factored form and symmetry work together. The factors reveal the intercepts, the midpoint of the intercepts locates the axis of symmetry, and evaluating the function there determines the vertex.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-transformations-and-vertex-form">
+    <title>Transformations and Vertex Form</title>
+
+    <!-- Figure: Show the parent parabola y=x^2 and several transformed parabolas illustrating horizontal shifts, vertical shifts, reflections, and vertical stretches or compressions. -->
+
+    <p>The parent quadratic function <m>y=x^2</m> can be shifted, stretched, compressed, or reflected. These transformations naturally lead to vertex form.</p>
+    <p>In a transformed parabola, the vertex is often the easiest feature to identify. Vertex form is designed to make direct use of that information.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-writing-vertex-form">
+    <title>Writing Equations in Vertex Form</title>
+
+    <definition xml:id="def-vertex-form">
+      <title>Vertex Form</title>
+      <p>A quadratic function in vertex form is written as</p>
+      <me>y=a(x-h)^2+k.</me>
+      <ul>
+        <li><p>The vertex is <m>(h,k)</m>.</p></li>
+        <li><p>The axis of symmetry is <m>x=h</m>.</p></li>
+        <li><p>The coefficient <m>a</m> controls the direction and width of the parabola.</p></li>
+      </ul>
+    </definition>
+
+    <p>Notice that the coordinates of the vertex appear directly in the equation. This is the main advantage of vertex form. As with factored form, one additional point is needed to determine <m>a</m>.</p>
+
+    <example xml:id="ex-writing-vertex-form">
+      <title>Using the Vertex to Write an Equation</title>
+      <statement>
+        <p>A parabola has vertex <m>(1,3)</m> and passes through the point <m>(3,7)</m>. Find an equation of the parabola.</p>
+      </statement>
+      <solution>
+        <p>Begin with vertex form:</p>
+        <me>y=a(x-1)^2+3.</me>
+        <p>Use the point <m>(3,7)</m>:</p>
+        <md>
+          <mrow>7&amp;=a(3-1)^2+3,</mrow>
+          <mrow>7&amp;=4a+3,</mrow>
+          <mrow>4&amp;=4a,</mrow>
+          <mrow>a&amp;=1.</mrow>
+        </md>
+        <p>Therefore,</p>
+        <me>y=(x-1)^2+3.</me>
+      </solution>
+    </example>
+
+    <p>This example mirrors the process used in factored form. The main difference is that the vertex determines the structure of the equation instead of the x-intercepts.</p>
+
+    <example xml:id="ex-vertex-form-opens-downward">
+      <title>A Parabola That Opens Downward</title>
+      <statement>
+        <p>A parabola has vertex <m>(-2,5)</m> and passes through <m>(0,-3)</m>. Find its equation in vertex form.</p>
+      </statement>
+      <solution>
+        <p>Start with the vertex:</p>
+        <me>y=a(x+2)^2+5.</me>
+        <p>Substitute <m>(0,-3)</m>:</p>
+        <md>
+          <mrow>-3&amp;=a(0+2)^2+5,</mrow>
+          <mrow>-8&amp;=4a,</mrow>
+          <mrow>a&amp;=-2.</mrow>
+        </md>
+        <p>Thus,</p>
+        <me>y=-2(x+2)^2+5.</me>
+      </solution>
+    </example>
+
+    <p>The negative value of <m>a</m> explains why the parabola opens downward. Its magnitude, <m>2</m>, indicates a vertical stretch relative to the parent graph <m>y=x^2</m>.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-comparing-quadratic-forms">
+    <title>Comparing Quadratic Forms</title>
+
+    <p>A quadratic function can be written in several equivalent forms. Each form emphasizes different characteristics of the graph.</p>
+
+    <table xml:id="tbl-comparing-quadratic-forms">
+      <title>Uses of Different Quadratic Forms</title>
+      <tabular>
+        <row header="yes"><cell>Form</cell><cell>General equation</cell><cell>Information shown most directly</cell></row>
+        <row><cell>Standard form</cell><cell><m>y=ax^2+bx+c</m></cell><cell>y-intercept and coefficients</cell></row>
+        <row><cell>Factored form</cell><cell><m>y=a(x-r_1)(x-r_2)</m></cell><cell>x-intercepts and zeros</cell></row>
+        <row><cell>Vertex form</cell><cell><m>y=a(x-h)^2+k</m></cell><cell>vertex and axis of symmetry</cell></row>
+      </tabular>
+    </table>
+
+    <p>These are not different functions. They are different representations of the same function. Choosing the right form often makes a problem significantly easier because the desired feature may already be visible in the equation.</p>
+
+    <example xml:id="ex-compare-forms-same-quadratic">
+      <title>Three Forms of the Same Quadratic</title>
+      <statement>
+        <p>Consider the quadratic function</p>
+        <me>f(x)=2(x-1)(x-5).</me>
+        <p>Identify its x-intercepts and vertex, then write it in standard form and vertex form.</p>
+      </statement>
+      <solution>
+        <p>Factored form shows that the x-intercepts are <m>1</m> and <m>5</m>. Their midpoint is <m>3</m>, so the axis of symmetry is <m>x=3</m>. Evaluate:</p>
+        <me>f(3)=2(3-1)(3-5)=-8.</me>
+        <p>The vertex is <m>(3,-8)</m>, so vertex form is</p>
+        <me>f(x)=2(x-3)^2-8.</me>
+        <p>Expanding the factored form gives</p>
+        <md>
+          <mrow>f(x)&amp;=2(x^2-6x+5),</mrow>
+          <mrow>&amp;=2x^2-12x+10.</mrow>
+        </md>
+      </solution>
+    </example>
+
+    <p>This final example demonstrates that each form reveals different information. Factored form immediately displays the zeros, vertex form immediately displays the vertex, and standard form makes the y-intercept visible as the constant term.</p>
+  </subsection>
+
+  <conclusion>
+    <p>Quadratic equations can be written using either the x-intercepts or the vertex of a graph. Factored form emphasizes zeros and intercepts, while vertex form emphasizes the vertex and axis of symmetry. Understanding both approaches provides a strong connection between graphical and algebraic representations and helps us choose the form that best matches the information given.</p>
+  </conclusion>
+</section>

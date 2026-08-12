@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-writing-polynomial-equations" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Writing Polynomial Equations from Graphs</title>
+
+  <introduction>
+    <p>In the previous section, we used a polynomial equation to predict the behavior of its graph. In this section, we reverse that process. We begin with graphical information and construct a polynomial equation that has the required zeros, multiplicities, end behavior, and scale.</p>
+    <p>The goal is often to write a polynomial of <term>least degree</term>. This means using the smallest multiplicity at each zero that is consistent with the graph. After the factors are determined, one additional point is used to find the unknown vertical scale factor.</p>
+  </introduction>
+
+  <subsection xml:id="subsec-from-intercepts-to-factors">
+    <title>From x-Intercepts to Factors</title>
+
+    <p>Every x-intercept identifies a zero of the polynomial. If a graph has an x-intercept at <m>x=r</m>, then <m>(x-r)</m> is a factor. The behavior of the graph at the intercept determines the factor's multiplicity.</p>
+
+    <important>
+      <ul>
+        <li><p>If the graph crosses the x-axis at <m>x=r</m>, use an odd multiplicity. For a least-degree polynomial, use multiplicity 1 unless the graph clearly indicates a higher odd multiplicity.</p></li>
+        <li><p>If the graph touches the x-axis and turns around at <m>x=r</m>, use an even multiplicity. For a least-degree polynomial, use multiplicity 2 unless the graph clearly indicates a higher even multiplicity.</p></li>
+      </ul>
+    </important>
+
+    <!-- Figure: A polynomial graph with x-intercepts at x=-2 and x=4. The graph bounces at x=-2 and crosses at x=4. Label both intercepts and make the local behavior visible. -->
+
+    <example xml:id="ex-build-factors-from-graph">
+      <title>Determining Factors from Intercepts and Behavior</title>
+      <statement>
+        <p>A polynomial graph has x-intercepts at <m>x=-2</m> and <m>x=4</m>. The graph bounces at <m>x=-2</m> and crosses at <m>x=4</m>. Write the least-degree form of the polynomial, leaving the leading scale factor unknown.</p>
+      </statement>
+      <solution>
+        <p>The zero <m>x=-2</m> gives the factor <m>(x+2)</m>. Because the graph bounces, the least possible multiplicity is 2.</p>
+        <p>The zero <m>x=4</m> gives the factor <m>(x-4)</m>. Because the graph crosses, the least possible multiplicity is 1.</p>
+        <p>Therefore, the least-degree family of polynomials with these features is</p>
+        <me>f(x)=a(x+2)^2(x-4),</me>
+        <p>where <m>a</m> is a nonzero constant.</p>
+      </solution>
+    </example>
+
+    <p>This example shows that the graph determines the structure of the factors but not yet the exact equation. Any nonzero value of <m>a</m> preserves the zeros and their multiplicities. An additional point is needed to determine the specific vertical scale.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-least-degree-polynomials">
+    <title>What Least Degree Means</title>
+
+    <definition xml:id="def-least-degree-polynomial">
+      <title>Polynomial of Least Degree</title>
+      <p>A polynomial of <term>least degree</term> uses the smallest multiplicity at each zero that matches the graph's behavior.</p>
+    </definition>
+
+    <p>For example, a crossing can be produced by multiplicity 1, 3, 5, and so on. A bounce can be produced by multiplicity 2, 4, 6, and so on. If the graph only indicates crossing or bouncing, then the least-degree choice is multiplicity 1 for a crossing and multiplicity 2 for a bounce.</p>
+
+    <example xml:id="ex-least-degree-choice">
+      <title>Choosing the Smallest Multiplicities</title>
+      <statement>
+        <p>A graph crosses the x-axis at <m>x=-5</m> and <m>x=1</m>, and it bounces at <m>x=3</m>. Write a least-degree polynomial with these intercepts, leaving <m>a</m> unknown. State its degree.</p>
+      </statement>
+      <solution>
+        <p>The crossing zeros receive multiplicity 1, and the bouncing zero receives multiplicity 2:</p>
+        <me>p(x)=a(x+5)(x-1)(x-3)^2.</me>
+        <p>The degree is the sum of the multiplicities:</p>
+        <me>1+1+2=4.</me>
+      </solution>
+    </example>
+
+    <p>This example illustrates why the phrase least degree matters. Increasing any exponent would preserve the same zeros and the same cross-or-bounce pattern, but it would introduce a higher degree than the graph requires.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-finding-polynomial-scale-factor">
+    <title>Determining the Scale Factor</title>
+
+    <p>After the zeros and multiplicities have been translated into factors, the coefficient <m>a</m> remains unknown. Substitute the coordinates of any additional point on the graph to solve for <m>a</m>. The y-intercept is especially convenient because its x-coordinate is zero.</p>
+
+    <procedure xml:id="proc-write-polynomial-from-graph">
+      <title>Writing a Polynomial from a Graph</title>
+      <ol>
+        <li><p>Identify all x-intercepts.</p></li>
+        <li><p>Use crossing or bouncing behavior to assign least-degree multiplicities.</p></li>
+        <li><p>Write the polynomial in factored form with an unknown factor <m>a</m>.</p></li>
+        <li><p>Substitute another point on the graph.</p></li>
+        <li><p>Solve for <m>a</m>.</p></li>
+        <li><p>Check the zeros, multiplicities, and end behavior of the completed equation.</p></li>
+      </ol>
+    </procedure>
+
+    <example xml:id="ex-determine-polynomial-scale-factor">
+      <title>Using the y-Intercept to Find a</title>
+      <statement>
+        <p>A polynomial graph bounces at <m>x=-1</m>, crosses at <m>x=3</m>, and passes through <m>(0,-6)</m>. Find its least-degree equation.</p>
+      </statement>
+      <solution>
+        <p>The intercept behavior gives</p>
+        <me>f(x)=a(x+1)^2(x-3).</me>
+        <p>Use the point <m>(0,-6)</m>:</p>
+        <md>
+          <mrow>-6&amp;=a(0+1)^2(0-3),</mrow>
+          <mrow>-6&amp;=-3a,</mrow>
+          <mrow>a&amp;=2.</mrow>
+        </md>
+        <p>Therefore,</p>
+        <me>f(x)=2(x+1)^2(x-3).</me>
+      </solution>
+    </example>
+
+    <p>This example demonstrates the complete equation-writing process. The x-intercepts and local behavior determine the factors and their exponents. The y-intercept then determines the value of <m>a</m>.</p>
+
+    <!-- Figure: A polynomial graph that bounces at (-1,0), crosses at (3,0), and passes through (0,-6). The right end rises and the left end falls. Use the figure with Example ex-determine-polynomial-scale-factor. -->
+  </subsection>
+
+  <subsection xml:id="subsec-using-nonintercept-point">
+    <title>Using a Point Other Than the y-Intercept</title>
+
+    <p>The additional point does not have to be the y-intercept. Any point with known coordinates can be substituted into the factored form. Choosing a point with simple coordinates usually makes the arithmetic easier.</p>
+
+    <example xml:id="ex-use-nonintercept-point">
+      <title>Determining a from Another Point</title>
+      <statement>
+        <p>A polynomial crosses the x-axis at <m>x=-4</m>, bounces at <m>x=2</m>, and passes through <m>(3,14)</m>. Find its least-degree equation.</p>
+      </statement>
+      <solution>
+        <p>The zero <m>-4</m> has least odd multiplicity 1, and the zero <m>2</m> has least even multiplicity 2. Thus,</p>
+        <me>g(x)=a(x+4)(x-2)^2.</me>
+        <p>Substitute <m>(3,14)</m>:</p>
+        <md>
+          <mrow>14&amp;=a(3+4)(3-2)^2,</mrow>
+          <mrow>14&amp;=7a,</mrow>
+          <mrow>a&amp;=2.</mrow>
+        </md>
+        <p>The equation is</p>
+        <me>g(x)=2(x+4)(x-2)^2.</me>
+      </solution>
+    </example>
+
+    <p>This example shows that the role of the extra point is always the same: it selects one specific vertical scale from the family of polynomials that share the same zeros and multiplicities.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-end-behavior-as-check">
+    <title>Using End Behavior as a Check</title>
+
+    <p>End behavior can often predict the sign of <m>a</m> before any substitution is performed. It also provides an important reasonableness check after the equation is found.</p>
+
+    <example xml:id="ex-end-behavior-predicts-sign">
+      <title>Predicting the Sign of a</title>
+      <statement>
+        <p>A least-degree polynomial crosses at <m>x=-2</m>, bounces at <m>x=1</m>, and crosses at <m>x=5</m>. Its graph falls on the left and rises on the right. Determine the sign of <m>a</m> in</p>
+        <me>f(x)=a(x+2)(x-1)^2(x-5).</me>
+      </statement>
+      <solution>
+        <p>The degree is <m>1+2+1=4</m>, which is even. An even-degree polynomial has ends that point in the same direction. However, the stated graph has opposite end behavior, so the listed features are inconsistent with a least-degree polynomial of this form.</p>
+        <p>No choice of <m>a</m> can make an even-degree polynomial fall on the left and rise on the right.</p>
+      </solution>
+    </example>
+
+    <p>This example shows that end behavior is more than a final decoration on a graph. It can reveal that a proposed combination of intercepts, multiplicities, and degree is impossible. A correct equation must satisfy both the short-run behavior near the zeros and the long-run behavior at the ends.</p>
+
+    <example xml:id="ex-end-behavior-confirms-sign">
+      <title>Confirming the Sign of the Scale Factor</title>
+      <statement>
+        <p>A cubic polynomial crosses at <m>x=-3</m>, <m>x=0</m>, and <m>x=4</m>. The graph rises on the left and falls on the right. Write its least-degree form and determine the required sign of <m>a</m>.</p>
+      </statement>
+      <solution>
+        <p>Each crossing has multiplicity 1, so</p>
+        <me>p(x)=a(x+3)x(x-4).</me>
+        <p>The degree is 3, which is odd. An odd-degree polynomial that rises on the left and falls on the right must have a negative leading coefficient. Since the factors have positive leading coefficients, <m>a</m> must be negative.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-complete-polynomial-equation-example">
+    <title>Putting All the Information Together</title>
+
+    <!-- Figure: A least-degree polynomial graph with a crossing at x=-3, a bounce at x=1, a crossing at x=4, and a labeled point (0,12). The left end rises and the right end falls. -->
+
+    <example xml:id="ex-complete-polynomial-equation">
+      <title>Writing an Equation from a Full Graph Description</title>
+      <statement>
+        <p>A polynomial graph crosses at <m>x=-3</m>, bounces at <m>x=1</m>, crosses at <m>x=4</m>, and passes through <m>(0,12)</m>. Find a polynomial equation of least degree and state its end behavior.</p>
+      </statement>
+      <solution>
+        <p>The least-degree multiplicities give</p>
+        <me>f(x)=a(x+3)(x-1)^2(x-4).</me>
+        <p>Use the point <m>(0,12)</m>:</p>
+        <md>
+          <mrow>12&amp;=a(3)(-1)^2(-4),</mrow>
+          <mrow>12&amp;=-12a,</mrow>
+          <mrow>a&amp;=-1.</mrow>
+        </md>
+        <p>Thus,</p>
+        <me>f(x)=-(x+3)(x-1)^2(x-4).</me>
+        <p>The degree is <m>1+2+1=4</m>, and the leading coefficient is negative. Therefore, both ends fall:</p>
+        <md>
+          <mrow>f(x)&amp;\to-\infty \text{ as } x\to-\infty,</mrow>
+          <mrow>f(x)&amp;\to-\infty \text{ as } x\to\infty.</mrow>
+        </md>
+      </solution>
+    </example>
+
+    <p>This example combines every major idea in the process. The zeros identify factors, cross-or-bounce behavior supplies the least multiplicities, an additional point determines <m>a</m>, and the completed degree and leading coefficient determine the end behavior.</p>
+  </subsection>
+
+  <conclusion>
+    <p>A polynomial graph contains enough information to reconstruct an equation. The x-intercepts determine the factors, local behavior determines the multiplicities, and an additional point determines the scale factor <m>a</m>. The phrase least degree tells us to use the smallest multiplicities consistent with the graph, while end behavior provides a check that the degree and leading coefficient agree with the graph.</p>
+  </conclusion>
+</section>

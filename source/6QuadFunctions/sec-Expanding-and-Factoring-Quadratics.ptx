@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-expanding-and-factoring-quadratics" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Expanding and Factoring Quadratic Expressions</title>
+
+  <introduction>
+    <p>Quadratic expressions appear throughout algebra. Two of the most important skills are expanding products and factoring polynomials. These processes are inverses of one another. Expanding uses the distributive property to create an equivalent polynomial, while factoring rewrites a polynomial as a product. Understanding how quadratics are built through multiplication helps explain why factoring methods work.</p>
+  </introduction>
+
+  <subsection xml:id="subsec-distribution-double-distribution">
+    <title>Distribution and Double Distribution</title>
+
+    <p>The distributive property allows a factor outside parentheses to multiply every term inside the parentheses. When both factors contain more than one term, distribution must be applied repeatedly. This process is often called <term>double distribution</term>.</p>
+
+    <example xml:id="ex-double-distribution">
+      <title>Multiplying Two Binomials</title>
+      <statement><p>Expand <m>(5x+3)(x+2)</m>.</p></statement>
+      <solution>
+        <p>Distribute the first factor across each term of the second factor:</p>
+        <md>
+          <mrow>(5x+3)(x+2)&amp;=(5x+3)x+(5x+3)2,</mrow>
+          <mrow>&amp;=5x^2+3x+10x+6,</mrow>
+          <mrow>&amp;=5x^2+13x+6.</mrow>
+        </md>
+      </solution>
+    </example>
+
+    <p>This example illustrates an important feature of quadratic expressions. The constant term comes from multiplying the constants, the leading term comes from multiplying the highest-degree terms, and the middle term is created by combining the two cross-products. Understanding where these pieces come from will later help us reverse the process through factoring.</p>
+
+    <example xml:id="ex-square-binomial">
+      <title>A Common Mistake</title>
+      <statement><p>Expand <m>(x+4)^2</m>.</p></statement>
+      <solution>
+        <p>First rewrite the square as a product:</p>
+        <me>(x+4)^2=(x+4)(x+4).</me>
+        <p>Now distribute:</p>
+        <me>x^2+4x+4x+16=x^2+8x+16.</me>
+      </solution>
+    </example>
+
+    <p>The expression <m>(x+4)^2</m> is not equal to <m>x^2+16</m> because the middle terms created during distribution cannot be ignored. This mistake appears frequently when students first work with quadratic expressions. citeturn30search1</p>
+  </subsection>
+
+  <subsection xml:id="subsec-factoring-gcf">
+    <title>Factoring Out a Greatest Common Factor</title>
+
+    <p>Factoring reverses distribution. Before attempting any advanced factoring method, look for a greatest common factor (GCF). Removing the GCF often simplifies the expression and reveals additional structure.</p>
+
+    <example xml:id="ex-gcf-factoring">
+      <title>Factoring Out a Common Factor</title>
+      <statement><p>Factor <m>15x^2-30x</m>.</p></statement>
+      <solution>
+        <p>Both terms contain a factor of <m>15x</m>.</p>
+        <me>15x^2-30x=15x(x-2).</me>
+      </solution>
+    </example>
+
+    <p>Factoring is easier to understand when we remember that it simply reverses distribution. If distributing <m>15x</m> into <m>(x-2)</m> recreates the original polynomial, then factoring extracts that common factor and reveals the multiplication structure hidden inside the polynomial.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-factoring-by-grouping">
+    <title>Factoring by Grouping</title>
+
+    <p>Many quadratic trinomials cannot be factored by a simple GCF. In these situations, we rewrite the middle term as the sum of two terms. The goal is to create pairs of terms that share common factors.</p>
+
+    <p>For a quadratic <m>ax^2+bx+c</m>, we look for two numbers whose product is <m>ac</m> and whose sum is <m>b</m>. Rewriting the middle term using those numbers creates a factorable grouping. citeturn30search2</p>
+
+    <example xml:id="ex-factoring-grouping-main">
+      <title>Factoring a Quadratic by Grouping</title>
+      <statement><p>Factor <m>15x^2+13x+2</m>.</p></statement>
+      <solution>
+        <p>The product <m>15\cdot2=30</m>. The numbers 10 and 3 multiply to 30 and add to 13.</p>
+        <p>Rewrite the middle term:</p>
+        <me>15x^2+10x+3x+2.</me>
+        <p>Factor from each pair:</p>
+        <me>5x(3x+2)+1(3x+2).</me>
+        <p>Now factor out the common binomial:</p>
+        <me>(5x+1)(3x+2).</me>
+      </solution>
+    </example>
+
+    <p>This example demonstrates why the decomposition of the middle term matters. Different decompositions are possible, but only those that produce a common binomial factor lead to a successful factorization. citeturn30search2</p>
+
+    <example xml:id="ex-factoring-grouping-second">
+      <title>A Second Example</title>
+      <statement><p>Factor <m>2x^2-5x-3</m>.</p></statement>
+      <solution>
+        <p>The product of the leading coefficient and constant term is <m>-6</m>. The numbers <m>-6</m> and <m>1</m> multiply to <m>-6</m> and add to <m>-5</m>.</p>
+        <me>2x^2-6x+x-3.</me>
+        <p>Group and factor:</p>
+        <me>2x(x-3)+1(x-3).</me>
+        <p>Factor the common binomial:</p>
+        <me>(2x+1)(x-3).</me>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-zero-product-property">
+    <title>The Zero Product Property</title>
+
+    <definition xml:id="def-zero-product-property">
+      <title>Zero Product Property</title>
+      <p>If the product of two numbers is zero, then at least one of the factors must equal zero.</p>
+      <me>ab=0 \implies a=0 \text{ or } b=0.</me>
+    </definition>
+
+    <p>The importance of factoring becomes clear when solving quadratic equations. Once an equation has been written as a product equal to zero, each factor can be set equal to zero and solved separately. citeturn30search2</p>
+
+    <example xml:id="ex-solve-by-factoring">
+      <title>Solving a Quadratic Equation</title>
+      <statement><p>Solve <m>2x^2-5x-3=0</m>.</p></statement>
+      <solution>
+        <p>Factor the quadratic:</p>
+        <me>(2x+1)(x-3)=0.</me>
+        <p>Apply the Zero Product Property:</p>
+        <md>
+          <mrow>2x+1=0 &amp;\Rightarrow x=-\frac12,</mrow>
+          <mrow>x-3=0 &amp;\Rightarrow x=3.</mrow>
+        </md>
+        <p>The solutions are <m>x=-\frac12</m> and <m>x=3</m>.</p>
+      </solution>
+    </example>
+
+    <p>The main advantage of factoring is that a complicated quadratic equation becomes two much simpler linear equations.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-quadratics-and-intercepts">
+    <title>Factoring and x-Intercepts</title>
+
+    <p>Finding x-intercepts and solving quadratic equations are closely related ideas. An x-intercept occurs whenever the output of a function equals zero. Therefore, finding x-intercepts means solving <m>f(x)=0</m>. citeturn30search2</p>
+
+    <!-- Figure: Graph of a quadratic with two x-intercepts. Label the intercepts and highlight that each intercept corresponds to a solution of f(x)=0. -->
+
+    <example xml:id="ex-x-intercepts-by-factoring">
+      <title>Finding x-Intercepts</title>
+      <statement><p>Find the x-intercepts of <m>v(x)=3x^2-4x-4</m>.</p></statement>
+      <solution>
+        <p>Set the function equal to zero:</p>
+        <me>3x^2-4x-4=0.</me>
+        <p>Factor:</p>
+        <me>(3x+2)(x-2)=0.</me>
+        <p>The solutions are <m>x=-\frac23</m> and <m>x=2</m>.</p>
+        <p>Therefore, the x-intercepts are <m>\left(-\frac23,0\right)</m> and <m>(2,0)</m>.</p>
+      </solution>
+    </example>
+
+    <p>This example shows the connection between algebra and graphs. Every real solution of the quadratic equation corresponds to an x-intercept of the graph, and every x-intercept corresponds to a solution of <m>f(x)=0</m>. citeturn30search2</p>
+  </subsection>
+
+  <conclusion>
+    <p>Expanding and factoring are inverse processes. Distribution builds quadratic expressions by multiplication, while factoring recovers that multiplication structure. Factoring by grouping relies on decomposing the middle term in a strategic way, and once a quadratic has been factored, the Zero Product Property provides an efficient method for solving equations and finding x-intercepts.</p>
+  </conclusion>
+</section>

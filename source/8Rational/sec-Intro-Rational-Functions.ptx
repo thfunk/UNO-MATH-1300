@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-introduction-to-rational-functions" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Introduction to Rational Functions</title>
+
+  <introduction>
+    <p>Polynomial functions are built from sums, differences, and products of powers of <m>x</m>. Rational functions extend this idea by allowing one polynomial to be divided by another. Ratios appear naturally in many applications, including rates, concentrations, densities, and probabilities. In this section, we introduce rational functions through both algebraic definitions and real-world examples.</p>
+  </introduction>
+
+  <subsection xml:id="subsec-what-is-a-rational-function">
+    <title>What Is a Rational Function?</title>
+
+    <definition xml:id="def-rational-function2">
+      <title>Rational Function</title>
+      <p>A <term>rational function</term> is a function of the form</p>
+      <me>f(x)=\frac{P(x)}{Q(x)},</me>
+      <p>where <m>P(x)</m> and <m>Q(x)</m> are polynomial functions and <m>Q(x)\ne0</m>.</p>
+    </definition>
+
+    <p>The requirement that the denominator is nonzero is important because division by zero is undefined. Every rational function is built from a ratio of polynomials.</p>
+
+    <example xml:id="ex-rational-or-not">
+      <title>Examples and Nonexamples</title>
+      <statement>
+        <p>Determine whether each expression is a rational function.</p>
+        <ol>
+          <li><m>\frac{x^2+1}{x-3}</m></li>
+          <li><m>\frac{3x-4}{x^2+2}</m></li>
+          <li><m>\frac{\sqrt{x}+1}{x-2}</m></li>
+        </ol>
+      </statement>
+      <solution>
+        <p>The first two expressions are rational functions because both the numerator and denominator are polynomials.</p>
+        <p>The third expression is not a rational function because <m>\sqrt{x}=x^{1/2}</m> is not a polynomial term. Polynomial exponents must be nonnegative integers.</p>
+      </solution>
+    </example>
+
+    <p>This example highlights that the key question is whether both the numerator and denominator are polynomial functions. Simply having a fraction does not automatically make an expression a rational function.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-concentrations-and-ratios">
+    <title>Concentrations as Ratios</title>
+
+    <p>Ratios are often used to describe concentrations. For example, a lemonade recipe may be described by the fraction</p>
+    <me>\frac{\text{lemon juice}}{\text{total liquid}}.</me>
+
+    <p>A larger value of this ratio indicates a more concentrated mixture.</p>
+
+    <example xml:id="ex-lemonade-comparison">
+      <title>Comparing Two Lemonade Recipes</title>
+      <statement>
+        <p>Recipe A contains 2 cups of lemon juice in 5 total cups of liquid. Recipe B contains 3 cups of lemon juice in 8 total cups of liquid. Which recipe is more concentrated?</p>
+      </statement>
+      <solution>
+        <p>Compute each concentration:</p>
+        <md>
+          <mrow>\text{Recipe A}&amp;=\frac{2}{5}=0.40=40\%,</mrow>
+          <mrow>\text{Recipe B}&amp;=\frac{3}{8}=0.375=37.5\%.</mrow>
+        </md>
+        <p>Recipe A has the greater concentration of lemon juice.</p>
+      </solution>
+    </example>
+
+    <p>This example motivates rational functions. Many real-world quantities are naturally expressed as a ratio of two changing quantities.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-modeling-concentrations">
+    <title>Building Rational Function Models</title>
+
+    <p>Suppose 6 cups of lemon juice are available and additional sugar water is added. The concentration depends on the amount of added water.</p>
+
+    <example xml:id="ex-lemonade-model-a">
+      <title>Adding Sugar Water</title>
+      <statement>
+        <p>You begin with 6 cups of lemon juice and add <m>w</m> cups of sugar water. Write a function describing the concentration of lemon juice.</p>
+      </statement>
+      <solution>
+        <p>The amount of lemon juice remains 6 cups. The total liquid becomes <m>w+6</m> cups.</p>
+        <p>Therefore,</p>
+        <me>A(w)=\frac{6}{w+6}.</me>
+      </solution>
+    </example>
+
+    <example xml:id="ex-lemonade-model-b">
+      <title>Adding Lemon Juice</title>
+      <statement>
+        <p>You begin with 6 cups of sugar water and add <m>L</m> cups of lemon juice. Write a function describing the concentration of lemon juice.</p>
+      </statement>
+      <solution>
+        <p>The amount of lemon juice is <m>L</m> and the total liquid is <m>L+6</m>.</p>
+        <p>Thus,</p>
+        <me>B(L)=\frac{L}{L+6}.</me>
+      </solution>
+    </example>
+
+    <p>Both functions are rational because they are ratios of polynomial expressions. The inputs are different, but the structure of each model is similar.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-solving-in-context">
+    <title>Solving a Rational Equation in Context</title>
+
+    <p>A rational function model can be used to answer practical questions about concentrations.</p>
+
+    <example xml:id="ex-ten-percent-concentration">
+      <title>Finding a Desired Concentration</title>
+      <statement>
+        <p>Using <m>A(w)=\frac{6}{w+6}</m>, how much sugar water must be added so that the concentration is 10%?</p>
+      </statement>
+      <solution>
+        <p>A concentration of 10% corresponds to 0.10.</p>
+        <md>
+          <mrow>0.10&amp;=\frac{6}{w+6},</mrow>
+          <mrow>0.10(w+6)&amp;=6,</mrow>
+          <mrow>w+6&amp;=60,</mrow>
+          <mrow>w&amp;=54.</mrow>
+        </md>
+        <p>Fifty-four cups of sugar water must be added.</p>
+      </solution>
+    </example>
+
+    <p>This example illustrates an important use of rational functions. Instead of only evaluating the function, we can solve equations to determine which input produces a desired output.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-end-behavior-rational-functions">
+    <title>End Behavior of Rational Functions</title>
+
+    <p>As the input becomes very large, a rational function may approach a constant value. This behavior differs from many polynomial functions, whose outputs often grow without bound.</p>
+
+    <example xml:id="ex-end-behavior-concentration-a">
+      <title>Long-Run Behavior of A(w)</title>
+      <statement>
+        <p>Describe the behavior of <m>A(w)=\frac{6}{w+6}</m> as <m>w</m> becomes very large.</p>
+      </statement>
+      <solution>
+        <p>As more and more sugar water is added, the denominator grows indefinitely while the numerator remains fixed at 6.</p>
+        <p>Therefore,</p>
+        <me>A(w)\to0 \text{ as } w\to\infty.</me>
+        <p>The concentration approaches 0%, meaning the lemonade becomes increasingly diluted.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-end-behavior-concentration-b">
+      <title>Long-Run Behavior of B(L)</title>
+      <statement>
+        <p>Describe the behavior of <m>B(L)=\frac{L}{L+6}</m> as <m>L</m> becomes very large.</p>
+      </statement>
+      <solution>
+        <p>When large amounts of lemon juice are added, the numerator and denominator become nearly equal.</p>
+        <p>Therefore,</p>
+        <me>B(L)\to1 \text{ as } L\to\infty.</me>
+        <p>The concentration approaches 100% lemon juice.</p>
+      </solution>
+    </example>
+
+    <!-- Figure: Graphs of A(w)=6/(w+6) and B(L)=L/(L+6). Show that one approaches 0 and the other approaches 1 as the input increases. -->
+     <figure xml:id="Horiz-Asymp-figure">
+     <image width="60%">
+    <prefigure xmlns="https://prefigure.org" label="Horiz-Asymp-prefigure">
+    <description>Horizontal Asymptotes/ Long-Run Behavior</description>
+    <diagram dimensions="(500,300)" margins="8">
+
+  <definition>A(x)=6/(x+6)</definition>
+  <definition>B(x)=x/(x+6)</definition>
+
+
+  <coordinates bbox="(-15,-0.1,90,1.1)">
+
+    <grid-axes
+        xlabel="amount added"
+        ylabel="concentration"/>
+
+    <graph
+        at="graph-A"
+        function="A"/>
+
+    <graph
+        at="graph-B"
+        function="B"/>
+
+    <graph
+        at="asymptote-B"
+        function="C"/>
+
+    <point
+        at="label-A"
+        p="(30,A(30))"
+        alignment="ne">
+      <m>A(w)=\frac{6}{w+6}\to 0</m>
+    </point>
+
+    <point
+        at="label-B"
+        p="(30,B(30))"
+        alignment="se">
+      <m>B(L)=\frac{L}{L+6}\to 1</m>
+    </point>
+
+    <point
+        at="intersection-point"
+        p="(6,A(6))"
+        alignment="e">
+      <m>(6,\frac{1}{2})</m>
+    </point>
+
+        <point
+        at="label-D"
+        p="(10,C(10))"
+        alignment="s">
+      <m>y=1</m>
+    </point>
+
+  </coordinates>
+
+  <annotations text="Graphs of two concentration functions. The graph of A decreases toward zero, while the graph of B increases toward one as the input increases.">
+
+    <annotation ref="graph-A" text="The graph of A of w equals 6 divided by w plus 6. The graph decreases from one and approaches zero as w increases." sonify="yes"/>
+
+    <annotation ref="graph-B" text="The graph of B of L equals L divided by L plus 6. The graph increases from zero and approaches one as L increases." sonify="yes"/>
+
+    <annotation ref="asymptote-B" text="The horizontal line y equals one, approached by the graph of B."/>
+
+    <annotation ref="intersection-point" text="The two concentration graphs intersect at the point 6 comma one half."/>
+
+    <annotation ref="label-A" text="A label indicating that A of w approaches zero."/>
+
+    <annotation ref="label-B" text="A label indicating that B of L approaches one."/>
+
+  </annotations>
+
+</diagram>
+</prefigure> 
+ </image>
+</figure>
+
+
+    <p>These examples introduce an important theme that will continue throughout the chapter: rational functions often level off and approach constant values. Those values are closely related to horizontal asymptotes, which will be studied in later sections.</p>
+  </subsection>
+
+  <conclusion>
+    <p>Rational functions are ratios of polynomial functions and arise naturally in applications involving rates, proportions, and concentrations. By modeling lemonade concentration, we saw how rational functions can be interpreted, evaluated, and solved in context. Unlike many polynomial functions, rational functions frequently approach constant values as inputs become large, leading to their distinctive long-run behavior.</p>
+  </conclusion>
+</section>

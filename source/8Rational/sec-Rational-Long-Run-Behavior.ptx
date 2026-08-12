@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-rational-long-run-behavior" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Long-Run Behavior and Horizontal Asymptotes</title>
+
+  <introduction>
+    <p>Rational functions often approach a predictable value as the input becomes very large in magnitude. This long-run behavior is closely connected to the degrees and leading coefficients of the numerator and denominator. By comparing those features, we can determine whether a rational function has a horizontal asymptote and describe its end behavior without graphing every detail.</p>
+    <p>This section focuses on behavior far to the left and far to the right. A rational graph may have intercepts, breaks, or dramatic changes in the middle, but those features do not determine its long-run behavior.</p>
+  </introduction>
+
+  <subsection xml:id="subsec-review-rational-end-behavior">
+    <title>Reading Long-Run Behavior</title>
+
+    <p>The notation <m>x\to\infty</m> describes inputs moving far to the right, while <m>x\to-\infty</m> describes inputs moving far to the left. If the output approaches a fixed value <m>c</m>, we write <m>f(x)\to c</m>.</p>
+
+    <example xml:id="ex-interpret-rational-end-behavior">
+      <title>Interpreting End-Behavior Notation</title>
+      <statement>
+        <p>Interpret the statement</p>
+        <me>f(x)\to-4 \text{ as } x\to\infty.</me>
+      </statement>
+      <solution>
+        <p>As the input becomes increasingly large and positive, the outputs of the function become increasingly close to <m>-4</m>.</p>
+      </solution>
+    </example>
+
+    <p>This statement does not say that the function must equal <m>-4</m> for a particular input. It describes a trend in the outputs as the inputs continue increasing.</p>
+
+    <!-- Figure: Three rational-function graphs with different end behavior. One approaches y=-4, one approaches y=0, and one has outputs that do not approach a constant. Use the figure to distinguish a horizontal asymptote from unbounded end behavior. -->
+  </subsection>
+
+  <subsection xml:id="subsec-horizontal-asymptotes-definition">
+    <title>Horizontal Asymptotes</title>
+
+    <definition xml:id="def-horizontal-asymptote-rational">
+      <title>Horizontal Asymptote</title>
+      <p>A horizontal line <m>y=c</m> is a <term>horizontal asymptote</term> of a function if the outputs approach <m>c</m> as <m>x\to\infty</m>, as <m>x\to-\infty</m>, or in both directions.</p>
+    </definition>
+
+    <p>A horizontal asymptote summarizes long-run behavior. It does not act as a barrier that the graph is forbidden to cross. The graph may cross its horizontal asymptote at a finite input and still approach that line farther to the left or right.</p>
+
+    <example xml:id="ex-horizontal-asymptote-from-behavior">
+      <title>Reading an Asymptote from End Behavior</title>
+      <statement>
+        <p>A function satisfies</p>
+        <md>
+          <mrow>f(x)&amp;\to1 \text{ as } x\to-\infty,</mrow>
+          <mrow>f(x)&amp;\to1 \text{ as } x\to\infty.</mrow>
+        </md>
+        <p>Identify its horizontal asymptote.</p>
+      </statement>
+      <solution>
+        <p>The outputs approach 1 at both ends of the graph, so the horizontal asymptote is</p>
+        <me>y=1.</me>
+      </solution>
+    </example>
+
+    <p>This example shows the direct connection between a limiting output and a horizontal asymptote. The long-run statement and the asymptote describe the same behavior in two different forms.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-degree-comparison-horizontal-asymptotes">
+    <title>Comparing the Degrees of the Numerator and Denominator</title>
+
+    <p>For a rational function <m>f(x)=\frac{P(x)}{Q(x)}</m>, the highest-degree terms control the long-run behavior. The lower-degree terms become less important relative to those leading terms when <m>|x|</m> is very large.</p>
+
+    <important xml:id="important-three-horizontal-asymptote-cases">
+      <title>Three Degree-Comparison Cases</title>
+      <ol>
+        <li><p>If <m>\deg(P)&lt;\deg(Q)</m>, then the horizontal asymptote is <m>y=0</m>.</p></li>
+        <li><p>If <m>\deg(P)=\deg(Q)</m>, then the horizontal asymptote is the ratio of the leading coefficients.</p></li>
+        <li><p>If <m>\deg(P)&gt;\deg(Q)</m>, then there is no horizontal asymptote.</p></li>
+      </ol>
+    </important>
+
+    <p>These cases are based on which polynomial grows faster. When the denominator has the larger degree, it outgrows the numerator and drives the ratio toward zero. When the degrees match, the leading terms grow at the same rate, so their coefficient ratio determines the limiting value. When the numerator has the larger degree, the ratio does not level off toward a constant.</p>
+
+    <!-- Figure: A three-column summary comparing numerator degree less than, equal to, and greater than denominator degree. Show the corresponding horizontal asymptote y=0, horizontal asymptote equal to a ratio of leading coefficients, and no horizontal asymptote. -->
+  </subsection>
+
+  <subsection xml:id="subsec-numerator-degree-smaller">
+    <title>Numerator Degree Less Than Denominator Degree</title>
+
+    <p>When the denominator has the larger degree, the denominator grows faster than the numerator. The fraction becomes closer and closer to zero as the magnitude of <m>x</m> increases.</p>
+
+    <example xml:id="ex-rational-ha-zero">
+      <title>A Horizontal Asymptote at y = 0</title>
+      <statement>
+        <p>Determine the horizontal asymptote and end behavior of</p>
+        <me>f(x)=\frac{3x-2}{x^2+5}.</me>
+      </statement>
+      <solution>
+        <p>The numerator has degree 1, and the denominator has degree 2. Since <m>1&lt;2</m>, the denominator grows faster.</p>
+        <p>The horizontal asymptote is</p>
+        <me>y=0.</me>
+        <p>Therefore,</p>
+        <md>
+          <mrow>f(x)&amp;\to0 \text{ as } x\to-\infty,</mrow>
+          <mrow>f(x)&amp;\to0 \text{ as } x\to\infty.</mrow>
+        </md>
+      </solution>
+    </example>
+
+    <p>This example illustrates that the exact coefficients and lower-degree terms do not affect the horizontal asymptote in this case. The comparison of degrees is enough.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-equal-degrees-rational">
+    <title>Equal Numerator and Denominator Degrees</title>
+
+    <p>When the numerator and denominator have the same degree, their leading terms grow at the same rate. Dividing those leading terms leaves the ratio of their leading coefficients.</p>
+
+    <example xml:id="ex-rational-ha-coefficient-ratio">
+      <title>Using the Leading Coefficients</title>
+      <statement>
+        <p>Determine the horizontal asymptote and end behavior of</p>
+        <me>g(x)=\frac{5x^2-3x+7}{-2x^2+4}.</me>
+      </statement>
+      <solution>
+        <p>Both the numerator and denominator have degree 2. Their leading coefficients are 5 and <m>-2</m>.</p>
+        <p>The horizontal asymptote is</p>
+        <me>y=\frac{5}{-2}=-\frac52.</me>
+        <p>Thus,</p>
+        <md>
+          <mrow>g(x)&amp;\to-\frac52 \text{ as } x\to-\infty,</mrow>
+          <mrow>g(x)&amp;\to-\frac52 \text{ as } x\to\infty.</mrow>
+        </md>
+      </solution>
+    </example>
+
+    <p>This example shows why the leading coefficients must include their signs. A negative leading coefficient in the denominator produces a negative long-run ratio.</p>
+
+    <example xml:id="ex-rational-ha-from-factored-form">
+      <title>Equal Degrees in Factored Form</title>
+      <statement>
+        <p>Determine the horizontal asymptote of</p>
+        <me>h(x)=\frac{3(x+4)(x-2)}{2(x-1)(x+7)}.</me>
+      </statement>
+      <solution>
+        <p>Both numerator and denominator have degree 2. Their leading coefficients are 3 and 2, so</p>
+        <me>y=\frac32</me>
+        <p>is the horizontal asymptote.</p>
+      </solution>
+    </example>
+
+    <p>This example demonstrates that expanding is unnecessary. The leading coefficient of each product can be read by multiplying the leading coefficients of its factors.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-numerator-degree-larger">
+    <title>Numerator Degree Greater Than Denominator Degree</title>
+
+    <p>When the numerator has the larger degree, the numerator grows faster than the denominator. The ratio does not approach a finite constant, so there is no horizontal asymptote.</p>
+
+    <example xml:id="ex-rational-no-horizontal-asymptote">
+      <title>No Horizontal Asymptote</title>
+      <statement>
+        <p>Determine whether</p>
+        <me>r(x)=\frac{2x^3-x+1}{x^2+4}</me>
+        <p>has a horizontal asymptote.</p>
+      </statement>
+      <solution>
+        <p>The numerator has degree 3, and the denominator has degree 2. Because <m>3&gt;2</m>, there is no horizontal asymptote.</p>
+      </solution>
+    </example>
+
+    <p>This conclusion does not mean the graph has no predictable long-run pattern. It means only that the graph does not approach a horizontal line. Other asymptotic behavior may be studied later.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-complete-rational-long-run-analysis">
+    <title>A Complete Long-Run Analysis</title>
+
+    <p>A reliable analysis begins by finding the degree and leading coefficient of both the numerator and denominator. The comparison then identifies the correct horizontal-asymptote case.</p>
+
+    <procedure xml:id="proc-rational-long-run-analysis">
+      <title>Determining Long-Run Behavior</title>
+      <ol>
+        <li><p>Find the degree of the numerator.</p></li>
+        <li><p>Find the degree of the denominator.</p></li>
+        <li><p>Compare the degrees.</p></li>
+        <li><p>Determine the horizontal asymptote, if one exists.</p></li>
+        <li><p>Write the end behavior using <m>x\to\infty</m> and <m>x\to-\infty</m> notation.</p></li>
+      </ol>
+    </procedure>
+
+    <example xml:id="ex-complete-rational-long-run-analysis">
+      <title>From Equation to End Behavior</title>
+      <statement>
+        <p>Determine the long-run behavior of</p>
+        <me>F(x)=\frac{-6x^3+2x-9}{4x^3+x^2-5}.</me>
+      </statement>
+      <solution>
+        <p>The numerator and denominator both have degree 3. The ratio of their leading coefficients is</p>
+        <me>\frac{-6}{4}=-\frac32.</me>
+        <p>Therefore, the horizontal asymptote is <m>y=-\frac32</m>, and</p>
+        <md>
+          <mrow>F(x)&amp;\to-\frac32 \text{ as } x\to-\infty,</mrow>
+          <mrow>F(x)&amp;\to-\frac32 \text{ as } x\to\infty.</mrow>
+        </md>
+      </solution>
+    </example>
+
+    <p>This example summarizes the main method of the section. The equal degrees identify the correct case, the leading coefficients determine the asymptote, and the asymptote determines the long-run output in both directions.</p>
+
+    <!-- Figure: A graph of F(x)=(-6x^3+2x-9)/(4x^3+x^2-5) with a dashed horizontal line y=-3/2. The graph may have other middle features, but both ends approach the dashed line. -->
+  </subsection>
+
+  <conclusion>
+    <p>The long-run behavior of a rational function is controlled by the leading terms of its numerator and denominator. If the numerator degree is smaller, the horizontal asymptote is <m>y=0</m>. If the degrees are equal, the horizontal asymptote is the ratio of the leading coefficients. If the numerator degree is larger, no horizontal asymptote exists. These degree comparisons provide an efficient way to describe rational functions far from the origin.</p>
+  </conclusion>
+</section>
