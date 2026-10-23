@@ -100,13 +100,15 @@
   </p>
 </introduction>
     
-  <xi:include href="sec-long-run-behavior-of-rationals.ptx" />
+  <xi:include href="sec-LongRunOriginal.ptx" />
 
-  <xi:include href="sec-short-run-behavior-of-rationals.ptx" />
+  <xi:include href="sec-Intro-Rational-Functions.ptx" />
 
-  <xi:include href="sec-sketching-graphs-of-rationals.ptx" />
+  <xi:include href="sec-Rational-Long-Run-Behavior.ptx" />
 
-  <xi:include href="sec-writing-equations-of-rationals.ptx" />
+  <xi:include href="sec-Rational-Short-Run-Behavior.ptx" />
+
+  <xi:include href="sec-Writing-Rational-Functions.ptx" />
 
 
 </chapter>

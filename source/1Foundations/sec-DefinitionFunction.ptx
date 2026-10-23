@@ -17,12 +17,67 @@
     </definition>
 
     <p>
+  Depending on the situation, we may refer to the relationship between a function and its inputs and outputs as a
+  <term>mapping</term>, a <term>correspondence</term>, or a <term>rule</term>. We also have several ways to represent
+  functions. We can use a <term>diagram</term>, a <term>table</term>, a <term>graph</term>, or an <term>equation</term>.
+</p>
+
+<definition xml:id="function-notation-definition">
+        <statement>
+            <p>
+                The representation of a function <m>y=f(x)</m> is called <term>function notation</term>.
+                The letter <m>f</m> is the name of the function, and the letter <m>x</m> is the input variable, and the
+                letter <m>y</m> is the output variable. We say that <m>y</m> is a function of <m>x</m>.
+            </p>
+
+      <figure xml:id="function-notation-figure">
+     <image width="60%">
+    <prefigure xmlns="https://prefigure.org" label="function-notation-prefigure">
+        <description>Function Notation</description>
+            <diagram dimensions="(300,300)" margins="(-10, -100, -50, -100)">
+  <coordinates bbox="(-2,-2,2,2)">
+     <label anchor="(0,0)" alignment="center">
+      <m>y=f(x)</m>
+     </label>
+     <path start="(-1,.5)" stroke="blue" arrows="1">
+      <quadratic-bezier controls="((-.4,.5),(-.4,.1))"/>
+    </path>
+    <label anchor="(-1.6,.45)" alignment="center" color="blue">
+      Output
+     </label>
+     <path start="(-.5,-0.5)" stroke="red" arrows="1">
+      <quadratic-bezier controls="((.05,-.5),(.05,-.2))"/>
+      </path>
+      <label anchor="(-1.9,-.55)" alignment="west" color="red">
+      Function Name
+     </label>
+     <path start="(.7,-0.5)" stroke="green" arrows="1">
+      <quadratic-bezier controls="((.3,-.5),(.3,-.2))"/>
+      </path>
+      <label anchor="(.7,-.55)" alignment="east" color="green">
+      Input
+     </label>
+  </coordinates>
+</diagram>
+</prefigure> 
+ </image>
+</figure>
+        </statement>
+    </definition>
+
+<subsection xml:id="subsec-Is-it-a-Function-Diagrams">
+      <title>Is it a Function - Diagrams
+      </title>
+      
+      <p>
       Below, in <xref ref="Func-Bubble-Diagram-figure1" text="type-global"/> and <xref ref="Func-Bubble-Diagram-figure2" text="type-global"/> we have two examples of relationships which <em>are functions</em>. Notice that each input A, B, and C is mapped to exactly one output value. Two inputs can share the same output value, but each input must have a unique output value.
     </p>
     <p>
       For example; in the first diagram, <xref ref="Func-Bubble-Diagram-figure1" text="type-global"/>, each input is going to a different output value.
       In the second diagram, <xref ref="Func-Bubble-Diagram-figure2" text="type-global"/>, inputs B and C are both going to 
       the same output value of Pear, but each input is still going to a single output value.
+    </p>
+    <p> Visually, a diagram which represents a function will always have a single arrow coming out of each input variable.
     </p>
 
 <sidebyside>   
@@ -48,22 +103,22 @@
     <line endpoints="((-mid+.2,0), (mid-.6,top))" stroke="blue" thickness="2" arrows="1"/>
     <line endpoints="((-mid+.2,top), (mid-.6,-top))" stroke="blue" thickness="2" arrows="1"/>
     <line endpoints="((-mid+.2,-top), (mid-.5,0))" stroke="blue" thickness="2" arrows="1"/>
-    <label anchor="(mid,top)" alignment="center">
+    <label anchor="(mid-.4,top)" alignment="center">
       Apple
     </label>
-    <label anchor="(mid,0)" alignment="center">
+    <label anchor="(mid-.4,0)" alignment="center">
       Pear
     </label>
-    <label anchor="(mid,-top-.1)" alignment="center">
+    <label anchor="(mid-.4,-top-.1)" alignment="center">
       Grape
     </label>
-    <label anchor="(-mid,top)" alignment="center">
+    <label anchor="(-mid-.2,top)" alignment="center">
       A
     </label>
-    <label anchor="(-mid,0)" alignment="center">
+    <label anchor="(-mid-.2,0)" alignment="center">
       B
     </label>
-    <label anchor="(-mid,-top)" alignment="center">
+    <label anchor="(-mid-.2,-top)" alignment="center">
       C
     </label>
   </coordinates>
@@ -96,22 +151,22 @@
      <line endpoints="((-mid+.2,0), (mid-.7,0))" stroke="blue" thickness="2" arrows="1"/>
      <line endpoints="((-mid+.2,top), (mid-.6,-top))" stroke="blue" thickness="2" arrows="1"/>
      <line endpoints="((-mid+.2,-top), (mid-.6,-0.1))" stroke="blue" thickness="2" arrows="1"/>
-     <label anchor="(mid,top)" alignment="center">
+     <label anchor="(mid-.4,top)" alignment="center">
       Apple
      </label>
-     <label anchor="(mid,0)" alignment="center">
+     <label anchor="(mid-.4,0)" alignment="center">
       Pear
      </label>
-     <label anchor="(mid,-top-.1)" alignment="center">
+     <label anchor="(mid-.4,-top-.1)" alignment="center">
       Grape
      </label>
-     <label anchor="(-mid,top)" alignment="center">
+     <label anchor="(-mid-.2,top)" alignment="center">
       A
      </label>
-     <label anchor="(-mid,0)" alignment="center">
+     <label anchor="(-mid-.2,0)" alignment="center">
       B
      </label>
-     <label anchor="(-mid,-top)" alignment="center">
+     <label anchor="(-mid-.2,-top)" alignment="center">
       C
      </label>
   </coordinates>
@@ -122,8 +177,7 @@
 </sidebyside> 
 
 <p>
-  In contrast, the diagrams below are both examples of relationships that are <em>not functions</em>. There is an input
-  which has two different outputs in each diagram.
+  In contrast, the diagrams below are both examples of relationships that are <em>not functions</em>. There is an input which has two different outputs in each diagram.
 </p>
 <p>
   In the first diagram, <xref ref="not-Func-Bubble-Diagram-figure1" text="type-global"/>, input B is going to both output values of Apple and Pear.
@@ -155,22 +209,22 @@
     <line endpoints="((-mid+.2,0), (mid-.6,0))" stroke="red" thickness="2" arrows="1"/>
     <line endpoints="((-mid+.2,top), (mid-.6,-top))" stroke="red" thickness="2" arrows="1"/>
     <line endpoints="((-mid+.2,-top), (mid-.5,0))" stroke="red" thickness="2" arrows="1"/>
-    <label anchor="(mid,top)" alignment="center">
+    <label anchor="(mid-.4,top)" alignment="center">
       Apple
     </label>
-    <label anchor="(mid,0)" alignment="center">
+    <label anchor="(mid-.4,0)" alignment="center">
       Pear
     </label>
-    <label anchor="(mid,-top-.1)" alignment="center">
+    <label anchor="(mid-.4,-top-.1)" alignment="center">
       Grape
     </label>
-    <label anchor="(-mid,top)" alignment="center">
+    <label anchor="(-mid-.2,top)" alignment="center">
       A
     </label>
-    <label anchor="(-mid,0)" alignment="center">
+    <label anchor="(-mid-.2,0)" alignment="center">
       B
     </label>
-    <label anchor="(-mid,-top)" alignment="center">
+    <label anchor="(-mid-.2,-top)" alignment="center">
       C
     </label>
   </coordinates>
@@ -204,22 +258,22 @@
      <line endpoints="((-mid+.2,top), (mid-.6,-top))" stroke="red" thickness="2" arrows="1"/>
      <line endpoints="((-mid+.2,top), (mid-.6,top))" stroke="red" thickness="2" arrows="1"/>
      <line endpoints="((-mid+.2,-top), (mid-.6,-0.1))" stroke="red" thickness="2" arrows="1"/>
-     <label anchor="(mid,top)" alignment="center">
+     <label anchor="(mid-.4,top)" alignment="center">
       Apple
      </label>
-     <label anchor="(mid,0)" alignment="center">
+     <label anchor="(mid-.4,0)" alignment="center">
       Pear
      </label>
-     <label anchor="(mid,-top-.1)" alignment="center">
+     <label anchor="(mid-.4,-top-.1)" alignment="center">
       Grape
      </label>
-     <label anchor="(-mid,top)" alignment="center">
+     <label anchor="(-mid-.2,top)" alignment="center">
       A
      </label>
-     <label anchor="(-mid,0)" alignment="center">
+     <label anchor="(-mid-.2,0)" alignment="center">
       B
      </label>
-     <label anchor="(-mid,-top)" alignment="center">
+     <label anchor="(-mid-.2,-top)" alignment="center">
       C
      </label>
   </coordinates>
@@ -228,64 +282,578 @@
  </image>
 </figure>
 </sidebyside> 
+    </subsection>
 
-<p>
-  Depending on the situation, we may refer to the relationship between a function and its inputs and outputs as a
-  <term>mapping</term>, a <term>correspondence</term>, or a <term>rule</term>. We also have several ways to represent
-  functions. We can use a <term>table</term>, a <term>graph</term>, a <term>diagram</term>, or an <term>equation</term>.
-</p>
+<subsection xml:id="subsec-Is-it-a-Function-Tables">
+      <title>Is it a Function - Tables</title>
+      <p> Recall that, in function notation, writing <m> f(x) </m> is the same as writing <m> y </m>. This is especially important when looking at a table as we often represent the output row/column with <m> f(x) </m> to give the reader the name of the function.
+      </p>
 
-<p>
-  So far we have seen functions represented as diagrams. Before we can move on the others, we need to learn about function notation.
-</p>
+      <table xml:id="table-function1">
+        <title>Example of Function (Table)</title>
+          <tabular>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col/>
+            <row bottom="minor">
+                <cell><m>x</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>12</m></cell>
+                <cell><m>25</m></cell>
+                <cell><m>40</m></cell>
+            </row>
 
-<definition xml:id="function-notation-definition">
-        <statement>
-            <p>
-                The representation of a function <m>y=f(x)</m> is called <term>function notation</term>.
-                The letter <m>f</m> is the name of the function, and the letter <m>x</m> is the input variable, and the
-                letter <m>y</m> is the output variable. We say that <m>y</m> is a function of <m>x</m>.
-            </p>
+            <row>
+                <cell><m>f(x)</m></cell>
+                <cell><m>3</m></cell>
+                <cell><m>7</m></cell>
+                <cell><m>3</m></cell>
+                <cell><m>24</m></cell>
+            </row>
+        </tabular>
+    </table>
 
-            <figure xml:id="function-notation-figure">
-     <image width="60%">
-    <prefigure xmlns="https://prefigure.org" label="function-notation-prefigure">
-        <description>Function Notation</description>
-            <diagram dimensions="(300,300)" margins="(-10, -100, -50, -100)">
-  <coordinates bbox="(-2,-2,2,2)">
-     <label anchor="(0,0)" alignment="center">
-      <m>y=f(x)</m>
-     </label>
-     <path start="(-1,.5)" stroke="blue" arrows="1">
-      <quadratic-bezier controls="((-.4,.5),(-.4,.1))"/>
-    </path>
-    <label anchor="(-1.25,.5)" alignment="center" color="blue">
-      Output
-     </label>
-     <path start="(-.5,-0.5)" stroke="red" arrows="1">
-      <quadratic-bezier controls="((.05,-.5),(.05,-.2))"/>
-      </path>
-      <label anchor="(-.3,-.5)" alignment="west" color="red">
-      Function Name
-     </label>
-     <path start="(.7,-0.5)" stroke="green" arrows="1">
-      <quadratic-bezier controls="((.3,-.5),(.3,-.2))"/>
-      </path>
-      <label anchor="(.7,-.5)" alignment="east" color="green">
-      Input
-     </label>
+    <p>
+      The top row of <xref ref="table-function1" text="type-global"/> gives all the input values (<m>x</m>-values), while the bottom row gives the output values (<m>y</m>-values). We know that this table is representing a function because each input is associated with a single output. This is seen by the fact that none of the <m>x</m>-values are repeated in the top row, and each cell in the bottom row has a single value listed. The fact that the output of <m>3</m> is achieved from multiple inputs is allowed in a function. This same function could have been represented as the table below.
+    </p>
+
+    <table xml:id="table-function2">
+        <title>Example of Function (Table)</title>
+          <tabular>
+            <col right="minor"/>
+            <col/>
+
+            <row bottom="minor">
+                <cell><m>x</m></cell>
+                <cell><m>f(x)</m></cell>
+            </row>
+            <row bottom="minor">
+                <cell><m>0</m></cell>
+                <cell><m>3</m></cell>
+            </row>
+            <row bottom="minor">
+                <cell><m>12</m></cell>
+                <cell><m>7</m></cell>
+            </row>
+            <row bottom="minor">
+                <cell><m>25</m></cell>
+                <cell><m>3</m></cell>
+            </row>
+            <row>
+                <cell><m>40</m></cell>
+                <cell><m>24</m></cell>
+            </row>
+        </tabular>
+    </table>
+
+    <p>
+      While <xref ref="table-function2" text="type-global"/> looks different at a glance, notice that we now have the input variables in the first column and the output variables in the second column. Further, each input is being mapped to the same output as before, just in a different order.
+    </p>
+    <p>
+      Below in <xref ref="table-not-function1" text="type-global"/> we have an example of a table which is <em> not a function</em>.
+    </p>
+
+    <table xml:id="table-not-function1">
+      <title>Example Not a Function (Table)</title>
+      <tabular>
+                <col right="minor"/>
+                <col right="minor"/>
+                <col right="minor"/>
+                <col right="minor"/>
+                <col/>
+                <row bottom="minor">
+                    <cell><m>x</m></cell>
+                    <cell><m>3</m></cell>
+                    <cell><m>12</m></cell>
+                    <cell><m>3</m></cell>
+                    <cell><m>28</m></cell>
+                </row>
+      
+                <row>
+                    <cell><m>f(x)</m></cell>
+                    <cell><m>7</m></cell>
+                    <cell><m>4</m></cell>
+                    <cell><m>9</m></cell>
+                    <cell><m>11</m></cell>
+                </row>
+            </tabular>
+    </table>
+
+    <p>
+      We can identify this as not being a function due to having the input <m>3</m> listed multiple times, and is associated with a different output each time. We cannot have the input of <m>3</m> associated with both the output of <m>7</m> and <m>9</m>.
+    </p>
+    </subsection>
+
+<subsection xml:id="subsec-Is-it-a-Function-Graphs">
+      <title>Is it a Function - Graphs</title>
+      <p>
+        In a graph we have the input variable located along the x-axis (the horizontal axis) and the output variable located along the y-axis (the vertical axis). Below are two examples of graphs representing functions.
+      </p>
+
+
+<sidebyside widths="45% 45%" margins="0% 0%">   
+<figure xml:id="Graph-Function-figure1">
+     <image width="45%">
+    <prefigure xmlns="https://prefigure.org" label="Graph-Function-prefigure1">
+        <title>Bubble Diagram</title>
+        <description>Bubble diagram of a function.</description>
+     <diagram dimensions="(300,300)" margins="0">
+  <definition>f(x)=(x-1)^2*(x+2)</definition>
+  <coordinates bbox="(-4,-3,4,5)">
+    <grid-axes/>
+    <graph function="f"/>
+    <label anchor="(3,4)" alignment="center" clear-background="yes">
+      <m>f(x)</m>
+    </label>
+  </coordinates>
+</diagram>
+
+</prefigure> 
+ </image>
+</figure>
+
+
+<figure xml:id="Graph-Function-figure2">
+     <image width="45%">
+    <caption>This is a Function</caption>
+    <prefigure xmlns="https://prefigure.org" label="Graph-Function-prefigure2">
+        <title>Graph of a Function</title>
+        <description>Graph of a function.</description>
+<diagram dimensions="(300,300)" margins="0">
+  <definition>g(x)=-(x+1)^2+4</definition>
+  <coordinates bbox="(-4,-3,4,5)">
+    <grid-axes/>
+    <graph function="g"/>
+    <label anchor="(3,4)" alignment="center" clear-background="yes">
+      <m>g(x)</m>
+    </label>
   </coordinates>
 </diagram>
 </prefigure> 
  </image>
 </figure>
+</sidebyside> 
+
+<p>
+  We know that <xref ref="Graph-Function-figure1"/> and <xref ref="Graph-Function-figure2"/> are functions due to no <m>x</m>-value being associated with more than one output. Graphically, we often call this “<em>passing the vertical line test</em>”. This means that every vertical line you draw on the graphs of <m>f(x)</m> and <m>g(x)</m> will touch the representation of the function (the blue line) at most one time.
+</p>
+<p>
+  In the following two graphs we see relationships which do not represent a function. This is again best seen through the vertical line test. Note the red vertical line in each at <m>x=1</m> which intersects the relationship twice. This indicates that the input <m>x=1</m> is associated with multiple outputs making the relationship not a function. Thus, the relationships <m>h(x)</m> and <m>j(x)</m> are not functions.
+</p>
+
+<sidebyside widths="45% 45%" margins="0% 0%">   
+<figure xml:id="Graph-Not-Function-figure1">
+     <image width="45%">
+    <prefigure xmlns="https://prefigure.org" label="Graph-Not-Function-prefigure1">
+        <title>Bubble Diagram</title>
+        <description>Bubble diagram of a function.</description>
+     <diagram dimensions="(300,300)" margins="0">
+  <definition>g(x)=sqrt(x+1)</definition>
+  <definition>h(x)=-sqrt(x+1)</definition>
+  <coordinates bbox="(-2,-3,3,5)">
+    <grid-axes/>
+    <graph function="g"/>
+    <graph function="h"/>
+     <line endpoints="((1,-4),(1,4))" infinite="yes" stroke="red"/>
+    <label anchor="(2,3)" alignment="center" clear-background="yes">
+      <m>h(x)</m>
+    </label>
+  </coordinates>
+</diagram>
+</prefigure> 
+ </image>
+</figure>
+
+
+<figure xml:id="Graph-Not-Function-figure2">
+     <image width="45%">
+    <caption>This is Not a Function</caption>
+    <prefigure xmlns="https://prefigure.org" label="Graph-Not-Function-prefigure2">
+        <title>Graph of a Relationship that is Not a Function</title>
+        <description>Graph of a relationship that is not a function.</description>
+<diagram dimensions="(300,300)" margins="0">
+  <coordinates bbox="(-2,-3,3,3.5)">
+    <grid-axes/>
+      <line endpoints="((-2,4),(2,0))" stroke="blue" infinite="no"/>
+      <line endpoints="((-1,-4),(2,0))" stroke="blue" infinite="no"/>
+      <line endpoints="((1,-4),(1,4))" stroke="red" infinite="yes"/>
+      <label anchor="(2,3)" alignment="center" clear-background="yes">
+      <m>j(x)</m>
+    </label>
+  </coordinates>
+</diagram>
+</prefigure> 
+ </image>
+</figure>
+</sidebyside> 
+
+</subsection>
+
+<subsection xml:id="subsec-Function-Equations">
+      <title>Is it a Function - Equations</title>
+      <p>
+        Most equations we write will be examples of relationships which are functions. We would need to introduce piecewise functions in order to have a collection of examples of equations which are not functions. This will be a topic for later.
+      </p>
+  </subsection>
+
+  <subsection xml:id="subsec-Definition-Function-Video">
+      <title>Video Lesson</title>
+        <video label="Definition-Function-Video" source="LO1-Day-3.mp4"/>
+  </subsection>
+
+  <subsection xml:id="subsec-Definition-Function-Exercises">
+      <title>Graded Exercises</title>
+      
+  <exercise label="Definition-Function-exercise1">
+        <statement>
+            <p>
+                True or False:
+            </p>
+            <p>
+              The relation shown below is a function.
+            </p>
+            <figure xml:id="Definition-Function-exercise1-figure1">
+                <image width="60%">
+                <prefigure xmlns="https://prefigure.org" label="Definition-Function-exercise1-prefigure1">
+                    <description>Points on Graph</description>
+                    <diagram dimensions="(300,300)" margins="5">
+  <definition> top=1.75 </definition>
+  <definition> mid=2 </definition>
+  <definition> top=1.75 </definition>
+  <definition> mid=2 </definition> 
+  <coordinates bbox="(-4,-4,4,4)">
+    <label anchor="(-mid,3.4)" alignment="center">
+      Input
+     </label>
+     <ellipse center="(-mid,0)" axes="(1.5,3)" stroke="black"/>
+     <label anchor="(mid,3.4)" alignment="center">
+      Output
+     </label>
+     <ellipse center="(mid,0)" axes="(1.5,3)" stroke="black"/>
+     <line endpoints="((-mid+.85,0), (mid-.5,-top-.1))" stroke="blue" thickness="2" arrows="1"/>
+     <line endpoints="((-mid+.7,top), (mid-.45,0.6))" stroke="blue" thickness="2" arrows="1"/>
+     <line endpoints="((-mid+.7,top), (mid-.45,-0.6))" stroke="blue" thickness="2" arrows="1"/>
+     <line endpoints="((-mid+.55,-top), (mid-.4,top+.2))" stroke="blue" thickness="2" arrows="1"/>
+     <label anchor="(mid-.4,top+.1)" alignment="center">
+      724
+     </label>
+     <label anchor="(mid-.4,0.5)" alignment="center">
+      783
+     </label>
+     <label anchor="(mid-.4,-.7)" alignment="center">
+      1145
+     </label>
+     <label anchor="(mid-.4,-top-.2)" alignment="center">
+      1945
+     </label>
+     <label anchor="(-mid-.6,top-.1)" alignment="center">
+      Tabitha
+     </label>
+     <label anchor="(-mid-.8,-.1)" alignment="center">
+      Alejandro
+     </label>
+     <label anchor="(-mid-.5,-top-.1)" alignment="center">
+      Omar
+     </label>
+  </coordinates>
+</diagram>
+
+                </prefigure>
+                </image>
+            </figure>
         </statement>
-    </definition>
 
-    <p>
-      Let's look at some examples showing function relationships using function notation.
-    </p>
+        <choices>
+          <choice>
+        <statement>
+          <p>
+            True
+          </p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>
+            False
+          </p>
+        </statement>
+      </choice>
+    </choices>
+    </exercise>
 
+     <exercise label="Definition-Function-exercise2">
+        <statement>
+            <p>
+                Select <em>all</em> the tables below that are functions.
+            </p>
+            
+            <p>
+              Table A:
+            </p>
+            <table>
+                            <tabular>
+                                <col right="minor"/>
+                                <col right="minor"/>
+                                <col right="minor"/>
+                                <col right="minor"/>
+                                <col right="minor"/>
+                                <col/>
+                                <row bottom="minor">
+                                    <cell>x</cell>
+                                    <cell>-4</cell>
+                                    <cell>0</cell>
+                                    <cell>1</cell>
+                                    <cell>3</cell>
+                                    <cell>7</cell>
+                                </row>
+            
+                                <row>
+                                    <cell>y</cell>
+                                    <cell>8</cell>
+                                    <cell>-5</cell>
+                                    <cell>3</cell>
+                                    <cell>8</cell>
+                                    <cell>4</cell>
+                                </row>
+                            </tabular>
+                        </table>
+            <p>
+              Table B:
+            </p>
+            <table>
+                            <tabular>
+                                <col right="minor"/>
+                                <col right="minor"/>
+                                <col right="minor"/>
+                                <col right="minor"/>
+                                <col right="minor"/>
+                                <col/>
+                                <row bottom="minor">
+                                    <cell>x</cell>
+                                    <cell>3</cell>
+                                    <cell>3</cell>
+                                    <cell>3</cell>
+                                    <cell>3</cell>
+                                    <cell>3</cell>
+                                </row>
+            
+                                <row>
+                                    <cell>y</cell>
+                                    <cell>8</cell>
+                                    <cell>-5</cell>
+                                    <cell>3</cell>
+                                    <cell>8</cell>
+                                    <cell>4</cell>
+                                </row>
+                            </tabular>
+                        </table>
+            <p>
+              Table C:
+            </p>
+            <table>
+                            <tabular>
+                                <col right="minor"/>
+                                <col right="minor"/>
+                                <col right="minor"/>
+                                <col right="minor"/>
+                                <col right="minor"/>
+                                <col/>
+                                <row bottom="minor">
+                                    <cell>x</cell>
+                                    <cell>-4</cell>
+                                    <cell>0</cell>
+                                    <cell>1</cell>
+                                    <cell>3</cell>
+                                    <cell>7</cell>
+                                </row>
+            
+                                <row>
+                                    <cell>y</cell>
+                                    <cell>-5</cell>
+                                    <cell>-5</cell>
+                                    <cell>-5</cell>
+                                    <cell>-5</cell>
+                                    <cell>-5</cell>
+                                </row>
+                            </tabular>
+                        </table>
+
+        </statement>
+
+        <choices>
+          <choice correct="yes">
+        <statement>
+          <p>
+            Table A
+          </p>
+        </statement>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>
+            Table B
+          </p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>
+            Table C
+          </p>
+        </statement>
+      </choice>
+    </choices>
+    </exercise>
+
+      <exercise label="Definition-Function-exercise3">
+        <statement>
+            <p>
+                Select <em>all</em> the graphs below which are notfunctions.
+            </p>
+            
+            <sidebyside widths="45% 45%" margins="0% 0%">   
+<figure xml:id="Definition-Function-exercise3-figure1">
+     <image width="45%">
+    <prefigure xmlns="https://prefigure.org" label="Definition-Function-exercise3-prefigure1">
+        <title>Graph A</title>
+        <description>Graph showing option A.</description>
+     <diagram dimensions="(300,300)" margins="5">
+  <definition>f(x)=sqrt(x)</definition>
+  <definition>g(x)=-sqrt(x)</definition>
+  <definition>a = 1</definition>
+  <coordinates bbox="(-4,-4,4,4)">
+    <grid-axes xlabel="x" ylabel="y"/>
+    <graph at="graph" function="f"/>
+    <graph at="graph" function="g"/>
+    <label anchor="(-1.5,3.2)" alignment="center" clear-background="yes">
+      Graph A
+    </label>
+
+  </coordinates>
+
+  <annotations text="A graph showing option A.">
+  </annotations>
+</diagram>
+
+</prefigure> 
+ </image>
+</figure>
+
+
+<figure xml:id="Definition-Function-exercise3-figure2">
+     <image width="45%">
+    <caption>This is a Function</caption>
+    <prefigure xmlns="https://prefigure.org" label="Definition-Function-exercise3-prefigure2">
+        <title>Graph B</title>
+        <description>Graph of a option B.</description>
+<diagram dimensions="(300,300)" margins="5">
+  <coordinates bbox="(-4,-4,4,4)">
+    <grid-axes xlabel="x" ylabel="y"/>
+    <line endpoints="((0,0),(4,4))" infinite="no" stroke="blue"/>
+    <line endpoints="((0,0),(-4,4))" infinite="no" stroke="blue"/>
+    <label anchor="(-1.5,3.2)" alignment="center" clear-background="yes">
+      Graph B
+    </label>
+
+  </coordinates>
+
+  <annotations text="A graph showing option B.">
+  </annotations>
+</diagram>
+</prefigure> 
+ </image>
+</figure>
+            </sidebyside> 
+
+            <sidebyside widths="45% 45%" margins="0% 0%">   
+<figure xml:id="Definition-Function-exercise3-figure3">
+     <image width="45%">
+    <prefigure xmlns="https://prefigure.org" label="Definition-Function-exercise3-prefigure3">
+        <title>Graph C</title>
+        <description>Graph showing option C.</description>
+     <diagram dimensions="(300,300)" margins="5">
+  <definition>f(x)=-.25*(x-.5)*(x+.5)*(x-2)*(x+2)</definition>
+  <coordinates bbox="(-4,-4,4,4)">
+    <grid-axes xlabel="x" ylabel="y"/>
+    <graph at="graph" function="f"/>
+    <label anchor="(-1.5,3.2)" alignment="center" clear-background="yes">
+      Graph C
+    </label>
+
+  </coordinates>
+
+  <annotations text="A graph showing option C.">
+  </annotations>
+</diagram>
+
+</prefigure> 
+ </image>
+</figure>
+
+
+<figure xml:id="Definition-Function-exercise3-figure4">
+     <image width="45%">
+    <caption>This is a Function</caption>
+    <prefigure xmlns="https://prefigure.org" label="Definition-Function-exercise3-prefigure4">
+        <title>Graph D</title>
+        <description>Graph of a option D.</description>
+<diagram dimensions="(300,300)" margins="5">
+  <coordinates bbox="(-4,-4,4,4)">
+    <grid-axes xlabel="x" ylabel="y"/>
+    <circle center="(1,-1)" radius="2" stroke="blue"/>
+    <label anchor="(-1.5,3.2)" alignment="center" clear-background="yes">
+      Graph D
+    </label>
+
+  </coordinates>
+
+  <annotations text="A graph showing option D.">
+  </annotations>
+</diagram>
+</prefigure> 
+ </image>
+</figure>
+            </sidebyside>
+
+        </statement>
+
+        <choices>
+          <choice correct="yes">
+        <statement>
+          <p>
+            Graph A
+          </p>
+        </statement>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>
+            Graph B
+          </p>
+        </statement>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>
+            Graph C
+          </p>
+        </statement>
+      </choice>
+            <choice correct="yes">
+        <statement>
+          <p>
+            Graph D
+          </p>
+        </statement>
+      </choice>
+    </choices>
+    </exercise>
+
+  </subsection> 
+
+<!--
 <example xml:id="function-notation-diagram-example">
         <statement>
             <p>
@@ -326,7 +894,7 @@
       </p>
     </statement>
   </example>
-
+-->
 
       <!--
       Start of RWT Questions

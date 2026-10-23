@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-polynomial-behavior" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Behavior of Polynomial Functions</title>
+
+  <introduction>
+    <p>Polynomial functions can have complicated graphs, but several important features can be determined from the equation alone. By studying the degree, leading coefficient, zeros, and multiplicities of a polynomial, we can predict much of a graph's shape without using technology.</p>
+    <p>In this section, we study two complementary perspectives on polynomial graphs. We first examine the <term>long-run behavior</term>, which describes what happens to the graph far to the left and far to the right. We then investigate the <term>short-run behavior</term> near the x-intercepts, where the graph may cross the x-axis or bounce off it.</p>
+  </introduction>
+
+  <!-- Figure: A side-by-side illustration showing the same polynomial viewed closely near its zeros and viewed from a much larger scale. The purpose is to contrast short-run and long-run behavior. -->
+
+  <subsection xml:id="subsec-leading-terms-degree-and-coefficients">
+    <title>Leading Terms, Degree, and Leading Coefficient</title>
+
+    <p>The end behavior of a polynomial is controlled by the term with the highest power of <m>x</m>. This term is called the <term>leading term</term>. Before identifying it, write the polynomial in standard form, with powers of <m>x</m> arranged from greatest to least.</p>
+
+    <definition xml:id="def-leading-term-degree-coefficient">
+      <title>Leading Term, Leading Coefficient, and Degree</title>
+      <p>A polynomial written in descending powers of <m>x</m> has the form</p>
+      <me>a_nx^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0.</me>
+      <ul>
+        <li><p>The term <m>a_nx^n</m> is the <term>leading term</term>.</p></li>
+        <li><p>The coefficient <m>a_n</m> is the <term>leading coefficient</term>.</p></li>
+        <li><p>The exponent <m>n</m> is the <term>degree</term>.</p></li>
+      </ul>
+    </definition>
+
+    <example xml:id="ex-leading-term-degree">
+      <title>Identifying the Leading Term</title>
+      <statement>
+        <p>Consider the polynomial</p>
+        <me>g(x)=4x^6+8x^{11}-3x^2-5.</me>
+        <p>Determine the leading term, leading coefficient, and degree.</p>
+      </statement>
+      <solution>
+        <p>The polynomial is not written in descending order. Reordering the terms gives</p>
+        <me>g(x)=8x^{11}+4x^6-3x^2-5.</me>
+        <p>The highest power of <m>x</m> is <m>x^{11}</m>, so the leading term is <m>8x^{11}</m>. The leading coefficient is <m>8</m>, and the degree is <m>11</m>.</p>
+      </solution>
+    </example>
+
+    <p>This example shows why standard form is useful. The first term in the original expression was not the leading term. The degree is determined by the largest exponent, not by the order in which the terms happen to be written.</p>
+
+    <example xml:id="ex-leading-term-from-factored-form">
+      <title>Finding the Leading Term from Factored Form</title>
+      <statement>
+        <p>Find the leading term and degree of</p>
+        <me>p(x)=-2(x+4)(x-1)^2(x+3)^3.</me>
+      </statement>
+      <solution>
+        <p>To find the leading term, multiply only the leading part of each factor:</p>
+        <me>-2(x)(x^2)(x^3)=-2x^6.</me>
+        <p>Therefore, the leading term is <m>-2x^6</m>, the leading coefficient is negative, and the degree is <m>6</m>.</p>
+      </solution>
+    </example>
+
+    <p>This second example illustrates that a polynomial does not need to be fully expanded before its degree and leading term can be found. In factored form, add the exponents contributed by the factors and multiply their leading coefficients.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-long-run-behavior">
+    <title>Long-Run Behavior</title>
+
+    <p>Long-run behavior, also called <term>end behavior</term>, describes what happens to the graph as <m>x</m> becomes extremely large or extremely negative. This perspective ignores the details in the middle of the graph and focuses only on its two ends.</p>
+
+    <definition xml:id="def-end-behavior-notation">
+      <title>End Behavior Notation</title>
+      <p>The statement <m>x\to\infty</m> refers to movement far to the right, while <m>x\to-\infty</m> refers to movement far to the left. The expression <m>f(x)\to\infty</m> means the outputs increase without bound, and <m>f(x)\to-\infty</m> means the outputs decrease without bound.</p>
+    </definition>
+
+    <example xml:id="ex-leading-term-controls-end-behavior">
+      <title>Why the Leading Term Matters</title>
+      <statement>
+        <p>Determine the end behavior of</p>
+        <me>f(x)=x^5+4x^2-1.</me>
+      </statement>
+      <solution>
+        <p>For values of <m>x</m> with very large magnitude, the term <m>x^5</m> dominates the smaller-degree terms <m>4x^2</m> and <m>-1</m>.</p>
+        <p>When <m>x</m> is large and positive, <m>x^5</m> is positive and large. When <m>x</m> is large and negative, <m>x^5</m> is negative and large in magnitude. Therefore,</p>
+        <md>
+          <mrow>f(x)&amp;\to-\infty \text{ as } x\to-\infty,</mrow>
+          <mrow>f(x)&amp;\to\infty \text{ as } x\to\infty.</mrow>
+        </md>
+      </solution>
+    </example>
+
+    <p>This example demonstrates the leading-term principle. Lower-degree terms can strongly affect the middle of the graph, but they do not determine the ultimate direction of its ends.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-four-end-behavior-cases">
+    <title>The Four End-Behavior Cases</title>
+
+    <p>The sign of the leading coefficient determines whether the right end rises or falls. The parity of the degree determines whether the two ends point in the same direction or in opposite directions.</p>
+
+    <!-- Figure: Four small graphs arranged in a grid showing positive-even, negative-even, positive-odd, and negative-odd end behavior. -->
+
+    <table xml:id="table-four-end-behavior-cases">
+      <title>End Behavior from Degree and Leading Coefficient</title>
+      <tabular>
+        <row header="yes"><cell>Degree</cell><cell>Leading coefficient</cell><cell>As <m>x\to-\infty</m></cell><cell>As <m>x\to\infty</m></cell></row>
+        <row><cell>Even</cell><cell>Positive</cell><cell><m>f(x)\to\infty</m></cell><cell><m>f(x)\to\infty</m></cell></row>
+        <row><cell>Even</cell><cell>Negative</cell><cell><m>f(x)\to-\infty</m></cell><cell><m>f(x)\to-\infty</m></cell></row>
+        <row><cell>Odd</cell><cell>Positive</cell><cell><m>f(x)\to-\infty</m></cell><cell><m>f(x)\to\infty</m></cell></row>
+        <row><cell>Odd</cell><cell>Negative</cell><cell><m>f(x)\to\infty</m></cell><cell><m>f(x)\to-\infty</m></cell></row>
+      </tabular>
+    </table>
+
+    <p>For even-degree polynomials, both ends point in the same direction. For odd-degree polynomials, the ends point in opposite directions. The sign of the leading coefficient determines the direction of the right end.</p>
+
+    <example xml:id="ex-end-behavior-factored-polynomial">
+      <title>End Behavior from Factored Form</title>
+      <statement>
+        <p>Determine the end behavior of</p>
+        <me>q(x)=-0.4(x+2)(x-3)^2(x-5).</me>
+      </statement>
+      <solution>
+        <p>The degree is <m>1+2+1=4</m>, which is even. The leading coefficient is negative because the outside factor is <m>-0.4</m> and every factor has positive leading coefficient.</p>
+        <p>A polynomial with even degree and a negative leading coefficient falls on both ends:</p>
+        <md>
+          <mrow>q(x)&amp;\to-\infty \text{ as } x\to-\infty,</mrow>
+          <mrow>q(x)&amp;\to-\infty \text{ as } x\to\infty.</mrow>
+        </md>
+      </solution>
+    </example>
+
+    <p>This example shows that end behavior can be determined without expanding the polynomial. The total degree and sign of the leading coefficient contain all the needed long-run information.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-zeros-and-factors">
+    <title>Zeros and Factors</title>
+
+    <p>End behavior describes what happens far from the origin. To understand what happens near the x-axis, we use the polynomial's factors. A factor becomes zero at a corresponding input, so factored form makes the x-intercepts visible.</p>
+
+    <definition xml:id="def-polynomial-zeros">
+      <title>Zeros and Factors</title>
+      <p>If</p>
+      <me>p(x)=a(x-r_1)(x-r_2)\cdots(x-r_n),</me>
+      <p>then the zeros occur at <m>x=r_1</m>, <m>x=r_2</m>, and so on. Each real zero corresponds to an x-intercept of the graph.</p>
+    </definition>
+
+    <example xml:id="ex-find-zeros-polynomial">
+      <title>Finding x-Intercepts from Factors</title>
+      <statement>
+        <p>Find the x-intercepts of</p>
+        <me>f(x)=-(x+3)(x-1)^2(x-5).</me>
+      </statement>
+      <solution>
+        <p>The factors become zero at <m>x=-3</m>, <m>x=1</m>, and <m>x=5</m>. Therefore, the graph has x-intercepts at <m>(-3,0)</m>, <m>(1,0)</m>, and <m>(5,0)</m>.</p>
+      </solution>
+    </example>
+
+    <p>This example identifies where the graph meets the x-axis, but it does not yet tell us how the graph behaves at each intercept. For that information, we need the exponent on each factor.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-multiplicity-and-behavior">
+    <title>Multiplicity and Behavior at a Zero</title>
+
+    <p>A zero can appear more than once as a factor of a polynomial. The number of times it appears is its multiplicity. Multiplicity determines whether the graph crosses the x-axis or touches it and turns around.</p>
+
+    <definition xml:id="def-multiplicity">
+      <title>Multiplicity</title>
+      <p>If a factor <m>(x-r)^k</m> appears in a polynomial, then the zero <m>x=r</m> has <term>multiplicity</term> <m>k</m>.</p>
+    </definition>
+
+    <important>
+      <ul>
+        <li><p>If a zero has odd multiplicity, the graph crosses the x-axis at that zero.</p></li>
+        <li><p>If a zero has even multiplicity, the graph touches the x-axis and bounces at that zero.</p></li>
+      </ul>
+    </important>
+
+    <!-- Figure: One graph crossing the x-axis at an odd-multiplicity zero and one graph bouncing at an even-multiplicity zero. -->
+
+    <example xml:id="ex-multiplicity-behavior">
+      <title>Crossing and Bouncing</title>
+      <statement>
+        <p>Determine the behavior at each zero of</p>
+        <me>p(x)=(x+2)^2(x-4)^3.</me>
+      </statement>
+      <solution>
+        <p>The zero <m>x=-2</m> has multiplicity 2. Because 2 is even, the graph touches the x-axis and bounces at <m>x=-2</m>.</p>
+        <p>The zero <m>x=4</m> has multiplicity 3. Because 3 is odd, the graph crosses the x-axis at <m>x=4</m>.</p>
+      </solution>
+    </example>
+
+    <p>This example provides local information about the graph. Multiplicity describes what happens very close to an intercept, while the leading term describes what happens very far from the intercepts.</p>
+
+    <remark>
+      <p>Higher multiplicities can make the graph appear flatter near a zero. The even-or-odd distinction still determines whether the graph bounces or crosses.</p>
+    </remark>
+  </subsection>
+
+  <subsection xml:id="subsec-combining-polynomial-features">
+    <title>Combining the Features of a Polynomial</title>
+
+    <p>A rough sketch of a polynomial can often be created without a graphing calculator by combining its end behavior, x-intercepts, multiplicities, and y-intercept. These pieces do not determine every turning point exactly, but they provide a reliable structural picture.</p>
+
+    <example xml:id="ex-polynomial-sketch">
+      <title>Predicting the Shape of a Polynomial</title>
+      <statement>
+        <p>Analyze the important graphical features of</p>
+        <me>w(x)=(x+1)^4(x-3)(x-2)^3.</me>
+      </statement>
+      <solution>
+        <p>The degree is <m>4+1+3=8</m>. The leading coefficient is positive, so both ends of the graph rise:</p>
+        <md>
+          <mrow>w(x)&amp;\to\infty \text{ as } x\to-\infty,</mrow>
+          <mrow>w(x)&amp;\to\infty \text{ as } x\to\infty.</mrow>
+        </md>
+        <p>The x-intercepts and their behaviors are:</p>
+        <ul>
+          <li><p><m>x=-1</m>, multiplicity 4: bounce.</p></li>
+          <li><p><m>x=2</m>, multiplicity 3: cross.</p></li>
+          <li><p><m>x=3</m>, multiplicity 1: cross.</p></li>
+        </ul>
+        <p>The y-intercept is found by evaluating <m>w(0)</m>:</p>
+        <me>w(0)=(1)^4(-3)(-2)^3=24.</me>
+        <p>Thus, the graph passes through <m>(0,24)</m>.</p>
+      </solution>
+    </example>
+
+    <!-- Figure: A rough sketch of w(x)=(x+1)^4(x-3)(x-2)^3 that rises on both ends, bounces at x=-1, crosses at x=2 and x=3, and passes through (0,24). -->
+
+    <p>This example brings together the long-run and short-run perspectives. The degree and leading coefficient control the ends, the factors locate the x-intercepts, multiplicity determines crossing or bouncing, and the y-intercept anchors the graph at the vertical axis.</p>
+  </subsection>
+
+  <conclusion>
+    <p>The graph of a polynomial is strongly influenced by a small amount of information. The degree and leading coefficient determine long-run behavior, while factors and multiplicities describe behavior at the zeros. Together with the y-intercept, these features allow us to understand and sketch polynomial functions without relying solely on technology.</p>
+  </conclusion>
+</section>

@@ -5,4 +5,7 @@
 
   <p>Content of the new chapter.</p>
 
+  <xi:include href="sec-Expanding-and-Factoring-Quadratics.ptx" />
+  <xi:include href="sec-Writing-Quadratics.ptx" />
+
 </chapter>

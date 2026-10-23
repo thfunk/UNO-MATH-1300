@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-writing-rational-equations" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <title>Writing Equations of Rational Functions</title>
+
+  <introduction>
+    <p>In earlier sections, we used rational equations to identify domain restrictions, intercepts, holes, and asymptotes. We now reverse that process. Starting with a list of graphical features, we construct a rational function whose numerator and denominator produce those features.</p>
+    <p>The central idea is that factors have different roles depending on where they appear. A factor in the numerator can create an x-intercept. A factor in the denominator can create a vertical asymptote. A common factor in both the numerator and denominator can create a hole.</p>
+  </introduction>
+
+  <subsection xml:id="subsec-features-determine-factors">
+    <title>Connecting Graphical Features to Factors</title>
+
+    <important xml:id="important-rational-feature-factor-connections">
+      <title>Feature-to-Factor Connections</title>
+      <ul>
+        <li><p>An x-intercept at <m>x=r</m> is created by a factor <m>(x-r)</m> in the numerator that does not cancel.</p></li>
+        <li><p>A vertical asymptote at <m>x=r</m> is created by a factor <m>(x-r)</m> in the denominator that does not cancel.</p></li>
+        <li><p>A hole at <m>x=r</m> is created by a common factor <m>(x-r)</m> in both the numerator and denominator.</p></li>
+      </ul>
+    </important>
+
+    <p>These rules describe the location of each feature. An additional constant factor, usually called <m>a</m>, controls the vertical scale of the graph and is determined from another point.</p>
+
+    <example xml:id="ex-build-rational-feature-template">
+      <title>Building a Function from Three Features</title>
+      <statement>
+        <p>Write the general form of a rational function with an x-intercept at <m>x=-2</m>, a vertical asymptote at <m>x=3</m>, and a hole at <m>x=5</m>.</p>
+      </statement>
+      <solution>
+        <p>The x-intercept requires <m>(x+2)</m> in the numerator. The vertical asymptote requires <m>(x-3)</m> in the denominator. The hole requires <m>(x-5)</m> in both the numerator and denominator.</p>
+        <p>A general form is</p>
+        <me>f(x)=\frac{a(x+2)(x-5)}{(x-3)(x-5)},</me>
+        <p>where <m>a\ne0</m>.</p>
+      </solution>
+    </example>
+
+    <p>This example shows why, when graphing a function, you should first identify places where the function is undefined or indeterminate (e.g., where there is a hole). Then you can cancel the common factor to help you graph the function. </p>
+  </subsection>
+
+  <subsection xml:id="subsec-domain-from-constructed-rational-function">
+    <title>Domain Restrictions Remain Important</title>
+
+    <p>Every zero of the original denominator is excluded from the domain, including a value whose factor later cancels. A canceled factor changes the type of discontinuity, but it does not restore the missing input to the domain.</p>
+
+    <example xml:id="ex-domain-and-hole-from-factorization">
+      <title>Factoring Before Interpreting the Domain</title>
+      <statement>
+        <p>Analyze the domain and discontinuities of</p>
+        <me>g(x)=\frac{x^2+2x-3}{(x+1)(x-1)}.</me>
+      </statement>
+      <solution>
+        <p>Factor the numerator:</p>
+        <me>x^2+2x-3=(x+3)(x-1).</me>
+        <p>Thus,</p>
+        <me>g(x)=\frac{(x+3)(x-1)}{(x+1)(x-1)}.</me>
+        <p>The original denominator is zero at <m>x=-1</m> and <m>x=1</m>, so both values are excluded from the domain.</p>
+        <p>The factor <m>(x-1)</m> cancels, so <m>x=1</m> produces a hole. The factor <m>(x+1)</m> remains in the denominator, so <m>x=-1</m> produces a vertical asymptote.</p>
+      </solution>
+    </example>
+
+    <p>This example illustrates the difference between an excluded input and a vertical asymptote. Every denominator zero is excluded, but only a noncanceled denominator factor creates a vertical asymptote.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-adding-features-to-rational-functions">
+    <title>Adding a New Graphical Feature</title>
+
+    <p>Once the role of each factor is understood, a rational function can be modified deliberately. To add a vertical asymptote, place a new noncanceling factor in the denominator. To add an x-intercept, place a new noncanceling factor in the numerator. To add a hole, place the same new factor in both parts of the fraction.</p>
+
+    <example xml:id="ex-add-vertical-asymptote-rational">
+      <title>Adding a Vertical Asymptote</title>
+      <statement>
+        <p>Modify</p>
+        <me>f(x)=\frac{(x+3)(x-1)}{(x+1)(x-1)}</me>
+        <p>so that the new function also has a vertical asymptote at <m>x=0</m>.</p>
+      </statement>
+      <solution>
+        <p>A vertical asymptote at <m>x=0</m> requires a noncanceling factor of <m>x</m> in the denominator. One suitable function is</p>
+        <me>F(x)=\frac{(x+3)(x-1)}{x(x+1)(x-1)}.</me>
+        <p>The common factor <m>(x-1)</m> still creates a hole at <m>x=1</m>. The factors <m>x</m> and <m>(x+1)</m> remain in the denominator, so the vertical asymptotes are <m>x=0</m> and <m>x=-1</m>.</p>
+      </solution>
+    </example>
+
+    <p>This example shows that adding one factor can change both the degree comparison and the long-run behavior. After modifying a rational function, all features should be checked again rather than assuming the original features are the only ones affected.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-determining-scale-rational-function">
+    <title>Determining the Scale Factor</title>
+
+    <p>The factors determine the locations of intercepts, holes, and vertical asymptotes, but they do not usually determine one unique function. A nonzero constant <m>a</m> can multiply the numerator without changing those locations. An additional point on the graph is used to determine <m>a</m>.</p>
+
+    <procedure xml:id="proc-write-rational-equation-from-features">
+      <title>Writing a Rational Equation from Graphical Features</title>
+      <ol>
+        <li><p>Use each x-intercept to create a noncanceling numerator factor.</p></li>
+        <li><p>Use each vertical asymptote to create a noncanceling denominator factor.</p></li>
+        <li><p>Use each hole to create a common factor in the numerator and denominator.</p></li>
+        <li><p>Include a nonzero scale factor <m>a</m>.</p></li>
+        <li><p>Substitute another point on the graph and solve for <m>a</m>.</p></li>
+        <li><p>Verify the domain, discontinuities, intercepts, and long-run behavior.</p></li>
+      </ol>
+    </procedure>
+
+    <example xml:id="ex-complete-writing-rational-equation">
+      <title>Writing a Rational Function from Features and a Point</title>
+      <statement>
+        <p>Write a rational function with an x-intercept at <m>x=1</m>, a vertical asymptote at <m>x=-2</m>, a hole at <m>x=4</m>, and a y-intercept at <m>(0,3)</m>.</p>
+      </statement>
+      <solution>
+        <p>The three features produce the form</p>
+        <me>f(x)=\frac{a(x-1)(x-4)}{(x+2)(x-4)}.</me>
+        <p>Use the point <m>(0,3)</m>:</p>
+        <md>
+          <mrow>3&amp;=\frac{a(0-1)(0-4)}{(0+2)(0-4)},</mrow>
+          <mrow>3&amp;=-\frac{a}{2},</mrow>
+          <mrow>a&amp;=-6.</mrow>
+        </md>
+        <p>Therefore, one suitable function is</p>
+        <me>f(x)=\frac{-6(x-1)(x-4)}{(x+2)(x-4)}.</me>
+      </solution>
+    </example>
+
+    <p>This example demonstrates the complete construction process. The factors create the requested local features, while the additional point selects the correct vertical scale from the family of functions with those same features.</p>
+
+    <!-- Figure: Graph of f(x)=-6(x-1)(x-4)/((x+2)(x-4)). Show an x-intercept at (1,0), a vertical asymptote at x=-2, a hole at x=4, and the y-intercept (0,3). -->
+  </subsection>
+
+  <subsection xml:id="subsec-finding-hole-coordinate-after-writing">
+    <title>Finding the Coordinate of a Constructed Hole</title>
+
+    <p>The common factor determines the x-coordinate of a hole, but the y-coordinate comes from the simplified function. The hole is located where the simplified graph would have been if the original domain had included that input.</p>
+
+    <example xml:id="ex-hole-coordinate-written-rational">
+      <title>Locating the Hole</title>
+      <statement>
+        <p>Find the coordinates of the hole in</p>
+        <me>f(x)=\frac{-6(x-1)(x-4)}{(x+2)(x-4)}.</me>
+      </statement>
+      <solution>
+        <p>Cancel the common factor while retaining the restriction <m>x\ne4</m>:</p>
+        <me>f(x)=\frac{-6(x-1)}{x+2},\qquad x\ne4.</me>
+        <p>Evaluate the simplified expression at <m>x=4</m>:</p>
+        <me>y=\frac{-6(4-1)}{4+2}=-3.</me>
+        <p>The hole is at <m>(4,-3)</m>.</p>
+      </solution>
+    </example>
+
+    <p>This example reinforces that the x-coordinate of a hole is read from the canceled factor, while its y-coordinate is calculated from the simplified expression.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-comparing-rational-functions-same-local-features">
+    <title>Functions Can Share Some Features but Differ in Others</title>
+
+    <p>Two rational functions can have the same hole and vertical asymptote while having different x-intercepts, hole coordinates, or horizontal asymptotes. Matching one or two features does not make two rational functions equivalent.</p>
+
+    <!-- Figure: Compare two rational graphs that both have a hole at x=4 and a vertical asymptote at x=-2, but have different x-intercepts, horizontal asymptotes, and hole heights. -->
+
+    <example xml:id="ex-compare-rational-functions-features">
+      <title>Comparing Related Rational Functions</title>
+      <statement>
+        <p>Compare</p>
+        <me>f(x)=\frac{3(x-1)(x-4)}{(x+2)(x-4)}</me>
+        <p>and</p>
+        <me>g(x)=\frac{(x+1)(x-4)}{2(x+2)(x-4)}.</me>
+      </statement>
+      <solution>
+        <p>Both functions have a common factor <m>(x-4)</m>, so both have a hole at <m>x=4</m>. Both have the noncanceling denominator factor <m>(x+2)</m>, so both have a vertical asymptote at <m>x=-2</m>.</p>
+        <p>The function <m>f</m> has an x-intercept at <m>x=1</m>, while <m>g</m> has an x-intercept at <m>x=-1</m>. Their leading-coefficient ratios also differ, so their horizontal asymptotes differ.</p>
+      </solution>
+    </example>
+
+    <p>This comparison shows why a complete analysis is necessary. Local discontinuities may match even when the remaining graph behaves differently.</p>
+  </subsection>
+
+  <conclusion>
+    <p>Writing a rational equation requires translating each graphical feature into an algebraic factor. Noncanceling numerator factors create x-intercepts, noncanceling denominator factors create vertical asymptotes, and common factors create holes. An additional point determines the scale factor. After constructing the equation, checking the domain, hole coordinates, intercepts, and asymptotes confirms that the function has all of the intended features.</p>
+  </conclusion>
+</section>
