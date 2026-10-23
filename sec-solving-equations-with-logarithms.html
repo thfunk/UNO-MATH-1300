@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Solving Equations with Logarithms</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="College Algebra">
+<meta property="book:author" content="Taran Funk">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.3.6';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.4beca1fdeed766a2.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.ebd33f6a21eed414.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.9963089870a016c8.css">
+<script src="_static/pretext/js/diagcess/diagcess.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">College Algebra</span> <span class="subtitle">MATH 1300, 1320</span></a></h1>
+<p class="byline">Taran Funk</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-logarithms-as-inverse-functions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="InvLogs.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-applications-of-logarithms.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Foundations.html" class="internal"><span class="codenumber">1</span> <span class="title">LO1: Foundations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-definition-of-function.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Definition of a Function</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-definition-of-function.html#subsec-functions-from-tables" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Functions Represented by Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-definition-of-function.html#subsec-functions-from-graphs" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Functions Represented by Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-definition-of-function.html#subsec-functions-from-mapping-diagrams" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Functions Represented by Bubble Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-definition-of-function.html#subsec-introduction-function-notation" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Introducing Function Notation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="DefinitionFunction.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Definition of a Function</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DefinitionFunction.html#subsec-Is-it-a-Function-Diagrams" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Is it a Function - Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DefinitionFunction.html#subsec-Is-it-a-Function-Tables" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Is it a Function - Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DefinitionFunction.html#subsec-Is-it-a-Function-Graphs" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Is it a Function - Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DefinitionFunction.html#subsec-Function-Equations" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Is it a Function - Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DefinitionFunction.html#subsec-Definition-Function-Video" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Video Lesson</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DefinitionFunction.html#subsec-Definition-Function-Exercises" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Graded Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-function-notation-evaluating-functions.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Function Notation and Evaluating Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-function-notation-evaluating-functions.html#subsec-understanding-function-notation" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Understanding Function Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-function-notation-evaluating-functions.html#subsec-interpreting-inputs-outputs" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Interpreting Inputs and Outputs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-function-notation-evaluating-functions.html#subsec-graph-evaluation" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Evaluating Functions from Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-function-notation-evaluating-functions.html#subsec-table-evaluation" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Evaluating Functions from Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-function-notation-evaluating-functions.html#subsec-summary-function-notation" class="internal"><span class="codenumber">1.3.5</span> <span class="title">Key Ideas</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-domain-and-range.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Domain and Range</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-domain-and-range.html#subsec-domain-range-definitions" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Domain and Range as Sets of Values</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-domain-and-range.html#subsec-interval-and-inequality-notation" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Interval Notation and Inequality Notation</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-domain-and-range.html#subsubsec-infinite-intervals" class="internal"><span class="codenumber">1.4.2.1</span> <span class="title">Intervals That Continue Without Bound</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-domain-and-range.html#subsec-domain-range-from-graphs" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Finding Domain and Range from a Graph</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-increasing-and-decreasing.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Increasing and Decreasing Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-increasing-and-decreasing.html#subsec-increasing-decreasing-graphs" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Identifying Increasing and Decreasing Intervals from Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-increasing-and-decreasing.html#subsec-increasing-decreasing-tables" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Identifying Increasing and Decreasing Behavior from Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-increasing-and-decreasing.html#subsec-summary-inc-dec" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Key Ideas</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Linear.html" class="internal"><span class="codenumber">2</span> <span class="title">LO2: Linear Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Slope.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Slope</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="Slope.html#exercises-groupwork" class="internal"><span class="codenumber">2.1</span> <span class="title">Preview 2.1</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="writing-linear-equations.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Writing Equations of Lines</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="writing-linear-equations.html#slope-intercept-form" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Slope-Intercept Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="writing-linear-equations.html#point-slope-form" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Point-Slope Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="writing-linear-equations.html#choosing-a-form" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Choosing a Form</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="LinearFunctions.html" class="internal"><span class="codenumber">3</span> <span class="title">LO3: Composition &amp; Transformation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-composition-of-functions.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Composition of Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-composition-of-functions.html#subsec-composition-context" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Composition in Context</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-composition-of-functions.html#subsec-composition-from-tables" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Finding Outputs Using Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-composition-of-functions.html#subsec-composition-from-graphs" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Finding Outputs Using Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-composition-of-functions.html#subsec-composition-from-equations" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Finding Outputs Using Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-composition-of-functions.html#subsec-find-original-functions" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Reversing a Composition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-composition-of-functions.html#subsec-composition-context-output" class="internal"><span class="codenumber">3.1.6</span> <span class="title">Finding the Output in Context</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-vertical-horizontal-shifts.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Vertical and Horizontal Shifts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vertical-horizontal-shifts.html#subsec-vertical-shifts" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Vertical Shifts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vertical-horizontal-shifts.html#subsec-horizontal-shifts" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Horizontal Shifts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vertical-horizontal-shifts.html#subsec-combined-shifts" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Combining Horizontal and Vertical Shifts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vertical-horizontal-shifts.html#subsec-desmos-shifts" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Exploring Shifts with Desmos</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vertical-horizontal-shifts.html#subsec-shifts-summary" class="internal"><span class="codenumber">3.2.5</span> <span class="title">Key Ideas</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-vertical-horizontal-reflections.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Vertical and Horizontal Reflections</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vertical-horizontal-reflections.html#subsec-horizontal-reflection" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Reflection Across the y-Axis</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vertical-horizontal-reflections.html#subsec-vertical-reflection" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Reflection Across the x-Axis</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vertical-horizontal-reflections.html#subsec-domain-range-reflections" class="internal"><span class="codenumber">3.3.3</span> <span class="title">How Reflections Affect Domain and Range</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vertical-horizontal-reflections.html#subsec-combined-transformations-reflections" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Reflections with Shifts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vertical-horizontal-reflections.html#subsec-reflections-summary" class="internal"><span class="codenumber">3.3.5</span> <span class="title">Key Ideas</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-vertical-horizontal-scaling.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Vertical and Horizontal Scaling</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vertical-horizontal-scaling.html#subsec-vertical-scaling" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Vertical Scaling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vertical-horizontal-scaling.html#subsec-horizontal-scaling" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Horizontal Scaling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vertical-horizontal-scaling.html#subsec-combined-scaling-transformations" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Scaling with Other Transformations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vertical-horizontal-scaling.html#subsec-scaling-summary" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Key Ideas</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-combining-transformations.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Combining Transformations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-combining-transformations.html#subsec-reading-combined-transformations" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Reading a Combined Transformation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-combining-transformations.html#subsec-moving-points-sequentially" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Moving a Point Through Several Transformations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-combining-transformations.html#subsec-order-matters-transformations" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Order Matters</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-combining-transformations.html#subsec-match-graphs-equations" class="internal"><span class="codenumber">3.5.4</span> <span class="title">Matching Graphs and Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-combining-transformations.html#subsec-transformations-as-compositions" class="internal"><span class="codenumber">3.5.5</span> <span class="title">Transformations as Compositions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-combining-transformations.html#subsec-combining-transformations-summary" class="internal"><span class="codenumber">3.5.6</span> <span class="title">Key Ideas</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Exp.html" class="internal"><span class="codenumber">4</span> <span class="title">LO4: Exponential Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-intro-exponential-functions.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Introduction to Exponential Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intro-exponential-functions.html#subsec-growth-and-decay" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Growth and Decay</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intro-exponential-functions.html#subsec-writing-exponential-equations" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Writing an Exponential Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intro-exponential-functions.html#subsec-graphs-properties" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Graphs and Properties</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intro-exponential-functions.html#subsec-finding-equations-from-points" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Finding an Equation from Points</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-applications-exponential-functions.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Applications of Exponential Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-applications-exponential-functions.html#subsec-growth-decay-rates" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Growth and Decay Rates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-applications-exponential-functions.html#subsec-interpreting-exponential-models" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Interpreting Exponential Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-applications-exponential-functions.html#subsec-general-vs-natural" class="internal"><span class="codenumber">4.2.3</span> <span class="title">General Base versus Natural Base</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-applications-exponential-functions.html#subsec-applied-problems" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Applied Exponential Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-applications-exponential-functions.html#subsec-summary-exponential-applications" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Key Ideas</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="InvLogs.html" class="internal"><span class="codenumber">5</span> <span class="title">LO5: Inverses &amp; Logarithms</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-introduction-inverse-functions.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Introduction to Inverse Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-inverse-functions.html#subsec-inverses-as-undoing" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Inverses as Undoing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-inverse-functions.html#subsec-definition-inverse-function" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Definition of an Inverse Function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-inverse-functions.html#subsec-inverses-from-tables" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Inverses from Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-inverse-functions.html#subsec-inverses-from-graphs" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Inverses from Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-inverse-functions.html#subsec-evaluating-inverse-notation" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Evaluating Inverse Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-inverse-functions.html#subsec-inverse-functions-summary" class="internal"><span class="codenumber">5.1.6</span> <span class="title">Key Ideas</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finding-inverse-functions.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Finding Inverse Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finding-inverse-functions.html#subsec-algebraic-process-inverses" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Finding an Inverse Algebraically</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finding-inverse-functions.html#subsec-quadratic-inverses-restricted-domain" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Quadratic Functions and Restricted Domains</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finding-inverse-functions.html#subsec-interpreting-inverse-context" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Interpreting Inverse Functions in Context</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finding-inverse-functions.html#subsec-verifying-inverses-composition" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Verifying Inverses with Composition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finding-inverse-functions.html#subsec-finding-inverses-summary" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Key Ideas</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-logarithms-as-inverse-functions.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Logarithms as Inverse Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-logarithms-as-inverse-functions.html#subsec-motivation-for-logarithms" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Reversing an Exponential Process</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-logarithms-as-inverse-functions.html#subsec-definition-of-logarithm" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Defining a Logarithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-logarithms-as-inverse-functions.html#subsec-exponential-logarithmic-inverses" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Exponential and Logarithmic Functions Are Inverses</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-logarithms-as-inverse-functions.html#subsec-common-natural-logarithms" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Common and Natural Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-logarithms-as-inverse-functions.html#subsec-logarithm-properties-introduction" class="internal"><span class="codenumber">5.3.5</span> <span class="title">Properties of Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-logarithms-as-inverse-functions.html#subsec-solving-exponential-equations-with-logs" class="internal"><span class="codenumber">5.3.6</span> <span class="title">Solving Exponential Equations with Logarithms</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-solving-equations-with-logarithms.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Solving Equations with Logarithms</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-with-logarithms.html#subsec-inverse-review-solving-equations" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Logarithms Undo Exponential Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-with-logarithms.html#subsec-solving-natural-exponential-equations" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Equations with Base e</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-with-logarithms.html#subsec-solving-other-base-exponential-equations" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Exponential Equations with Other Bases</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-with-logarithms.html#subsec-solving-logarithmic-equations" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Equations Containing Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-with-logarithms.html#subsec-solving-log-equations-summary" class="internal"><span class="codenumber">5.4.5</span> <span class="title">Choosing a Method</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-applications-of-logarithms.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Applications of Logarithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-applications-of-logarithms.html#subsec-inverse-questions-in-context" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Forward and Inverse Questions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-applications-of-logarithms.html#subsec-solving-contextual-exponential-equations" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Solving for Time with Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-applications-of-logarithms.html#subsec-finding-inverse-exponential-models" class="internal"><span class="codenumber">5.5.3</span> <span class="title">Writing an Inverse Model</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-applications-of-logarithms.html#subsec-error-analysis-log-applications" class="internal"><span class="codenumber">5.5.4</span> <span class="title">Analyzing Common Errors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-applications-of-logarithms.html#subsec-applications-of-logs-summary" class="internal"><span class="codenumber">5.5.5</span> <span class="title">Key Ideas</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Quad.html" class="internal"><span class="codenumber">6</span> <span class="title">LO6: Quadratic Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-expanding-and-factoring-quadratics.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Expanding and Factoring Quadratic Expressions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expanding-and-factoring-quadratics.html#subsec-distribution-double-distribution" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Distribution and Double Distribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expanding-and-factoring-quadratics.html#subsec-factoring-gcf" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Factoring Out a Greatest Common Factor</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expanding-and-factoring-quadratics.html#subsec-factoring-by-grouping" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Factoring by Grouping</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expanding-and-factoring-quadratics.html#subsec-zero-product-property" class="internal"><span class="codenumber">6.1.4</span> <span class="title">The Zero Product Property</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expanding-and-factoring-quadratics.html#subsec-quadratics-and-intercepts" class="internal"><span class="codenumber">6.1.5</span> <span class="title">Factoring and x-Intercepts</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-writing-quadratic-equations.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Writing Equations of Quadratic Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-writing-quadratic-equations.html#subsec-characteristics-of-a-parabola" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Characteristics of a Parabola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-writing-quadratic-equations.html#subsec-writing-factored-form" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Writing Equations in Factored Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-writing-quadratic-equations.html#subsec-axis-symmetry-and-vertex" class="internal"><span class="codenumber">6.2.3</span> <span class="title">The Axis of Symmetry and the Vertex</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-writing-quadratic-equations.html#subsec-transformations-and-vertex-form" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Transformations and Vertex Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-writing-quadratic-equations.html#subsec-writing-vertex-form" class="internal"><span class="codenumber">6.2.5</span> <span class="title">Writing Equations in Vertex Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-writing-quadratic-equations.html#subsec-comparing-quadratic-forms" class="internal"><span class="codenumber">6.2.6</span> <span class="title">Comparing Quadratic Forms</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="HO.html" class="internal"><span class="codenumber">7</span> <span class="title">LO7: Higher Order Polynomials</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-polynomial-behavior.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Behavior of Polynomial Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-polynomial-behavior.html#subsec-leading-terms-degree-and-coefficients" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Leading Terms, Degree, and Leading Coefficient</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-polynomial-behavior.html#subsec-long-run-behavior" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Long-Run Behavior</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-polynomial-behavior.html#subsec-four-end-behavior-cases" class="internal"><span class="codenumber">7.1.3</span> <span class="title">The Four End-Behavior Cases</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-polynomial-behavior.html#subsec-zeros-and-factors" class="internal"><span class="codenumber">7.1.4</span> <span class="title">Zeros and Factors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-polynomial-behavior.html#subsec-multiplicity-and-behavior" class="internal"><span class="codenumber">7.1.5</span> <span class="title">Multiplicity and Behavior at a Zero</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-polynomial-behavior.html#subsec-combining-polynomial-features" class="internal"><span class="codenumber">7.1.6</span> <span class="title">Combining the Features of a Polynomial</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-writing-polynomial-equations.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Writing Polynomial Equations from Graphs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-writing-polynomial-equations.html#subsec-from-intercepts-to-factors" class="internal"><span class="codenumber">7.2.1</span> <span class="title">From x-Intercepts to Factors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-writing-polynomial-equations.html#subsec-least-degree-polynomials" class="internal"><span class="codenumber">7.2.2</span> <span class="title">What Least Degree Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-writing-polynomial-equations.html#subsec-finding-polynomial-scale-factor" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Determining the Scale Factor</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-writing-polynomial-equations.html#subsec-using-nonintercept-point" class="internal"><span class="codenumber">7.2.4</span> <span class="title">Using a Point Other Than the y-Intercept</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-writing-polynomial-equations.html#subsec-end-behavior-as-check" class="internal"><span class="codenumber">7.2.5</span> <span class="title">Using End Behavior as a Check</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-writing-polynomial-equations.html#subsec-complete-polynomial-equation-example" class="internal"><span class="codenumber">7.2.6</span> <span class="title">Putting All the Information Together</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Rational.html" class="internal"><span class="codenumber">8</span> <span class="title">LO8: Rational Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-long-run-behavior-of-rationals.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Long-Run Behavior of Rational Functions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-introduction-to-rational-functions.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Introduction to Rational Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-rational-functions.html#subsec-what-is-a-rational-function" class="internal"><span class="codenumber">8.2.1</span> <span class="title">What Is a Rational Function?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-rational-functions.html#subsec-concentrations-and-ratios" class="internal"><span class="codenumber">8.2.2</span> <span class="title">Concentrations as Ratios</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-rational-functions.html#subsec-modeling-concentrations" class="internal"><span class="codenumber">8.2.3</span> <span class="title">Building Rational Function Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-rational-functions.html#subsec-solving-in-context" class="internal"><span class="codenumber">8.2.4</span> <span class="title">Solving a Rational Equation in Context</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-rational-functions.html#subsec-end-behavior-rational-functions" class="internal"><span class="codenumber">8.2.5</span> <span class="title">End Behavior of Rational Functions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-rational-long-run-behavior.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Long-Run Behavior and Horizontal Asymptotes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-rational-long-run-behavior.html#subsec-review-rational-end-behavior" class="internal"><span class="codenumber">8.3.1</span> <span class="title">Reading Long-Run Behavior</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-rational-long-run-behavior.html#subsec-horizontal-asymptotes-definition" class="internal"><span class="codenumber">8.3.2</span> <span class="title">Horizontal Asymptotes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-rational-long-run-behavior.html#subsec-degree-comparison-horizontal-asymptotes" class="internal"><span class="codenumber">8.3.3</span> <span class="title">Comparing the Degrees of the Numerator and Denominator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-rational-long-run-behavior.html#subsec-numerator-degree-smaller" class="internal"><span class="codenumber">8.3.4</span> <span class="title">Numerator Degree Less Than Denominator Degree</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-rational-long-run-behavior.html#subsec-equal-degrees-rational" class="internal"><span class="codenumber">8.3.5</span> <span class="title">Equal Numerator and Denominator Degrees</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-rational-long-run-behavior.html#subsec-numerator-degree-larger" class="internal"><span class="codenumber">8.3.6</span> <span class="title">Numerator Degree Greater Than Denominator Degree</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-rational-long-run-behavior.html#subsec-complete-rational-long-run-analysis" class="internal"><span class="codenumber">8.3.7</span> <span class="title">A Complete Long-Run Analysis</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-rational-short-run-behavior.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Short-Run Behavior of Rational Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-rational-short-run-behavior.html#s1" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Excluded Input Values</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-rational-short-run-behavior.html#s2" class="internal"><span class="codenumber">8.4.2</span> <span class="title">Vertical Asymptotes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-rational-short-run-behavior.html#s3" class="internal"><span class="codenumber">8.4.3</span> <span class="title">x-Intercepts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-rational-short-run-behavior.html#s4" class="internal"><span class="codenumber">8.4.4</span> <span class="title">Holes</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-writing-rational-equations.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Writing Equations of Rational Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-writing-rational-equations.html#subsec-features-determine-factors" class="internal"><span class="codenumber">8.5.1</span> <span class="title">Connecting Graphical Features to Factors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-writing-rational-equations.html#subsec-domain-from-constructed-rational-function" class="internal"><span class="codenumber">8.5.2</span> <span class="title">Domain Restrictions Remain Important</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-writing-rational-equations.html#subsec-adding-features-to-rational-functions" class="internal"><span class="codenumber">8.5.3</span> <span class="title">Adding a New Graphical Feature</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-writing-rational-equations.html#subsec-determining-scale-rational-function" class="internal"><span class="codenumber">8.5.4</span> <span class="title">Determining the Scale Factor</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-writing-rational-equations.html#subsec-finding-hole-coordinate-after-writing" class="internal"><span class="codenumber">8.5.5</span> <span class="title">Finding the Coordinate of a Constructed Hole</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-writing-rational-equations.html#subsec-comparing-rational-functions-same-local-features" class="internal"><span class="codenumber">8.5.6</span> <span class="title">Functions Can Share Some Features but Differ in Others</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec-solving-equations-with-logarithms">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solving Equations with Logarithms</span>
+</h2>
+<section class="introduction" id="sec-solving-equations-with-logarithms-2">
+<div class="para" id="sec-solving-equations-with-logarithms-2-1">Logarithmic and exponential functions are inverses. This inverse relationship allows us to solve equations in which the variable appears in an exponent or inside a logarithm. Solutions may be written exactly with logarithms or approximated with a calculator.<div class="autopermalink" data-description="Paragraph"><a href="#sec-solving-equations-with-logarithms-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<article class="objectives goal-like" id="sec-solving-equations-with-logarithms-3"><h3 class="heading">
+<span class="type">Objectives<span class="colon heading-divison-mark heading-divison-mark__colon">:</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Objectives</span>
+</h3>
+<ol class="decimal" id="sec-solving-equations-with-logarithms-3-2">
+<li id="sec-solving-equations-with-logarithms-3-2-1">
+<div class="para" id="sec-solving-equations-with-logarithms-3-2-1-1">Solve exponential equations with base <span class="process-math">\(e\)</span> by applying the natural logarithm.<div class="autopermalink" data-description="Paragraph"><a href="#sec-solving-equations-with-logarithms-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 5.4.1"><a href="#sec-solving-equations-with-logarithms-3-2-1" title="Copy heading and permalink for Objective 5.4.1" aria-label="Copy heading and permalink for Objective 5.4.1">🔗</a></div>
+</li>
+<li id="sec-solving-equations-with-logarithms-3-2-2">
+<div class="para" id="sec-solving-equations-with-logarithms-3-2-2-1">Solve exponential equations with other bases by using logarithms.<div class="autopermalink" data-description="Paragraph"><a href="#sec-solving-equations-with-logarithms-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 5.4.2"><a href="#sec-solving-equations-with-logarithms-3-2-2" title="Copy heading and permalink for Objective 5.4.2" aria-label="Copy heading and permalink for Objective 5.4.2">🔗</a></div>
+</li>
+<li id="sec-solving-equations-with-logarithms-3-2-3">
+<div class="para" id="sec-solving-equations-with-logarithms-3-2-3-1">Distinguish between exact and approximate solutions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-solving-equations-with-logarithms-3-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 5.4.3"><a href="#sec-solving-equations-with-logarithms-3-2-3" title="Copy heading and permalink for Objective 5.4.3" aria-label="Copy heading and permalink for Objective 5.4.3">🔗</a></div>
+</li>
+<li id="sec-solving-equations-with-logarithms-3-2-4">
+<div class="para" id="sec-solving-equations-with-logarithms-3-2-4-1">Solve logarithmic equations by applying the corresponding exponential function.<div class="autopermalink" data-description="Paragraph"><a href="#sec-solving-equations-with-logarithms-3-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 5.4.4"><a href="#sec-solving-equations-with-logarithms-3-2-4" title="Copy heading and permalink for Objective 5.4.4" aria-label="Copy heading and permalink for Objective 5.4.4">🔗</a></div>
+</li>
+<li id="sec-solving-equations-with-logarithms-3-2-5">
+<div class="para" id="sec-solving-equations-with-logarithms-3-2-5-1">Check restrictions and reject invalid logarithmic solutions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-solving-equations-with-logarithms-3-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 5.4.5"><a href="#sec-solving-equations-with-logarithms-3-2-5" title="Copy heading and permalink for Objective 5.4.5" aria-label="Copy heading and permalink for Objective 5.4.5">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Objectives 5.4: Learning Objectives"><a href="#sec-solving-equations-with-logarithms-3" title="Copy heading and permalink for Objectives 5.4: Learning Objectives" aria-label="Copy heading and permalink for Objectives 5.4: Learning Objectives">🔗</a></div>
+</article>
+<section class="subsection" id="subsec-inverse-review-solving-equations">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Logarithms Undo Exponential Functions</span>
+</h3>
+<div class="para" id="subsec-inverse-review-solving-equations-2">If <span class="process-math">\(g(x)=b^x\text{,}\)</span> then its inverse is <span class="process-math">\(g^{-1}(x)=\log_b(x)\text{.}\)</span> Therefore, the equation <span class="process-math">\(b^x=A\)</span> can be solved by applying a logarithm:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-inverse-review-solving-equations-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="subsec-inverse-review-solving-equations-3">
+\begin{equation*}
+x=\log_b(A)=\frac{\ln(A)}{\ln(b)}.
+\end{equation*}
+</div>
+<details id="ex-review-inverse-power-two" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exact and Approximate Forms.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-review-inverse-power-two-2-1">Solve <span class="process-math">\(2^x=70\text{.}\)</span> Give an exact solution and an approximation to three decimal places.<div class="autopermalink" data-description="Paragraph"><a href="#ex-review-inverse-power-two-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-review-inverse-power-two-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-review-inverse-power-two-3-1">Apply the natural logarithm to both sides:<div class="autopermalink" data-description="Paragraph"><a href="#ex-review-inverse-power-two-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="ex-review-inverse-power-two-3-2">
+\begin{align*}
+\ln(2^x)&amp;=\ln(70),\\
+x\ln(2)&amp;=\ln(70),\\
+x&amp;=\frac{\ln(70)}{\ln(2)}.
+\end{align*}
+</div>
+<div class="para" id="ex-review-inverse-power-two-3-3">The exact solution is <span class="process-math">\(\frac{\ln(70)}{\ln(2)}\text{.}\)</span> Using a calculator, <span class="process-math">\(x\approx6.129\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-review-inverse-power-two-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.4.1.1"><a href="#ex-review-inverse-power-two-3" title="Copy heading and permalink for Solution 5.4.1.1" aria-label="Copy heading and permalink for Solution 5.4.1.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 5.4.1: Exact and Approximate Forms"><a href="#ex-review-inverse-power-two" title="Copy heading and permalink for Example 5.4.1: Exact and Approximate Forms" aria-label="Copy heading and permalink for Example 5.4.1: Exact and Approximate Forms">🔗</a></div>
+</article></details>
+<article class="remark remark-like" id="subsec-inverse-review-solving-equations-5"><h4 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-inverse-review-solving-equations-5-1">An exact answer retains logarithms. An approximate answer replaces the logarithmic expression with a rounded decimal.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-inverse-review-solving-equations-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 5.4.2"><a href="#subsec-inverse-review-solving-equations-5" title="Copy heading and permalink for Remark 5.4.2" aria-label="Copy heading and permalink for Remark 5.4.2">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 5.4.1: Logarithms Undo Exponential Functions"><a href="#subsec-inverse-review-solving-equations" title="Copy heading and permalink for Subsection 5.4.1: Logarithms Undo Exponential Functions" aria-label="Copy heading and permalink for Subsection 5.4.1: Logarithms Undo Exponential Functions">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-solving-natural-exponential-equations">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Equations with Base e</span>
+</h3> 
+<ol class="decimal" id="proc-solve-natural-exponential-equation-2">
+<li id="proc-solve-natural-exponential-equation-2-1">
+<div class="para" id="proc-solve-natural-exponential-equation-2-1-1">Isolate the exponential expression.<div class="autopermalink" data-description="Paragraph"><a href="#proc-solve-natural-exponential-equation-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#proc-solve-natural-exponential-equation-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="proc-solve-natural-exponential-equation-2-2">
+<div class="para" id="proc-solve-natural-exponential-equation-2-2-1">Apply <span class="process-math">\(\ln\)</span> to both sides.<div class="autopermalink" data-description="Paragraph"><a href="#proc-solve-natural-exponential-equation-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#proc-solve-natural-exponential-equation-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="proc-solve-natural-exponential-equation-2-3">
+<div class="para" id="proc-solve-natural-exponential-equation-2-3-1">Use <span class="process-math">\(\ln(e^u)=u\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#proc-solve-natural-exponential-equation-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#proc-solve-natural-exponential-equation-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="proc-solve-natural-exponential-equation-2-4">
+<div class="para" id="proc-solve-natural-exponential-equation-2-4-1">Solve the resulting equation.<div class="autopermalink" data-description="Paragraph"><a href="#proc-solve-natural-exponential-equation-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#proc-solve-natural-exponential-equation-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<details id="ex-natural-exponential-basic" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Natural Exponential Equation.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-natural-exponential-basic-2-1">Solve <span class="process-math">\(e^{-0.35t}=\frac{1}{4}\text{.}\)</span> Give an exact solution and an approximation.<div class="autopermalink" data-description="Paragraph"><a href="#ex-natural-exponential-basic-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-natural-exponential-basic-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="displaymath process-math" id="ex-natural-exponential-basic-3-1">
+\begin{align*}
+\ln\left(e^{-0.35t}\right)&amp;=\ln\left(\frac14\right),\\
+-0.35t&amp;=\ln\left(\frac14\right),\\
+t&amp;=\frac{\ln(1/4)}{-0.35}.
+\end{align*}
+</div>
+<div class="para" id="ex-natural-exponential-basic-3-2">Thus, <span class="process-math">\(t\approx3.961\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-natural-exponential-basic-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.4.3.1"><a href="#ex-natural-exponential-basic-3" title="Copy heading and permalink for Solution 5.4.3.1" aria-label="Copy heading and permalink for Solution 5.4.3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 5.4.3: A Natural Exponential Equation"><a href="#ex-natural-exponential-basic" title="Copy heading and permalink for Example 5.4.3: A Natural Exponential Equation" aria-label="Copy heading and permalink for Example 5.4.3: A Natural Exponential Equation">🔗</a></div>
+</article></details>
+<details id="ex-natural-exponential-isolate-first" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Isolate the Exponential Expression First.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-natural-exponential-isolate-first-2-1">Solve <span class="process-math">\(18=50e^{-0.22t}+6\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-natural-exponential-isolate-first-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-natural-exponential-isolate-first-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-natural-exponential-isolate-first-3-1">First isolate the exponential expression:<div class="autopermalink" data-description="Paragraph"><a href="#ex-natural-exponential-isolate-first-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="ex-natural-exponential-isolate-first-3-2">
+\begin{align*}
+12&amp;=50e^{-0.22t},\\
+\frac{6}{25}&amp;=e^{-0.22t}.
+\end{align*}
+</div>
+<div class="para" id="ex-natural-exponential-isolate-first-3-3">Now apply the natural logarithm:<div class="autopermalink" data-description="Paragraph"><a href="#ex-natural-exponential-isolate-first-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="ex-natural-exponential-isolate-first-3-4">
+\begin{align*}
+\ln\left(\frac{6}{25}\right)&amp;=-0.22t,\\
+t&amp;=\frac{\ln(6/25)}{-0.22}\approx6.488.
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Solution 5.4.4.1"><a href="#ex-natural-exponential-isolate-first-3" title="Copy heading and permalink for Solution 5.4.4.1" aria-label="Copy heading and permalink for Solution 5.4.4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 5.4.4: Isolate the Exponential Expression First"><a href="#ex-natural-exponential-isolate-first" title="Copy heading and permalink for Example 5.4.4: Isolate the Exponential Expression First" aria-label="Copy heading and permalink for Example 5.4.4: Isolate the Exponential Expression First">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 5.4.2: Equations with Base e"><a href="#subsec-solving-natural-exponential-equations" title="Copy heading and permalink for Subsection 5.4.2: Equations with Base e" aria-label="Copy heading and permalink for Subsection 5.4.2: Equations with Base e">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-solving-other-base-exponential-equations">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exponential Equations with Other Bases</span>
+</h3>
+<div class="para" id="subsec-solving-other-base-exponential-equations-2">When the base is not <span class="process-math">\(e\text{,}\)</span> we can still apply <span class="process-math">\(\ln\)</span> to both sides. The power property, <span class="process-math">\(\ln(b^x)=x\ln(b)\text{,}\)</span> brings the variable out of the exponent.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-solving-other-base-exponential-equations-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-other-base-growth-equation" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Growth with an Initial Value.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-other-base-growth-equation-2-1">Solve <span class="process-math">\(420=75(1.18)^t\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-other-base-growth-equation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-other-base-growth-equation-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-other-base-growth-equation-3-1">Divide by 75 before applying a logarithm:<div class="autopermalink" data-description="Paragraph"><a href="#ex-other-base-growth-equation-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="ex-other-base-growth-equation-3-2">
+\begin{align*}
+5.6&amp;=(1.18)^t,\\
+\ln(5.6)&amp;=\ln\left((1.18)^t\right),\\
+\ln(5.6)&amp;=t\ln(1.18),\\
+t&amp;=\frac{\ln(5.6)}{\ln(1.18)}\approx10.410.
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Solution 5.4.5.1"><a href="#ex-other-base-growth-equation-3" title="Copy heading and permalink for Solution 5.4.5.1" aria-label="Copy heading and permalink for Solution 5.4.5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 5.4.5: Growth with an Initial Value"><a href="#ex-other-base-growth-equation" title="Copy heading and permalink for Example 5.4.5: Growth with an Initial Value" aria-label="Copy heading and permalink for Example 5.4.5: Growth with an Initial Value">🔗</a></div>
+</article></details>
+<details id="ex-other-base-shifted-equation" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">An Equation with a Vertical Shift.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-other-base-shifted-equation-2-1">Solve <span class="process-math">\(36=11(1.09)^{x+2}+3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-other-base-shifted-equation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-other-base-shifted-equation-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-other-base-shifted-equation-3-1">Isolate the exponential expression:<div class="autopermalink" data-description="Paragraph"><a href="#ex-other-base-shifted-equation-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="ex-other-base-shifted-equation-3-2">
+\begin{align*}
+33&amp;=11(1.09)^{x+2},\\
+3&amp;=(1.09)^{x+2}.
+\end{align*}
+</div>
+<div class="para" id="ex-other-base-shifted-equation-3-3">Apply <span class="process-math">\(\ln\)</span> and use the power property:<div class="autopermalink" data-description="Paragraph"><a href="#ex-other-base-shifted-equation-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="ex-other-base-shifted-equation-3-4">
+\begin{align*}
+\ln(3)&amp;=(x+2)\ln(1.09),\\
+x+2&amp;=\frac{\ln(3)}{\ln(1.09)},\\
+x&amp;=\frac{\ln(3)}{\ln(1.09)}-2\approx10.747.
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Solution 5.4.6.1"><a href="#ex-other-base-shifted-equation-3" title="Copy heading and permalink for Solution 5.4.6.1" aria-label="Copy heading and permalink for Solution 5.4.6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 5.4.6: An Equation with a Vertical Shift"><a href="#ex-other-base-shifted-equation" title="Copy heading and permalink for Example 5.4.6: An Equation with a Vertical Shift" aria-label="Copy heading and permalink for Example 5.4.6: An Equation with a Vertical Shift">🔗</a></div>
+</article></details>
+<article class="warning remark-like" id="subsec-solving-other-base-exponential-equations-5"><h4 class="heading">
+<span class="type">Warning</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-solving-other-base-exponential-equations-5-1">Do not apply a logarithm until the exponential expression is isolated. For example, in <span class="process-math">\(36=11(1.09)^{x+2}+3\text{,}\)</span> subtract 3 and divide by 11 before taking logarithms.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-solving-other-base-exponential-equations-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Warning 5.4.7"><a href="#subsec-solving-other-base-exponential-equations-5" title="Copy heading and permalink for Warning 5.4.7" aria-label="Copy heading and permalink for Warning 5.4.7">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 5.4.3: Exponential Equations with Other Bases"><a href="#subsec-solving-other-base-exponential-equations" title="Copy heading and permalink for Subsection 5.4.3: Exponential Equations with Other Bases" aria-label="Copy heading and permalink for Subsection 5.4.3: Exponential Equations with Other Bases">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-solving-logarithmic-equations">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Equations Containing Logarithms</span>
+</h3>
+<div class="para" id="subsec-solving-logarithmic-equations-2">To solve an equation containing one logarithm, first isolate the logarithm. Then rewrite the equation in exponential form.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-solving-logarithmic-equations-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-solve-common-log-equation" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Common Logarithmic Equation.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-solve-common-log-equation-2-1">Solve <span class="process-math">\(2\log(x-4)+1=7\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-solve-common-log-equation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-solve-common-log-equation-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-solve-common-log-equation-3-1">Isolate the logarithm:<div class="autopermalink" data-description="Paragraph"><a href="#ex-solve-common-log-equation-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="ex-solve-common-log-equation-3-2">
+\begin{align*}
+2\log(x-4)&amp;=6,\\
+\log(x-4)&amp;=3.
+\end{align*}
+</div>
+<div class="para" id="ex-solve-common-log-equation-3-3">Rewrite in exponential form:<div class="autopermalink" data-description="Paragraph"><a href="#ex-solve-common-log-equation-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="ex-solve-common-log-equation-3-4">
+\begin{align*}
+x-4&amp;=10^3,\\
+x&amp;=1004.
+\end{align*}
+</div>
+<div class="para" id="ex-solve-common-log-equation-3-5">Because <span class="process-math">\(x-4&gt;0\text{,}\)</span> the solution is valid.<div class="autopermalink" data-description="Paragraph"><a href="#ex-solve-common-log-equation-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.4.8.1"><a href="#ex-solve-common-log-equation-3" title="Copy heading and permalink for Solution 5.4.8.1" aria-label="Copy heading and permalink for Solution 5.4.8.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 5.4.8: A Common Logarithmic Equation"><a href="#ex-solve-common-log-equation" title="Copy heading and permalink for Example 5.4.8: A Common Logarithmic Equation" aria-label="Copy heading and permalink for Example 5.4.8: A Common Logarithmic Equation">🔗</a></div>
+</article></details>
+<details id="ex-solve-natural-log-equation" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Natural Logarithmic Equation.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-solve-natural-log-equation-2-1">Solve <span class="process-math">\(5-3\ln(2x)=-1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-solve-natural-log-equation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-solve-natural-log-equation-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="displaymath process-math" id="ex-solve-natural-log-equation-3-1">
+\begin{align*}
+-3\ln(2x)&amp;=-6,\\
+\ln(2x)&amp;=2,\\
+2x&amp;=e^2,\\
+x&amp;=\frac{e^2}{2}.
+\end{align*}
+</div>
+<div class="para" id="ex-solve-natural-log-equation-3-2">The exact solution is <span class="process-math">\(\frac{e^2}{2}\text{,}\)</span> and <span class="process-math">\(x\approx3.695\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-solve-natural-log-equation-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.4.9.1"><a href="#ex-solve-natural-log-equation-3" title="Copy heading and permalink for Solution 5.4.9.1" aria-label="Copy heading and permalink for Solution 5.4.9.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 5.4.9: A Natural Logarithmic Equation"><a href="#ex-solve-natural-log-equation" title="Copy heading and permalink for Example 5.4.9: A Natural Logarithmic Equation" aria-label="Copy heading and permalink for Example 5.4.9: A Natural Logarithmic Equation">🔗</a></div>
+</article></details>
+<details id="ex-log-equation-reject-invalid" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Checking the Logarithm’s Domain.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-log-equation-reject-invalid-2-1">Solve <span class="process-math">\(\ln(x-1)=\ln(5-x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-log-equation-reject-invalid-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-log-equation-reject-invalid-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-log-equation-reject-invalid-3-1">Since the natural logarithm is one-to-one, equal logarithms with the same base have equal arguments:<div class="autopermalink" data-description="Paragraph"><a href="#ex-log-equation-reject-invalid-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="ex-log-equation-reject-invalid-3-2">
+\begin{align*}
+x-1&amp;=5-x,\\
+2x&amp;=6,\\
+x&amp;=3.
+\end{align*}
+</div>
+<div class="para" id="ex-log-equation-reject-invalid-3-3">Checking the arguments gives <span class="process-math">\(3-1=2&gt;0\)</span> and <span class="process-math">\(5-3=2&gt;0\text{,}\)</span> so <span class="process-math">\(x=3\)</span> is valid.<div class="autopermalink" data-description="Paragraph"><a href="#ex-log-equation-reject-invalid-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.4.10.1"><a href="#ex-log-equation-reject-invalid-3" title="Copy heading and permalink for Solution 5.4.10.1" aria-label="Copy heading and permalink for Solution 5.4.10.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 5.4.10: Checking the Logarithm’s Domain"><a href="#ex-log-equation-reject-invalid" title="Copy heading and permalink for Example 5.4.10: Checking the Logarithm’s Domain" aria-label="Copy heading and permalink for Example 5.4.10: Checking the Logarithm’s Domain">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 5.4.4: Equations Containing Logarithms"><a href="#subsec-solving-logarithmic-equations" title="Copy heading and permalink for Subsection 5.4.4: Equations Containing Logarithms" aria-label="Copy heading and permalink for Subsection 5.4.4: Equations Containing Logarithms">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-solving-log-equations-summary">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Choosing a Method</span>
+</h3>
+<figure class="table table-like" id="table-solving-exponential-log-equations"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Equation Types and Inverse Operations<div class="autopermalink" data-description="Table 5.4.11: Equation Types and Inverse Operations"><a href="#table-solving-exponential-log-equations" title="Copy heading and permalink for Table 5.4.11: Equation Types and Inverse Operations" aria-label="Copy heading and permalink for Table 5.4.11: Equation Types and Inverse Operations">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines">Equation type</th>
+<th scope="col" class="l m b0 r0 l0 t0 lines">First goal</th>
+<th scope="col" class="l m b0 r0 l0 t0 lines">Inverse operation</th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(e^{u}=A\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Isolate <span class="process-math">\(e^u\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">Apply <span class="process-math">\(\ln\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(b^{u}=A\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Isolate <span class="process-math">\(b^u\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">Apply <span class="process-math">\(\ln\)</span> or <span class="process-math">\(\log_b\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\ln(u)=A\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Isolate <span class="process-math">\(\ln(u)\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">Apply the exponential base <span class="process-math">\(e\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\log(u)=A\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Isolate <span class="process-math">\(\log(u)\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">Apply the exponential base 10</td>
+</tr>
+</table></div>
+</figure>
+<ul class="disc" id="subsec-solving-log-equations-summary-3-1">
+<li id="subsec-solving-log-equations-summary-3-1-1">
+<div class="para" id="subsec-solving-log-equations-summary-3-1-1-1">Isolate the exponential or logarithmic expression before applying its inverse.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-solving-log-equations-summary-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-solving-log-equations-summary-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-solving-log-equations-summary-3-1-2">
+<div class="para" id="subsec-solving-log-equations-summary-3-1-2-1">Use the power property to move a variable out of an exponent.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-solving-log-equations-summary-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-solving-log-equations-summary-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-solving-log-equations-summary-3-1-3">
+<div class="para" id="subsec-solving-log-equations-summary-3-1-3-1">State exact answers with logarithms before rounding.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-solving-log-equations-summary-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-solving-log-equations-summary-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-solving-log-equations-summary-3-1-4">
+<div class="para" id="subsec-solving-log-equations-summary-3-1-4-1">Check that every logarithm has a positive argument.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-solving-log-equations-summary-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-solving-log-equations-summary-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsection 5.4.5: Choosing a Method"><a href="#subsec-solving-log-equations-summary" title="Copy heading and permalink for Subsection 5.4.5: Choosing a Method" aria-label="Copy heading and permalink for Subsection 5.4.5: Choosing a Method">🔗</a></div>
+</section>
+<section class="conclusion" id="sec-solving-equations-with-logarithms-9">
+<div class="para" id="sec-solving-equations-with-logarithms-9-1">Logarithms and exponentials undo one another. To solve an exponential equation, isolate the exponential expression and apply a logarithm. To solve a logarithmic equation, isolate the logarithm and rewrite in exponential form. Exact logarithmic expressions preserve the full solution, while decimal approximations provide practical numerical values.<div class="autopermalink" data-description="Paragraph"><a href="#sec-solving-equations-with-logarithms-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><div class="autopermalink" data-description="Section 5.4: Solving Equations with Logarithms"><a href="#sec-solving-equations-with-logarithms" title="Copy heading and permalink for Section 5.4: Solving Equations with Logarithms" aria-label="Copy heading and permalink for Section 5.4: Solving Equations with Logarithms">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-logarithms-as-inverse-functions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-applications-of-logarithms.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<script>diagcess.Base.init()</script>
+</body>
+</html>

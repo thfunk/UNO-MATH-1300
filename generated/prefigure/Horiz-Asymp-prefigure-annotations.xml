@@ -1,0 +1,103 @@
+<diagram>
+  <annotations>
+    <annotation id="Horiz-Asymp-prefigure-figure" speech2="Graphs of two concentration functions. The graph of A decreases toward zero, while the graph of B increases toward one as the input increases.">
+      <grouped>Horiz-Asymp-prefigure-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>Horiz-Asymp-prefigure-grid-axes</active>
+        <active>Horiz-Asymp-prefigure-graph-A</active>
+        <active>Horiz-Asymp-prefigure-graph-B</active>
+        <active>Horiz-Asymp-prefigure-asymptote-B</active>
+        <active>Horiz-Asymp-prefigure-intersection-point</active>
+        <active>Horiz-Asymp-prefigure-label-A</active>
+        <active>Horiz-Asymp-prefigure-label-B</active>
+      </children>
+      <components>
+        <active>Horiz-Asymp-prefigure-grid-axes</active>
+        <active>Horiz-Asymp-prefigure-graph-A</active>
+        <active>Horiz-Asymp-prefigure-graph-B</active>
+        <active>Horiz-Asymp-prefigure-asymptote-B</active>
+        <active>Horiz-Asymp-prefigure-intersection-point</active>
+        <active>Horiz-Asymp-prefigure-label-A</active>
+        <active>Horiz-Asymp-prefigure-label-B</active>
+      </components>
+    </annotation>
+    <annotation id="Horiz-Asymp-prefigure-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>Horiz-Asymp-prefigure-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>Horiz-Asymp-prefigure-grid</active>
+        <active>Horiz-Asymp-prefigure-axes</active>
+      </children>
+      <components>
+        <active>Horiz-Asymp-prefigure-grid</active>
+        <active>Horiz-Asymp-prefigure-axes</active>
+      </components>
+      <parents>
+        <grouped>Horiz-Asymp-prefigure-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="Horiz-Asymp-prefigure-grid" speech2="The coordinate grid">
+      <active>Horiz-Asymp-prefigure-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>Horiz-Asymp-prefigure-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="Horiz-Asymp-prefigure-axes" speech2="The coordinate axes">
+      <active>Horiz-Asymp-prefigure-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>Horiz-Asymp-prefigure-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="Horiz-Asymp-prefigure-graph-A" speech2="The graph of A of w equals 6 divided by w plus 6. The graph decreases from one and approaches zero as w increases." sonify="yes">
+      <active>Horiz-Asymp-prefigure-graph-A</active>
+      <position>2</position>
+      <parents>
+        <grouped>Horiz-Asymp-prefigure-figure</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>Horiz-Asymp-prefigure-graph-A</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="Horiz-Asymp-prefigure-graph-B" speech2="The graph of B of L equals L divided by L plus 6. The graph increases from zero and approaches one as L increases." sonify="yes">
+      <active>Horiz-Asymp-prefigure-graph-B</active>
+      <position>3</position>
+      <parents>
+        <grouped>Horiz-Asymp-prefigure-figure</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>Horiz-Asymp-prefigure-graph-B</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="Horiz-Asymp-prefigure-asymptote-B" speech2="The horizontal line y equals one, approached by the graph of B.">
+      <active>Horiz-Asymp-prefigure-asymptote-B</active>
+      <position>4</position>
+      <parents>
+        <grouped>Horiz-Asymp-prefigure-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="Horiz-Asymp-prefigure-intersection-point" speech2="The two concentration graphs intersect at the point 6 comma one half.">
+      <active>Horiz-Asymp-prefigure-intersection-point</active>
+      <position>5</position>
+      <parents>
+        <grouped>Horiz-Asymp-prefigure-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="Horiz-Asymp-prefigure-label-A" speech2="A label indicating that A of w approaches zero.">
+      <active>Horiz-Asymp-prefigure-label-A</active>
+      <position>6</position>
+      <parents>
+        <grouped>Horiz-Asymp-prefigure-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="Horiz-Asymp-prefigure-label-B" speech2="A label indicating that B of L approaches one.">
+      <active>Horiz-Asymp-prefigure-label-B</active>
+      <position>7</position>
+      <parents>
+        <grouped>Horiz-Asymp-prefigure-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

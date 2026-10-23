@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Introduction to Function Composition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="College Algebra">
+<meta property="book:author" content="Taran Funk">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.40bd1420d3277749.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.b388362b5f43738a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
+<script src="_static/pretext/js/diagcess/diagcess.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">College Algebra</span> <span class="subtitle">MATH 1300, 1320</span></a></h1>
+<p class="byline">Taran Funk</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="LinearFunctions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="LinearFunctions.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="Exp.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Foundations.html" class="internal"><span class="codenumber">1</span> <span class="title">LO1: Foundations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-definition-of-function.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Definition of a Function</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-definition-of-function.html#subsec-functions-from-tables" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Functions Represented by Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-definition-of-function.html#subsec-functions-from-graphs" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Functions Represented by Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-definition-of-function.html#subsec-functions-from-mapping-diagrams" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Functions Represented by Bubble Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-definition-of-function.html#subsec-introduction-function-notation" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Introducing Function Notation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="DefinitionFunction.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Definition of a Function</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-function-notation-evaluating-functions.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Function Notation and Evaluating Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-function-notation-evaluating-functions.html#subsec-understanding-function-notation" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Understanding Function Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-function-notation-evaluating-functions.html#subsec-interpreting-inputs-outputs" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Interpreting Inputs and Outputs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-function-notation-evaluating-functions.html#subsec-graph-evaluation" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Evaluating Functions from Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-function-notation-evaluating-functions.html#subsec-table-evaluation" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Evaluating Functions from Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-function-notation-evaluating-functions.html#subsec-summary-function-notation" class="internal"><span class="codenumber">1.3.5</span> <span class="title">Key Ideas</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-domain-and-range.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Domain and Range</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-domain-and-range.html#subsec-domain-range-definitions" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Domain and Range as Sets of Values</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-domain-and-range.html#subsec-interval-and-inequality-notation" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Interval Notation and Inequality Notation</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-domain-and-range.html#subsubsec-infinite-intervals" class="internal"><span class="codenumber">1.4.2.1</span> <span class="title">Intervals That Continue Without Bound</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-domain-and-range.html#subsec-domain-range-from-graphs" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Finding Domain and Range from a Graph</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-increasing-and-decreasing.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Increasing and Decreasing Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-increasing-and-decreasing.html#subsec-increasing-decreasing-graphs" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Identifying Increasing and Decreasing Intervals from Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-increasing-and-decreasing.html#subsec-increasing-decreasing-tables" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Identifying Increasing and Decreasing Behavior from Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-increasing-and-decreasing.html#subsec-summary-inc-dec" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Key Ideas</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Linear.html" class="internal"><span class="codenumber">2</span> <span class="title">LO2: Linear Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Slope.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Slope</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="Slope.html#exercises-groupwork" class="internal"><span class="codenumber">2.1</span> <span class="title">Preview 2.1</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="writing-linear-equations.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Writing Equations of Lines</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="writing-linear-equations.html#slope-intercept-form" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Slope-Intercept Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="writing-linear-equations.html#point-slope-form" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Point-Slope Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="writing-linear-equations.html#choosing-a-form" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Choosing a Form</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="LinearFunctions.html" class="internal"><span class="codenumber">3</span> <span class="title">LO3: Composition &amp; Transformation</span></a></div>
+<ul class="structural toc-item-list contains-active"><li class="toc-item toc-section active"><div class="toc-title-box"><a href="section-intro-composition.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Introduction to Function Composition</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="Exp.html" class="internal"><span class="codenumber">4</span> <span class="title">LO4: Exponential Functions</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="InvLogs.html" class="internal"><span class="codenumber">5</span> <span class="title">LO5: Inverses &amp; Logarithms</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="Quad.html" class="internal"><span class="codenumber">6</span> <span class="title">LO6: Quadratic Functions</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="HO.html" class="internal"><span class="codenumber">7</span> <span class="title">LO7: Higher Order Polynomials</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Rational.html" class="internal"><span class="codenumber">8</span> <span class="title">LO8: Rational Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-long-run-behavior-of-rationals.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Long-Run Behavior of Rational Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-short-run-behavior-of-rationals.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Short-Run Behavior of Rational Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-sketching-graphs-of-rationals.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Sketching Graphs of Rational Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-writing-equations-of-rationals.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Writing Equations of Rational Functions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="section-intro-composition">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Introduction to Function Composition</span>
+</h2>
+<div class="para" id="section-intro-composition-2">In many situations, we apply multiple processes in sequence, where the output of one process becomes the input of the next. This idea is captured mathematically using <dfn class="terminology">function composition</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#section-intro-composition-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-intro-composition-3">For example, imagine performing a sequence of steps—each step transforms an input into a new value. By chaining these steps together, we create a new function that represents the entire process.<div class="autopermalink" data-description="Paragraph"><a href="#section-intro-composition-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-function-composition"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>Let <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> be functions. The <dfn class="terminology">composition</dfn> of <span class="process-math">\(f\)</span> with <span class="process-math">\(g\text{,}\)</span> written <span class="process-math">\(f(g(x))\text{,}\)</span> is a new function obtained by applying <span class="process-math">\(g\)</span> first, and then applying <span class="process-math">\(f\)</span> to the result.<div class="autopermalink" data-description="Definition 3.1.1"><a href="#def-function-composition" title="Copy heading and permalink for Definition 3.1.1" aria-label="Copy heading and permalink for Definition 3.1.1">🔗</a></div>
+</article>
+<article class="remark remark-like" id="remark-composition-key-idea"><h3 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="remark-composition-key-idea-1">The key idea of composition is:<div class="autopermalink" data-description="Paragraph"><a href="#remark-composition-key-idea-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="remark-composition-key-idea-2">
+<em class="emphasis">The output of one function becomes the input of the next function.</em><div class="autopermalink" data-description="Paragraph"><a href="#remark-composition-key-idea-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 3.1.2"><a href="#remark-composition-key-idea" title="Copy heading and permalink for Remark 3.1.2" aria-label="Copy heading and permalink for Remark 3.1.2">🔗</a></div>
+</article>
+<details id="example-multiple-composition" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">Suppose we have four functions <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(C\text{,}\)</span> and <span class="process-math">\(D\text{.}\)</span> A composition of these functions can be written as<div class="displaymath process-math" id="example-multiple-composition-1-5">
+\begin{equation*}
+P(x) = D(C(B(A(x))))\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Example 3.1.3"><a href="#example-multiple-composition" title="Copy heading and permalink for Example 3.1.3" aria-label="Copy heading and permalink for Example 3.1.3">🔗</a></div>
+</article></details>
+<details id="example-temperature-bacteria" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">Let <span class="process-math">\(F = m(h)\)</span> represent the temperature (in degrees Fahrenheit) <span class="process-math">\(h\)</span>     hours after midnight. Let <span class="process-math">\(B = a(F)\)</span> represent the growth rate of a colony of bacteria at temperature <span class="process-math">\(F\text{.}\)</span><div class="autopermalink" data-description="Example 3.1.4"><a href="#example-temperature-bacteria" title="Copy heading and permalink for Example 3.1.4" aria-label="Copy heading and permalink for Example 3.1.4">🔗</a></div>
+</article></details>
+<details id="example-surface-volume" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">Let <span class="process-math">\(A = g(s)\)</span> represent the surface area (in cm2) of a cube with side length <span class="process-math">\(s\text{.}\)</span> Let <span class="process-math">\(s = f(v)\)</span> represent the side length of a cube with volume <span class="process-math">\(v\text{.}\)</span><div class="autopermalink" data-description="Example 3.1.5"><a href="#example-surface-volume" title="Copy heading and permalink for Example 3.1.5" aria-label="Copy heading and permalink for Example 3.1.5">🔗</a></div>
+</article></details>
+<details id="example-order-matters" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">Let <span class="process-math">\(T = f(n)\)</span> represent the total cost to rent an indoor pool for <span class="process-math">\(n\)</span> people. Let <span class="process-math">\(D = g(T)\)</span> represent the discounted cost after applying a seasonal discount.<div class="autopermalink" data-description="Example 3.1.6"><a href="#example-order-matters" title="Copy heading and permalink for Example 3.1.6" aria-label="Copy heading and permalink for Example 3.1.6">🔗</a></div>
+</article></details>
+<details id="example-interpretation" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">Let <span class="process-math">\(M = a(x)\)</span> represent the number of miles that can be driven in <span class="process-math">\(x\)</span> hours. Let <span class="process-math">\(G = b(M)\)</span> represent the number of gallons of gas used to drive <span class="process-math">\(M\)</span> miles.<div class="autopermalink" data-description="Example 3.1.8"><a href="#example-interpretation" title="Copy heading and permalink for Example 3.1.8" aria-label="Copy heading and permalink for Example 3.1.8">🔗</a></div>
+</article></details>
+<article class="activity project-like" id="activity-compose-functions"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Composing Functions.</span>
+</h3>
+<div class="para" id="activity-compose-functions-2">Work with a partner or small group.<div class="autopermalink" data-description="Paragraph"><a href="#activity-compose-functions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="activity-compose-functions-3">
+<li id="activity-compose-functions-3-1">
+<div class="para" id="p-derived-activity-compose-functions-3-1">Find as many pairs of functions as possible that can be composed.</div>
+<div class="autopermalink" data-description="Item"><a href="#activity-compose-functions-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activity-compose-functions-3-2">
+<div class="para" id="p-derived-activity-compose-functions-3-2">Write each composition using proper function notation.</div>
+<div class="autopermalink" data-description="Item"><a href="#activity-compose-functions-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activity-compose-functions-3-3">
+<div class="para" id="p-derived-activity-compose-functions-3-3">Find examples of functions that cannot be composed, and explain why.</div>
+<div class="autopermalink" data-description="Item"><a href="#activity-compose-functions-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activity-compose-functions-3-4">
+<div class="para" id="p-derived-activity-compose-functions-3-4">Challenge: find three or more functions that can be composed in sequence.</div>
+<div class="autopermalink" data-description="Item"><a href="#activity-compose-functions-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Activity 3.1.1: Composing Functions"><a href="#activity-compose-functions" title="Copy heading and permalink for Activity 3.1.1: Composing Functions" aria-label="Copy heading and permalink for Activity 3.1.1: Composing Functions">🔗</a></div>
+</article><div class="autopermalink" data-description="Section 3.1: Introduction to Function Composition"><a href="#section-intro-composition" title="Copy heading and permalink for Section 3.1: Introduction to Function Composition" aria-label="Copy heading and permalink for Section 3.1: Introduction to Function Composition">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="LinearFunctions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="Exp.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<script>diagcess.Base.init()</script>
+</body>
+</html>

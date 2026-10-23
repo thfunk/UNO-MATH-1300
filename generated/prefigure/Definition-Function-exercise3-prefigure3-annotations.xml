@@ -1,0 +1,43 @@
+<diagram>
+  <annotations>
+    <annotation id="Definition-Function-exercise3-prefigure3-figure" speech2="A graph showing option C.">
+      <grouped>Definition-Function-exercise3-prefigure3-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>Definition-Function-exercise3-prefigure3-grid-axes</active>
+      </children>
+      <components>
+        <active>Definition-Function-exercise3-prefigure3-grid-axes</active>
+      </components>
+    </annotation>
+    <annotation id="Definition-Function-exercise3-prefigure3-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>Definition-Function-exercise3-prefigure3-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>Definition-Function-exercise3-prefigure3-grid</active>
+        <active>Definition-Function-exercise3-prefigure3-axes</active>
+      </children>
+      <components>
+        <active>Definition-Function-exercise3-prefigure3-grid</active>
+        <active>Definition-Function-exercise3-prefigure3-axes</active>
+      </components>
+      <parents>
+        <grouped>Definition-Function-exercise3-prefigure3-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="Definition-Function-exercise3-prefigure3-grid" speech2="The coordinate grid">
+      <active>Definition-Function-exercise3-prefigure3-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>Definition-Function-exercise3-prefigure3-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="Definition-Function-exercise3-prefigure3-axes" speech2="The coordinate axes">
+      <active>Definition-Function-exercise3-prefigure3-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>Definition-Function-exercise3-prefigure3-grid-axes</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>
