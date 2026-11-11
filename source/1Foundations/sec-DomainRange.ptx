@@ -3,18 +3,8 @@
   <title>Domain and Range</title>
 
   <introduction>
-    <p>Every function connects inputs with outputs. The collection of all possible inputs is called the <term>domain</term>, and the collection of all possible outputs is called the <term>range</term>. In this section, we will define domain and range, translate between interval notation and inequality notation, and determine domain and range from graphs.</p>
+    <p>Every function connects inputs with outputs. In this section, we will define <b>domain</b> and <b>range</b>, translate between interval notation and inequality notation, and determine domain and range from graphs. All functions have a domain and a range, but our focus will be on identifying them for graphs represented in the coordinate plane (graphically).</p>
   </introduction>
-
-  <objectives>
-    <title>Learning Objectives</title>
-    <ol>
-      <li><p>Define the domain and range of a function.</p></li>
-      <li><p>Translate between interval notation and inequality notation.</p></li>
-      <li><p>Determine domain and range from a graph.</p></li>
-      <li><p>Express domain and range using both interval and inequality notation.</p></li>
-    </ol>
-  </objectives>
 
   <subsection xml:id="subsec-domain-range-definitions">
     <title>Domain and Range as Sets of Values</title>
@@ -32,11 +22,11 @@
     <example xml:id="ex-domain-range-context">
       <title>Interpreting Domain and Range in Context</title>
       <statement>
-        <p>Let <m>B=f(t)</m> represent the charge level of a rechargeable battery, as a percent, <m>t</m> minutes after it is connected to a charger. Describe the meaning of the domain and range.</p>
+        <p>Let <m>B=f(t)</m> represent the charge level of a phone battery, as a percent, <m>t</m> minutes after it is connected to a charger. Describe the meaning of the domain and range and give reasonable bounds for each.</p>
       </statement>
       <solution>
-        <p>The input is time in minutes, so the domain is the set of possible charging times.</p>
-        <p>The output is the battery's charge level as a percent, so the range is the set of possible charge levels produced during those times.</p>
+        <p>The input is time in minutes, so the domain is the set of possible charging times. A reasonable bound for the domain would be <m>0 \le t \le 60</m>, assuming the battery is charged for up to one hour.</p>
+        <p>The output is the battery's charge level as a percent, so the range is the set of possible charge levels produced during those times. A reasonable bound for the range would be <m>0 \le B \le 100</m>, representing a fully discharged to fully charged battery.</p>
       </solution>
     </example>
 
@@ -56,8 +46,8 @@
       <title>Endpoint Notation</title>
       <tabular>
         <row header="yes"><cell>Endpoint condition</cell><cell>Interval symbol</cell><cell>Inequality symbol</cell></row>
-        <row><cell>Endpoint is included</cell><cell>Square bracket</cell><cell><m>\le</m> or <m>\ge</m></cell></row>
-        <row><cell>Endpoint is not included</cell><cell>Parenthesis</cell><cell><m>&lt;</m> or <m>></m></cell></row>
+        <row><cell>Endpoint is included</cell><cell>Square bracket; [ or ]</cell><cell><m>\le</m> or <m>\ge</m></cell></row>
+        <row><cell>Endpoint is not included</cell><cell>Parenthesis; ( or )</cell><cell><m>&lt;</m> or <m>></m></cell></row>
       </tabular>
     </table>
 
@@ -105,10 +95,7 @@
       </solution>
     </example>
 
-    <subsubsection xml:id="subsubsec-infinite-intervals">
-      <title>Intervals That Continue Without Bound</title>
-
-      <p>The symbols <m>\infty</m> and <m>-\infty</m> indicate that an interval continues without bound. Infinity is not a number or an endpoint that can be included, so it always appears next to a parenthesis.</p>
+<p>The symbols <m>\infty</m> and <m>-\infty</m> indicate that an interval continues without bound. Infinity is not a number or an endpoint that can be included, so it always appears next to a parenthesis.</p>
 
       <example xml:id="ex-positive-infinity-interval">
         <statement>
@@ -130,10 +117,9 @@
         </solution>
       </example>
 
-      <warning>
-        <p>Do not write inequalities such as <m>x&lt;\infty</m> as part of a compound inequality. Instead, write only the finite restriction, such as <m>x\ge -3</m>.</p>
-      </warning>
-    </subsubsection>
+      <remark>
+        <p>By convention, we do not write inequalities such as <m>-3\le x\lt\infty</m> as part of a compound inequality. Instead, write only the finite restriction, such as <m>-3\le x</m>.</p>
+      </remark>
   </subsection>
 
   <subsection xml:id="subsec-domain-range-from-graphs">
@@ -145,22 +131,49 @@
       <ul>
         <li><p><em>Domain:</em> read the graph from left to right.</p></li>
         <li><p><em>Range:</em> read the graph from bottom to top.</p></li>
-        <li><p>A closed point includes its coordinate and corresponds to a square bracket or a non-strict inequality.</p></li>
-        <li><p>An open point excludes its coordinate and corresponds to a parenthesis or a strict inequality.</p></li>
+        <li><p>A closed point, <m>\bullet</m>, includes its coordinate and corresponds to a square bracket or a non-strict inequality.</p></li>
+        <li><p>An open point, <m>\circ</m>, excludes its coordinate and corresponds to a parenthesis or a strict inequality.</p></li>
       </ul>
     </important>
-
-    <!-- Figure: A continuous curve begins at a closed point (-5,1), rises to a highest point with y=7, and ends at an open point (4,3). The curve reaches y=1 only at the closed left endpoint and reaches y=7 at an included point. Use this graph for Example ex-bounded-domain-range-graph. -->
 
     <example xml:id="ex-bounded-domain-range-graph">
       <title>A Graph with Two Finite Endpoints</title>
       <statement>
-        <p>Use the graph described above to determine the domain and range. Express each answer using interval notation and inequality notation.</p>
+        <p>Use the graph described to determine the domain and range. Express each answer using interval notation and inequality notation.</p>
+
+    <figure xml:id="domain-range-graph1">
+  <image width="60%">
+    <prefigure xmlns="https://prefigure.org"
+               label="domain-range-prefigure1">
+      <title>Bounded Domain and Range</title>
+
+      <diagram dimensions="(300,300)" margins="5">
+      <coordinates bbox="(-6,-1,5,8)">
+        <grid-axes xlabel="x" ylabel="y"/>
+        <graph at="graph" function="f"/>
+        <tangent-line at="tangent" function="f" point="a"/>
+        <path start="(-5,1)" stroke="blue">
+                <cubic-bezier controls="((-4,4),(-3,7),(-1,7))"/>
+                <cubic-bezier controls="((1,7),(3,5),(4,3))"/>
+        </path>
+        <point p="(-5,1)" fill="blue"/>
+        <point p="(4,3)" fill ="white"/>
+      </coordinates>
+
+      <annotations text="A continuous curve begins at a closed point at negative 5 comma 1,
+        rises to a highest point at negative 1 comma 7, and ends at an open
+        point at 4 comma 3.">
+      </annotations>
+    </diagram>
+    </prefigure>
+  </image>
+</figure>
+
       </statement>
       <solution>
         <p>The graph begins at the included input <m>x=-5</m> and ends at the excluded input <m>x=4</m>.</p>
         <p><em>Domain in interval notation:</em> <m>[-5,4)</m></p>
-        <p><em>Domain in inequality notation:</em> <m>-5\le x&lt;4</m></p>
+        <p><em>Domain in inequality notation:</em> <m>-5\le x\lt4</m></p>
         <p>The smallest output is <m>y=1</m> and the largest output is <m>y=7</m>. Both output values occur on the graph.</p>
         <p><em>Range in interval notation:</em> <m>[1,7]</m></p>
         <p><em>Range in inequality notation:</em> <m>1\le y\le 7</m></p>
@@ -171,12 +184,39 @@
       <p>An open endpoint affects the domain through its <m>x</m>-coordinate and the range through its <m>y</m>-coordinate. However, an excluded endpoint does not automatically exclude that output from the range. The same output may occur at another included point on the graph.</p>
     </remark>
 
-    <!-- Figure: A curve starts at a closed point (-2,-4), passes through several points, and continues indefinitely to the right and upward as indicated by an arrow. Use this graph for Example ex-unbounded-domain-range-graph. -->
+    <remark>
+      <p>Every point along a curve should be thought of as a filled in point. The graph is made up of infinitely many of these filled in points making the curve. In example <xref ref="ex-unbounded-domain-range-graph"/>, the graph extends up to <m>y=7</m>. Even though there is not a filled in point at <m>y=7</m>, the range includes <m>y=7</m>.</p>
+    </remark>
 
     <example xml:id="ex-unbounded-domain-range-graph">
       <title>A Graph That Continues Without Bound</title>
       <statement>
-        <p>Use the graph described above to determine the domain and range. Express each answer using interval notation and inequality notation.</p>
+        <p>Use the graph to determine the domain and range. Express each answer using interval notation and inequality notation.</p>
+
+        <figure xml:id="domain-range-graph2">
+     <image width="60%">
+    <prefigure xmlns="https://prefigure.org"
+               label="domain-range-prefigure2">
+      <title>Bounded Domain and Range</title>
+
+      <diagram dimensions="(400,300)" margins="5">
+        <coordinates bbox="(-3,-5,6,5)">
+          <grid-axes xlabel="x" ylabel="y"/>
+
+          <!-- Curve begins at (-2,-4) and continues right and upward -->
+          <path start="(-2,-4)" stroke="blue" thickness="2" arrows="1">
+            <quadratic-bezier controls="((-1,-1),(1,0))"/>
+            <quadratic-bezier controls="((3,1),(5,4))"/>
+          </path>
+
+          <!-- Closed endpoint -->
+          <point p="(-2,-4)" fill="blue"/>
+        </coordinates>
+          </diagram>
+        </prefigure>
+      </image>
+    </figure>
+
       </statement>
       <solution>
         <p>The smallest input is <m>-2</m>, and it is included. The graph continues to the right without bound.</p>
@@ -188,12 +228,37 @@
       </solution>
     </example>
 
-    <!-- Figure: A smooth wave-like graph extends indefinitely in both horizontal directions, indicated by arrows. Its lowest output is y=-3 and its highest output is y=2, and both values are attained. Use this graph for Example ex-all-real-domain-bounded-range. -->
+    
 
     <example xml:id="ex-all-real-domain-bounded-range">
       <title>All Real Inputs with Bounded Outputs</title>
       <statement>
         <p>Use the graph described above to determine the domain and range. Express each answer using interval notation and inequality notation.</p>
+
+        <figure xml:id="Unbounded-Wave-graph">
+  <image width="60%">
+    <prefigure xmlns="https://prefigure.org"
+               label="Unbounded-Wave-prefigure">
+      <title>Wave with Bounded Range</title>
+      <description>
+        A sine curve extends indefinitely in both horizontal directions.
+        Its lowest output is negative 3 and its highest output is 2, and
+        both values are attained.
+      </description>
+
+      <diagram dimensions="(400,300)" margins="5">
+        <definition>f(x)=(5/2)*sin(x)-(1/2)</definition>
+
+        <coordinates bbox="(-7,-4,7,3)">
+          <grid-axes xlabel="x" ylabel="y"/>
+
+          <graph function="f"/>
+        </coordinates>
+      </diagram>
+    </prefigure>
+  </image>
+</figure>
+
       </statement>
       <solution>
         <p>The graph continues indefinitely to both the left and the right, so every real number is an input.</p>
@@ -206,7 +271,298 @@
     </example>
   </subsection>
 
-  <conclusion>
-    <p>The domain is the set of input values, and the range is the set of output values. Interval notation and inequality notation provide two ways to describe the same sets of numbers. On a graph, read from left to right to find the domain and from bottom to top to find the range, paying careful attention to open points, closed points, and arrows.</p>
-  </conclusion>
+  <remark>
+    <p>A domain or range going to infinity can look different depending on the graph. In some cases, arrows indicate the direction of the graph, while in others, the graph may simply extend to the edge of the viewing window. In either case, we assume the graph continues in that direction indefinitely.</p>
+  </remark>
+
+  <subsection xml:id="subsec-Domain-Range-Video">
+      <title>Video Lesson</title>
+      <video label="Domain-Range-Video1" source="LO-1-Domain-Range-Part-1.mp4"/>
+      <video label="Domain-Range-Video2" source="LO-1-Domain-Range-Part-2.mp4"/>
+  </subsection>
+
+  <subsection xml:id="subsec-Domain-Range-Exercises">
+      <title>Graded Exercises</title>
+
+      <exercise label="Domain-Range-exercise1">
+      <statement>
+        <p>
+          The domain is the set of all
+        </p>
+      </statement>
+
+  <choices>
+    <choice correct="yes">
+      <statement><p>inputs to a function.</p></statement>
+    </choice>
+    <choice>
+      <statement><p>outputs of a function.</p></statement>
+    </choice>
+    <choice>
+      <statement><p>ordered pairs of a function.</p></statement>
+    </choice>
+    <choice>
+      <statement><p>maximum values of a function.</p></statement>
+    </choice>
+  </choices>
+</exercise>
+
+  <exercise label="Domain-Range-exercise2">
+  <statement>
+    <p>
+      The range is the set of all
+    </p>
+  </statement>
+
+  <choices>
+    <choice>
+      <statement><p>inputs to a function.</p></statement>
+    </choice>
+    <choice correct="yes">
+      <statement><p>outputs of a function.</p></statement>
+    </choice>
+    <choice>
+      <statement><p>ordered pairs of a function.</p></statement>
+    </choice>
+    <choice>
+      <statement><p>independent values of a function.</p></statement>
+    </choice>
+  </choices>
+</exercise>
+
+<exercise label="Domain-Range-exercise3">
+  <statement>
+    <p>
+      The inequality <m>-4 \le x \lt 8</m> is represented by the interval
+    </p>
+  </statement>
+
+  <choices>
+    <choice>
+      <statement><p><m>[-4,8]</m></p></statement>
+    </choice>
+    <choice>
+      <statement><p><m>(-4,8]</m></p></statement>
+    </choice>
+    <choice correct="yes">
+      <statement><p><m>[-4,8)</m></p></statement>
+    </choice>
+    <choice>
+      <statement><p><m>(-4,8)</m></p></statement>
+    </choice>
+  </choices>
+</exercise>
+
+<exercise label="Domain-Range-exercise4">
+
+  <statement>
+    <p>
+      Use the graph of the function to answer the questions.
+      If no endpoint is shown, assume that the graph continues on forever.
+      Enter <q>infty</q> for <m>\infty</m> when using interval notation.
+    </p>
+
+    <figure xml:id="Domain-Range-exercise4-figure">
+      <image width="60%">
+        <prefigure xmlns="https://prefigure.org"
+                   label="domain-range-exercise4-prefigure">
+
+          <title>Bounded Domain and Range</title>
+
+          <diagram dimensions="(300,300)" margins="5">
+            <definition>f(x)=.25*x^3+1</definition>
+
+            <coordinates bbox="(-4,-4,4,4)">
+              <grid-axes xlabel="x" ylabel="y"/>
+
+              <graph at="graph" function="f" domain="(-2,2)"/>
+
+              <point p="(-2,-1)" fill="blue"/>
+              <point p="(2,3)" fill="white" stroke="black"/>
+            </coordinates>
+          </diagram>
+
+        </prefigure>
+      </image>
+    </figure>
+
+    <p>
+      The domain of the function is
+      <fillin mode="string" answer="[-2,2)" width="10"/>.
+    </p>
+
+    <p>
+      The range of the function is
+      <fillin mode="string" answer="[-1,3)" width="10"/>.
+    </p>
+
+  </statement>
+
+  <evaluation>
+
+    <!-- Domain -->
+    <evaluate>
+
+      <!-- Accept [-2,2) or [-2, 2) -->
+      <test correct="yes">
+        <strcmp>\[-2,\s*2\)</strcmp>
+        <feedback>
+          <p>
+            Correct! The graph begins at <m>x=-2</m> with a closed point,
+            so <m>-2</m> is included. The graph ends at <m>x=2</m> with
+            an open point, so <m>2</m> is not included.
+          </p>
+        </feedback>
+      </test>
+
+      <!-- Any other response -->
+      <test>
+        <strcmp>.*</strcmp>
+        <feedback>
+          <p>
+            Not quite. Look at the endpoints of the graph. The point at
+            <m>x=-2</m> is closed, while the point at <m>x=2</m> is open.
+          </p>
+        </feedback>
+      </test>
+
+    </evaluate>
+
+    <!-- Range -->
+    <evaluate>
+
+      <!-- Accept [-1,3) or [-1, 3) -->
+      <test correct="yes">
+        <strcmp>\[-1,\s*3\)</strcmp>
+        <feedback>
+          <p>
+            Correct! The graph reaches <m>y=-1</m> at a closed point,
+            so <m>-1</m> is included. The graph approaches <m>y=3</m>
+            at an open point, so <m>3</m> is not included.
+          </p>
+        </feedback>
+      </test>
+
+      <!-- Any other response -->
+      <test>
+        <strcmp>.*</strcmp>
+        <feedback>
+          <p>
+            Not quite. The lowest output is <m>-1</m> and is included,
+            while the graph has an open point at <m>y=3</m>.
+          </p>
+        </feedback>
+      </test>
+
+    </evaluate>
+
+  </evaluation>
+
+</exercise>
+
+<exercise label="Domain-Range-exercise5">
+
+  <statement>
+    <p>
+      Use the graph of the function to answer the questions.
+      If no endpoint is shown, assume that the graph continues on forever.
+      Enter <q>infty</q> for <m>\infty</m> when using interval notation.
+    </p>
+
+    <figure xml:id="Domain-Range-exercise5-figure">
+      <image width="60%">
+        <prefigure xmlns="https://prefigure.org"
+                   label="domain-range-exercise5-prefigure">
+          <title>Bounded Domain and Range</title>
+
+          <diagram dimensions="(300,300)" margins="5">
+            <definition>f(x)=-.25*x^3+1</definition>
+            <coordinates bbox="(-4,-4,4,4)">
+              <grid-axes xlabel="x" ylabel="y"/>
+              <graph at="graph" function="f" domain="(-2,2.6)" arrows="1"/>
+              <point p="(-2,3)" fill="white" stroke="black"/>
+            </coordinates>
+          </diagram>
+        </prefigure>
+      </image>
+    </figure>
+
+    <p>
+      The domain of the function is
+      <fillin mode="string" answer="(-2,infty)" width="10"/>.
+    </p>
+
+    <p>
+      The range of the function is
+      <fillin mode="string" answer="(-infty,3]" width="10"/>.
+    </p>
+
+  </statement>
+
+  <evaluation>
+
+    <!-- Domain -->
+    <evaluate>
+
+      <!-- Accept (-2, infty) (-2, infinity) or (-2, ∞) -->
+      <test correct="yes">
+        <strcmp>\(-2,\s*(?:infty|infinity|∞)\)</strcmp>
+        <feedback>
+          <p>
+            Correct! The graph begins at <m>x=-2</m> with an open point,
+            so <m>-2</m> is not included. The graph continues to the right without bound, so <m>\infty</m> is not included.
+          </p>
+        </feedback>
+      </test>
+
+      <!-- Any other response -->
+      <test>
+        <strcmp>.*</strcmp>
+        <feedback>
+          <p>
+            Not quite. Look at the endpoints of the graph. The point at
+            <m>x=-2</m> is open, while there is no endpoint on the right.
+          </p>
+        </feedback>
+      </test>
+
+    </evaluate>
+
+    <!-- Range -->
+    <evaluate>
+
+      <!-- Accept (-infty,3) (-infinity,3) or (-∞,3) -->
+      <test correct="yes">
+        <strcmp>\(-(?:infty|infinity|∞),\s*3\)</strcmp>
+        <feedback>
+          <p>
+            Correct! The graph reaches <m>y=3</m> at an open point,
+            so <m>3</m> is not included. The graph continues downward without bound, so <m>-infty</m> is not included.
+          </p>
+        </feedback>
+      </test>
+
+      <!-- Any other response -->
+      <test>
+        <strcmp>.*</strcmp>
+        <feedback>
+          <p>
+            Not quite. The lowest output is <m>-infty</m> and is not included,
+            while the graph has an open point at <m>y=3</m>.
+          </p>
+        </feedback>
+      </test>
+
+    </evaluate>
+
+  </evaluation>
+
+</exercise>
+   
+   
+   
+
+      </subsection>
+
 </section>
+
