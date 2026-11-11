@@ -3,62 +3,26 @@
   <title>Function Notation and Evaluating Functions</title>
 
   <introduction>
-    <p>A function assigns exactly one output to each input. Function notation provides a convenient way to describe this input-output relationship. Before evaluating functions, it is important to understand what the inputs and outputs represent in a real-world situation.</p>
+    <p>A function assigns exactly one output to each input. Function notation provides a convenient way to describe this input-output relationship. Before evaluating functions, it is important to understand what the inputs and outputs represent in a real-world situation.
+    </p>
   </introduction>
 
   <subsection xml:id="subsec-understanding-function-notation">
     <title>Understanding Function Notation</title>
-    <p>Function notation does not change the relationship itself. Instead, it gives the relationship a name.</p>
-    <p>When we write <m>N=f(x)</m>, the symbol <m>f</m> names the function, <m>x</m> represents the input, and <m>f(x)</m> represents the output corresponding to that input.</p>
+    <p>
+      We not only use function notation to denote the function itself, <m>y=f(x)</m>, but we also use it to represent specific values that a function takes. For example, we may write <m>3=f(1)</m> or <m>f(1)=3</m> to mean at the input of <m>1</m> the function <m>f</m> gives the output of <m>3</m>.
+    </p>
+    <p>
+      Each of the following are equivalent ways to represent the input-output pair associated with a function <m>g</m> sending an input of <m>3</m> to the output <m>9</m>:
+    </p>
 
-    <example xml:id="ex-function-notation-non-numeric">
-      <title>A Function Does Not Need Numbers</title>
-      <statement>
-        <p>Suppose a bookstore records a customer associated with each preferred genre. Let <m>C=f(g)</m> represent the customer associated with genre <m>g</m>.</p>
-        <table xml:id="table-bookstore-genres">
-          <title>Preferred Genres</title>
-          <tabular>
-            <row header="yes"><cell>Genre</cell><cell>Customer</cell></row>
-            <row><cell>Mystery</cell><cell>Ava</cell></row>
-            <row><cell>Fantasy</cell><cell>Ben</cell></row>
-            <row><cell>History</cell><cell>Maya</cell></row>
-          </tabular>
-        </table>
-        <p>Evaluate <m>f(\text{Fantasy})</m>.</p>
-      </statement>
-      <solution>
-        <p>The input <q>Fantasy</q> corresponds to the output <q>Ben</q>. Therefore, <m>f(\text{Fantasy})=\text{Ben}</m>.</p>
-      </solution>
-    </example>
-
-    <remark>
-      <p>Function notation is not limited to numbers. An object can serve as an input or output as long as the relationship is a function.</p>
-    </remark>
-  </subsection>
-
-  <subsection xml:id="subsec-interpreting-inputs-outputs">
-    <title>Interpreting Inputs and Outputs</title>
-    <p>To understand a function, identify what the input represents and what the output represents.</p>
-
-    <example xml:id="ex-paddleboard-rental">
-      <title>Rental Cost</title>
-      <statement>
-        <p>Let <m>C=t(h)</m> represent the total cost, in dollars, of renting a paddleboard for <m>h</m> hours. Interpret the statement <m>t(4)=36</m>.</p>
-      </statement>
-      <solution>
-        <p>The input is <m>4</m> hours and the output is <m>36</m> dollars. Renting a paddleboard for four hours costs 36 dollars.</p>
-      </solution>
-    </example>
-
-    <example xml:id="ex-plant-growth">
-      <title>Plant Growth</title>
-      <statement>
-        <p>Let <m>H=g(d)</m> represent the height of a sunflower, in centimeters, after <m>d</m> days. Interpret the statement <m>g(20)=58</m>.</p>
-      </statement>
-      <solution>
-        <p>The input is <m>20</m> days and the output is <m>58</m> centimeters. After twenty days, the sunflower is 58 centimeters tall.</p>
-      </solution>
-    </example>
+    <ul>
+      <li><p><m>g(3)=9</m></p></li>
+      <li><p><m>9=g(3)</m></p></li>
+      <li><p><m>(3,9)</m></p></li>
+      <li><p><m>(3,g(3))</m></p></li>
+      <li><p><m>x=3</m> when <m>g(x)=9</m></p></li>
+    </ul>
 
     <example xml:id="ex-bicycle-distance">
       <title>Distance Traveled</title>
@@ -69,45 +33,183 @@
         <p>The input is <m>45</m> minutes and the output is <m>11</m> miles. After riding for 45 minutes, the cyclist has traveled 11 miles.</p>
       </solution>
     </example>
-  </subsection>
-
-  <subsection xml:id="subsec-graph-evaluation">
-    <title>Evaluating Functions from Graphs</title>
-    <p>A graph represents many input-output pairs at once. To evaluate a function using a graph:</p>
-    <ol>
-      <li><p>Locate the input on the horizontal axis.</p></li>
-      <li><p>Move vertically until you reach the graph.</p></li>
-      <li><p>Read the corresponding output on the vertical axis.</p></li>
-    </ol>
-
-    <!-- Figure: A piecewise linear graph passing through (-2,1), (0,3), (3,5), and (6,2). Use the graph to illustrate f(3)=5, f(0)=3, and f(x)=5 when x=3. -->
-
-    <example xml:id="ex-evaluate-graph-output">
-      <title>Finding an Output from a Graph</title>
-      <statement><p>Use the graph described above to evaluate <m>f(3)</m>.</p></statement>
-      <solution>
-        <p>Locate <m>x=3</m> on the horizontal axis and move to the graph. The corresponding output is <m>5</m>. Therefore, <m>f(3)=5</m>.</p>
-      </solution>
-    </example>
-
-    <example xml:id="ex-evaluate-graph-input">
-      <title>Finding an Input from a Graph</title>
-      <statement><p>Use the same graph to find the value of <m>x</m> for which <m>f(x)=5</m>.</p></statement>
-      <solution>
-        <p>Locate <m>5</m> on the vertical axis and determine where the graph has that output value. The graph reaches an output of <m>5</m> when <m>x=3</m>.</p>
-      </solution>
-    </example>
 
     <remark>
-      <p>Questions like <m>f(3)</m> begin with an input and ask for an output. Questions like <m>f(x)=5</m> begin with an output and ask for an input.</p>
+      <p>Questions like "<m>f(3)=</m>___" begin with an input and ask for an output. Questions like "<m>f(x)=5</m> when <m>x=</m>___" begin with an output and ask for an input.</p>
     </remark>
+
   </subsection>
 
-  <subsection xml:id="subsec-table-evaluation">
-    <title>Evaluating Functions from Tables</title>
-    <p>A table lists inputs and their corresponding outputs. To evaluate a function, locate the given input and read the matching output.</p>
+  <subsection xml:id="subsec-Evaluate-Diagrams">
+    <title>Evaluating with Diagrams</title>
+      
+      <p>
+        In the previous section, <xref ref="subsec-Is-it-a-Function-Diagrams"/>, we learned that <xref ref="Func-Bubble-Diagram-figure1" text="type-global"/> is representing a function. It was not given a name previously, let's call it the function <m>f</m>. We have three input values, so we have three evaluations of this function. We start at each input value and follow the arrow to find the output of the function there.
+      </p>
 
-    <example xml:id="ex-function-values-table">
+      <figure xml:id="Func-Bubble-Diagram-figure1-revised">
+        <title>Bubble Diagram</title>
+        <caption>A bubble diagram of a function.</caption>
+     <image width="60%">
+    <prefigure xmlns="https://prefigure.org" label="Bubble-Diagram-prefigure1-revised">
+        <title>Bubble Diagram</title>
+        <description>Bubble diagram of a function.</description>
+     <diagram dimensions="(300,300)" margins="5">
+  <definition> top=1.75 </definition>
+  <definition> mid=2 </definition>
+  <definition> top=1.75 </definition>
+  <definition> mid=2 </definition> 
+  <coordinates bbox="(-4,-4,4,4)">
+    <label anchor="(-mid,3.4)" alignment="center">
+      Input
+     </label>
+    <ellipse center="(-mid,0)" axes="(1.5,3)" stroke="black"/>
+    <label anchor="(mid,3.4)" alignment="center">
+      Output
+     </label>
+    <ellipse center="(mid,0)" axes="(1.5,3)" stroke="black"/>
+    <line endpoints="((-mid+.2,0), (mid-.6,top))" stroke="blue" thickness="2" arrows="1"/>
+    <line endpoints="((-mid+.2,top), (mid-.6,-top))" stroke="blue" thickness="2" arrows="1"/>
+    <line endpoints="((-mid+.2,-top), (mid-.5,0))" stroke="blue" thickness="2" arrows="1"/>
+    <label anchor="(mid-.4,top)" alignment="center">
+      Apple
+    </label>
+    <label anchor="(mid-.4,0)" alignment="center">
+      Pear
+    </label>
+    <label anchor="(mid-.4,-top-.1)" alignment="center">
+      Grape
+    </label>
+    <label anchor="(-mid-.2,top)" alignment="center">
+      A
+    </label>
+    <label anchor="(-mid-.2,0)" alignment="center">
+      B
+    </label>
+    <label anchor="(-mid-.2,-top)" alignment="center">
+      C
+    </label>
+  </coordinates>
+</diagram>
+</prefigure> 
+ </image>
+      </figure>
+
+<p>
+  Give it a try and check your work with the example below.
+</p>
+
+<example xml:id="example-evaluating-diagram1">
+      <title>Evaluating a Function from a Diagram</title>
+      <statement>
+        <p>Using the bubble diagram, <xref ref="Func-Bubble-Diagram-figure1" text="type-global"/> identify the three input values and evaluate the function at each. Use <m>f</m> as the function name.</p>
+      </statement>
+      <solution>
+        <ul>
+      <li><p><m>f(A)=</m> Grape</p></li>
+      <li><p><m>f(B)=</m> Apple</p></li>
+      <li><p><m>f(C)=</m> Pear</p></li>
+      </ul>
+      </solution>
+    </example>
+
+</subsection>
+
+  <subsection xml:id="subsec-Evaluate-Tables">
+    <title>Evaluating with Tables</title>
+    <p>
+      Recall that <m>f(x)</m> is the same as <m>y</m>. When looking at a table we need to identify which column/row has data related to the input variable and which has data related to the output variable. We do not always use <m>x</m> to represent input and <m>f(x)</m> for the output. Different problems may use a different input variable, and a different name for the function.
+    </p>
+    <p>
+      Below is a table, <xref ref="table-evaluate1"/>, that represents a function. Remember, we know it's a function as each input has a unique output associated with it. For a table, this means that each input value appears only once in the table. The first row represents the input values, and the second row represents the output values. The function is named <m>f</m>, and the input variable is <m>x</m>.
+    </p>
+
+    <table xml:id="table-evaluate1">
+        <title>The Function <m>f</m></title>
+          <tabular>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col/>
+            <row bottom="minor">
+                <cell><m>x</m></cell>
+                <cell><m>2</m></cell>
+                <cell><m>9</m></cell>
+                <cell><m>-3</m></cell>
+                <cell><m>40</m></cell>
+            </row>
+
+            <row>
+                <cell><m>f(x)</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>-6</m></cell>
+                <cell><m>9</m></cell>
+                <cell><m>2</m></cell>
+            </row>
+        </tabular>
+    </table>
+
+    <p>
+      Try the example below to evaluate the function at each input value.
+    </p>
+
+    <example>
+      <title>Evaluating a Function from a Table</title>
+      <statement>
+        <p>Using the table, <xref ref="table-evaluate1"/>, evaluate the function at each input value.</p>
+      </statement>
+      <solution>
+        <ul>
+          <li><p><m>f(2)=0</m></p></li>
+          <li><p><m>f(9)=-6</m></p></li>
+          <li><p><m>f(-3)=9</m></p></li>
+          <li><p><m>f(40)=2</m></p></li>
+        </ul>
+      </solution>
+    </example>
+
+    <example>
+      <title>Evaluating a Function from a Table</title>
+      <statement>
+        <p>
+          The amount of money, in dollars, that a child has in their piggy bank after <m>t</m> days is given by the function <m>P(t)</m>. The table below represents this function. Evaluate <m>P(2)</m> and interpret the result.
+        </p>
+
+        <table xml:id="table-evaluate-bank-account">
+          <title>Piggy Bank Balance</title>
+          <tabular>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col/>
+            <row bottom="minor">
+                <cell><m>t</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>1</m></cell>
+                <cell><m>2</m></cell>
+                <cell><m>3</m></cell>
+            </row>
+
+            <row>
+                <cell><m>P(t)</m></cell>
+                <cell><m>5.5</m></cell>
+                <cell><m>2</m></cell>
+                <cell><m>7.84</m></cell>
+                <cell><m>5</m></cell>
+            </row>
+            </tabular>
+        </table>
+      </statement>
+      <solution>
+        <p>
+          <m>P(2)=7.84</m>. This means that after 2 days, the child has $<m>7.84</m> in their piggy bank.
+        </p>
+      </solution>
+    </example>
+
+       <example xml:id="ex-function-values-table">
       <title>Reading a Function Table</title>
       <statement>
         <p>Suppose <m>f(x)</m> is represented by the table below.</p>
@@ -150,25 +252,337 @@
         <p>The input is <m>4</m> hours, and the corresponding output is <m>6</m> cups of water. Thus, <m>c(4)=6</m>, meaning that 6 cups of water have been consumed after 4 hours of hiking.</p>
       </solution>
     </example>
+
   </subsection>
 
-  <subsection xml:id="subsec-summary-function-notation">
-    <title>Key Ideas</title>
-    <important>
-      <p>When interpreting function notation:</p>
-      <ul>
-        <li><p>The value inside the parentheses is the input.</p></li>
-        <li><p>The value after the equals sign is the output.</p></li>
-      </ul>
-      <p>When evaluating a function:</p>
-      <ul>
-        <li><p>Start with the given input and find the corresponding output.</p></li>
-        <li><p>If an output is given, determine which input produces that output.</p></li>
-      </ul>
-    </important>
+  <subsection xml:id="subsec-Evaluate-Graphs">
+    <title>Evaluating With Graphs</title>
+    <p>A graph represents many input-output pairs at once. To evaluate a function using a graph:</p>
+    <ol>
+      <li><p>Locate the input on the horizontal axis.</p></li>
+      <li><p>Move vertically until you reach the graph.</p></li>
+      <li><p>Read the corresponding output on the vertical axis.</p></li>
+    </ol>
+
+    <p>
+      In both <xref ref="Eval-Graph-figure1"/> and <xref ref="Eval-Graph-figure2"/> we see the graph of the function <m>g(x)</m>. The graph in <xref ref="Eval-Graph-figure2"/> has additional lines to help evaluate the function at a specific point. 
+    </p>
+
+
+    <sidebyside>   
+<figure xml:id="Eval-Graph-figure1">
+     <image width="60%">
+    <prefigure xmlns="https://prefigure.org" label="Eval-Graph-prefigure1">
+        <title>Bubble Diagram</title>
+        <description>Graph of Quadratic Function</description>
+     <diagram dimensions="(300,300)" margins="0">
+  <definition>g(x)=-(x+1)^2+4</definition>
+  <coordinates bbox="(-4,-3,4,5)">
+    <grid-axes/>
+    <graph function="g"/>
+    <label anchor="(3,4)" alignment="center" clear-background="yes">
+      <m>g(x)</m>
+    </label>
+  </coordinates>
+</diagram>
+</prefigure> 
+ </image>
+</figure>
+
+
+<figure xml:id="Eval-Graph-figure2">
+     <image width="60%">
+    <caption>This is a Function</caption>
+    <prefigure xmlns="https://prefigure.org" label="Eval-Graph-prefigure2">
+        <title>Graph of Quadratic Function</title>
+        <description>Graph of the quadratic function with lines to help evaluate.</description>
+<diagram dimensions="(300,300)" margins="0">
+  <definition>g(x)=-(x+1)^2+4</definition>
+  <coordinates bbox="(-4,-3,4,5)">
+    <grid-axes/>
+    <graph function="g"/>
+    <label anchor="(3,4)" alignment="center" clear-background="yes">
+      <m>g(x)</m>
+    </label>
+    <line endpoints="((-2,-4),(-2,0))" stroke="red" infinite="yes"/>
+    <line endpoints="((1,3),(-1,3))" stroke="green" infinite="yes"/>
+  </coordinates>
+</diagram>
+</prefigure> 
+ </image>
+</figure>
+    </sidebyside> 
+
+    <p>
+  To evaluate <m>g(3)</m>, locate <m>x=3</m> on the horizontal axis and move vertically to the graph (this is shown by the vertical red line). Find the point where the vertical line intersects the graph and see the corresponding output by following the horizontal green line back to the <m>y</m>-axis. The corresponding output is <m>5</m>. Therefore, <m>g(3)=5</m>.
+</p>
+
+    <example xml:id="example-evaluate-graph1">
+      <title>Finding an Output from a Graph</title>
+      <statement><p>Use the same graph,<xref ref="Eval-Graph-figure1"/>, to find the value of
+      </p>
+    <ol>
+      <li><p><m>g(-3)</m></p></li>
+      <li><p><m>g(0)</m></p></li>
+    </ol>
+    </statement>
+      <solution>
+        <p>
+          <ol>
+            <li><p><m>g(-3)=0</m></p></li>
+            <li><p><m>g(0)=3</m></p></li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+        <example xml:id="example-evaluate-graph2">
+      <title>Finding an Input from a Graph</title>
+      <statement><p>Use the same graph,<xref ref="Eval-Graph-figure1"/>, to find the value of <m>x</m> for each of the following outputs:
+      </p>
+    <ol>
+      <li><p><m>g(x)=4</m></p></li>
+      <li><p><m>g(x)=0</m></p></li>
+    </ol>
+    </statement>
+      <solution>
+        <p>
+          <ol>
+            <li><p><m>g(x)=4</m> when <m>x=-1</m></p></li>
+            <li><p><m>g(x)=0</m> when <m>x=-3</m> and when <m>x=1</m></p></li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
   </subsection>
 
-  <conclusion>
-    <p>Function notation provides a concise way to describe input-output relationships. Whether a function is represented by a context, a graph, or a table, the underlying goal remains the same: identify how inputs and outputs are connected.</p>
-  </conclusion>
+  <subsection xml:id="subsec-Evaluate-Equations">
+    <title>Evaluating With Equations</title>
+    <p>
+      Like graphs, equations typically have infinitely many input-output pairs. To evaluate a function given as an equations we replace the input variable with the number we choose for the input. It's helpful to begin evaluating an equation by first replacing the x's (or whatever the input variable name is) with a set of parenthesis and then placing the number into the parenthesis. This reduces the chance that you make an error in order of operations or placing a negative in the wrong location.
+    </p>
+    <p>
+      For example, to evaluate <m>f(x)=x^2-3x+5</m> at <m>x=4</m>, we first replace the <m>x</m> with parentheses and then place the number <m>4</m> into the parentheses:
+    </p>
+    <p>
+  <md>
+    <mrow>f(x) \amp =x^2 - 3x + 5</mrow>
+    <mrow>f() \amp = ()^2 - 3() + 5</mrow>
+    <mrow>f(4) \amp = (4)^2 - 3(4) + 5</mrow>
+    <mrow>f(4) \amp = 16 - 12 + 5</mrow>
+    <mrow>f(4) \amp = 9</mrow>
+  </md>
+  </p>
+
+  <example xml:id="example-evaluate-equation1">
+      <title>Evaluating a Function from an Equation</title>
+      <statement>
+        <p>Given the function <m>f(x)=\frac{1}{2}x-4</m> find each of the following:</p>
+        <ol>
+          <li><p>The value <m>f(3)</m>.</p></li>
+          <li><p>The value of <m>x</m> when <m>f(x)=-2</m>.</p></li>
+        </ol>
+      </statement>
+      <solution>
+        <ol>
+          <li><p>To find <m>f(3)</m>, we replace the <m>x</m> in the equation with parentheses and then place the number <m>3</m> into the parentheses:</p>
+            <md>
+              <mrow>f(x) \amp = \frac{1}{2}x - 4</mrow>
+              <mrow>f() \amp = \frac{1}{2}() - 4</mrow>
+              <mrow>f(3) \amp = \frac{1}{2}(3) - 4</mrow>
+              <mrow>f(3) \amp = \frac{3}{2} - 4</mrow>
+              <mrow>f(3) \amp = -\frac{5}{2}</mrow>
+            </md>
+          </li>
+          <li><p>To find the value of <m>x</m> when <m>f(x)=-2</m>, we set the equation equal to -2 and solve for <m>x</m>.</p>
+            <md>
+              <mrow>-2 \amp = \frac{1}{2}x - 4</mrow>
+              <mrow>-2 + 4 \amp = \frac{1}{2}x - 4 + 4</mrow>
+              <mrow>2 \amp = \frac{1}{2}x</mrow>
+              <mrow>2 * 2 \amp = x</mrow>
+              <mrow>x \amp = 4</mrow>
+            </md>
+          </li>
+        </ol>
+      </solution>
+    
+  </example>
+  </subsection>
+
+
+   <subsection xml:id="subsec-Evaluating-Functions-Video">
+      <title>Video Lesson</title>
+        <video label="Evaluating-Functions-Video" source="LO1-Day-4.mp4"/>
+  </subsection>
+
+    <paragraphs>
+      <title>Video Lesson</title>
+        
+    </paragraphs>
+
+  <subsection xml:id="subsec-Evaluating-Functions-Exercises">
+      <title>Graded Exercises</title>
+      
+  <exercise label="Evaluating-Function-exercise1">
+        <statement>
+            <p>
+                In function notation, <m>f(5)=-2</m> match each of the following.
+            </p>
+        </statement>
+        <cardsort>
+
+      <match>
+      <premise order="1"><m>-2</m></premise>
+      <response>Output</response>
+      </match>
+
+      <match>
+      <premise order="2"><m>5</m></premise>
+      <response>Input</response>
+      </match>
+
+      <match>
+      <premise order="3"><m>f</m></premise>
+      <response>Name of Function</response>
+      </match>
+      </cardsort>
+      </exercise>
+
+  <exercise label="Evaluating-Function-exercise2">
+    <statement>
+      <p>
+          Use the table to identify the values.
+      </p>
+      <table>
+        <title>Input-Output Table for <m>f(x)</m></title>
+        <tabular>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col/>
+            <row bottom="minor">
+                <cell><m>x</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>2</m></cell>
+                <cell><m>4</m></cell>
+                <cell><m>6</m></cell>
+                <cell><m>8</m></cell>
+            </row>
+
+            <row>
+                <cell><m>f(x)</m></cell>
+                <cell><m>5</m></cell>
+                <cell><m>6</m></cell>
+                <cell><m>3</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>2</m></cell>
+            </row>
+        </tabular>
+      </table>   
+      <p>
+      <m>f(0)=</m><fillin mode="math" width="8" answer="5" name="firstD"/>
+      </p>
+      <p>
+        When <m>x=</m><fillin mode="math" width="8" answer="8" name="secondD"/>, then <m>f(x)=2</m>.
+      </p>
+      </statement>
+      
+      <evaluation> 
+      <evaluate submit="firstD"> <test correct="yes"> <numcmp use-answer="yes"/> </test> </evaluate> 
+      
+      <evaluate submit="secondD"> <test correct="yes"> <numcmp use-answer="yes"/> </test> </evaluate>
+      </evaluation>  
+    </exercise>
+
+  <exercise label="Evaluating-Function-exercise3">
+    <statement>
+      <p>
+          Use the graph of <m>g(x)</m> to fill in the blanks.
+      </p>
+ 
+      <figure xml:id="Evaluating-Function-exercise3-figure1">
+     <image width="60%">
+        <prefigure xmlns="https://prefigure.org" label="Evaluating-Function-exercise3-prefigure1">
+            <title>Graph of <m>g(x)</m></title>
+            <description>Graph of Quadratic Function</description>
+        <diagram dimensions="(300,300)" margins="5">
+        <coordinates bbox="(-4,-2,4,5)">
+          <grid-axes xlabel="x" ylabel="y"/>
+          <point p="(-3,0)" fill="blue"/>
+          <point p="(0,4)" fill="blue"/>
+          <point p="(1,3)" fill="blue"/>
+          <point p="(3,3)" fill="blue"/>
+          <line endpoints="((-3,0), (0,4))" stroke="blue" infinite="no"/>
+          <line endpoints="((0,4), (1,3))" stroke="blue" infinite="no"/>
+          <line endpoints="((1,3), (3,3))" stroke="blue" infinite="no"/>
+        </coordinates>
+      </diagram>
+    </prefigure> 
+    </image>
+    </figure>
+
+      <p>
+      <m>g(1)=</m><fillin mode="math" width="8" answer="3" name="firstD"/>
+      </p>
+      <p>
+        When <m>x=</m><fillin mode="math" width="8" answer="-3" name="secondD"/>, then <m>g(x)=0</m>.
+      </p>
+      </statement>
+      
+      <evaluation> 
+      <evaluate submit="firstD"> <test correct="yes"> <numcmp use-answer="yes"/> </test> </evaluate> 
+      
+      <evaluate submit="secondD"> <test correct="yes"> <numcmp use-answer="yes"/> </test> </evaluate>
+      </evaluation>  
+    </exercise>
+
+  <exercise label="Evaluating-Function-exercise4">
+        <statement>
+            <p>
+                The temperature on campus can be modeled by the function <m>T=p(h)</m> where <m>T</m> is the temperature in degrees Fahrenheit and <m>h</m> is the number of hours after sunrise. 
+            </p>
+            <p>
+              Choose the correct interpretation for the function notation <m>p(3)=74</m>.
+            </p>
+        </statement>
+
+        <choices>
+          <choice correct="no">
+        <statement>
+          <p>
+            An input of <m>3</m> is paired with an output of <m>74</m>.
+          </p>
+        </statement>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>
+            An input of <m>74</m> is paired with an output of <m>3</m>. 
+          </p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>
+            Three hours after sunrise it is <m>74</m> degrees Fahrenheit on campus. 
+          </p>
+        </statement>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>
+            Seventy four hours after sunrise it is <m>3</m> degrees Fahrenheit on campus.
+          </p>
+        </statement>
+      </choice>
+    </choices>
+    </exercise>
+
+  </subsection> 
+
+
+  
 </section>
