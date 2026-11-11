@@ -1,0 +1,43 @@
+<diagram>
+  <annotations>
+    <annotation id="domain-range-exercise4-prefigure-figure" speech2="The graph of a function with a bounded domain and range.">
+      <grouped>domain-range-exercise4-prefigure-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>domain-range-exercise4-prefigure-grid-axes</active>
+      </children>
+      <components>
+        <active>domain-range-exercise4-prefigure-grid-axes</active>
+      </components>
+    </annotation>
+    <annotation id="domain-range-exercise4-prefigure-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>domain-range-exercise4-prefigure-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>domain-range-exercise4-prefigure-grid</active>
+        <active>domain-range-exercise4-prefigure-axes</active>
+      </children>
+      <components>
+        <active>domain-range-exercise4-prefigure-grid</active>
+        <active>domain-range-exercise4-prefigure-axes</active>
+      </components>
+      <parents>
+        <grouped>domain-range-exercise4-prefigure-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="domain-range-exercise4-prefigure-grid" speech2="The coordinate grid">
+      <active>domain-range-exercise4-prefigure-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>domain-range-exercise4-prefigure-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="domain-range-exercise4-prefigure-axes" speech2="The coordinate axes">
+      <active>domain-range-exercise4-prefigure-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>domain-range-exercise4-prefigure-grid-axes</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

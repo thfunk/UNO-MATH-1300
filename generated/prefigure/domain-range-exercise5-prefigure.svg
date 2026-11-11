@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="domain-range-exercise5-prefigure-figure" width="310" height="310" viewBox="0 0 310 310">
+  <defs>
+    <clipPath id="domain-range-exercise5-prefigure-__clipPath-0">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="domain-range-exercise5-prefigure-__clipPath-1">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+    <marker id="domain-range-exercise5-prefigure-arrow-head-end-2_None_24_60-blue" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="blue" stroke="none"/>
+    </marker>
+    <marker id="domain-range-exercise5-prefigure-arrow-head-end-2_None_24_60-blue-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+  </defs>
+  <g id="domain-range-exercise5-prefigure-grid-axes">
+    <g id="domain-range-exercise5-prefigure-grid" stroke="#ccc" stroke-width="1">
+      <line x1="5.0" y1="305.0" x2="5.0" y2="5.0"/>
+      <line x1="42.5" y1="305.0" x2="42.5" y2="5.0"/>
+      <line x1="80.0" y1="305.0" x2="80.0" y2="5.0"/>
+      <line x1="117.5" y1="305.0" x2="117.5" y2="5.0"/>
+      <line x1="155.0" y1="305.0" x2="155.0" y2="5.0"/>
+      <line x1="192.5" y1="305.0" x2="192.5" y2="5.0"/>
+      <line x1="230.0" y1="305.0" x2="230.0" y2="5.0"/>
+      <line x1="267.5" y1="305.0" x2="267.5" y2="5.0"/>
+      <line x1="305.0" y1="305.0" x2="305.0" y2="5.0"/>
+      <line x1="5.0" y1="305.0" x2="305.0" y2="305.0"/>
+      <line x1="5.0" y1="267.5" x2="305.0" y2="267.5"/>
+      <line x1="5.0" y1="230.0" x2="305.0" y2="230.0"/>
+      <line x1="5.0" y1="192.5" x2="305.0" y2="192.5"/>
+      <line x1="5.0" y1="155.0" x2="305.0" y2="155.0"/>
+      <line x1="5.0" y1="117.5" x2="305.0" y2="117.5"/>
+      <line x1="5.0" y1="80.0" x2="305.0" y2="80.0"/>
+      <line x1="5.0" y1="42.5" x2="305.0" y2="42.5"/>
+      <line x1="5.0" y1="5.0" x2="305.0" y2="5.0"/>
+    </g>
+    <g id="domain-range-exercise5-prefigure-axes" stroke="black" stroke-width="2">
+      <line id="domain-range-exercise5-prefigure-__line-18" x1="5.0" y1="155.0" x2="305.0" y2="155.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="domain-range-exercise5-prefigure-__line-19" x1="80.0" y1="158.0" x2="80.0" y2="152.0"/>
+        <line id="domain-range-exercise5-prefigure-__line-20" x1="230.0" y1="158.0" x2="230.0" y2="152.0"/>
+      </g>
+      <line id="domain-range-exercise5-prefigure-__line-21" x1="155.0" y1="305.0" x2="155.0" y2="5.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="domain-range-exercise5-prefigure-__line-22" x1="152.0" y1="230.0" x2="158.0" y2="230.0"/>
+        <line id="domain-range-exercise5-prefigure-__line-23" x1="152.0" y1="80.0" x2="158.0" y2="80.0"/>
+      </g>
+    </g>
+    <g id="domain-range-exercise5-prefigure-__label-0" transform="translate(301.0,151.0) translate(-10.4,-8.2)">
+      <g id="domain-range-exercise5-prefigure-__g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+          <defs>
+            <path id="domain-range-exercise5-prefigure-MJX-2-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="x">
+                <use data-c="1D465" xlink:href="#domain-range-exercise5-prefigure-MJX-2-TEX-I-1D465"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="domain-range-exercise5-prefigure-__label-1" transform="translate(159.0,9.0) translate(0.0,-0.0)">
+      <g id="domain-range-exercise5-prefigure-__g-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+          <defs>
+            <path id="domain-range-exercise5-prefigure-MJX-3-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="y">
+                <use data-c="1D466" xlink:href="#domain-range-exercise5-prefigure-MJX-3-TEX-I-1D466"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="domain-range-exercise5-prefigure-__label-2" transform="translate(80.0,166.0) translate(-7.5,-0.0)">
+      <g id="domain-range-exercise5-prefigure-__g-2">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="domain-range-exercise5-prefigure-MJX-4-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="domain-range-exercise5-prefigure-MJX-4-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 2">
+                <use data-c="2D" xlink:href="#domain-range-exercise5-prefigure-MJX-4-TEX-N-2D"/>
+                <use data-c="32" xlink:href="#domain-range-exercise5-prefigure-MJX-4-TEX-N-32" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="domain-range-exercise5-prefigure-__label-3" transform="translate(230.0,166.0) translate(-4.5,-0.0)">
+      <g id="domain-range-exercise5-prefigure-__g-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="domain-range-exercise5-prefigure-MJX-5-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#domain-range-exercise5-prefigure-MJX-5-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="domain-range-exercise5-prefigure-__label-4" transform="translate(144.0,230.0) translate(-15.1,-6.0)">
+      <g id="domain-range-exercise5-prefigure-__g-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="domain-range-exercise5-prefigure-MJX-6-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="domain-range-exercise5-prefigure-MJX-6-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 2">
+                <use data-c="2D" xlink:href="#domain-range-exercise5-prefigure-MJX-6-TEX-N-2D"/>
+                <use data-c="32" xlink:href="#domain-range-exercise5-prefigure-MJX-6-TEX-N-32" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="domain-range-exercise5-prefigure-__label-5" transform="translate(144.0,80.0) translate(-9.0,-6.0)">
+      <g id="domain-range-exercise5-prefigure-__g-5">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="domain-range-exercise5-prefigure-MJX-7-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#domain-range-exercise5-prefigure-MJX-7-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <path id="domain-range-exercise5-prefigure-graph" stroke="blue" stroke-width="2" fill="none" d="M 80.0 42.5 L 81.7 47.5 L 83.4 52.3 L 85.1 56.8 L 86.8 61.2 L 88.5 65.3 L 90.2 69.2 L 91.9 72.9 L 93.6 76.4 L 95.3 79.8 L 97.1 82.9 L 98.8 85.9 L 100.5 88.7 L 102.2 91.3 L 103.9 93.7 L 105.6 96.0 L 107.3 98.2 L 109.0 100.2 L 110.7 102.0 L 112.4 103.8 L 114.1 105.3 L 115.8 106.8 L 117.5 108.1 L 119.2 109.4 L 120.9 110.5 L 122.6 111.5 L 124.3 112.4 L 126.0 113.2 L 127.7 113.9 L 129.4 114.5 L 131.2 115.1 L 132.9 115.6 L 134.6 116.0 L 136.3 116.3 L 138.0 116.6 L 139.7 116.9 L 141.4 117.1 L 143.1 117.2 L 144.8 117.3 L 146.5 117.4 L 148.2 117.4 L 149.9 117.5 L 151.6 117.5 L 153.3 117.5 L 155.0 117.5 L 156.7 117.5 L 158.4 117.5 L 160.1 117.5 L 161.8 117.6 L 163.5 117.6 L 165.2 117.7 L 167.0 117.8 L 168.7 118.0 L 170.4 118.1 L 172.1 118.4 L 173.8 118.7 L 175.5 119.0 L 177.2 119.4 L 178.9 119.9 L 180.6 120.5 L 182.3 121.1 L 184.0 121.8 L 185.7 122.6 L 187.4 123.6 L 189.1 124.6 L 190.8 125.7 L 192.5 126.9 L 194.2 128.2 L 195.9 129.7 L 197.6 131.3 L 199.4 133.0 L 201.1 134.9 L 202.8 136.9 L 204.5 139.0 L 206.2 141.3 L 207.9 143.8 L 209.6 146.4 L 211.3 149.2 L 213.0 152.2 L 214.7 155.3 L 216.4 158.7 L 218.1 162.2 L 219.8 165.9 L 221.5 169.8 L 223.2 173.9 L 224.9 178.3 L 226.6 182.8 L 228.3 187.6 L 230.0 192.6 L 231.7 197.9 L 233.5 203.3 L 235.2 209.1 L 236.9 215.0 L 238.6 221.2 L 240.3 227.7 L 242.0 234.5 L 243.7 241.5 L 245.4 248.8 L 247.1 256.3 L 248.8 264.2 L 250.5 272.3" marker-end="url(#domain-range-exercise5-prefigure-arrow-head-end-2_None_24_60-blue)" clip-path="url(#domain-range-exercise5-prefigure-__clipPath-1)"/>
+  <circle id="domain-range-exercise5-prefigure-__circle-0" cx="80.0" cy="42.5" r="4" stroke="black" stroke-width="2" fill="white"/>
+</svg>

@@ -10,128 +10,11 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
-  "id": "sec-definition-of-function",
-  "level": "1",
-  "url": "sec-definition-of-function.html",
-  "type": "Section",
-  "number": "1.1",
-  "title": "The Definition of a Function",
-  "body": " The Definition of a Function   A relationship connects inputs with outputs. Some relationships are functions and some are not. In this section, we will decide whether a relationship is a function when it is represented by a table, a graph, or a bubble diagram. We will also use function notation to describe and evaluate functions.    Learning Objectives   Identify the input and output of a relationship.  Determine whether a table, graph, or bubble diagram represents a function.  Interpret and evaluate function notation.     Function  A function is a relationship in which every input has exactly one output.    The words exactly one output are essential. Different inputs are allowed to have the same output. However, one input cannot be paired with two different outputs.    Functions Represented by Tables   Deciding Whether a Table Represents a Function   The table gives the number of pages, , a student has read after studying for minutes. Does the table represent as a function of ?   Pages read after several study times   , minutes , pages          Yes. Each input in the first column appears once and is paired with exactly one output in the second column. Therefore, the relationship is a function.     A Repeated Input   A weather station records a temperature at several times. Does the table represent temperature as a function of time ?   Temperature readings   , hours after noon , degrees Fahrenheit          No. The input is paired with two different outputs, and . One input has more than one output, so the relationship is not a function.      Functions Represented by Graphs  On a graph, the horizontal coordinate is the input and the vertical coordinate is the output. A graph represents a function when each input corresponds to only one point on the graph.   Vertical Line Test  A graph represents a function if every vertical line intersects the graph at most once.     A vertical line does not need to intersect a graph. It only causes a problem when it intersects the graph more than once.     Functions Represented by Bubble Diagrams  A bubble diagram , also called a mapping diagram , places inputs in one group and outputs in another. An arrow shows which output is assigned to each input.   Finding the Input That Breaks the Rule   Suppose the input in the previous diagram also had an arrow pointing to Zone A. Would the new relationship be a function?    No. The input would have two outputs, Zone A and Zone B. That violates the definition of a function.      Introducing Function Notation  When a relationship is a function, we can give the function a name. A common name is . The notation   means that is the input, is the name of the function, and is the output. The expression is read of ; it does not mean multiplied by .   Interpreting Function Notation in Context   Let represent the total cost, in dollars, to print posters. Interpret the statement .    The input is posters and the output is a cost of dollars. Therefore, printing posters costs .     Evaluating a Function from a Table   Use and let .   Find .  Find an input for which .      Locate the input . Its output is , so .  Locate the output and read its corresponding input. Since , the requested input is .      Evaluating a Function Given by a Formula   Let . Find .    Substitute for every occurrence of .   Thus, the input produces the output .      A relationship is a function when every input has exactly one output. In a table, check repeated inputs. On a graph, use the vertical line test. In a bubble diagram, verify that exactly one arrow leaves every input. Function notation records the same input-output relationship compactly.   "
-},
-{
-  "id": "sec-definition-of-function-3",
-  "level": "2",
-  "url": "sec-definition-of-function.html#sec-definition-of-function-3",
-  "type": "Objectives",
-  "number": "1.1",
-  "title": "Learning Objectives",
-  "body": " Learning Objectives   Identify the input and output of a relationship.  Determine whether a table, graph, or bubble diagram represents a function.  Interpret and evaluate function notation.   "
-},
-{
-  "id": "def-function",
-  "level": "2",
-  "url": "sec-definition-of-function.html#def-function",
-  "type": "Definition",
-  "number": "1.1.1",
-  "title": "Function.",
-  "body": " Function  A function is a relationship in which every input has exactly one output.  "
-},
-{
-  "id": "sec-definition-of-function-5",
-  "level": "2",
-  "url": "sec-definition-of-function.html#sec-definition-of-function-5",
-  "type": "Remark",
-  "number": "1.1.2",
-  "title": "",
-  "body": " The words exactly one output are essential. Different inputs are allowed to have the same output. However, one input cannot be paired with two different outputs.  "
-},
-{
-  "id": "ex-function-table",
-  "level": "2",
-  "url": "sec-definition-of-function.html#ex-function-table",
-  "type": "Example",
-  "number": "1.1.3",
-  "title": "Deciding Whether a Table Represents a Function.",
-  "body": " Deciding Whether a Table Represents a Function   The table gives the number of pages, , a student has read after studying for minutes. Does the table represent as a function of ?   Pages read after several study times   , minutes , pages          Yes. Each input in the first column appears once and is paired with exactly one output in the second column. Therefore, the relationship is a function.   "
-},
-{
-  "id": "ex-not-function-table",
-  "level": "2",
-  "url": "sec-definition-of-function.html#ex-not-function-table",
-  "type": "Example",
-  "number": "1.1.5",
-  "title": "A Repeated Input.",
-  "body": " A Repeated Input   A weather station records a temperature at several times. Does the table represent temperature as a function of time ?   Temperature readings   , hours after noon , degrees Fahrenheit          No. The input is paired with two different outputs, and . One input has more than one output, so the relationship is not a function.   "
-},
-{
-  "id": "def-vertical-line-test",
-  "level": "2",
-  "url": "sec-definition-of-function.html#def-vertical-line-test",
-  "type": "Definition",
-  "number": "1.1.7",
-  "title": "Vertical Line Test.",
-  "body": " Vertical Line Test  A graph represents a function if every vertical line intersects the graph at most once.  "
-},
-{
-  "id": "subsec-functions-from-graphs-4",
-  "level": "2",
-  "url": "sec-definition-of-function.html#subsec-functions-from-graphs-4",
-  "type": "Warning",
-  "number": "1.1.8",
-  "title": "",
-  "body": " A vertical line does not need to intersect a graph. It only causes a problem when it intersects the graph more than once.  "
-},
-{
-  "id": "subsec-functions-from-mapping-diagrams-2",
-  "level": "2",
-  "url": "sec-definition-of-function.html#subsec-functions-from-mapping-diagrams-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "bubble diagram mapping diagram "
-},
-{
-  "id": "ex-bubble-not-function",
-  "level": "2",
-  "url": "sec-definition-of-function.html#ex-bubble-not-function",
-  "type": "Example",
-  "number": "1.1.9",
-  "title": "Finding the Input That Breaks the Rule.",
-  "body": " Finding the Input That Breaks the Rule   Suppose the input in the previous diagram also had an arrow pointing to Zone A. Would the new relationship be a function?    No. The input would have two outputs, Zone A and Zone B. That violates the definition of a function.   "
-},
-{
-  "id": "ex-notation-context",
-  "level": "2",
-  "url": "sec-definition-of-function.html#ex-notation-context",
-  "type": "Example",
-  "number": "1.1.10",
-  "title": "Interpreting Function Notation in Context.",
-  "body": " Interpreting Function Notation in Context   Let represent the total cost, in dollars, to print posters. Interpret the statement .    The input is posters and the output is a cost of dollars. Therefore, printing posters costs .   "
-},
-{
-  "id": "ex-evaluate-notation-table",
-  "level": "2",
-  "url": "sec-definition-of-function.html#ex-evaluate-notation-table",
-  "type": "Example",
-  "number": "1.1.11",
-  "title": "Evaluating a Function from a Table.",
-  "body": " Evaluating a Function from a Table   Use and let .   Find .  Find an input for which .      Locate the input . Its output is , so .  Locate the output and read its corresponding input. Since , the requested input is .    "
-},
-{
-  "id": "ex-evaluate-formula",
-  "level": "2",
-  "url": "sec-definition-of-function.html#ex-evaluate-formula",
-  "type": "Example",
-  "number": "1.1.12",
-  "title": "Evaluating a Function Given by a Formula.",
-  "body": " Evaluating a Function Given by a Formula   Let . Find .    Substitute for every occurrence of .   Thus, the input produces the output .   "
-},
-{
   "id": "DefinitionFunction",
   "level": "1",
   "url": "DefinitionFunction.html",
   "type": "Section",
-  "number": "1.2",
+  "number": "1.1",
   "title": "Definition of a Function",
   "body": " Definition of a Function  In this section, we will definine a function and learn how to identify the input and output variables of graphs, tables, diagrams, and equations.    A function is a relationship between two variables where every input corresponds to exactly one output .    Depending on the situation, we may refer to the relationship between a function and its inputs and outputs as a mapping , a correspondence , or a rule . We also have several ways to represent functions. We can use a diagram , a table , a graph , or an equation .    The representation of a function is called function notation . The letter is the name of the function, and the letter is the input variable, and the letter is the output variable. We say that is a function of .     Function Notation     y=f(x)      Output     Function Name     Input          Is it a Function - Diagrams  Below, in and we have two examples of relationships which are functions . Notice that each input A, B, and C is mapped to exactly one output value. Two inputs can share the same output value, but each input must have a unique output value.  For example; in the first diagram, , each input is going to a different output value. In the second diagram, , inputs B and C are both going to the same output value of Pear, but each input is still going to a single output value.  Visually, a diagram which represents a function will always have a single arrow coming out of each input variable.      Bubble Diagram  Bubble diagram of a function.   top=1.75  mid=2  top=1.75  mid=2   Input   Output      Apple  Pear  Grape  A  B  C         This is a Function   Bubble Diagram  Bubble diagram of a function.   top=1.75  mid=2  top=1.75  mid=2   Input   Output      Apple  Pear  Grape  A  B  C        In contrast, the diagrams below are both examples of relationships that are not functions . There is an input which has two different outputs in each diagram.  In the first diagram, , input B is going to both output values of Apple and Pear. In the second diagram, , input A is going to both output values of Apple and Grape.       Bubble Diagram  Bubble diagram of a function.   top=1.75  mid=2  top=1.75  mid=2   Input   Output       Apple  Pear  Grape  A  B  C         This is a Function   Bubble Diagram  Bubble diagram of a function.   top=1.75  mid=2  top=1.75  mid=2   Input   Output       Apple  Pear  Grape  A  B  C          Is it a Function - Tables  Recall that, in function notation, writing is the same as writing . This is especially important when looking at a table as we often represent the output row\/column with to give the reader the name of the function.   Example of Function (Table)                        The top row of gives all the input values ( -values), while the bottom row gives the output values ( -values). We know that this table is representing a function because each input is associated with a single output. This is seen by the fact that none of the -values are repeated in the top row, and each cell in the bottom row has a single value listed. The fact that the output of is achieved from multiple inputs is allowed in a function. This same function could have been represented as the table below.   Example of Function (Table)                           While looks different at a glance, notice that we now have the input variables in the first column and the output variables in the second column. Further, each input is being mapped to the same output as before, just in a different order.  Below in we have an example of a table which is not a function .   Example Not a Function (Table)                        We can identify this as not being a function due to having the input listed multiple times, and is associated with a different output each time. We cannot have the input of associated with both the output of and .    Is it a Function - Graphs  In a graph we have the input variable located along the x-axis (the horizontal axis) and the output variable located along the y-axis (the vertical axis). Below are two examples of graphs representing functions.      Bubble Diagram  Bubble diagram of a function.   f(x)=(x-1)^2*(x+2)      f(x)          This is a Function   Graph of a Function  Graph of a function.   g(x)=-(x+1)^2+4      g(x)         We know that and are functions due to no -value being associated with more than one output. Graphically, we often call this “ passing the vertical line test ”. This means that every vertical line you draw on the graphs of and will touch the representation of the function (the blue line) at most one time.  In the following two graphs we see relationships which do not represent a function. This is again best seen through the vertical line test. Note the red vertical line in each at which intersects the relationship twice. This indicates that the input is associated with multiple outputs making the relationship not a function. Thus, the relationships and are not functions.      Bubble Diagram  Bubble diagram of a function.   g(x)=sqrt(x+1)  h(x)=-sqrt(x+1)        h(x)          This is Not a Function   Graph of a Relationship that is Not a Function  Graph of a relationship that is not a function.         j(x)           Is it a Function - Equations  Most equations we write will be examples of relationships which are functions. We would need to introduce piecewise functions in order to have a collection of examples of equations which are not functions. This will be a topic for later.    Video Lesson     Graded Exercises    True or False:  The relation shown below is a function.     Points on Graph   top=1.75  mid=2  top=1.75  mid=2   Input   Output       724  783  1145  1945  Tabitha  Alejandro  Omar           True      False        Select all the tables below that are functions.  Table A:           x  -4  0  1  3  7    y  8  -5  3  8  4     Table B:           x  3  3  3  3  3    y  8  -5  3  8  4     Table C:           x  -4  0  1  3  7    y  -5  -5  -5  -5  -5         Table A      Table B      Table C        Select all the graphs below which are notfunctions.      Graph A  Graph showing option A.   f(x)=sqrt(x)  g(x)=-sqrt(x)  a = 1      Graph A           This is a Function   Graph B  Graph of a option B.       Graph B              Graph C  Graph showing option C.   f(x)=-.25*(x-.5)*(x+.5)*(x-2)*(x+2)     Graph C           This is a Function   Graph D  Graph of a option D.      Graph D              Graph A      Graph B      Graph C      Graph D          "
 },
@@ -140,7 +23,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "DefinitionFunction.html#function-definition",
   "type": "Definition",
-  "number": "1.2.1",
+  "number": "1.1.1",
   "title": "",
   "body": "  A function is a relationship between two variables where every input corresponds to exactly one output .   "
 },
@@ -158,7 +41,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "DefinitionFunction.html#function-notation-definition",
   "type": "Definition",
-  "number": "1.2.2",
+  "number": "1.1.2",
   "title": "",
   "body": "  The representation of a function is called function notation . The letter is the name of the function, and the letter is the input variable, and the letter is the output variable. We say that is a function of .     Function Notation     y=f(x)      Output     Function Name     Input        "
 },
@@ -167,7 +50,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "DefinitionFunction.html#Func-Bubble-Diagram-figure1",
   "type": "Figure",
-  "number": "1.2.4",
+  "number": "1.1.4",
   "title": "",
   "body": "   Bubble Diagram  Bubble diagram of a function.   top=1.75  mid=2  top=1.75  mid=2   Input   Output      Apple  Pear  Grape  A  B  C      "
 },
@@ -176,7 +59,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "DefinitionFunction.html#Func-Bubble-Diagram-figure2",
   "type": "Figure",
-  "number": "1.2.5",
+  "number": "1.1.5",
   "title": "",
   "body": "  This is a Function   Bubble Diagram  Bubble diagram of a function.   top=1.75  mid=2  top=1.75  mid=2   Input   Output      Apple  Pear  Grape  A  B  C      "
 },
@@ -185,7 +68,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "DefinitionFunction.html#not-Func-Bubble-Diagram-figure1",
   "type": "Figure",
-  "number": "1.2.6",
+  "number": "1.1.6",
   "title": "",
   "body": "    Bubble Diagram  Bubble diagram of a function.   top=1.75  mid=2  top=1.75  mid=2   Input   Output       Apple  Pear  Grape  A  B  C      "
 },
@@ -194,7 +77,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "DefinitionFunction.html#not-Func-Bubble-Diagram-figure2",
   "type": "Figure",
-  "number": "1.2.7",
+  "number": "1.1.7",
   "title": "",
   "body": "  This is a Function   Bubble Diagram  Bubble diagram of a function.   top=1.75  mid=2  top=1.75  mid=2   Input   Output       Apple  Pear  Grape  A  B  C      "
 },
@@ -203,7 +86,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "DefinitionFunction.html#table-function1",
   "type": "Table",
-  "number": "1.2.8",
+  "number": "1.1.8",
   "title": "Example of Function (Table)",
   "body": " Example of Function (Table)                       "
 },
@@ -212,7 +95,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "DefinitionFunction.html#table-function2",
   "type": "Table",
-  "number": "1.2.9",
+  "number": "1.1.9",
   "title": "Example of Function (Table)",
   "body": " Example of Function (Table)                          "
 },
@@ -221,7 +104,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "DefinitionFunction.html#table-not-function1",
   "type": "Table",
-  "number": "1.2.10",
+  "number": "1.1.10",
   "title": "Example Not a Function (Table)",
   "body": " Example Not a Function (Table)                       "
 },
@@ -230,7 +113,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "DefinitionFunction.html#Graph-Function-figure1",
   "type": "Figure",
-  "number": "1.2.11",
+  "number": "1.1.11",
   "title": "",
   "body": "   Bubble Diagram  Bubble diagram of a function.   f(x)=(x-1)^2*(x+2)      f(x)       "
 },
@@ -239,7 +122,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "DefinitionFunction.html#Graph-Function-figure2",
   "type": "Figure",
-  "number": "1.2.12",
+  "number": "1.1.12",
   "title": "",
   "body": "  This is a Function   Graph of a Function  Graph of a function.   g(x)=-(x+1)^2+4      g(x)       "
 },
@@ -248,7 +131,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "DefinitionFunction.html#Graph-Not-Function-figure1",
   "type": "Figure",
-  "number": "1.2.13",
+  "number": "1.1.13",
   "title": "",
   "body": "   Bubble Diagram  Bubble diagram of a function.   g(x)=sqrt(x+1)  h(x)=-sqrt(x+1)        h(x)       "
 },
@@ -257,7 +140,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "DefinitionFunction.html#Graph-Not-Function-figure2",
   "type": "Figure",
-  "number": "1.2.14",
+  "number": "1.1.14",
   "title": "",
   "body": "  This is Not a Function   Graph of a Relationship that is Not a Function  Graph of a relationship that is not a function.         j(x)       "
 },
@@ -266,7 +149,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "DefinitionFunction.html#Definition-Function-exercise1",
   "type": "Checkpoint",
-  "number": "1.2.15",
+  "number": "1.1.15",
   "title": "",
   "body": "  True or False:  The relation shown below is a function.     Points on Graph   top=1.75  mid=2  top=1.75  mid=2   Input   Output       724  783  1145  1945  Tabitha  Alejandro  Omar           True      False     "
 },
@@ -275,7 +158,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "DefinitionFunction.html#Definition-Function-exercise2",
   "type": "Checkpoint",
-  "number": "1.2.17",
+  "number": "1.1.17",
   "title": "",
   "body": "  Select all the tables below that are functions.  Table A:           x  -4  0  1  3  7    y  8  -5  3  8  4     Table B:           x  3  3  3  3  3    y  8  -5  3  8  4     Table C:           x  -4  0  1  3  7    y  -5  -5  -5  -5  -5         Table A      Table B      Table C     "
 },
@@ -284,7 +167,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "DefinitionFunction.html#Definition-Function-exercise3",
   "type": "Checkpoint",
-  "number": "1.2.21",
+  "number": "1.1.21",
   "title": "",
   "body": "  Select all the graphs below which are notfunctions.      Graph A  Graph showing option A.   f(x)=sqrt(x)  g(x)=-sqrt(x)  a = 1      Graph A           This is a Function   Graph B  Graph of a option B.       Graph B              Graph C  Graph showing option C.   f(x)=-.25*(x-.5)*(x+.5)*(x-2)*(x+2)     Graph C           This is a Function   Graph D  Graph of a option D.      Graph D              Graph A      Graph B      Graph C      Graph D     "
 },
@@ -293,88 +176,79 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-function-notation-evaluating-functions.html",
   "type": "Section",
-  "number": "1.3",
+  "number": "1.2",
   "title": "Function Notation and Evaluating Functions",
-  "body": " Function Notation and Evaluating Functions   A function assigns exactly one output to each input. Function notation provides a convenient way to describe this input-output relationship. Before evaluating functions, it is important to understand what the inputs and outputs represent in a real-world situation.    Understanding Function Notation  Function notation does not change the relationship itself. Instead, it gives the relationship a name.  When we write , the symbol names the function, represents the input, and represents the output corresponding to that input.   A Function Does Not Need Numbers   Suppose a bookstore records a customer associated with each preferred genre. Let represent the customer associated with genre .   Preferred Genres   Genre Customer  Mystery Ava  Fantasy Ben  History Maya    Evaluate .    The input Fantasy corresponds to the output Ben . Therefore, .     Function notation is not limited to numbers. An object can serve as an input or output as long as the relationship is a function.     Interpreting Inputs and Outputs  To understand a function, identify what the input represents and what the output represents.   Rental Cost   Let represent the total cost, in dollars, of renting a paddleboard for hours. Interpret the statement .    The input is hours and the output is dollars. Renting a paddleboard for four hours costs 36 dollars.     Plant Growth   Let represent the height of a sunflower, in centimeters, after days. Interpret the statement .    The input is days and the output is centimeters. After twenty days, the sunflower is 58 centimeters tall.     Distance Traveled   Let represent the total distance traveled, in miles, after riding a bicycle for minutes. Interpret the statement .    The input is minutes and the output is miles. After riding for 45 minutes, the cyclist has traveled 11 miles.      Evaluating Functions from Graphs  A graph represents many input-output pairs at once. To evaluate a function using a graph:   Locate the input on the horizontal axis.  Move vertically until you reach the graph.  Read the corresponding output on the vertical axis.     Finding an Output from a Graph  Use the graph described above to evaluate .   Locate on the horizontal axis and move to the graph. The corresponding output is . Therefore, .     Finding an Input from a Graph  Use the same graph to find the value of for which .   Locate on the vertical axis and determine where the graph has that output value. The graph reaches an output of when .     Questions like begin with an input and ask for an output. Questions like begin with an output and ask for an input.     Evaluating Functions from Tables  A table lists inputs and their corresponding outputs. To evaluate a function, locate the given input and read the matching output.   Reading a Function Table   Suppose is represented by the table below.   Function Values   0 2 5 8 10  12 15 18 21 25     Find .  Find .  Find the value of for which .      The input corresponds to the output , so .  The input corresponds to the output , so .  The output occurs when the input is , so .      A Contextual Example   Let represent the number of cups of water consumed after hours of hiking.   Hiking Data   1 2 4 6  2 3 6 8    Evaluate and interpret the result.    The input is hours, and the corresponding output is cups of water. Thus, , meaning that 6 cups of water have been consumed after 4 hours of hiking.      Key Ideas   When interpreting function notation:   The value inside the parentheses is the input.  The value after the equals sign is the output.   When evaluating a function:   Start with the given input and find the corresponding output.  If an output is given, determine which input produces that output.      Function notation provides a concise way to describe input-output relationships. Whether a function is represented by a context, a graph, or a table, the underlying goal remains the same: identify how inputs and outputs are connected.   "
-},
-{
-  "id": "ex-function-notation-non-numeric",
-  "level": "2",
-  "url": "sec-function-notation-evaluating-functions.html#ex-function-notation-non-numeric",
-  "type": "Example",
-  "number": "1.3.1",
-  "title": "A Function Does Not Need Numbers.",
-  "body": " A Function Does Not Need Numbers   Suppose a bookstore records a customer associated with each preferred genre. Let represent the customer associated with genre .   Preferred Genres   Genre Customer  Mystery Ava  Fantasy Ben  History Maya    Evaluate .    The input Fantasy corresponds to the output Ben . Therefore, .   "
-},
-{
-  "id": "subsec-understanding-function-notation-5",
-  "level": "2",
-  "url": "sec-function-notation-evaluating-functions.html#subsec-understanding-function-notation-5",
-  "type": "Remark",
-  "number": "1.3.3",
-  "title": "",
-  "body": " Function notation is not limited to numbers. An object can serve as an input or output as long as the relationship is a function.  "
-},
-{
-  "id": "ex-paddleboard-rental",
-  "level": "2",
-  "url": "sec-function-notation-evaluating-functions.html#ex-paddleboard-rental",
-  "type": "Example",
-  "number": "1.3.4",
-  "title": "Rental Cost.",
-  "body": " Rental Cost   Let represent the total cost, in dollars, of renting a paddleboard for hours. Interpret the statement .    The input is hours and the output is dollars. Renting a paddleboard for four hours costs 36 dollars.   "
-},
-{
-  "id": "ex-plant-growth",
-  "level": "2",
-  "url": "sec-function-notation-evaluating-functions.html#ex-plant-growth",
-  "type": "Example",
-  "number": "1.3.5",
-  "title": "Plant Growth.",
-  "body": " Plant Growth   Let represent the height of a sunflower, in centimeters, after days. Interpret the statement .    The input is days and the output is centimeters. After twenty days, the sunflower is 58 centimeters tall.   "
+  "body": " Function Notation and Evaluating Functions   A function assigns exactly one output to each input. Function notation provides a convenient way to describe this input-output relationship. Before evaluating functions, it is important to understand what the inputs and outputs represent in a real-world situation.    Understanding Function Notation  We not only use function notation to denote the function itself, , but we also use it to represent specific values that a function takes. For example, we may write or to mean at the input of the function gives the output of .  Each of the following are equivalent ways to represent the input-output pair associated with a function sending an input of to the output :       when    Distance Traveled   Let represent the total distance traveled, in miles, after riding a bicycle for minutes. Interpret the statement .    The input is minutes and the output is miles. After riding for 45 minutes, the cyclist has traveled 11 miles.     Questions like \" ___\" begin with an input and ask for an output. Questions like \" when ___\" begin with an output and ask for an input.     Evaluating with Diagrams  In the previous section, , we learned that is representing a function. It was not given a name previously, let's call it the function . We have three input values, so we have three evaluations of this function. We start at each input value and follow the arrow to find the output of the function there.   Bubble Diagram  A bubble diagram of a function.    Bubble Diagram  Bubble diagram of a function.   top=1.75  mid=2  top=1.75  mid=2   Input   Output      Apple  Pear  Grape  A  B  C       Give it a try and check your work with the example below.   Evaluating a Function from a Diagram   Using the bubble diagram, identify the three input values and evaluate the function at each. Use as the function name.     Grape  Apple  Pear       Evaluating with Tables  Recall that is the same as . When looking at a table we need to identify which column\/row has data related to the input variable and which has data related to the output variable. We do not always use to represent input and for the output. Different problems may use a different input variable, and a different name for the function.  Below is a table, , that represents a function. Remember, we know it's a function as each input has a unique output associated with it. For a table, this means that each input value appears only once in the table. The first row represents the input values, and the second row represents the output values. The function is named , and the input variable is .   The Function                        Try the example below to evaluate the function at each input value.   Evaluating a Function from a Table   Using the table, , evaluate the function at each input value.             Evaluating a Function from a Table   The amount of money, in dollars, that a child has in their piggy bank after days is given by the function . The table below represents this function. Evaluate and interpret the result.   Piggy Bank Balance                           . This means that after 2 days, the child has $ in their piggy bank.     Reading a Function Table   Suppose is represented by the table below.   Function Values   0 2 5 8 10  12 15 18 21 25     Find .  Find .  Find the value of for which .      The input corresponds to the output , so .  The input corresponds to the output , so .  The output occurs when the input is , so .      A Contextual Example   Let represent the number of cups of water consumed after hours of hiking.   Hiking Data   1 2 4 6  2 3 6 8    Evaluate and interpret the result.    The input is hours, and the corresponding output is cups of water. Thus, , meaning that 6 cups of water have been consumed after 4 hours of hiking.      Evaluating With Graphs  A graph represents many input-output pairs at once. To evaluate a function using a graph:   Locate the input on the horizontal axis.  Move vertically until you reach the graph.  Read the corresponding output on the vertical axis.   In both and we see the graph of the function . The graph in has additional lines to help evaluate the function at a specific point.      Bubble Diagram  Graph of Quadratic Function   g(x)=-(x+1)^2+4      g(x)          This is a Function   Graph of Quadratic Function  Graph of the quadratic function with lines to help evaluate.   g(x)=-(x+1)^2+4      g(x)           To evaluate , locate on the horizontal axis and move vertically to the graph (this is shown by the vertical red line). Find the point where the vertical line intersects the graph and see the corresponding output by following the horizontal green line back to the -axis. The corresponding output is . Therefore, .   Finding an Output from a Graph  Use the same graph, , to find the value of                 Finding an Input from a Graph  Use the same graph, , to find the value of for each of the following outputs:          when  when and when        Evaluating With Equations  Like graphs, equations typically have infinitely many input-output pairs. To evaluate a function given as an equations we replace the input variable with the number we choose for the input. It's helpful to begin evaluating an equation by first replacing the x's (or whatever the input variable name is) with a set of parenthesis and then placing the number into the parenthesis. This reduces the chance that you make an error in order of operations or placing a negative in the wrong location.  For example, to evaluate at , we first replace the with parentheses and then place the number into the parentheses:      Evaluating a Function from an Equation   Given the function find each of the following:   The value .  The value of when .      To find , we replace the in the equation with parentheses and then place the number into the parentheses:    To find the value of when , we set the equation equal to -2 and solve for .         Video Lesson     Video Lesson    Graded Exercises    In function notation, match each of the following.      Output     Input     Name of Function       Use the table to identify the values.   Input-Output Table for                              When , then .                  Use the graph of to fill in the blanks.     Graph of g(x)  Graph of Quadratic Function                    When , then .                  The temperature on campus can be modeled by the function where is the temperature in degrees Fahrenheit and is the number of hours after sunrise.  Choose the correct interpretation for the function notation .      An input of is paired with an output of .      An input of is paired with an output of .      Three hours after sunrise it is degrees Fahrenheit on campus.      Seventy four hours after sunrise it is degrees Fahrenheit on campus.       "
 },
 {
   "id": "ex-bicycle-distance",
   "level": "2",
   "url": "sec-function-notation-evaluating-functions.html#ex-bicycle-distance",
   "type": "Example",
-  "number": "1.3.6",
+  "number": "1.2.1",
   "title": "Distance Traveled.",
   "body": " Distance Traveled   Let represent the total distance traveled, in miles, after riding a bicycle for minutes. Interpret the statement .    The input is minutes and the output is miles. After riding for 45 minutes, the cyclist has traveled 11 miles.   "
 },
 {
-  "id": "ex-evaluate-graph-output",
+  "id": "subsec-understanding-function-notation-6",
   "level": "2",
-  "url": "sec-function-notation-evaluating-functions.html#ex-evaluate-graph-output",
-  "type": "Example",
-  "number": "1.3.7",
-  "title": "Finding an Output from a Graph.",
-  "body": " Finding an Output from a Graph  Use the graph described above to evaluate .   Locate on the horizontal axis and move to the graph. The corresponding output is . Therefore, .   "
-},
-{
-  "id": "ex-evaluate-graph-input",
-  "level": "2",
-  "url": "sec-function-notation-evaluating-functions.html#ex-evaluate-graph-input",
-  "type": "Example",
-  "number": "1.3.8",
-  "title": "Finding an Input from a Graph.",
-  "body": " Finding an Input from a Graph  Use the same graph to find the value of for which .   Locate on the vertical axis and determine where the graph has that output value. The graph reaches an output of when .   "
-},
-{
-  "id": "subsec-graph-evaluation-6",
-  "level": "2",
-  "url": "sec-function-notation-evaluating-functions.html#subsec-graph-evaluation-6",
+  "url": "sec-function-notation-evaluating-functions.html#subsec-understanding-function-notation-6",
   "type": "Remark",
-  "number": "1.3.9",
+  "number": "1.2.2",
   "title": "",
-  "body": " Questions like begin with an input and ask for an output. Questions like begin with an output and ask for an input.  "
+  "body": " Questions like \" ___\" begin with an input and ask for an output. Questions like \" when ___\" begin with an output and ask for an input.  "
+},
+{
+  "id": "Func-Bubble-Diagram-figure1-revised",
+  "level": "2",
+  "url": "sec-function-notation-evaluating-functions.html#Func-Bubble-Diagram-figure1-revised",
+  "type": "Figure",
+  "number": "1.2.3",
+  "title": "Bubble Diagram",
+  "body": " Bubble Diagram  A bubble diagram of a function.    Bubble Diagram  Bubble diagram of a function.   top=1.75  mid=2  top=1.75  mid=2   Input   Output      Apple  Pear  Grape  A  B  C      "
+},
+{
+  "id": "example-evaluating-diagram1",
+  "level": "2",
+  "url": "sec-function-notation-evaluating-functions.html#example-evaluating-diagram1",
+  "type": "Example",
+  "number": "1.2.4",
+  "title": "Evaluating a Function from a Diagram.",
+  "body": " Evaluating a Function from a Diagram   Using the bubble diagram, identify the three input values and evaluate the function at each. Use as the function name.     Grape  Apple  Pear    "
+},
+{
+  "id": "table-evaluate1",
+  "level": "2",
+  "url": "sec-function-notation-evaluating-functions.html#table-evaluate1",
+  "type": "Table",
+  "number": "1.2.5",
+  "title": "The Function <span class=\"process-math\">\\(f\\)<\/span>",
+  "body": " The Function                       "
+},
+{
+  "id": "subsec-Evaluate-Tables-6",
+  "level": "2",
+  "url": "sec-function-notation-evaluating-functions.html#subsec-Evaluate-Tables-6",
+  "type": "Example",
+  "number": "1.2.6",
+  "title": "Evaluating a Function from a Table.",
+  "body": " Evaluating a Function from a Table   Using the table, , evaluate the function at each input value.           "
+},
+{
+  "id": "subsec-Evaluate-Tables-7",
+  "level": "2",
+  "url": "sec-function-notation-evaluating-functions.html#subsec-Evaluate-Tables-7",
+  "type": "Example",
+  "number": "1.2.7",
+  "title": "Evaluating a Function from a Table.",
+  "body": " Evaluating a Function from a Table   The amount of money, in dollars, that a child has in their piggy bank after days is given by the function . The table below represents this function. Evaluate and interpret the result.   Piggy Bank Balance                           . This means that after 2 days, the child has $ in their piggy bank.   "
 },
 {
   "id": "ex-function-values-table",
   "level": "2",
   "url": "sec-function-notation-evaluating-functions.html#ex-function-values-table",
   "type": "Example",
-  "number": "1.3.10",
+  "number": "1.2.9",
   "title": "Reading a Function Table.",
   "body": " Reading a Function Table   Suppose is represented by the table below.   Function Values   0 2 5 8 10  12 15 18 21 25     Find .  Find .  Find the value of for which .      The input corresponds to the output , so .  The input corresponds to the output , so .  The output occurs when the input is , so .    "
 },
@@ -383,43 +257,106 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-function-notation-evaluating-functions.html#ex-water-consumption-table",
   "type": "Example",
-  "number": "1.3.12",
+  "number": "1.2.11",
   "title": "A Contextual Example.",
   "body": " A Contextual Example   Let represent the number of cups of water consumed after hours of hiking.   Hiking Data   1 2 4 6  2 3 6 8    Evaluate and interpret the result.    The input is hours, and the corresponding output is cups of water. Thus, , meaning that 6 cups of water have been consumed after 4 hours of hiking.   "
+},
+{
+  "id": "Eval-Graph-figure1",
+  "level": "2",
+  "url": "sec-function-notation-evaluating-functions.html#Eval-Graph-figure1",
+  "type": "Figure",
+  "number": "1.2.13",
+  "title": "",
+  "body": "   Bubble Diagram  Graph of Quadratic Function   g(x)=-(x+1)^2+4      g(x)       "
+},
+{
+  "id": "Eval-Graph-figure2",
+  "level": "2",
+  "url": "sec-function-notation-evaluating-functions.html#Eval-Graph-figure2",
+  "type": "Figure",
+  "number": "1.2.14",
+  "title": "",
+  "body": "  This is a Function   Graph of Quadratic Function  Graph of the quadratic function with lines to help evaluate.   g(x)=-(x+1)^2+4      g(x)         "
+},
+{
+  "id": "example-evaluate-graph1",
+  "level": "2",
+  "url": "sec-function-notation-evaluating-functions.html#example-evaluate-graph1",
+  "type": "Example",
+  "number": "1.2.15",
+  "title": "Finding an Output from a Graph.",
+  "body": " Finding an Output from a Graph  Use the same graph, , to find the value of               "
+},
+{
+  "id": "example-evaluate-graph2",
+  "level": "2",
+  "url": "sec-function-notation-evaluating-functions.html#example-evaluate-graph2",
+  "type": "Example",
+  "number": "1.2.16",
+  "title": "Finding an Input from a Graph.",
+  "body": " Finding an Input from a Graph  Use the same graph, , to find the value of for each of the following outputs:          when  when and when     "
+},
+{
+  "id": "example-evaluate-equation1",
+  "level": "2",
+  "url": "sec-function-notation-evaluating-functions.html#example-evaluate-equation1",
+  "type": "Example",
+  "number": "1.2.17",
+  "title": "Evaluating a Function from an Equation.",
+  "body": " Evaluating a Function from an Equation   Given the function find each of the following:   The value .  The value of when .      To find , we replace the in the equation with parentheses and then place the number into the parentheses:    To find the value of when , we set the equation equal to -2 and solve for .      "
+},
+{
+  "id": "Evaluating-Function-exercise1",
+  "level": "2",
+  "url": "sec-function-notation-evaluating-functions.html#Evaluating-Function-exercise1",
+  "type": "Checkpoint",
+  "number": "1.2.18",
+  "title": "",
+  "body": "  In function notation, match each of the following.      Output     Input     Name of Function    "
+},
+{
+  "id": "Evaluating-Function-exercise2",
+  "level": "2",
+  "url": "sec-function-notation-evaluating-functions.html#Evaluating-Function-exercise2",
+  "type": "Checkpoint",
+  "number": "1.2.19",
+  "title": "",
+  "body": "  Use the table to identify the values.   Input-Output Table for                              When , then .               "
+},
+{
+  "id": "Evaluating-Function-exercise3",
+  "level": "2",
+  "url": "sec-function-notation-evaluating-functions.html#Evaluating-Function-exercise3",
+  "type": "Checkpoint",
+  "number": "1.2.21",
+  "title": "",
+  "body": "  Use the graph of to fill in the blanks.     Graph of g(x)  Graph of Quadratic Function                    When , then .               "
+},
+{
+  "id": "Evaluating-Function-exercise4",
+  "level": "2",
+  "url": "sec-function-notation-evaluating-functions.html#Evaluating-Function-exercise4",
+  "type": "Checkpoint",
+  "number": "1.2.23",
+  "title": "",
+  "body": "  The temperature on campus can be modeled by the function where is the temperature in degrees Fahrenheit and is the number of hours after sunrise.  Choose the correct interpretation for the function notation .      An input of is paired with an output of .      An input of is paired with an output of .      Three hours after sunrise it is degrees Fahrenheit on campus.      Seventy four hours after sunrise it is degrees Fahrenheit on campus.     "
 },
 {
   "id": "sec-domain-and-range",
   "level": "1",
   "url": "sec-domain-and-range.html",
   "type": "Section",
-  "number": "1.4",
+  "number": "1.3",
   "title": "Domain and Range",
-  "body": " Domain and Range   Every function connects inputs with outputs. The collection of all possible inputs is called the domain , and the collection of all possible outputs is called the range . In this section, we will define domain and range, translate between interval notation and inequality notation, and determine domain and range from graphs.    Learning Objectives   Define the domain and range of a function.  Translate between interval notation and inequality notation.  Determine domain and range from a graph.  Express domain and range using both interval and inequality notation.     Domain and Range as Sets of Values   Domain  The domain of a function is the set of all input values for which the function is defined.    Range  The range of a function is the set of all output values produced by the function.    Interpreting Domain and Range in Context   Let represent the charge level of a rechargeable battery, as a percent, minutes after it is connected to a charger. Describe the meaning of the domain and range.    The input is time in minutes, so the domain is the set of possible charging times.  The output is the battery's charge level as a percent, so the range is the set of possible charge levels produced during those times.     When a function is written as , the domain contains the possible -values and the range contains the resulting -values.     Interval Notation and Inequality Notation  An interval describes all real numbers between two boundary values. We can describe the same interval using either interval notation or inequality notation.  Use a square bracket when a finite endpoint is included. Use a parenthesis when an endpoint is not included.   Endpoint Notation   Endpoint condition Interval symbol Inequality symbol  Endpoint is included Square bracket or  Endpoint is not included Parenthesis or     From Interval Notation to Inequality Notation   Write using inequality notation.    The parenthesis at means that is not included. The square bracket at means that is included.      From Inequality Notation to Interval Notation   Write using interval notation.    The value is included, so use a square bracket. The value is not included, so use a parenthesis.      Neither Endpoint Included   Write using inequality notation.    Both endpoints use parentheses, so neither endpoint is included.      Both Endpoints Included   Write using interval notation.    Both endpoints are included, so use a square bracket at each end.      Intervals That Continue Without Bound  The symbols and indicate that an interval continues without bound. Infinity is not a number or an endpoint that can be included, so it always appears next to a parenthesis.    Write using inequality notation.    The interval begins at , includes , and continues to the right without bound.       Write using interval notation.    The values continue to the left without bound, and is not included.      Do not write inequalities such as as part of a compound inequality. Instead, write only the finite restriction, such as .      Finding Domain and Range from a Graph  To find the domain of a graph, look from left to right and identify every input value used by the graph. To find the range, look from bottom to top and identify every output value used by the graph.    Domain: read the graph from left to right.  Range: read the graph from bottom to top.  A closed point includes its coordinate and corresponds to a square bracket or a non-strict inequality.  An open point excludes its coordinate and corresponds to a parenthesis or a strict inequality.      A Graph with Two Finite Endpoints   Use the graph described above to determine the domain and range. Express each answer using interval notation and inequality notation.    The graph begins at the included input and ends at the excluded input .  Domain in interval notation:   Domain in inequality notation:   The smallest output is and the largest output is . Both output values occur on the graph.  Range in interval notation:   Range in inequality notation:      An open endpoint affects the domain through its -coordinate and the range through its -coordinate. However, an excluded endpoint does not automatically exclude that output from the range. The same output may occur at another included point on the graph.     A Graph That Continues Without Bound   Use the graph described above to determine the domain and range. Express each answer using interval notation and inequality notation.    The smallest input is , and it is included. The graph continues to the right without bound.  Domain in interval notation:   Domain in inequality notation:   The smallest output is , and it is included. The graph continues upward without bound.  Range in interval notation:   Range in inequality notation:       All Real Inputs with Bounded Outputs   Use the graph described above to determine the domain and range. Express each answer using interval notation and inequality notation.    The graph continues indefinitely to both the left and the right, so every real number is an input.  Domain in interval notation:   Domain in inequality notation:  , or equivalently, is any real number.  The lowest output is and the highest output is . Both values occur on the graph.  Range in interval notation:   Range in inequality notation:       The domain is the set of input values, and the range is the set of output values. Interval notation and inequality notation provide two ways to describe the same sets of numbers. On a graph, read from left to right to find the domain and from bottom to top to find the range, paying careful attention to open points, closed points, and arrows.   "
-},
-{
-  "id": "sec-domain-and-range-2-1",
-  "level": "2",
-  "url": "sec-domain-and-range.html#sec-domain-and-range-2-1",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "domain range "
-},
-{
-  "id": "sec-domain-and-range-3",
-  "level": "2",
-  "url": "sec-domain-and-range.html#sec-domain-and-range-3",
-  "type": "Objectives",
-  "number": "1.4",
-  "title": "Learning Objectives",
-  "body": " Learning Objectives   Define the domain and range of a function.  Translate between interval notation and inequality notation.  Determine domain and range from a graph.  Express domain and range using both interval and inequality notation.   "
+  "body": " Domain and Range   Every function connects inputs with outputs. In this section, we will define domain and range , translate between interval notation and inequality notation, and determine domain and range from graphs. All functions have a domain and a range, but our focus will be on identifying them for graphs represented in the coordinate plane (graphically).    Domain and Range as Sets of Values   Domain  The domain of a function is the set of all input values for which the function is defined.    Range  The range of a function is the set of all output values produced by the function.    Interpreting Domain and Range in Context   Let represent the charge level of a phone battery, as a percent, minutes after it is connected to a charger. Describe the meaning of the domain and range and give reasonable bounds for each.    The input is time in minutes, so the domain is the set of possible charging times. A reasonable bound for the domain would be , assuming the battery is charged for up to one hour.  The output is the battery's charge level as a percent, so the range is the set of possible charge levels produced during those times. A reasonable bound for the range would be , representing a fully discharged to fully charged battery.     When a function is written as , the domain contains the possible -values and the range contains the resulting -values.     Interval Notation and Inequality Notation  An interval describes all real numbers between two boundary values. We can describe the same interval using either interval notation or inequality notation.  Use a square bracket when a finite endpoint is included. Use a parenthesis when an endpoint is not included.   Endpoint Notation   Endpoint condition Interval symbol Inequality symbol  Endpoint is included Square bracket; [ or ] or  Endpoint is not included Parenthesis; ( or ) or     From Interval Notation to Inequality Notation   Write using inequality notation.    The parenthesis at means that is not included. The square bracket at means that is included.      From Inequality Notation to Interval Notation   Write using interval notation.    The value is included, so use a square bracket. The value is not included, so use a parenthesis.      Neither Endpoint Included   Write using inequality notation.    Both endpoints use parentheses, so neither endpoint is included.      Both Endpoints Included   Write using interval notation.    Both endpoints are included, so use a square bracket at each end.     The symbols and indicate that an interval continues without bound. Infinity is not a number or an endpoint that can be included, so it always appears next to a parenthesis.    Write using inequality notation.    The interval begins at , includes , and continues to the right without bound.       Write using interval notation.    The values continue to the left without bound, and is not included.      By convention, we do not write inequalities such as as part of a compound inequality. Instead, write only the finite restriction, such as .     Finding Domain and Range from a Graph  To find the domain of a graph, look from left to right and identify every input value used by the graph. To find the range, look from bottom to top and identify every output value used by the graph.    Domain: read the graph from left to right.  Range: read the graph from bottom to top.  A closed point, , includes its coordinate and corresponds to a square bracket or a non-strict inequality.  An open point, , excludes its coordinate and corresponds to a parenthesis or a strict inequality.     A Graph with Two Finite Endpoints   Use the graph described to determine the domain and range. Express each answer using interval notation and inequality notation.     Bounded Domain and Range                      The graph begins at the included input and ends at the excluded input .  Domain in interval notation:   Domain in inequality notation:   The smallest output is and the largest output is . Both output values occur on the graph.  Range in interval notation:   Range in inequality notation:      An open endpoint affects the domain through its -coordinate and the range through its -coordinate. However, an excluded endpoint does not automatically exclude that output from the range. The same output may occur at another included point on the graph.    Every point along a curve should be thought of as a filled in point. The graph is made up of infinitely many of these filled in points making the curve. In example , the graph extends up to . Even though there is not a filled in point at , the range includes .    A Graph That Continues Without Bound   Use the graph to determine the domain and range. Express each answer using interval notation and inequality notation.     Bounded Domain and Range                   The smallest input is , and it is included. The graph continues to the right without bound.  Domain in interval notation:   Domain in inequality notation:   The smallest output is , and it is included. The graph continues upward without bound.  Range in interval notation:   Range in inequality notation:      All Real Inputs with Bounded Outputs   Use the graph described above to determine the domain and range. Express each answer using interval notation and inequality notation.     Wave with Bounded Range  A sine curve extends indefinitely in both horizontal directions. Its lowest output is negative 3 and its highest output is 2, and both values are attained.   f(x)=(5\/2)*sin(x)-(1\/2)            The graph continues indefinitely to both the left and the right, so every real number is an input.  Domain in interval notation:   Domain in inequality notation:  , or equivalently, is any real number.  The lowest output is and the highest output is . Both values occur on the graph.  Range in interval notation:   Range in inequality notation:       A domain or range going to infinity can look different depending on the graph. In some cases, arrows indicate the direction of the graph, while in others, the graph may simply extend to the edge of the viewing window. In either case, we assume the graph continues in that direction indefinitely.    Video Lesson      Graded Exercises    The domain is the set of all     inputs to a function.    outputs of a function.    ordered pairs of a function.    maximum values of a function.       The range is the set of all     inputs to a function.    outputs of a function.    ordered pairs of a function.    independent values of a function.       The inequality is represented by the interval                    Use the graph of the function to answer the questions. If no endpoint is shown, assume that the graph continues on forever. Use infty for in your answers.     Bounded Domain and Range   f(x)=.25*x^3+1            The domain of the function is .  The range of the function is .        \\[-2,\\s*2\\)   Correct! The graph begins at with a closed point, so is included. The graph ends at with an open point, so is not included.      .*   Not quite. Look at the endpoints of the graph. The point at is closed, while the point at is open.         \\[-1,\\s*3\\)   Correct! The graph reaches at a closed point, so is included. The graph approaches at an open point, so is not included.      .*   Not quite. The lowest output is and is included, while the graph has an open point at .         Use the graph of the function to answer the questions. If no endpoint is shown, assume that the graph continues on forever. Use infty for in your answers.     Bounded Domain and Range   f(x)=-.25*x^3+1           The domain of the function is .  The range of the function is .        \\(-2,\\s*infty\\)   Correct! The graph begins at with an open point, so is not included. The graph continues to the right without bound, so is not included.      .*   Not quite. Look at the endpoints of the graph. The point at is open, while there is no endpoint on the right.         \\[-infty,\\s*3\\)   Correct! The graph reaches at an open point, so is not included. The graph continues downward without bound, so is not included.      .*   Not quite. The lowest output is and is not included, while the graph has an open point at .        "
 },
 {
   "id": "def-domain",
   "level": "2",
   "url": "sec-domain-and-range.html#def-domain",
   "type": "Definition",
-  "number": "1.4.1",
+  "number": "1.3.1",
   "title": "Domain.",
   "body": " Domain  The domain of a function is the set of all input values for which the function is defined.  "
 },
@@ -428,7 +365,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-domain-and-range.html#def-range",
   "type": "Definition",
-  "number": "1.4.2",
+  "number": "1.3.2",
   "title": "Range.",
   "body": " Range  The range of a function is the set of all output values produced by the function.  "
 },
@@ -437,16 +374,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-domain-and-range.html#ex-domain-range-context",
   "type": "Example",
-  "number": "1.4.3",
+  "number": "1.3.3",
   "title": "Interpreting Domain and Range in Context.",
-  "body": " Interpreting Domain and Range in Context   Let represent the charge level of a rechargeable battery, as a percent, minutes after it is connected to a charger. Describe the meaning of the domain and range.    The input is time in minutes, so the domain is the set of possible charging times.  The output is the battery's charge level as a percent, so the range is the set of possible charge levels produced during those times.   "
+  "body": " Interpreting Domain and Range in Context   Let represent the charge level of a phone battery, as a percent, minutes after it is connected to a charger. Describe the meaning of the domain and range and give reasonable bounds for each.    The input is time in minutes, so the domain is the set of possible charging times. A reasonable bound for the domain would be , assuming the battery is charged for up to one hour.  The output is the battery's charge level as a percent, so the range is the set of possible charge levels produced during those times. A reasonable bound for the range would be , representing a fully discharged to fully charged battery.   "
 },
 {
   "id": "subsec-domain-range-definitions-5",
   "level": "2",
   "url": "sec-domain-and-range.html#subsec-domain-range-definitions-5",
   "type": "Remark",
-  "number": "1.4.4",
+  "number": "1.3.4",
   "title": "",
   "body": " When a function is written as , the domain contains the possible -values and the range contains the resulting -values.  "
 },
@@ -455,16 +392,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-domain-and-range.html#table-endpoint-notation",
   "type": "Table",
-  "number": "1.4.5",
+  "number": "1.3.5",
   "title": "Endpoint Notation",
-  "body": " Endpoint Notation   Endpoint condition Interval symbol Inequality symbol  Endpoint is included Square bracket or  Endpoint is not included Parenthesis or   "
+  "body": " Endpoint Notation   Endpoint condition Interval symbol Inequality symbol  Endpoint is included Square bracket; [ or ] or  Endpoint is not included Parenthesis; ( or ) or   "
 },
 {
   "id": "ex-interval-to-inequality-open-closed",
   "level": "2",
   "url": "sec-domain-and-range.html#ex-interval-to-inequality-open-closed",
   "type": "Example",
-  "number": "1.4.6",
+  "number": "1.3.6",
   "title": "From Interval Notation to Inequality Notation.",
   "body": " From Interval Notation to Inequality Notation   Write using inequality notation.    The parenthesis at means that is not included. The square bracket at means that is included.    "
 },
@@ -473,7 +410,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-domain-and-range.html#ex-inequality-to-interval-closed-open",
   "type": "Example",
-  "number": "1.4.7",
+  "number": "1.3.7",
   "title": "From Inequality Notation to Interval Notation.",
   "body": " From Inequality Notation to Interval Notation   Write using interval notation.    The value is included, so use a square bracket. The value is not included, so use a parenthesis.    "
 },
@@ -482,7 +419,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-domain-and-range.html#ex-interval-to-inequality-neither-endpoint",
   "type": "Example",
-  "number": "1.4.8",
+  "number": "1.3.8",
   "title": "Neither Endpoint Included.",
   "body": " Neither Endpoint Included   Write using inequality notation.    Both endpoints use parentheses, so neither endpoint is included.    "
 },
@@ -491,7 +428,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-domain-and-range.html#ex-inequality-to-interval-both-endpoints",
   "type": "Example",
-  "number": "1.4.9",
+  "number": "1.3.9",
   "title": "Both Endpoints Included.",
   "body": " Both Endpoints Included   Write using interval notation.    Both endpoints are included, so use a square bracket at each end.    "
 },
@@ -500,7 +437,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-domain-and-range.html#ex-positive-infinity-interval",
   "type": "Example",
-  "number": "1.4.10",
+  "number": "1.3.10",
   "title": "",
   "body": "  Write using inequality notation.    The interval begins at , includes , and continues to the right without bound.    "
 },
@@ -509,61 +446,124 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-domain-and-range.html#ex-negative-infinity-interval",
   "type": "Example",
-  "number": "1.4.11",
+  "number": "1.3.11",
   "title": "",
   "body": "  Write using interval notation.    The values continue to the left without bound, and is not included.    "
 },
 {
-  "id": "subsubsec-infinite-intervals-5",
+  "id": "subsec-interval-and-inequality-notation-12",
   "level": "2",
-  "url": "sec-domain-and-range.html#subsubsec-infinite-intervals-5",
-  "type": "Warning",
-  "number": "1.4.12",
+  "url": "sec-domain-and-range.html#subsec-interval-and-inequality-notation-12",
+  "type": "Remark",
+  "number": "1.3.12",
   "title": "",
-  "body": " Do not write inequalities such as as part of a compound inequality. Instead, write only the finite restriction, such as .  "
+  "body": " By convention, we do not write inequalities such as as part of a compound inequality. Instead, write only the finite restriction, such as .  "
 },
 {
   "id": "ex-bounded-domain-range-graph",
   "level": "2",
   "url": "sec-domain-and-range.html#ex-bounded-domain-range-graph",
   "type": "Example",
-  "number": "1.4.13",
+  "number": "1.3.13",
   "title": "A Graph with Two Finite Endpoints.",
-  "body": " A Graph with Two Finite Endpoints   Use the graph described above to determine the domain and range. Express each answer using interval notation and inequality notation.    The graph begins at the included input and ends at the excluded input .  Domain in interval notation:   Domain in inequality notation:   The smallest output is and the largest output is . Both output values occur on the graph.  Range in interval notation:   Range in inequality notation:    "
+  "body": " A Graph with Two Finite Endpoints   Use the graph described to determine the domain and range. Express each answer using interval notation and inequality notation.     Bounded Domain and Range                      The graph begins at the included input and ends at the excluded input .  Domain in interval notation:   Domain in inequality notation:   The smallest output is and the largest output is . Both output values occur on the graph.  Range in interval notation:   Range in inequality notation:    "
 },
 {
   "id": "subsec-domain-range-from-graphs-5",
   "level": "2",
   "url": "sec-domain-and-range.html#subsec-domain-range-from-graphs-5",
   "type": "Remark",
-  "number": "1.4.14",
+  "number": "1.3.15",
   "title": "",
   "body": " An open endpoint affects the domain through its -coordinate and the range through its -coordinate. However, an excluded endpoint does not automatically exclude that output from the range. The same output may occur at another included point on the graph.  "
+},
+{
+  "id": "subsec-domain-range-from-graphs-6",
+  "level": "2",
+  "url": "sec-domain-and-range.html#subsec-domain-range-from-graphs-6",
+  "type": "Remark",
+  "number": "1.3.16",
+  "title": "",
+  "body": " Every point along a curve should be thought of as a filled in point. The graph is made up of infinitely many of these filled in points making the curve. In example , the graph extends up to . Even though there is not a filled in point at , the range includes .  "
 },
 {
   "id": "ex-unbounded-domain-range-graph",
   "level": "2",
   "url": "sec-domain-and-range.html#ex-unbounded-domain-range-graph",
   "type": "Example",
-  "number": "1.4.15",
+  "number": "1.3.17",
   "title": "A Graph That Continues Without Bound.",
-  "body": " A Graph That Continues Without Bound   Use the graph described above to determine the domain and range. Express each answer using interval notation and inequality notation.    The smallest input is , and it is included. The graph continues to the right without bound.  Domain in interval notation:   Domain in inequality notation:   The smallest output is , and it is included. The graph continues upward without bound.  Range in interval notation:   Range in inequality notation:    "
+  "body": " A Graph That Continues Without Bound   Use the graph to determine the domain and range. Express each answer using interval notation and inequality notation.     Bounded Domain and Range                   The smallest input is , and it is included. The graph continues to the right without bound.  Domain in interval notation:   Domain in inequality notation:   The smallest output is , and it is included. The graph continues upward without bound.  Range in interval notation:   Range in inequality notation:    "
 },
 {
   "id": "ex-all-real-domain-bounded-range",
   "level": "2",
   "url": "sec-domain-and-range.html#ex-all-real-domain-bounded-range",
   "type": "Example",
-  "number": "1.4.16",
+  "number": "1.3.19",
   "title": "All Real Inputs with Bounded Outputs.",
-  "body": " All Real Inputs with Bounded Outputs   Use the graph described above to determine the domain and range. Express each answer using interval notation and inequality notation.    The graph continues indefinitely to both the left and the right, so every real number is an input.  Domain in interval notation:   Domain in inequality notation:  , or equivalently, is any real number.  The lowest output is and the highest output is . Both values occur on the graph.  Range in interval notation:   Range in inequality notation:    "
+  "body": " All Real Inputs with Bounded Outputs   Use the graph described above to determine the domain and range. Express each answer using interval notation and inequality notation.     Wave with Bounded Range  A sine curve extends indefinitely in both horizontal directions. Its lowest output is negative 3 and its highest output is 2, and both values are attained.   f(x)=(5\/2)*sin(x)-(1\/2)            The graph continues indefinitely to both the left and the right, so every real number is an input.  Domain in interval notation:   Domain in inequality notation:  , or equivalently, is any real number.  The lowest output is and the highest output is . Both values occur on the graph.  Range in interval notation:   Range in inequality notation:    "
+},
+{
+  "id": "sec-domain-and-range-6",
+  "level": "2",
+  "url": "sec-domain-and-range.html#sec-domain-and-range-6",
+  "type": "Remark",
+  "number": "1.3.21",
+  "title": "",
+  "body": " A domain or range going to infinity can look different depending on the graph. In some cases, arrows indicate the direction of the graph, while in others, the graph may simply extend to the edge of the viewing window. In either case, we assume the graph continues in that direction indefinitely.  "
+},
+{
+  "id": "Domain-Range-exercise1",
+  "level": "2",
+  "url": "sec-domain-and-range.html#Domain-Range-exercise1",
+  "type": "Checkpoint",
+  "number": "1.3.22",
+  "title": "",
+  "body": "  The domain is the set of all     inputs to a function.    outputs of a function.    ordered pairs of a function.    maximum values of a function.    "
+},
+{
+  "id": "Domain-Range-exercise2",
+  "level": "2",
+  "url": "sec-domain-and-range.html#Domain-Range-exercise2",
+  "type": "Checkpoint",
+  "number": "1.3.23",
+  "title": "",
+  "body": "  The range is the set of all     inputs to a function.    outputs of a function.    ordered pairs of a function.    independent values of a function.    "
+},
+{
+  "id": "Domain-Range-exercise3",
+  "level": "2",
+  "url": "sec-domain-and-range.html#Domain-Range-exercise3",
+  "type": "Checkpoint",
+  "number": "1.3.24",
+  "title": "",
+  "body": "  The inequality is represented by the interval                 "
+},
+{
+  "id": "Domain-Range-exercise4",
+  "level": "2",
+  "url": "sec-domain-and-range.html#Domain-Range-exercise4",
+  "type": "Checkpoint",
+  "number": "1.3.25",
+  "title": "",
+  "body": "  Use the graph of the function to answer the questions. If no endpoint is shown, assume that the graph continues on forever. Use infty for in your answers.     Bounded Domain and Range   f(x)=.25*x^3+1            The domain of the function is .  The range of the function is .        \\[-2,\\s*2\\)   Correct! The graph begins at with a closed point, so is included. The graph ends at with an open point, so is not included.      .*   Not quite. Look at the endpoints of the graph. The point at is closed, while the point at is open.         \\[-1,\\s*3\\)   Correct! The graph reaches at a closed point, so is included. The graph approaches at an open point, so is not included.      .*   Not quite. The lowest output is and is included, while the graph has an open point at .      "
+},
+{
+  "id": "Domain-Range-exercise5",
+  "level": "2",
+  "url": "sec-domain-and-range.html#Domain-Range-exercise5",
+  "type": "Checkpoint",
+  "number": "1.3.27",
+  "title": "",
+  "body": "  Use the graph of the function to answer the questions. If no endpoint is shown, assume that the graph continues on forever. Use infty for in your answers.     Bounded Domain and Range   f(x)=-.25*x^3+1           The domain of the function is .  The range of the function is .        \\(-2,\\s*infty\\)   Correct! The graph begins at with an open point, so is not included. The graph continues to the right without bound, so is not included.      .*   Not quite. Look at the endpoints of the graph. The point at is open, while there is no endpoint on the right.         \\[-infty,\\s*3\\)   Correct! The graph reaches at an open point, so is not included. The graph continues downward without bound, so is not included.      .*   Not quite. The lowest output is and is not included, while the graph has an open point at .      "
 },
 {
   "id": "sec-increasing-and-decreasing",
   "level": "1",
   "url": "sec-increasing-and-decreasing.html",
   "type": "Section",
-  "number": "1.5",
+  "number": "1.4",
   "title": "Increasing and Decreasing Functions",
   "body": " Increasing and Decreasing Functions   Functions can change in different ways as the input changes. One important question is whether the outputs get larger or smaller as we move from left to right across a graph.    Increasing Function  A function is increasing on an interval if the outputs become larger as the inputs become larger.    Decreasing Function  A function is decreasing on an interval if the outputs become smaller as the inputs become larger.    To determine whether a graph is increasing or decreasing, read the graph from left to right. If the graph rises, the function is increasing. If the graph falls, the function is decreasing.    Identifying Increasing and Decreasing Intervals from Graphs    A Function with One Turning Point   Determine the interval(s) on which the graph described above is increasing and decreasing.    The graph falls as we move toward x=3 from the left, so it is decreasing on .  The graph rises after x=3, so it is increasing on .      Multiple Increasing and Decreasing Intervals   Determine where the function is increasing and decreasing.    The graph rises until x=-2, decreases from x=-2 to x=4, and then rises again after x=4.  Increasing:  Decreasing:      Identifying Both Increasing and Decreasing Intervals   Use the graph described above to identify every interval on which the function is increasing and every interval on which the function is decreasing.    Read the graph from left to right. The graph rises until it reaches the local maximum at , so the function is increasing on .  The graph then falls from to the local minimum at , so the function is decreasing on .  After , the graph rises again, so the function is increasing on .  Combining the two increasing intervals gives:        Finding Decreasing Intervals   Identify all intervals on which the graph is decreasing.    The graph falls as x approaches 1, rises between x=1 and x=5, and falls again after x=5.  Decreasing:      Identifying Increasing and Decreasing Behavior from Tables  A table can also reveal whether a function is increasing or decreasing. Compare the outputs as the inputs increase.   An Increasing Function    Website Subscribers   Week 1 2 3 4  Subscribers 120 145 171 198    Is the function increasing or decreasing?    As the inputs increase from week 1 to week 4, every output increases. Therefore, the function is increasing.     A Decreasing Function    Fuel Remaining   Hours Driven 0 2 4 6  Gallons Remaining 14 11 8 5    Is the function increasing or decreasing?    As the inputs increase, the outputs continually decrease. Therefore, the function is decreasing.     Neither Increasing nor Decreasing    Output Values   x 1 2 3 4  f(x) 5 9 7 10    Is the function increasing or decreasing?    The outputs increase, then decrease, then increase again. The function is neither increasing nor decreasing on its entire domain.      Key Ideas    Read graphs from left to right.  If outputs get larger as inputs get larger, the function is increasing.  If outputs get smaller as inputs get larger, the function is decreasing.  Intervals of increase and decrease are usually written using interval notation.     "
 },
@@ -572,7 +572,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-increasing-and-decreasing.html#def-increasing-function",
   "type": "Definition",
-  "number": "1.5.1",
+  "number": "1.4.1",
   "title": "Increasing Function.",
   "body": " Increasing Function  A function is increasing on an interval if the outputs become larger as the inputs become larger.  "
 },
@@ -581,7 +581,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-increasing-and-decreasing.html#def-decreasing-function",
   "type": "Definition",
-  "number": "1.5.2",
+  "number": "1.4.2",
   "title": "Decreasing Function.",
   "body": " Decreasing Function  A function is decreasing on an interval if the outputs become smaller as the inputs become larger.  "
 },
@@ -590,7 +590,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-increasing-and-decreasing.html#sec-increasing-and-decreasing-5",
   "type": "Remark",
-  "number": "1.5.3",
+  "number": "1.4.3",
   "title": "",
   "body": " To determine whether a graph is increasing or decreasing, read the graph from left to right. If the graph rises, the function is increasing. If the graph falls, the function is decreasing.  "
 },
@@ -599,7 +599,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-increasing-and-decreasing.html#ex-absolute-value-intervals",
   "type": "Example",
-  "number": "1.5.4",
+  "number": "1.4.4",
   "title": "A Function with One Turning Point.",
   "body": " A Function with One Turning Point   Determine the interval(s) on which the graph described above is increasing and decreasing.    The graph falls as we move toward x=3 from the left, so it is decreasing on .  The graph rises after x=3, so it is increasing on .   "
 },
@@ -608,7 +608,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-increasing-and-decreasing.html#ex-two-turning-points",
   "type": "Example",
-  "number": "1.5.5",
+  "number": "1.4.5",
   "title": "Multiple Increasing and Decreasing Intervals.",
   "body": " Multiple Increasing and Decreasing Intervals   Determine where the function is increasing and decreasing.    The graph rises until x=-2, decreases from x=-2 to x=4, and then rises again after x=4.  Increasing:  Decreasing:   "
 },
@@ -617,7 +617,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-increasing-and-decreasing.html#ex-identify-both-inc-dec",
   "type": "Example",
-  "number": "1.5.6",
+  "number": "1.4.6",
   "title": "Identifying Both Increasing and Decreasing Intervals.",
   "body": " Identifying Both Increasing and Decreasing Intervals   Use the graph described above to identify every interval on which the function is increasing and every interval on which the function is decreasing.    Read the graph from left to right. The graph rises until it reaches the local maximum at , so the function is increasing on .  The graph then falls from to the local minimum at , so the function is decreasing on .  After , the graph rises again, so the function is increasing on .  Combining the two increasing intervals gives:     "
 },
@@ -626,7 +626,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-increasing-and-decreasing.html#ex-find-decreasing-intervals",
   "type": "Example",
-  "number": "1.5.7",
+  "number": "1.4.7",
   "title": "Finding Decreasing Intervals.",
   "body": " Finding Decreasing Intervals   Identify all intervals on which the graph is decreasing.    The graph falls as x approaches 1, rises between x=1 and x=5, and falls again after x=5.  Decreasing:   "
 },
@@ -635,7 +635,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-increasing-and-decreasing.html#ex-increasing-table",
   "type": "Example",
-  "number": "1.5.8",
+  "number": "1.4.8",
   "title": "An Increasing Function.",
   "body": " An Increasing Function    Website Subscribers   Week 1 2 3 4  Subscribers 120 145 171 198    Is the function increasing or decreasing?    As the inputs increase from week 1 to week 4, every output increases. Therefore, the function is increasing.   "
 },
@@ -644,7 +644,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-increasing-and-decreasing.html#ex-decreasing-table",
   "type": "Example",
-  "number": "1.5.10",
+  "number": "1.4.10",
   "title": "A Decreasing Function.",
   "body": " A Decreasing Function    Fuel Remaining   Hours Driven 0 2 4 6  Gallons Remaining 14 11 8 5    Is the function increasing or decreasing?    As the inputs increase, the outputs continually decrease. Therefore, the function is decreasing.   "
 },
@@ -653,7 +653,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-increasing-and-decreasing.html#ex-neither-table",
   "type": "Example",
-  "number": "1.5.12",
+  "number": "1.4.12",
   "title": "Neither Increasing nor Decreasing.",
   "body": " Neither Increasing nor Decreasing    Output Values   x 1 2 3 4  f(x) 5 9 7 10    Is the function increasing or decreasing?    The outputs increase, then decrease, then increase again. The function is neither increasing nor decreasing on its entire domain.   "
 },

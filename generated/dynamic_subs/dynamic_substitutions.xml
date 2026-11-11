@@ -1,8 +1,2 @@
 <xml>
-  <dynamic-substitution id="RWT-Representations-Functions-exercise1">
-    <eval-subst obj="theFunction">3 \left(x+3\right)</eval-subst>
-    <eval-subst obj="Answer1">6</eval-subst>
-    <eval-subst obj="Answer2">9</eval-subst>
-    <eval-subst obj="Answer3">15</eval-subst>
-  </dynamic-substitution>
 </xml>
